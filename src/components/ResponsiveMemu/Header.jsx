@@ -3,13 +3,13 @@ import Navbar from "./Navbar";
 import { Link } from "react-router-dom";
 import Logo from "../../assets/images/ca-capka-logo.png"
 
-const Header = () => {
+const ResHeader = () => {
   return (
-    <header className="responsive-header">
+   <header className="responsive-header">
       <div className="nav-area">
-        <Link to="/" className="logo">
+        <aLink href="/home" className="logo">
           <img src={Logo} alt="" srcset=""  width={82}/>
-        </Link>
+        </aLink>
 
         {/* for large screens */}
         <Navbar />
@@ -21,4 +21,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default ResHeader;

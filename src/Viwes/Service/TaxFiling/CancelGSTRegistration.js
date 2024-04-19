@@ -12,6 +12,7 @@ import {
   CancelGSTRegistrationAbout,
   CancelGSTRegistrationCardText,
 } from "../../../constants/Paragram";
+import ResHeader from "../../../components/ResponsiveMemu/Header";
 
 const CancelGSTRegistration = () => {
   const [cardtext1, setCardText1] = useState("");
@@ -32,7 +33,7 @@ const CancelGSTRegistration = () => {
   return (
     <>
       <Topbar />
-      <Header />
+      <ResHeader />
       <CommonBanner text="Cancel GST Registration" src={banner} />
       <CommonAboutSection
         text={CancelGSTRegistrationAbout}

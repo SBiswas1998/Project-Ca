@@ -42,7 +42,7 @@ const QuickEnquiryFrom = () => {
           </Col>
           <Col lg={6}>
             <figure className="image-wrap image-wrap-1 bg-athens-gray-inner">
-              <img src={contactimg} alt="" className="img-fluid" style={{marginLeft:"45%"}}/>
+              <img src={contactimg} alt="" className="img-fluid QuickEnquiryimg" style={{marginLeft:"45%"}} />
             </figure>
           </Col>
         </Row>

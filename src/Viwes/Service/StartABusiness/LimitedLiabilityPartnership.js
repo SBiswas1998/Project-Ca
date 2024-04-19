@@ -12,6 +12,7 @@ import CommonCard from "../../../components/Card/CommonCard";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import ResHeader from "../../../components/ResponsiveMemu/Header";
 
 const LimitedLiabilityPartnership = () => {
   const [cardtext1, setCardText1] = useState("");
@@ -46,7 +47,7 @@ const LimitedLiabilityPartnership = () => {
   return (
     <>
       <Topbar />
-      <Header />
+      <ResHeader />
       <CommonBanner text="Limited Liability Partnership" src={banner} />
       <CommonAboutSection
         text={LimitedLiabilityPartnershipAcboutText}

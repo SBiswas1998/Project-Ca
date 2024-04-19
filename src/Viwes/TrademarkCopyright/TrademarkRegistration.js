@@ -5,14 +5,14 @@ import banner from "../../assets/images/Trademark.jpg";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import { TrademarkRegistrationAboutText, TrademarkRegistrationCardText } from "../../constants/Paragram";
+import {
+  TrademarkRegistrationAboutText,
+  TrademarkRegistrationCardText,
+} from "../../constants/Paragram";
 import CommonBanner from "../../components/CommonBanner";
 import CommonAboutSection from "../../components/CommonAboutSection";
 import CommonCard from "../../components/Card/CommonCard";
-
-
-
-
+import ResHeader from "../../components/ResponsiveMemu/Header";
 
 const TrademarkRegistration = () => {
   const [cardtext1, setCardText1] = useState("");
@@ -31,7 +31,9 @@ const TrademarkRegistration = () => {
       setCardText3(TrademarkRegistrationCardText[2]?.Trust_or_Goodwill);
       setCardText4(TrademarkRegistrationCardText[3]?.Creation_of_Asset);
       setCardText5(TrademarkRegistrationCardText[4]?.Global_Trademark_Filing);
-      setCardText6(TrademarkRegistrationCardText[5]?.Identity_and_Business_Proof);
+      setCardText6(
+        TrademarkRegistrationCardText[5]?.Identity_and_Business_Proof
+      );
       setCardText7(TrademarkRegistrationCardText[6]?.Logo_with_Tagline);
       setCardText8(TrademarkRegistrationCardText[7]?.Form48_and_User_Affidavit);
     }
@@ -39,7 +41,7 @@ const TrademarkRegistration = () => {
   return (
     <>
       <Topbar />
-      <Header />
+      <ResHeader />
       <CommonBanner text="Trademark Registration" src={banner} />
       <CommonAboutSection
         text={TrademarkRegistrationAboutText}

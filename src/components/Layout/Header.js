@@ -407,6 +407,7 @@ export default function Header() {
                       <MDBNavbarLink href="#">
                         <a href="http://">Rules</a>
                       </MDBNavbarLink>
+                      
                       <ul className="dropdown-menu dropdown-submenu">
                         <MDBDropdownItem>
                           <MDBNavbarLink href="#">

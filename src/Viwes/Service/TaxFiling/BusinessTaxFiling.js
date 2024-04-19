@@ -9,6 +9,7 @@ import {
   BusinessTaxFilingAboutText,
   BusinessTaxFilingCardText,
 } from "../../../constants/Paragram";
+import ResHeader from "../../../components/ResponsiveMemu/Header";
 
 const BusinessTaxFiling = () => {
   const [cardtext1, setCardText1] = useState("");
@@ -29,7 +30,7 @@ const BusinessTaxFiling = () => {
   return (
     <>
       <Topbar />
-      <Header />
+      <ResHeader />
       <CommonBanner text="Business Tax Filing" src={banner} />
       <CommonAboutSection
         text={BusinessTaxFilingAboutText}

@@ -9,6 +9,7 @@ import {
 } from "../../../constants/Paragram";
 import QuickEnquiryFrom from "../../../components/Forms/QuickEnquiryFrom";
 import CommonCard from "../../../components/Card/CommonCard";
+import ResHeader from "../../../components/ResponsiveMemu/Header";
 
 const PrivateLimitedCompany = () => {
   const [cardtext1, setCardText1] = useState("");
@@ -29,7 +30,7 @@ const PrivateLimitedCompany = () => {
   return (
     <>
       <Topbar />
-      <Header />
+      <ResHeader />
       <CommonBanner text="Private Limited Company" src={banner} />
       <CommonAboutSection
         text={PrivateLimitedCompanyAboutText}

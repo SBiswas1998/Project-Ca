@@ -1,69 +1,48 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import { 
-    About, 
+import { About, 
     AddPartner, 
     BankLoanRating, 
     BankLoanSyndication, 
-    BusinessPlanPreparation, 
-    BusinessTaxFiling, 
-    CMAReportPreparation, 
-    CancelGSTRegistration, 
-    ChangeCompanyName, 
-    CollateralFreeLoan, 
-    Contact, 
-    CopyrightRegistration, 
-    CreditScoreCheck, 
-    Demo, 
-    ESIReturn, 
-    Home, 
-    IncreaseAuthorizedCapital, 
-    LimitedLiabilityPartnership, 
-    MOAAmendment, 
-    OnePersonCompany, 
-    Partnership, 
-    Payment,
-    PrivateLimitedCompany,
-    Proprietorship, 
-    PublicLimitedCompany,
-    RegisteredOfficeChange,
-    RemoveDirectors,
-    ShareTransfer,
-    TDSReturn,
-    TermLoan,
-    TrademarkObjection,
-    TrademarkRegistration,
-    TrademarkRenewal,
-    WindingUpofCompany,
-    WindingUpofLLP,
-    WorkingCapital
+    BusinessPlanPreparation,
+     BusinessTaxFiling, 
+     CMAReportPreparation, 
+     CancelGSTRegistration, 
+     ChangeCompanyName, 
+     CollateralFreeLoan, 
+     Contact, 
+     CopyrightRegistration, 
+     CreditScoreCheck, 
+     ESIReturn, 
+     Home, 
+     IncreaseAuthorizedCapital, 
+     LimitedLiabilityPartnership, 
+     MOAAmendment, 
+     OnePersonCompany, 
+     Partnership, 
+     Payment, 
+     PrivateLimitedCompany, 
+     Proprietorship, 
+     PublicLimitedCompany, 
+     RegisteredOfficeChange, 
+     RemoveDirectors, 
+     ShareTransfer, 
+     TDSReturn, 
+     TermLoan, 
+     TrademarkObjection, 
+     TrademarkRegistration, 
+     TrademarkRenewal, 
+     WindingUpofCompany,
+      WindingUpofLLP, 
+      WorkingCapital 
 } from "../Viwes";
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 const AppRouter =() =>{
     return(
         <Routes>
             <Route path="/" exact element={<Home/>}/>
+            <Route path="/home" exact element={<Home/>}/>
             <Route path="/about" exact element={<About/>}/>
             <Route path="/contactus" exact element={<Contact/>}/>
             <Route path="/payment" exact element={<Payment/>}/>
@@ -97,10 +76,7 @@ const AppRouter =() =>{
             <Route path="/trademarkcopyright/trademark_registration" exact element={<TrademarkRegistration/>}/>
             <Route path="/trademarkcopyright/trademark_objection" exact element={<TrademarkObjection/>}/>
             <Route path="/trademarkcopyright/trademark_renewal" exact element={<TrademarkRenewal/>}/>
-            <Route path="/trademarkcopyright/copyright_registration" exact element={<CopyrightRegistration/>}/>
-            <Route path="/demo" exact element={<Demo/>}/>
-           
-           
+            <Route path="/trademarkcopyright/copyright_registration" exact element={<CopyrightRegistration/>}/>           
         </Routes>
     )
 }

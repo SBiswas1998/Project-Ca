@@ -12,6 +12,7 @@ import {
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import ResHeader from "../../../components/ResponsiveMemu/Header";
 
 const BankLoanSyndication = () => {
   const [cardtext1, setCardText1] = useState("");
@@ -32,7 +33,7 @@ const BankLoanSyndication = () => {
   return (
     <>
       <Topbar />
-      <Header />
+      <ResHeader />
       <CommonBanner text="Bank Loan Syndication" src={banner} />
       <CommonAboutSection
         text={BankLoanSyndicationAboutText}

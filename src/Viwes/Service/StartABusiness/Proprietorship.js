@@ -7,6 +7,7 @@ import { ProprietorshipAboutText } from "../../../constants/Paragram";
 import CommonCard from "../../../components/Card/CommonCard";
 import { ProprietorshipCardText } from "../../../constants/Paragram";
 import QuickEnquiryFrom from "../../../components/Forms/QuickEnquiryFrom";
+import ResHeader from "../../../components/ResponsiveMemu/Header";
 
 const Proprietorship = () => {
   const [cardtext1, setCardText1] = useState("");
@@ -28,7 +29,7 @@ const Proprietorship = () => {
   return (
     <>
       <Topbar />
-      <Header />
+      <ResHeader />
       <CommonBanner text="Proprietorship" src={banner} />
       <CommonAboutSection
         text={ProprietorshipAboutText}

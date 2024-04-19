@@ -9,6 +9,7 @@ import {
   ESIReturnAboutText,
   ESIReturnCardText,
 } from "../../../constants/Paragram";
+import ResHeader from "../../../components/ResponsiveMemu/Header";
 
 const ESIReturn = () => {
   const [cardtext1, setCardText1] = useState("");
@@ -35,7 +36,7 @@ const ESIReturn = () => {
   return (
     <>
       <Topbar />
-      <Header />
+      <ResHeader />
       <CommonBanner text="ESI Return" src={banner} />
       <CommonAboutSection text={ESIReturnAboutText} title="ESI" span="Return" />
       <CommonCard

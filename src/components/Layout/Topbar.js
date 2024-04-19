@@ -3,18 +3,17 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Navbar from "react-bootstrap/Navbar";
-import Logo from "../../assets/images/ca-capka-logo.png";
+import Logo from "../../assets/images/ca_logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone, faEnvelope, faClock } from "@fortawesome/free-solid-svg-icons";
 import { faSquareInstagram, faFacebook, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import time from "../../assets/images/time.png";
 
 function Topbar() {
   return (
     <>
       <div className="top-header-fixed" id="header-top-fixed"></div>
-      <header className="header">
-        <div className="topbar">
+      <header className="top-header">
+      <div className="topbar">
           <Container fluid>
             <Row>
               <Col xs={12} md={6}>
@@ -46,10 +45,10 @@ function Topbar() {
             </Row>
           </Container>
         </div>
-        <Navbar className="bg-body-tertiary" expand="md">
+        <Navbar className="bg-body-tertiary topbar-nav" expand="md">
           <Container>
             <Navbar.Brand href="#home">
-              <img src={Logo} alt="" srcset="" />
+              <img src={Logo} alt="" srcset="" width={85}/>
             </Navbar.Brand>
             <Navbar.Toggle />
             <Navbar.Collapse className="justify-content-end">
@@ -63,6 +62,7 @@ function Topbar() {
           </Container>
         </Navbar>
       </header>
+
     </>
   );
 }

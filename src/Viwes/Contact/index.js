@@ -1,16 +1,17 @@
 import React from "react";
 import Footer from "../../components/Layout/Footer";
-import { Aboutsection, Header, Topbar } from "../../components/Layout";
+import { Topbar } from "../../components/Layout";
 import CommonBanner from "../../components/CommonBanner";
 import banner from "../../assets/images/banner-5.jpg";
 import ContactFrom from "../../components/Forms/ContactFrom";
 import { Container, Row, Col } from "react-bootstrap";
+import ResHeader from "../../components/ResponsiveMemu/Header";
 
 const Contact = () => {
   return (
     <>
       <Topbar />
-      <Header />
+      <ResHeader />
       <CommonBanner text="Contact US" src={banner} url="/contactus" />
       <ContactFrom />
       <section className="hm-contactus-sec">

@@ -12,6 +12,7 @@ import {
 import CommonBanner from "../../components/CommonBanner";
 import CommonAboutSection from "../../components/CommonAboutSection";
 import CommonCard from "../../components/Card/CommonCard";
+import ResHeader from "../../components/ResponsiveMemu/Header";
 
 const TrademarkRenewal = () => {
   const [cardtext1, setCardText1] = useState("");
@@ -32,7 +33,7 @@ const TrademarkRenewal = () => {
   return (
     <>
       <Topbar />
-      <Header />
+      <ResHeader />
       <CommonBanner text="Trademark Renewal" src={banner} />
       <CommonAboutSection
         text={TrademarkRenewalAboutText}

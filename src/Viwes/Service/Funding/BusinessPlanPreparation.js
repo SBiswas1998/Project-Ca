@@ -12,6 +12,7 @@ import {
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import ResHeader from "../../../components/ResponsiveMemu/Header";
 
 const BusinessPlanPreparation = () => {
   const [cardtext1, setCardText1] = useState("");
@@ -34,7 +35,7 @@ const BusinessPlanPreparation = () => {
   return (
     <>
       <Topbar />
-      <Header />
+      <ResHeader />
       <CommonBanner text="Business Plan Preparation" src={banner} />
       <CommonAboutSection
         text={BusinessPlanPreparationAboutText}

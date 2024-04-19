@@ -12,6 +12,7 @@ import {
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import ResHeader from "../../../components/ResponsiveMemu/Header";
 
 const CreditScoreCheck = () => {
   const [cardtext1, setCardText1] = useState("");
@@ -33,7 +34,7 @@ const CreditScoreCheck = () => {
   return (
     <>
       <Topbar />
-      <Header />
+      <ResHeader />
       <CommonBanner text="Credit Score Check" src={banner} />
       <CommonAboutSection
         text={CreditScoreCheckAboutText}

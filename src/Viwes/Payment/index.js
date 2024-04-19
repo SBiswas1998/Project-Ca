@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { Footer, Header, Topbar } from "../../components/Layout";
+import { Footer, Topbar } from "../../components/Layout";
 import banner from "../../assets/images/banner-4.jpg";
 import CommonBanner from "../../components/CommonBanner";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import qrcode from "../../assets/images/qr-code.png";
+import ResHeader from "../../components/ResponsiveMemu/Header";
 
 const Payment = () => {
   const [count, setCount] = useState(5); // Initial countdown value
@@ -31,7 +32,7 @@ const Payment = () => {
       {showPayment ? (
         <>
           <Topbar />
-          <Header />
+          <ResHeader />
           <CommonBanner text="Payment" src={banner} url="/payment" />
           <section className="hm-about-sec">
             <Container>

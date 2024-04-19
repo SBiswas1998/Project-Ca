@@ -9,6 +9,7 @@ import {
   OnePersonCompanyCardText,
 } from "../../../constants/Paragram";
 import CommonCard from "../../../components/Card/CommonCard";
+import ResHeader from "../../../components/ResponsiveMemu/Header";
 
 const OnePersonCompany = () => {
   const [cardtext1, setCardText1] = useState("");
@@ -29,7 +30,7 @@ const OnePersonCompany = () => {
   return (
     <>
       <Topbar />
-      <Header />
+      <ResHeader />
       <CommonBanner text="One Person Company" src={banner} />
       <CommonAboutSection
         text={OnePersonCompanyAcboutText}
@@ -50,7 +51,6 @@ const OnePersonCompany = () => {
         card5="Owning Property"
         cardtext5={cardtext5}
       />
-
       <QuickEnquiryFrom />
       <Footer />
     </>

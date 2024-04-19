@@ -33,7 +33,6 @@ import TrademarkRegistration from "./TrademarkCopyright/TrademarkRegistration";
 import TrademarkObjection from "./TrademarkCopyright/TrademarkObjection";
 import TrademarkRenewal from "./TrademarkCopyright/TrademarkRenewal";
 import CopyrightRegistration from "./TrademarkCopyright/CopyrightRegistration";
-import Demo from "./demo";
 
 
 
@@ -75,7 +74,6 @@ export{
     WindingUpofLLP,
     WorkingCapital,
     WindingUpofCompany,
-    Demo
 }
 
 

@@ -12,6 +12,7 @@ import {
 import CommonBanner from "../../components/CommonBanner";
 import CommonAboutSection from "../../components/CommonAboutSection";
 import CommonCard from "../../components/Card/CommonCard";
+import ResHeader from "../../components/ResponsiveMemu/Header";
 
 const CopyrightRegistration = () => {
   const [cardtext1, setCardText1] = useState("");
@@ -34,7 +35,7 @@ const CopyrightRegistration = () => {
   return (
     <>
       <Topbar />
-      <Header />
+      <ResHeader />
       <CommonBanner text="Copyright Registration" src={banner} />
       <CommonAboutSection
         text={CopyrightRegistrationAboutText}

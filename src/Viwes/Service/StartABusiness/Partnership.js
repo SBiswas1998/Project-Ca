@@ -9,6 +9,7 @@ import {
 } from "../../../constants/Paragram";
 import CommonCard from "../../../components/Card/CommonCard";
 import QuickEnquiryFrom from "../../../components/Forms/QuickEnquiryFrom";
+import ResHeader from "../../../components/ResponsiveMemu/Header";
 
 const Partnership = () => {
   const [cardtext1, setCardText1] = useState("");
@@ -30,7 +31,7 @@ const Partnership = () => {
   return (
     <>
       <Topbar />
-      <Header />
+      <ResHeader />
       <CommonBanner src={banner} text="Partnership" />
       <CommonAboutSection
         text={PartnershipAboutText}
