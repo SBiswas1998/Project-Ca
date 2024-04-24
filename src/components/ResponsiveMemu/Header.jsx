@@ -1,14 +1,14 @@
 import MobileNav from "./MobileNav";
 import Navbar from "./Navbar";
 import { Link } from "react-router-dom";
-import Logo from "../../assets/images/ca-capka-logo.png"
+import Logo from "../../assets/images/ca_logo.png";
 
 const ResHeader = () => {
   return (
    <header className="responsive-header">
       <div className="nav-area">
         <aLink href="/home" className="logo">
-          <img src={Logo} alt="" srcset=""  width={82}/>
+          <img src={Logo} alt="" srcset=""  width={150}/>
         </aLink>
 
         {/* for large screens */}

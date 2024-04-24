@@ -101,6 +101,9 @@ span.navbar-text ul {
   /* color: rgb(4, 4, 99) !important; */
   text-decoration: none !important;
 }
+.navbar {
+  height: 16vh;
+}
 
 /* navbar */
 /* demo */

@@ -17,7 +17,7 @@ import {
 
 const initialState ={
     signup_res: null,
-    user_data: null,
+    user_data: [],
     is_authenticated: false,
     token:'',
     loginMessage: null,
@@ -37,10 +37,11 @@ export default (state = initialState,action)=>{
 
     switch (type){
         case REGISTER_RESPONSE:
+            console.log("payload---",payload)
             return{
                 ...state,
-                signup_res: payload,
-                user_data: payload.data
+                // signup_res: payload,
+                user_data: payload
             }
         case LOGIN_SUCCESS:
             localStorage.setItem('token',payload.data.data.data.token)

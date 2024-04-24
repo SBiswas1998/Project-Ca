@@ -21,12 +21,12 @@ function Topbar() {
                   <div className="top-info-d">
                     <FontAwesomeIcon icon={faEnvelope} />
                     &nbsp;
-                    <span>caportal@sagipl.com</span>
+                    <span> info@capka.co.in</span>
                   </div>
                   <div className="top-info-d">
                     <FontAwesomeIcon icon={faPhone} />
                     &nbsp;
-                    <span>0141-4072000</span>
+                    <span>+91 964-687-4599</span>
                   </div>
                 </div>
               </Col>
@@ -48,7 +48,7 @@ function Topbar() {
         <Navbar className="bg-body-tertiary topbar-nav" expand="md">
           <Container>
             <Navbar.Brand href="#home">
-              <img src={Logo} alt="" srcset="" width={85}/>
+              <img src={Logo} alt="" srcset="" width={180}/>
             </Navbar.Brand>
             <Navbar.Toggle />
             <Navbar.Collapse className="justify-content-end">

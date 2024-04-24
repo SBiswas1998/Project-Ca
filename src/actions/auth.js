@@ -21,20 +21,38 @@ import { baseUrl } from "../constants/const";
 const token = localStorage.getItem("check_token")
 
 
-export const registerUser =(data)=> async dispatch =>{
-    console.log("data---",data)
-    let config ={
-        mothod: 'POST',
-        headers:{},
-        url:`${baseUrl}`,
-        data,
+export const registerUser = (data) => async (dispatch) => {
+    try {
+        // Configure the request
+        let config = {
+            method: 'POST',
+            url: `${baseUrl}/sign`, // Assuming baseUrl is defined somewhere
+            headers: {'Content-Type': 'application/json'}, // Set content type to JSON
+            data: data // Send the entire data object
+        };
+        // Make the API call
+        let response = await apiCall(config, dispatch);
+
+        if(response.status == 400){
+            console.log("Errror")
+        }
+
+        // Dispatch the response to the reducer
+        dispatch({
+            type: REGISTER_RESPONSE,
+            payload: response
+        });
+    } catch (error) {
+        dispatch({
+            type: REGISTER_RESPONSE,
+            payload: error.response
+        })
+        console.error('Error registering user:', error.response);
+        // Handle the error
     }
-    let response = await apiCall(config,dispatch)
-    dispatch({
-        type:REGISTER_RESPONSE,
-        payload:response.data
-    })
-}
+};
+
+
 
 export const loginAction =(data)=> async dispatch =>{
     let config ={
@@ -87,17 +105,35 @@ export const varifyEmail = (data)=>async dispatch =>{
 }
 
 export const verifyOtp = (data)=>async dispatch =>{
-    let config ={
-        method:'post',
-        headers:{},
-        url:`${baseUrl}`,
-        data,
+    try {
+        // Configure the request
+        let config = {
+            method: 'POST',
+            url: `${baseUrl}/verifyOTP`, // Assuming baseUrl is defined somewhere
+            headers: {'Content-Type': 'application/json'}, // Set content type to JSON
+            data: data // Send the entire data object
+        };
+        // Make the API call
+        let response = await apiCall(config, dispatch);
+        console.log("response----->>>>>",response)
+
+        if(response.status == 400){
+            console.log("Errror")
+        }
+
+        // Dispatch the response to the reducer
+        dispatch({
+            type: VERIFY_OTP,
+            payload: response
+        });
+    } catch (error) {
+        dispatch({
+            type: VERIFY_OTP,
+            payload: error.response
+        })
+        console.error('Error otp user:', error);
+        // Handle the error
     }
-    let response = await apiCall(config,dispatch)
-    dispatch({
-        type:VERIFY_OTP,
-        payload: response.data
-    })
 }
 
 export const validateOtp = (data)=> async dispatch =>{
