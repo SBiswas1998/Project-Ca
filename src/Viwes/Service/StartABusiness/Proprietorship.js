@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Footer, Header, Topbar } from "../../../components/Layout";
+import { Footer,Topbar } from "../../../components/Layout";
 import CommonBanner from "../../../components/CommonBanner";
 import banner from "../../../assets/images/banner-8.jpg";
 import CommonAboutSection from "../../../components/CommonAboutSection";
@@ -31,6 +31,7 @@ const Proprietorship = () => {
       <Topbar />
       <ResHeader />
       <CommonBanner text="Proprietorship" src={banner} />
+      <QuickEnquiryFrom />
       <CommonAboutSection
         text={ProprietorshipAboutText}
         title="Proprietor"
@@ -50,7 +51,6 @@ const Proprietorship = () => {
         card5="Easy to Close"
         cardtext5={cardtext5}
       />
-      <QuickEnquiryFrom />
       <Footer />
     </>
   );

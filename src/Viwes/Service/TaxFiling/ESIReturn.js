@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Footer, Header, Topbar } from "../../../components/Layout";
+import { Footer,Topbar } from "../../../components/Layout";
 import CommonBanner from "../../../components/CommonBanner";
 import CommonAboutSection from "../../../components/CommonAboutSection";
 import CommonCard from "../../../components/Card/CommonCard";
@@ -38,6 +38,7 @@ const ESIReturn = () => {
       <Topbar />
       <ResHeader />
       <CommonBanner text="ESI Return" src={banner} />
+      <QuickEnquiryFrom />
       <CommonAboutSection text={ESIReturnAboutText} title="ESI" span="Return" />
       <CommonCard
         cardtilte="Reasons to"
@@ -52,14 +53,14 @@ const ESIReturn = () => {
         cardtext4={cardtext4}
         card5="ESI Registration"
         cardtext5={cardtext5}
-        card6="Document_Collection"
+        card6="Document Collection"
         cardtext6={cardtext6}
         card7="Return Prepartion"
         cardtext7={cardtext7}
         card8="Return Filing"
         cardtext8={cardtext8}
       />
-      <QuickEnquiryFrom />
+     
       <Footer />
     </>
   );

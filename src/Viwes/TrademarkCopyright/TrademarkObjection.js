@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Footer, Header, Topbar } from "../../components/Layout";
+import { Footer, Topbar } from "../../components/Layout";
 import QuickEnquiryFrom from "../../components/Forms/QuickEnquiryFrom";
 import banner from "../../assets/images/Trademark.jpg";
 import Container from "react-bootstrap/Container";
@@ -35,6 +35,7 @@ const TrademarkObjection = () => {
       <Topbar />
       <ResHeader />
       <CommonBanner text="Trademark Objection" src={banner} />
+      <QuickEnquiryFrom />
       <CommonAboutSection
         text={TrademarkObjectionAboutText}
         title="Trademark"
@@ -98,7 +99,6 @@ const TrademarkObjection = () => {
           </Row>
         </Container>
       </section>
-      <QuickEnquiryFrom />
       <Footer />
     </>
   );

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Footer, Header, Topbar } from "../../components/Layout";
+import { Footer,Topbar } from "../../components/Layout";
 import QuickEnquiryFrom from "../../components/Forms/QuickEnquiryFrom";
 import banner from "../../assets/images/Trademark.jpg";
 import Container from "react-bootstrap/Container";
@@ -37,6 +37,7 @@ const CopyrightRegistration = () => {
       <Topbar />
       <ResHeader />
       <CommonBanner text="Copyright Registration" src={banner} />
+      <QuickEnquiryFrom />
       <CommonAboutSection
         text={CopyrightRegistrationAboutText}
         title="Copyright"
@@ -99,7 +100,7 @@ const CopyrightRegistration = () => {
           </Row>
         </Container>
       </section>
-      <QuickEnquiryFrom />
+     
       <Footer />
     </>
   );

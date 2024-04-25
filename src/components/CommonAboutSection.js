@@ -10,7 +10,7 @@ const CommonAboutSection = ({ text, title, span, listItem, subtext }) => {
 
   useEffect(() => {
     if (subtext) {
-      setSubText1(subtext[0].Voluntary_Winding_Up);
+      setSubText1(subtext[0].Voluntary_Winding_Up || subtext[0].Consent);
       setSubText2(subtext[1].Striking_Off);
       setSubText3(subtext[2].Winding_Up_by_Tribunal);
     }
@@ -23,7 +23,7 @@ const CommonAboutSection = ({ text, title, span, listItem, subtext }) => {
           <Row>
             <Col className="hm-about-what-sec">
               <h2>
-                {title} <span>{span}</span>
+                {title} <span dangerouslySetInnerHTML={{ __html: span }} />
               </h2>
             </Col>
           </Row>
@@ -34,6 +34,13 @@ const CommonAboutSection = ({ text, title, span, listItem, subtext }) => {
               {subtext1 ? (
                 <p>
                   <h4 className="start">Voluntary Winding Up</h4>
+                  {subtext1}
+                </p>
+              ) : null}
+
+              {subtext1 ? (
+                <p>
+                  <h4 className="start">Consent</h4>
                   {subtext1}
                 </p>
               ) : null}

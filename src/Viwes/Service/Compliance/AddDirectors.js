@@ -1,20 +1,20 @@
 import React, { useEffect, useState } from "react";
-import { Footer,Topbar } from "../../../components/Layout";
+import { Footer, Topbar } from "../../../components/Layout";
 import CommonBanner from "../../../components/CommonBanner";
 import CommonAboutSection from "../../../components/CommonAboutSection";
 import CommonCard from "../../../components/Card/CommonCard";
 import QuickEnquiryFrom from "../../../components/Forms/QuickEnquiryFrom";
 import banner from "../../../assets/images/banner.jpg";
 import {
-  RegisteredOfficeChangeAboutText,
-  RegisteredOfficeChangeCardText,
+  AddDirectorsAboutText,
+  RemoveDirectorsCardText,
 } from "../../../constants/Paragram";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import ResHeader from "../../../components/ResponsiveMemu/Header";
 
-const RegisteredOfficeChange = () => {
+const AddDirectors = () => {
   const [cardtext1, setCardText1] = useState("");
   const [cardtext2, setCardText2] = useState("");
   const [cardtext3, setCardText3] = useState("");
@@ -22,37 +22,37 @@ const RegisteredOfficeChange = () => {
   const [cardtext5, setCardText5] = useState("");
 
   useEffect(() => {
-    if (RegisteredOfficeChangeCardText) {
-      setCardText1(RegisteredOfficeChangeCardText[0]?.Registered_Office);
-      setCardText2(RegisteredOfficeChangeCardText[1]?.Books_of_Accounts);
-      setCardText3(RegisteredOfficeChangeCardText[2]?.Within_City_Change);
-      setCardText4(RegisteredOfficeChangeCardText[3]?.Residential_Address);
-      setCardText5(RegisteredOfficeChangeCardText[4]?.Inter_State_Change);
+    if (RemoveDirectorsCardText) {
+      setCardText1(RemoveDirectorsCardText[0]?.Managing_Director);
+      setCardText2(RemoveDirectorsCardText[1]?.Executive_Director);
+      setCardText3(RemoveDirectorsCardText[2]?.Additional_Director);
+      setCardText4(RemoveDirectorsCardText[3]?.Ordinary_Director);
+      setCardText5(RemoveDirectorsCardText[4]?.Alternate_Director);
     }
-  }, [RegisteredOfficeChangeCardText]);
+  }, [RemoveDirectorsCardText]);
   return (
     <>
       <Topbar />
       <ResHeader />
-      <CommonBanner text="Registered Office Changes" src={banner} />
+      <CommonBanner text="Add Directors" src={banner} />
       <QuickEnquiryFrom />
       <CommonAboutSection
-        text={RegisteredOfficeChangeAboutText}
-        title="Registered Office"
-        span="Changes"
+        text={AddDirectorsAboutText}
+        title="Add"
+        span="Directors"
       />
       <CommonCard
-        cardtilte="Reasons to Registered"
-        cardspan="Office Changes"
-        card1="Registered Office"
+        cardtilte="Types of Director "
+        cardspan="in a Company "
+        card1="Managing Director"
         card1text={cardtext1}
-        crad2="Books of Accounts"
+        crad2="Executive Director"
         cardtext2={cardtext2}
-        card3="Within City Change"
+        card3="Additional Director"
         cardtext3={cardtext3}
-        card4="Residential Address"
+        card4="Ordinary Director"
         cardtext4={cardtext4}
-        card5="Inter-State Change"
+        card5="Alternate Director"
         cardtext5={cardtext5}
       />
       <section className="hm-about-sec">
@@ -60,7 +60,7 @@ const RegisteredOfficeChange = () => {
           <Row>
             <Col className="hm-about-what-sec">
               <h2>
-                How we help with <span> Registered Office Change</span>
+                How we help with <span> appointment of director</span>
               </h2>
             </Col>
           </Row>
@@ -69,9 +69,9 @@ const RegisteredOfficeChange = () => {
               <div className="support-Limited-card">
                 <p className="title">Advisory</p>
                 <p className="text">
-                  The procedure for changing the Registered Office of a company
-                  depends on the nature of change. Our Experts will advice you
-                  on the procedure relevant for you.
+                  The procedure for adding a Director to the Board of a company
+                  would depend on the existing Board of Directors. Our Experts
+                  will advise you on the procedure relevant for you.
                 </p>
               </div>
             </Col>
@@ -79,9 +79,9 @@ const RegisteredOfficeChange = () => {
               <div className="support-Limited-card">
                 <p className="title">Board Resolutions</p>
                 <p className="text">
-                  Once your obtain an understanding of the procedures involved
-                  in changing the Registered Office of your Company, our Experts
-                  will draft the necessary Resolutions for the procedure.
+                  Once you obtain an understanding of the procedures involved in
+                  appointing a Director to your Company, our Experts will draft
+                  the necessary Resolutions for the procedure.
                 </p>
               </div>
             </Col>
@@ -91,8 +91,7 @@ const RegisteredOfficeChange = () => {
                 <p className="text">
                   Once the Board Resolutions are passed, our Experts will
                   prepare and file the necessary documents with the Ministry of
-                  Corporate Affairs to register the change of address of the
-                  Registered Office.
+                  Corporate Affairs to register the addition of new Director.
                 </p>
               </div>
             </Col>
@@ -104,4 +103,4 @@ const RegisteredOfficeChange = () => {
   );
 };
 
-export default RegisteredOfficeChange;
+export default AddDirectors;

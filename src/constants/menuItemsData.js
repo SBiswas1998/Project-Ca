@@ -52,19 +52,19 @@ export const menuItemsData = [
           },
           {
             title: "Temporary GST Registration",
-            url: "frontend",
+            url: "/service/registrations/temporary_GST_registration",
           },
           {
             title: "Professional Tax",
-            url: "frontend",
+            url: "/service/registrations/professional_tax",
           },
           {
-            title: "Tan Registration",
-            url: "frontend",
+            title: "Tan & PAN Registration",
+            url: "/service/registrations/tan_registration",
           },
           {
             title: "PF Registration",
-            url: "frontend",
+            url: "/service/registrations/PF_registration",
           },
           {
             title: "ESI Registration",
@@ -72,11 +72,11 @@ export const menuItemsData = [
           },
           {
             title: "MSME Registration",
-            url: "frontend",
+            url: "/service/registrations/MSME_registration",
           },
           {
             title: "Import Export Code",
-            url: "frontend",
+            url: "/service/registrations/import_export_code",
           },
           {
             title: "Fssai Registration",
@@ -88,7 +88,7 @@ export const menuItemsData = [
           },
           {
             title: "Trade License",
-            url: "frontend",
+            url: "/service/registrations/trade_license",
           },
           // {
           //   title: "Backend",

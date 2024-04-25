@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Footer, Header, Topbar } from "../../../components/Layout";
+import { Footer,Topbar } from "../../../components/Layout";
 import CommonBanner from "../../../components/CommonBanner";
 import CommonAboutSection from "../../../components/CommonAboutSection";
 import CommonCard from "../../../components/Card/CommonCard";
@@ -32,6 +32,8 @@ const BusinessTaxFiling = () => {
       <Topbar />
       <ResHeader />
       <CommonBanner text="Business Tax Filing" src={banner} />
+      <QuickEnquiryFrom />
+
       <CommonAboutSection
         text={BusinessTaxFilingAboutText}
         title="Business Tax"
@@ -40,6 +42,7 @@ const BusinessTaxFiling = () => {
       <CommonCard
         cardtilte="Purminder Kaur & Associates Business"
         cardspan="Tax Filing Service Includes"
+        
         card1="Dedicated Advisor"
         card1text={cardtext1}
         crad2="Accounting"
@@ -51,7 +54,7 @@ const BusinessTaxFiling = () => {
         card5="TDS Return Filing"
         cardtext5={cardtext5}
       />
-      <QuickEnquiryFrom />
+    
       <Footer />
     </>
   );

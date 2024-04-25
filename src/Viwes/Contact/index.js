@@ -1,6 +1,5 @@
 import React from "react";
-import Footer from "../../components/Layout/Footer";
-import { Topbar } from "../../components/Layout";
+import { Topbar,Footer} from "../../components/Layout";
 import CommonBanner from "../../components/CommonBanner";
 import banner from "../../assets/images/banner-5.jpg";
 import ContactFrom from "../../components/Forms/ContactFrom";

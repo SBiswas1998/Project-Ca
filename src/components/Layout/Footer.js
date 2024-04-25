@@ -72,6 +72,11 @@ const Footer = () => {
                           Share Purchase Agreement
                         </a>
                       </li>
+                      <li>
+                        <a class="" href="/privacy_policy">
+                          Privacy Policy
+                        </a>
+                      </li>
                     </ul>
                   </div>
                 </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import { Aboutsection, Footer, Header, Topbar } from "../../components/Layout";
+import { Aboutsection, Footer,Topbar } from "../../components/Layout";
 import CommonBanner from "../../components/CommonBanner";
 import banner from "../../assets/images/banner-2.jpg";
 import {

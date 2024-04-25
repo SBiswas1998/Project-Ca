@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Footer, Header, Topbar } from "../../../components/Layout";
+import { Footer,Topbar } from "../../../components/Layout";
 import CommonBanner from "../../../components/CommonBanner";
 import CommonAboutSection from "../../../components/CommonAboutSection";
 import CommonCard from "../../../components/Card/CommonCard";
@@ -35,6 +35,7 @@ const AddPartner = () => {
       <Topbar />
       <ResHeader />
       <CommonBanner text="Add Partner" src={banner} />
+      <QuickEnquiryFrom />
       <CommonAboutSection
         text={AddPartnerAboutText}
         title="Add"
@@ -97,7 +98,6 @@ const AddPartner = () => {
           </Row>
         </Container>
       </section>
-      <QuickEnquiryFrom />
       <Footer />
     </>
   );

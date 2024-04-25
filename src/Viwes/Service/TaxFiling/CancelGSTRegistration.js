@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { Footer, Header, Topbar } from "../../../components/Layout";
+import { Footer,Topbar } from "../../../components/Layout";
+import ResHeader from "../../../components/ResponsiveMemu/Header";
 import CommonBanner from "../../../components/CommonBanner";
 import CommonAboutSection from "../../../components/CommonAboutSection";
 import CommonCard from "../../../components/Card/CommonCard";
@@ -12,14 +13,12 @@ import {
   CancelGSTRegistrationAbout,
   CancelGSTRegistrationCardText,
 } from "../../../constants/Paragram";
-import ResHeader from "../../../components/ResponsiveMemu/Header";
 
 const CancelGSTRegistration = () => {
   const [cardtext1, setCardText1] = useState("");
   const [cardtext2, setCardText2] = useState("");
   const [cardtext3, setCardText3] = useState("");
   const [cardtext4, setCardText4] = useState("");
-  const [cardtext5, setCardText5] = useState("");
 
   useEffect(() => {
     if (CancelGSTRegistrationCardText) {
@@ -35,6 +34,7 @@ const CancelGSTRegistration = () => {
       <Topbar />
       <ResHeader />
       <CommonBanner text="Cancel GST Registration" src={banner} />
+      <QuickEnquiryFrom />
       <CommonAboutSection
         text={CancelGSTRegistrationAbout}
         title="Cancel GST"
@@ -98,7 +98,6 @@ const CancelGSTRegistration = () => {
           </Row>
         </Container>
       </section>
-      <QuickEnquiryFrom />
       <Footer />
     </>
   );

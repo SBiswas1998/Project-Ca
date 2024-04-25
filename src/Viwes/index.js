@@ -33,6 +33,16 @@ import TrademarkRegistration from "./TrademarkCopyright/TrademarkRegistration";
 import TrademarkObjection from "./TrademarkCopyright/TrademarkObjection";
 import TrademarkRenewal from "./TrademarkCopyright/TrademarkRenewal";
 import CopyrightRegistration from "./TrademarkCopyright/CopyrightRegistration";
+import PrivacyPolicy from "./PrivacyPolicy";
+import AddDirectors from "./Service/Compliance/AddDirectors";
+import TradeLicense from "./Service/Registrations/TradeLicense";
+import TemporaryGSTRegistration from "./Service/Registrations/TemporaryGSTRegistration";
+import TanRegistration from "./Service/Registrations/TanRegistration";
+import ProfessionalTax from "./Service/Registrations/ProfessionalTax";
+import PFRegistration from "./Service/Registrations/PFRegistration";
+import MSMERegistration from "./Service/Registrations/MSMERegistration";
+import ImportExportCode from "./Service/Registrations/ImportExportCode";
+
 
 
 
@@ -41,6 +51,7 @@ import CopyrightRegistration from "./TrademarkCopyright/CopyrightRegistration";
 export{
     About,
     AddPartner,
+    AddDirectors,
     BusinessTaxFiling,
     BusinessPlanPreparation,
     BankLoanSyndication,
@@ -53,27 +64,37 @@ export{
     CopyrightRegistration,
     CreditScoreCheck,
     ESIReturn,
+    ImportExportCode,
     IncreaseAuthorizedCapital,
     Home,
     MOAAmendment,
+    MSMERegistration,
     LimitedLiabilityPartnership,
     OnePersonCompany,
     Payment,
     Partnership,
+    PFRegistration,
+    ProfessionalTax,
     PrivateLimitedCompany,
     Proprietorship,
+    PrivacyPolicy,
     PublicLimitedCompany,
     ShareTransfer,
     RegisteredOfficeChange,
     RemoveDirectors,
+    TanRegistration,
     TDSReturn,
+    TemporaryGSTRegistration,
     TrademarkRegistration,
     TrademarkObjection,
     TrademarkRenewal,
+    TradeLicense,
     TermLoan,
     WindingUpofLLP,
     WorkingCapital,
     WindingUpofCompany,
 }
+
+
 
 

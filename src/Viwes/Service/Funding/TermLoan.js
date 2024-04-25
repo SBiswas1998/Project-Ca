@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Footer, Header, Topbar } from "../../../components/Layout";
+import { Footer,Topbar } from "../../../components/Layout";
 import CommonBanner from "../../../components/CommonBanner";
 import CommonAboutSection from "../../../components/CommonAboutSection";
 import CommonCard from "../../../components/Card/CommonCard";
@@ -36,6 +36,7 @@ const TermLoan = () => {
       <Topbar />
       <ResHeader />
       <CommonBanner text="Term Loan" src={banner} />
+      <QuickEnquiryFrom />
       <CommonAboutSection text={TermLoanAboutText} title="Term" span="Lone" />
       <CommonCard
         cardtilte="How we help with"
@@ -94,7 +95,6 @@ const TermLoan = () => {
           </Row>
         </Container>
       </section>
-      <QuickEnquiryFrom />
       <Footer />
     </>
   );

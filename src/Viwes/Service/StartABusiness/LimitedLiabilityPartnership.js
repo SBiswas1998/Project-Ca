@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Footer, Header, Topbar } from "../../../components/Layout";
+import { Footer,Topbar } from "../../../components/Layout";
 import CommonBanner from "../../../components/CommonBanner";
 import banner from "../../../assets/images/banner-8.jpg";
 import QuickEnquiryFrom from "../../../components/Forms/QuickEnquiryFrom";
@@ -49,6 +49,7 @@ const LimitedLiabilityPartnership = () => {
       <Topbar />
       <ResHeader />
       <CommonBanner text="Limited Liability Partnership" src={banner} />
+      <QuickEnquiryFrom />
       <CommonAboutSection
         text={LimitedLiabilityPartnershipAcboutText}
         title="Limited Liability"
@@ -118,7 +119,6 @@ const LimitedLiabilityPartnership = () => {
           </Row>
         </Container>
       </section>
-      <QuickEnquiryFrom />
       <Footer />
     </>
   );

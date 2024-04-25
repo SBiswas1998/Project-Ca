@@ -5,7 +5,7 @@ import Col from "react-bootstrap/Col";
 import Navbar from "react-bootstrap/Navbar";
 import Logo from "../../assets/images/ca_logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPhone, faEnvelope, faClock } from "@fortawesome/free-solid-svg-icons";
+import { faPhone, faEnvelope, faClock ,faRightToBracket } from "@fortawesome/free-solid-svg-icons";
 import { faSquareInstagram, faFacebook, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 function Topbar() {
@@ -55,7 +55,7 @@ function Topbar() {
               <Navbar.Text>
                 <ul>
                   <li><FontAwesomeIcon icon={faClock} /> <span>Mon-Sat: 09.00 - 07.00</span></li>
-                  <li className="last"><FontAwesomeIcon icon={faEnvelope} />&nbsp; <span>caportal@sagipl.com</span></li>
+                  <li className="last"> <FontAwesomeIcon icon={faRightToBracket} />&nbsp; <span>LOGIN</span></li>
                 </ul>
               </Navbar.Text>
             </Navbar.Collapse>

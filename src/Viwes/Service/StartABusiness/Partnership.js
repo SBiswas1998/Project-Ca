@@ -33,6 +33,7 @@ const Partnership = () => {
       <Topbar />
       <ResHeader />
       <CommonBanner src={banner} text="Partnership" />
+      <QuickEnquiryFrom />
       <CommonAboutSection
         text={PartnershipAboutText}
         title="Partner"
@@ -52,7 +53,6 @@ const Partnership = () => {
         card5="Bank Account"
         cardtext5={cardtext5}
       />
-      <QuickEnquiryFrom />
       <Footer />
     </>
   );

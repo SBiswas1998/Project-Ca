@@ -1113,6 +1113,33 @@ export const RemoveDirectorsCardText = [
   },
 ];
 
+export const AddDirectorsAboutText = [
+  `
+    Director of a company are living person entrusted by the shareholders to manage the affairs of the company.Director of a company is a person elected by the shareholders for managing the affairs of the company as per the Memorandum of Association and Articles of Association of the company. Since a company is an artificial judicial person created by law, it can only act through the agency of natural persons. Thus, only living persons can be Directors of a company and the management of a company is entrusted to the Board of Directors. Appointment of Directors can be required for a company from time to time based on the requirements of the shareholders of the business.
+
+    To appoint a director, the person proposing to become a Director must obtain a digital signature certificate (DSC) and director identification number (DIN). DIN can be obtained for any person who is above the age of 18. The nationality or residency status of the DIN applicant does not matters. Hence, Indian Nationals, Non-Resident Indians and Foreign Nationals can obtain DIN and be appointed as Director of a company in India.
+    
+    Purminder Kaur & Associates is the leading business services platform in India, offering a variety of services like company registration, trademark filing, GST registration, income tax filing and more. Purminder Kaur & Associates can help you appoint a director in your company. The average time taken to file for appointment of director is about 10 – 15 working days, subject to government processing time and client document submission. Get a free consultation on appointment of director by scheduling an appointment with an Purminder Kaur & Associates Advisor`,
+];
+
+export const AddDirectorsCardText = [
+  {
+    Managing_Director: `Managing Director is a Director, who by virtue of Articles of Association of a company or an agreement with the company or a resolution passed in its general meeting, or by its Board of Directors, is entrusted with substantial powers of managed of affairs of the company. `,
+  },
+  {
+    Executive_Director: `Executive Director is a Director, who is in full-time employment of the company. Hence, executive directors are deeply involved with the management of the company and managing affairs of the company`,
+  },
+  {
+    Additional_Director: `Additional Director is someone appointed by the Board of Directors between two annual general meetings subject to the provisions of the Articles of Association of a company. Additional Directors can hold office only upto the date of next annual general meeting of the Company. `,
+  },
+  {
+    Ordinary_Director: `Ordinary Director means a simple Director who attends the Board Meetings of a company and participates in the matters put before the Board of Directors. These Directors are neither whole-time Directors or Managing Directors.`,
+  },
+  {
+    Alternate_Director: `Alternate Director is someone appointed by the Board of Directors in a general meeting to act for a Director called the original director during his/her absence for a period of not less than three months. Generally, alternate Director are appointed for a person who is a Non-Resident Indian or Foreign Collaborators of a company.`,
+  },
+];
+
 export const RegisteredOfficeChangeAboutText = [
   `Registered office change must be intimated to the Registrar of Companies by filing of appropriate form.The registered office 
     of a Company or LLP is the principle place of business for a private / public limited company and all official correspondence 
@@ -1254,22 +1281,285 @@ export const CopyrightRegistrationAboutText = [
 
 export const CopyrightRegistrationCardText = [
   {
-    "Legal_Protection" : `Copyright registration serves as prima facie evidence in the court of law over ownership of the work. Therefore, copyright registration gives the owner legal protection for his/her work.`
+    Legal_Protection: `Copyright registration serves as prima facie evidence in the court of law over ownership of the work. Therefore, copyright registration gives the owner legal protection for his/her work.`,
   },
   {
-    "Branding_or_Goodwill" : `Registered copyright can be used for marketing and creating a sense of goodwill and quality in the minds of your customer. Registered copyright show others that you care about your work.`
+    Branding_or_Goodwill: `Registered copyright can be used for marketing and creating a sense of goodwill and quality in the minds of your customer. Registered copyright show others that you care about your work.`,
   },
   {
-    "Global_Protection" : `Works that are copyrighted in many other countries are accorded similar privileges here in India. Likewise, works copyright registered in India are accorded protection in many foreign countries.`
+    Global_Protection: `Works that are copyrighted in many other countries are accorded similar privileges here in India. Likewise, works copyright registered in India are accorded protection in many foreign countries.`,
   },
   {
-    "Restricts_Unauthorized_Reproduction" : `Copyright registration will establish that you are serious about copyright infringement. This will help impede unauthorized reproduction of the work as it provides the owner with a host of legal remedies.`
+    Restricts_Unauthorized_Reproduction: `Copyright registration will establish that you are serious about copyright infringement. This will help impede unauthorized reproduction of the work as it provides the owner with a host of legal remedies.`,
   },
   {
-    "Creation_of_Asset" : `Copyright registration creates an intellectual property, an intangible asset. Registered copyrights are an intellectual property and the rights can be sold, franchised or commercially contracted.`
-  }
+    Creation_of_Asset: `Copyright registration creates an intellectual property, an intangible asset. Registered copyrights are an intellectual property and the rights can be sold, franchised or commercially contracted.`,
+  },
+];
 
+export const PrivacyPolicyAboutText = [
+  `At www.capka.co.in, accessible at www.capka.co.in, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by www.capka.co.in and how we use it.
+  If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us through email at info@capka.co.in
+  This privacy policy applies only to our online activities and is valid for visitors to our website with regards to the information that they shared and/or collect in www.capka.co.in. This policy is not applicable to any information collected offline or via channels other than this website
+  `,
+];
+
+export const PrivacyPolicyAboutSubText = [
+  {
+    Consent: `By using our website, you hereby consent to our Privacy Policy and agree to its terms.`,
+  },
+  {
+    Striking_Off: `The Ministry of Corporate Affairs has recently amended Limited Liability Partnership Rules, 2009 by 
+        introducing the Limited Liability Partnership (Amendment) Rules, 2017 with effect from 20th May, 2017. With this amendment, 
+        LLP Form 24 has been introduced by the MCA and it is now possible to easily close a LLP by making an application to the 
+        Registrar for striking off name of LLP. Before the introduction of the Limited Liability Partnership (Amendment) Rules, 
+        2017, the procedure for winding up a LLP used to be long and cumbersome. However, with the introduction of LLP Form 24, 
+        the procedure has been made easy and simple.`,
+  },
+  {
+    Winding_Up_by_Tribunal: `Winding up of LLP can be initiated by a Tribunal for the following reasons:`,
+  },
+];
+
+
+
+export const TradeLicenseAboutText = [
+  `
+  Any place of business within the corporation or municipal limits will require a Gumasta license or Trade license from the concerned State Government.
+  A place of business within a State, Corporation or Municipality will require a trade license from the concerned State Government or Corporation or 
+  Municipality for operating. Rules and regulations pertaining to trade license varies from state to state. Hence, to obtain trade license, the 
+  applicant must first understand the jurisdiction under which he/she is operating the business and the applicable Act.
+  In most states, the application for grant or renewal of license will be made to a Commissioner in the Corporation. The application must be made within 
+  30 days of starting to operate a business. On applying with the required information and documents, the concerned Officer will ensure that the business 
+  is suitable for the purpose used, there is no possibility of danger or nuisance for any person around and issue the license. Trade license would normally 
+  be issued within a period of 7-15 days on submission of application. Purminder Kaur & Associates can help you obtain trade license for your business. Get 
+  in touch with an Purminder Kaur & Associates Advisor to know more about the rules and regulations applicable for your business and begin the process of 
+  applying for a trade license`,
+];
+
+export const TradeLicenseCardText = [
+  {
+    Gumasta_License: `Trade license is known by different names in different parts of the country. For instance, trade license is referred to as Gumasta license in the state of Maharashtra`,
+  },
+  {
+    Application: `Trade license application must be made to the concerned State Government or Corporation or Municipality. The jurisdiction and procedure for application would differ based on the State regulations`,
+  },
+  {
+    Processing_Time: `The normal processing time for trade application is 10 – 15 days subject to Government processing time. The certificate can be downloaded online after approval.. `,
+  },
+  {
+    Verification: `In some State, the trade license would be issued only after in-person verification from the concerned authorities. However, many states have also done away with the requirement.`,
+  },
+  {
+    Validity: `In most states, trade licenses are issued with a validity of 1 year. Trade license can be renewed at the end of each year by paying the renewal fee.`,
+  },
+];
+
+
+
+
+export const TemporaryGSTRegistrationAboutText =[
+  `GST registration is mandatory for all entities involved in the buying or selling or providing of services in India.Goods and Services Tax or GST has been 
+  implemented in India from 1st July, 2017 and casual taxable persons are also required to obtain GST registration and file GST returns. According to the GST 
+  Act, “casual taxable person” means a person who occasionally undertakes transactions involving supply of goods or services or both in the course or 
+  furtherance of business, whether as principal, agent or in any other capacity, in a State or a Union territory where he has no fixed place of business. 
+  A casual taxable person is mandatorily required to obtain GST registration irrespective of annual aggregate sales turnover.
+
+  Casual taxable persons are required to obtain GST registration under a special category at least 5 days prior to the undertaking business. An application 
+  for casual taxable person GST registration can be filed online along with identity proof, address proof and photographs of the promoters. Once, an application 
+  for casual taxable person GST registration is filed, a transaction number would be generated. Using the transaction number, GST deposit must be made by the 
+  taxpayer to obtain casual taxable person GST registration in India.
+  
+  Purminder Kaur & Associates is the leading business services platform in India, offering a variety of services like GST migration, GST registration, 
+  GST return filing, private limited company registration, trademark filing and more. Purminder Kaur & Associates can help casual taxable persons with 
+  end-to-end GST compliance services starting from GST registration to GST return filing through a proprietary GST accounting software. The average time 
+  taken to obtain GST registration is about 10 – 15 working days, subject to government processing time and client document submission. Get a free 
+  consultation on GST registration, GST accounting and GST return filing by scheduling an appointment with an Purminder Kaur & Associates Advisor`
 ]
+
+export const TemporaryGSTRegistrationCardText = [
+  {
+    Unified_Platform: `With the implementation of GST in India, the indirect taxes would be streamlined and standardized. Under GST regime, businesses would no longer have to obtain multiple VAT registration in different States or obtain a separate VAT and Service Tax registration. A single GST registration would be sufficient across India for selling or purchasing goods or providing services.`,
+  },
+  {
+    Subsuming_of_Taxes: `Subsumes various other taxes like Central Sales Tax, Additional Customs Duty, Purchase Tax, Luxury Tax, etc., Hence, under GST, many of the taxes in existence today would be subsumed and made into one tax. This would make tax collection and compliance easy for businesses across the country`,
+  },
+  {
+    Ease_of_Doing_Business: `Currently, many businesses like restaurants, computer sales and services businesses have to comply with both VAT and Service Tax regulations. This creates a compliance burden on the business, as they have to calculate taxes for the transaction based on different rates for different items. Under GST, the distinction between goods and services will be gone – making doing business easy `,
+  },
+  {
+    Lower_Taxes: `Currently in some states under the VAT regime, businesses are required to comply with VAT regulations once they cross an annual turnover of Rs.5 lakhs. Under GST regime, GST liability accrues only if an entity crosses an annual turnover of Rs.10 lakhs in northeast or hill states, whereas for rest of India, the threshold is set at Rs.20 lakhs.`,
+  },
+  {
+    Larger_Tax_Base: `GST is expected to increase the tax base in India significantly. Hence, the overall tax liability for businesses is expected to reduce overtime, as more and more businesses become compliant. Further, GST will use the latest in technology, including data from Aadhaar database, PAN database, etc., to make GST registration and GST return filing process, as seamless as possible`,
+  },
+]
+
+
+
+export const TanRegistrationAboutText =[
+  `TAN registration is required for making tax deduction or tax collection at source, remittance of TDS payments and issuance of TDS certificates.
+  TAN or Tax Deduction and Collection Number (TAN) is mandatory 10 digit alpha number required to be obtained by all persons who are responsible 
+  for Tax Deduction at Source (TDS) or Tax Collection at Source (TCS) on behalf of the Government. Tax deducted at source (TDS) ensures that the 
+  Government’s collection of tax is proponed and the responsibility for paying tax is diversified. The person deducting the tax at source is 
+  required to deposit the tax deducted to the credit of Central Government – quoting the TAN number. Individuals who are salaried are not required 
+  to obtain TAN or deduct tax at source. However, a proprietorship business and other entities (i.e., Private Limited Company, LLP, etc.,) must deduct 
+  tax at source while making certain payment like salary, payments to contractor or sub-contractors, payment of rent exceeding Rs.1,80,000 per year, etc. 
+  On deducting tax at source, the entity registered for TAN will issue a TDS Certificate as proof of collection of tax.
+  To obtain TAN, application must be made for allotment of TAN in Form 49B along with the required supporting documents. Based on the application, 
+  the TAN will be allotted to the entity and the entity must quote the TAN in all TDS/TCS returns, TDS/TCS payment challans and all TDS/TCS Certificates.
+   Purminder Kaur & Associates can help you obtain your TAN registration quickly and hassle-fee. Purminder Kaur & Associates is an authorized TAN Facilitation Center.`
+]
+
+export const TanRegistrationCardText = [
+  {
+    TAN: `PAN is a 10 character alpha-numeric code issued by the Income Tax Department for persons responsible for deducting or collecting tax at source. All most all for-profit entities and not-for-profit entities are required to obtain TAN`,
+  },
+  {
+    TDS_Payments: `Tax Deducted at Source must be paid into authorized bank, quoting the TAN and using Challan 281. TDS during the preceding month must be paid before the 7th day of the following month.`,
+  },
+  {
+    TAN_Facilitation_Center: `Purminder Kaur & Associates is a authorized TAN facilitation center. Therefore, Purminder Kaur & Associates can help you obtain TAN hassle-free and quickly. Just send the TAN application along with the supporting documents and we will help you get your TAN quickly `,
+  },
+  {
+    Proprietorship: `Salaried individuals are not required to deduct tax at source. However, individuals running a proprietorship are required to obtain TAN and deduct tax at source when required.`,
+  },
+  {
+    Validity: `Once a TAN is issued, it is valid for lifetime. However, TDS Filings must be made quarterly on the 15th day of July, October, January and May. Non-filing of TDS filings within the due date will attract a penalty.`,
+  },
+]
+
+export const ProfessionalTaxAboutText =[
+  `Professional tax registration is required for employers and persons engaged in any profession, trade or calling.Professional Tax is a tax levied on professions and trades in India. It is a state-level tax and has to be compulsorily paid by every member of staff employed in private companies. The owner of a business is responsible to deduct professional tax from the salaries of his employees and pay the amount so collected to the appropriate government department.
+  Professional tax is usually a slab-amount based on the gross income of the professional. It is deducted from his income every month. Some of the state governments that have levied professional tax are Karnataka, West Bengal, Andhra Pradesh, Maharashtra, Tamil Nadu, Gujarat, Assam, Chhattisgarh, Kerala, Meghalaya, Orissa, Tripura and Madhya Pradesh. In case of salaried employees and wage earners, Employer is liable to deduct professional tax with the State Government. In case of other class of Individuals, this tax is liable to be paid by the person himself. Purminder Kaur & Associates can help obtain professional tax registration in India`
+]
+
+
+export const ProfessionalTaxCardText = [
+  {
+    Statutory_Requirement: `Employers in certain states are required to mandatorily obtain
+    professional tax registration, deduct and pay service tax on
+    behalf of employees.`,
+  },
+  {
+    Avoid_Penalty: `Failure to obtain professional tax registration or remit
+    professional tax could result in fines and penalties that
+    accrue over time.`,
+  },
+  {
+    Tax_Deductible: `A deduction from salary can be claimed by the taxpayer on
+    account of professional tax paid. The deduction for
+    professional tax will be allowed in the year in which the tax
+    is actually paid by the employee.`,
+  },
+  {
+    Easy_Compliance: ` Compliance with professional tax regulation is easy.
+    Professional tax registration can be obtained easily and
+    compliance maintained easily.`,
+  },
+  {
+    State_Government_Tax: `State Governments and Local Authorities are empowered to
+    collect professional taxes on professions, trades, callings
+    and employment. The amount of professional tax collected does
+    not exceed Rs.2500 per annum.`,
+  },
+]
+
+export const PFRegistrationAboutText =[
+  `PF registration is applicable for all establishment which employs 20 or more persons.
+  Employees Provident Fund (EPF) is a scheme controlled by the Employees’ Provident Funds and Miscellaneous Provisions Act, 1952. It is regulated under the umbrella of Employees’ Provident Fund Organisation (EPFO). PF registration is applicable for all establishment which employs 20 or more persons. PF registration can also be obtained voluntarily by establishments having less than 20 employee.
+
+The PF contribution paid by the employer is 6% of (basic salary + dearness allowance + retaining allowance). An equal contribution is payable by the employee. In case of establishments which engage less than 20 employees or meet certain other conditions, as per the EPFO rules, the contribution rate for both employee and the employer is restricted to 10%. For most employees working in the private sector, it’s the basic salary on which the contribution is calculated.
+
+It is obligatory that employees’ drawing less than Rs 15,000 per month, to become members of the EPF. As per the guidelines in EPF, employee, whose ‘basic pay’ is more than Rs. 15,000 per month, at the time of joining, is not required to make PF contributions. Nevertheless, an employee who is drawing a pay of more than Rs 15,000 can still become a member and make PF contributions, with the consent of the Employer
+  `
+]
+
+
+export const PFRegistrationCardText = [
+  {
+    PF_Return : `Provident fund return must be filed by all entities having PF registration every month. PF return is due on the 25th of each month. Further, a final PF return is due on the 25th of April for the year ended on 31st March..`,
+  },
+  {
+    APF_Payment: `Provident Fund (PF) payments are due on the 15th of each month. The employer must deposit a total of 12% or 10% of the employee wages towards PF on or before this date every month. For most entities, the PF rate of 12% would be applicable..`,
+  },
+  {
+    Unified_Portal: `To improve ease of doing business, all services relating to provident fund like PF registration, PF return filing and payment of PF contribution has been made available online through the Unified Portal`,
+  },
+  {
+    UAN: ` The Employee Provident Fund has launched the Unified Portal to streamline and simplify all aspects of provident fund for both employers and employees. Employees who have the newly allotted UAN can use the Unified Portal for various services..`,
+  },
+  {
+    PF_Withdrawal: `Employees who have contributed to PF can withdraw money in their PF account for various reasons by applying on the Unified Portal. PF can be withdrawn for house purchase, medical reasons, marriage or education of family members.`,
+  },
+]
+
+
+export const MSMERegistrationAboutText =[
+  `PF registration is applicable for all establishment which employs 20 or more persons.
+  Employees Provident Fund (EPF) is a scheme controlled by the Employees’ Provident Funds and Miscellaneous Provisions Act, 1952. It is regulated under the umbrella of Employees’ Provident Fund Organisation (EPFO). PF registration is applicable for all establishment which employs 20 or more persons. PF registration can also be obtained voluntarily by establishments having less than 20 employee.
+
+The PF contribution paid by the employer is 6% of (basic salary + dearness allowance + retaining allowance). An equal contribution is payable by the employee. In case of establishments which engage less than 20 employees or meet certain other conditions, as per the EPFO rules, the contribution rate for both employee and the employer is restricted to 10%. For most employees working in the private sector, it’s the basic salary on which the contribution is calculated.
+
+It is obligatory that employees’ drawing less than Rs 15,000 per month, to become members of the EPF. As per the guidelines in EPF, employee, whose ‘basic pay’ is more than Rs. 15,000 per month, at the time of joining, is not required to make PF contributions. Nevertheless, an employee who is drawing a pay of more than Rs 15,000 can still become a member and make PF contributions, with the consent of the Employer
+  `
+]
+
+export const MSMERegistrationCardText = [
+  {
+    MSME_Registration : `MSME Registration is an optional Registration under the MSMED Act that provides Micro, Small and Medium sized enterprises with a host of benefits and access to subsidies and schemes.`,
+  },
+  {
+    Small_Enterprise: `A Small Enterprise in the manufacturing sector is an enterprise with more than Rs. 25 lakhs but not exceeding Rs. 5 crores of investment in plant & machinery. A Small Enterprise in the service sector is an enterprise with more than Rs. 10 lakhs but not exceeding Rs. 2 crores of investment in plant & machinery.`,
+  },
+  {
+    Medium_Enterprise: `A Medium Enterprise in the manufacturing sector is an enterprise with more than Rs. 5 crores but not exceeding Rs. 10 crores of investment in plant & machinery. A Medium Enterprise in the service sector is an enterprise with more than Rs. 2 crores but not exceeding Rs. 5 crores of investment in plant & machinery.`,
+  },
+  {
+    Registratio_Criteria :  `To be classified as a MSME, Enterprises in the Manufacturing sector need to have less than Rs.10 crores of investment in plant & machinery; service Enterprises must have an investment of less than Rs.5 crores of investment in plant & machinery. `,
+  },
+  {
+    Micro_Enterprises: `A Micro Enterprise in the manufacturing sector is an enterprise with less than Rs. 25 lakhs of investment in plant & machinery. A Micro Enterprise in the service sector is an enterprise with less than Rs. 10 lakhs of investment in plant & machinery.`,
+  },
+]
+
+
+export const ImportExportCodeAboutText =[
+  `
+  Import Export Code or IE Code is required for undertaking import of export transactions and availing benefits under schemes like SEIS or MEIS.
+  Import Export (IE) Code is a registration required for persons importing or exporting goods and services from India. IE Code is issued by the 
+  Directorate General of Foreign Trade (DGFT), Ministry of Commerce and Industries, Government of India. IE Codes when issued can be used by the 
+  entity throughout its existence and doesn’t require any renewal or filing. Therefore, it is recommended for most organizations to obtain IE Code, 
+  irrespective of if they need it at the moment.
+  IE Code application must be made to the Directorate General of Foreign Trade along with the necessary supporting documents. Once, the application is 
+  submitted, DGFT will issue the IE Code for the entity in 15 – 20 working days or less.
+  `
+]
+
+export const ImportExportCodeCardText = [
+  {
+    Importers_Require_IE_Code : `All Importers who import goods into India require an IE Code. The IE Code must be quoted while clearing customs. Also, banks require the importers IE Code while sending money abroad.`,
+  },
+  {
+    No_Return_Filing: `IE Code does not require the filing of any return. Once, an IE Code is issued there are no further procedures required to maintain validity of the IE Code. Even if import or export transactions occur, there are no filings required to DGFT.`,
+  },
+  {
+    Proprietors_can_have_IE_Code: `Even individuals who are proprietors of a business can obtain IE Code in their name. It is not necessary to incorporate a business entity for obtaining IE Code.`,
+  },
+  {
+    Exporters_Require_IE_Code :  `All Exporters who export goods or services from India require an IE Code. The IE Code must be quoted while sending shipments. And banks require the exporters IE Code while receiving money from abroad. `,
+  },
+  {
+    Lifetime_NO_Renewal: `IE Code is issued for the lifetime of the entity and requires no renewal. So once a IE Code is obtained, it can be used by that entity for all its import or export transactions without any further hassles.`,
+  },  
+  {
+    Identity_and_Business_Proof: `Identity proof like passport, drivers license, aadhaar card, voters id or ration card for the promoters with photo or person authorised to file IE code application. In case of legal entity or registered body, then partnership deed or incorporation certificate or registration certificate is required.`,
+  },  
+  {
+    Cancelled_Cheque_Copy: `Bank certificate as per DGFT format or cancelled cheque bearing preprinted name of applicant and account number. Bank certificate or cancelled cheque is used to verify that the applicant has an active current account with a bank in India.`,
+  },  
+]
+
 
 
 

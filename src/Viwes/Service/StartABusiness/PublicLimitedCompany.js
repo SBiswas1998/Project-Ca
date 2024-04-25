@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Footer, Header, Topbar } from "../../../components/Layout";
+import { Footer,Topbar } from "../../../components/Layout";
 import CommonBanner from "../../../components/CommonBanner";
 import CommonCard from "../../../components/Card/CommonCard";
 import QuickEnquiryFrom from "../../../components/Forms/QuickEnquiryFrom";
@@ -32,6 +32,7 @@ const PublicLimitedCompany = () => {
       <Topbar />
       <ResHeader />
       <CommonBanner text="Public Limited Company" src={banner} />
+      <QuickEnquiryFrom />
       <CommonAboutSection
         text={PublicLimitedCompanyAboutText}
         title="Public Limited"
@@ -51,7 +52,7 @@ const PublicLimitedCompany = () => {
         card5="Borrowing Capacity"
         cardtext5={cardtext5}
       />
-      <QuickEnquiryFrom />
+      
       <Footer />
     </>
   );

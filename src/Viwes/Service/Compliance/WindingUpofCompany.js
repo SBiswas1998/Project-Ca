@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Footer, Header, Topbar } from "../../../components/Layout";
+import { Footer,Topbar } from "../../../components/Layout";
 import CommonBanner from "../../../components/CommonBanner";
 import CommonAboutSection from "../../../components/CommonAboutSection";
 import CommonCard from "../../../components/Card/CommonCard";
@@ -35,6 +35,7 @@ const WindingUpofCompany = () => {
       <Topbar />
       <ResHeader />
       <CommonBanner text="Winding Up of Company" src={banner} />
+      <QuickEnquiryFrom />
       <CommonAboutSection
         text={WindingUpofCompanyAboutText}
         title="Winding Up ofy"
@@ -100,7 +101,6 @@ const WindingUpofCompany = () => {
           </Row>
         </Container>
       </section>
-      <QuickEnquiryFrom />
       <Footer />
     </>
   );

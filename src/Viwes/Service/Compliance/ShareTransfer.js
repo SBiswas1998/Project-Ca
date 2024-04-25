@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Footer, Header, Topbar } from "../../../components/Layout";
+import { Footer,Topbar } from "../../../components/Layout";
 import CommonBanner from "../../../components/CommonBanner";
 import CommonAboutSection from "../../../components/CommonAboutSection";
 import CommonCard from "../../../components/Card/CommonCard";
@@ -35,6 +35,7 @@ const ShareTransfer = () => {
       <Topbar />
       <ResHeader />
       <CommonBanner text="Share Transfer" src={banner} />
+      <QuickEnquiryFrom />
       <CommonAboutSection
         text={ShareTransferAboutText}
         title="Share"
@@ -100,7 +101,6 @@ const ShareTransfer = () => {
           </Row>
         </Container>
       </section>
-      <QuickEnquiryFrom />
       <Footer />
     </>
   );

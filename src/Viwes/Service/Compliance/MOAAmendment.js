@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Footer, Header, Topbar } from "../../../components/Layout";
+import { Footer,Topbar } from "../../../components/Layout";
 import CommonBanner from "../../../components/CommonBanner";
 import CommonAboutSection from "../../../components/CommonAboutSection";
 import CommonCard from "../../../components/Card/CommonCard";
@@ -35,6 +35,7 @@ const MOAAmendment = () => {
       <Topbar />
       <ResHeader />
       <CommonBanner text="MOA Amendment" src={banner} />
+      <QuickEnquiryFrom />
       <CommonAboutSection
         text={MOAAmendmentAboutText}
         title="MOA"
@@ -99,7 +100,6 @@ const MOAAmendment = () => {
           </Row>
         </Container>
       </section>
-      <QuickEnquiryFrom />
       <Footer />
     </>
   );

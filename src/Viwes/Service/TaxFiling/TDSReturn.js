@@ -35,6 +35,8 @@ const TDSReturn = () => {
       <Topbar />
       <ResHeader />
       <CommonBanner text="TDS Return" src={banner} />
+      <QuickEnquiryFrom />
+
       <CommonAboutSection text={TDSReturnAboutText} title="TDS" span="Return" />
       <CommonCard
         cardtilte="Reasons to TDS"
@@ -93,7 +95,6 @@ const TDSReturn = () => {
           </Row>
         </Container>
       </section>
-      <QuickEnquiryFrom />
       <Footer />
     </>
   );
