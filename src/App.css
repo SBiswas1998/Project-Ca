@@ -225,6 +225,9 @@ nav.desktop-nav {
 
 /* menu on mobile */
 @media screen and (max-width: 960px) {
+  :where(.css-1qfezbu).ant-carousel {
+    display: none !important;
+}
   .nav-area {
     justify-content: space-between;
     background: #fff !important;
@@ -236,7 +239,7 @@ nav.desktop-nav {
   }
   .logo img {
     width: 82px !important;
-    margin-top: 50px !important;
+    margin-top: 36px !important;
     margin-left: 34px !important;
 }
   .banner-image {
@@ -1434,7 +1437,7 @@ input.form-control,textarea.form-control{
   }
  
   :where(.css-dev-only-do-not-override-1qfezbu).ant-carousel {
-    display: none;
+    display: none !important;
   }
 
   .mobile-view-hero {
