@@ -215,6 +215,8 @@ nav.desktop-nav {
   left: 100%;
   top: -7px;
   color: #000;
+  height: 50vh;
+  overflow-y: scroll;
 }
 
 .mobile-nav {
