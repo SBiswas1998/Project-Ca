@@ -3,7 +3,9 @@ import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from './store'
 import Loading from './components/Loader';
+import { Analytics } from '@vercel/analytics/react'; // Import Analytics component
 import './App.css';
+
 
 const AppRouter = lazy(()=>import('./routes'))
 
@@ -11,17 +13,15 @@ const AppRouter = lazy(()=>import('./routes'))
 
 function App() {
   return (
-      <Provider store={store}>
-        <BrowserRouter>
-          <Suspense fallback={
-            <div className='text-center mt-3'>
-              <Loading/>
-            </div>
-          }>
-            <AppRouter/>
-          </Suspense>
-        </BrowserRouter>
-      </Provider>
+    <Provider store={store}>
+    <BrowserRouter>
+       {/* Wrap your entire application with Analytics */}
+        <Suspense fallback={<div className='text-center mt-3'><Loading/></div>}>
+          <AppRouter/>
+        </Suspense>
+      <Analytics/>
+    </BrowserRouter>
+  </Provider>
   );
 }
 
