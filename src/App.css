@@ -211,12 +211,12 @@ nav.desktop-nav {
 }
 
 .desktop-nav .dropdown .dropdown-submenu {
-  position: absolute;
-  left: 100%;
-  top: -7px;
-  color: #000;
-  height: 50vh;
-  overflow-y: scroll;
+    position: absolute;
+    left: 100%;
+    top: -7px;
+    color: #000;
+    height: 50vh;
+    overflow-y: scroll;
 }
 
 .mobile-nav {
@@ -334,6 +334,10 @@ nav.desktop-nav {
   .mobile-nav .dropdown.show {
     display: block;
   }
+  .mobile-nav .dropdown .dropdown-submenu {
+    height: 20vh;
+    overflow-y: scroll;
+}
 }
 
 
