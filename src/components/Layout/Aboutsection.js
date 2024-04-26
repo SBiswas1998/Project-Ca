@@ -21,7 +21,7 @@ function MyComponent({ title, span, text, src }) {
             </a>
           </Col>
           <Col md={6}>
-            <img alt="aboutimage" src={src} className="aboutimage img-fluid" />
+            <img alt="aboutimage" src={src} className="aboutimage" />
           </Col>
         </Row>
       </Container>

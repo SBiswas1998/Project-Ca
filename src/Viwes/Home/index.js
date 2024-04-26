@@ -6,18 +6,16 @@ import {
   NewsSection,
   Servicesection,
   Supportsection,
-  Topbar,
 } from "../../components/Layout";
 import { AboutSpan, AboutText, AboutTitle } from "../../constants/Paragram";
-import aboutbanner from "../../assets/images/hm-about.jpg";
-import ResHeader from "../../components/ResponsiveMemu/Header";
+import aboutbanner from "../../assets/images/aboutimg.jpg";
+import MobileHero from "../../components/MobileView/Hero";
 
 const index = () => {
   return (
     <>
-      <Topbar />
-      <ResHeader />
       <Hero />
+      <MobileHero/>
       <Aboutsection
         text={AboutText}
         title={AboutTitle}

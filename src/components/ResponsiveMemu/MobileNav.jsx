@@ -2,6 +2,8 @@ import React, { useEffect, useRef, useState } from "react";
 // import { menuItemsData } from "../menuItemsData";
 import MobileMenuItems from "./MobileMenuItems";
 import { menuItemsData } from "../../constants/menuItemsData";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 const MobileNav = () => {
   const depthLevel = 0;
@@ -30,7 +32,7 @@ const MobileNav = () => {
         className="mobile-nav__menu-button"
         type="button"
         onClick={() => setShowMenu((prev) => !prev)}>
-        Menu
+        <FontAwesomeIcon icon={faBars} />
       </button>
 
       {showMenu && (

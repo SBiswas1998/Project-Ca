@@ -28,7 +28,7 @@ const Proprietorship = () => {
 
   return (
     <>
-      <Topbar />
+      {/* <Topbar /> */}
       <ResHeader />
       <CommonBanner text="Proprietorship" src={banner} />
       <QuickEnquiryFrom />
