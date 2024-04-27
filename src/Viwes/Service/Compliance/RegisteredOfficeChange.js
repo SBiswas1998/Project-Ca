@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { Footer,Topbar } from "../../../components/Layout";
-import CommonBanner from "../../../components/CommonBanner";
+import { Footer } from "../../../components/Layout";
 import CommonAboutSection from "../../../components/CommonAboutSection";
 import CommonCard from "../../../components/Card/CommonCard";
 import QuickEnquiryFrom from "../../../components/Forms/QuickEnquiryFrom";
-import banner from "../../../assets/images/banner.jpg";
 import {
   RegisteredOfficeChangeAboutText,
   RegisteredOfficeChangeCardText,
@@ -13,6 +11,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import ResHeader from "../../../components/ResponsiveMemu/Header";
+import TitleSection from "../../../components/TitleSection"
 
 const RegisteredOfficeChange = () => {
   const [cardtext1, setCardText1] = useState("");
@@ -32,9 +31,8 @@ const RegisteredOfficeChange = () => {
   }, [RegisteredOfficeChangeCardText]);
   return (
     <>
-      <Topbar />
       <ResHeader />
-      <CommonBanner text="Registered Office Changes" src={banner} />
+      <TitleSection text="Registered Office Changes"/>
       <QuickEnquiryFrom />
       <CommonAboutSection
         text={RegisteredOfficeChangeAboutText}
@@ -55,7 +53,7 @@ const RegisteredOfficeChange = () => {
         card5="Inter-State Change"
         cardtext5={cardtext5}
       />
-      <section className="hm-about-sec">
+      <section className="hm-about-sec help-with-sec">
         <Container>
           <Row>
             <Col className="hm-about-what-sec">

@@ -10,6 +10,8 @@ import {
 } from "../../../constants/Paragram";
 import CommonAboutSection from "../../../components/CommonAboutSection";
 import ResHeader from "../../../components/ResponsiveMemu/Header";
+import TitleSection from "../../../components/TitleSection"
+
 
 const PublicLimitedCompany = () => {
   const [cardtext1, setCardText1] = useState("");
@@ -29,9 +31,8 @@ const PublicLimitedCompany = () => {
   }, [PublicLimitedCompanyCardText]);
   return (
     <>
-      <Topbar />
       <ResHeader />
-      <CommonBanner text="Public Limited Company" src={banner} />
+      <TitleSection text="Public Limited Company"/>
       <QuickEnquiryFrom />
       <CommonAboutSection
         text={PublicLimitedCompanyAboutText}

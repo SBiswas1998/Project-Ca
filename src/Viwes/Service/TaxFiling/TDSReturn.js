@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { Footer, Header, Topbar } from "../../../components/Layout";
-import CommonBanner from "../../../components/CommonBanner";
+import { Footer} from "../../../components/Layout";
 import CommonAboutSection from "../../../components/CommonAboutSection";
 import CommonCard from "../../../components/Card/CommonCard";
 import QuickEnquiryFrom from "../../../components/Forms/QuickEnquiryFrom";
-import banner from "../../../assets/images/herobanner-1.jpg";
 import {
   TDSReturnAboutText,
   TDSReturnCardText,
@@ -13,6 +11,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import ResHeader from "../../../components/ResponsiveMemu/Header";
+import TitleSection from "../../../components/TitleSection"
 
 const TDSReturn = () => {
   const [cardtext1, setCardText1] = useState("");
@@ -32,11 +31,9 @@ const TDSReturn = () => {
   }, [TDSReturnCardText]);
   return (
     <>
-      <Topbar />
       <ResHeader />
-      <CommonBanner text="TDS Return" src={banner} />
+      <TitleSection text="TDS Return"/>
       <QuickEnquiryFrom />
-
       <CommonAboutSection text={TDSReturnAboutText} title="TDS" span="Return" />
       <CommonCard
         cardtilte="Reasons to TDS"
@@ -52,7 +49,7 @@ const TDSReturn = () => {
         card5="Validity"
         cardtext5={cardtext5}
       />
-      <section className="hm-about-sec">
+      <section className="hm-about-sec  help-with-sec">
         <Container>
           <Row>
             <Col className="hm-about-what-sec">

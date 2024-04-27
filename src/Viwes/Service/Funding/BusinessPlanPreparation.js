@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { Footer,Topbar } from "../../../components/Layout";
-import CommonBanner from "../../../components/CommonBanner";
+import { Footer } from "../../../components/Layout";
 import CommonAboutSection from "../../../components/CommonAboutSection";
 import CommonCard from "../../../components/Card/CommonCard";
 import QuickEnquiryFrom from "../../../components/Forms/QuickEnquiryFrom";
-import banner from "../../../assets/images/banner9.jpg";
 import {
   BusinessPlanPreparationAboutText,
   BusinessPlanPreparationCardText,
@@ -13,6 +11,8 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import ResHeader from "../../../components/ResponsiveMemu/Header";
+import TitleSection from "../../../components/TitleSection"
+
 
 const BusinessPlanPreparation = () => {
   const [cardtext1, setCardText1] = useState("");
@@ -34,9 +34,8 @@ const BusinessPlanPreparation = () => {
   }, [BusinessPlanPreparationCardText]);
   return (
     <>
-      <Topbar />
       <ResHeader />
-      <CommonBanner text="Business Plan Preparation" src={banner} />
+      <TitleSection text="Business Plan Preparation"/>
       <QuickEnquiryFrom />
       <CommonAboutSection
         text={BusinessPlanPreparationAboutText}
@@ -57,7 +56,7 @@ const BusinessPlanPreparation = () => {
         card5="Capital Syndication"
         cardtext5={cardtext5}
       />
-      <section className="hm-about-sec">
+      <section className="hm-about-sec help-with-sec">
         <Container>
           <Row>
             <Col className="hm-about-what-sec">

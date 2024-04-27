@@ -10,6 +10,7 @@ import {
   BusinessTaxFilingCardText,
 } from "../../../constants/Paragram";
 import ResHeader from "../../../components/ResponsiveMemu/Header";
+import BreadcrumbExample from "../../../components/Breadcrumb";
 
 const BusinessTaxFiling = () => {
   const [cardtext1, setCardText1] = useState("");
@@ -29,9 +30,9 @@ const BusinessTaxFiling = () => {
   }, [BusinessTaxFilingCardText]);
   return (
     <>
-      <Topbar />
       <ResHeader />
-      <CommonBanner text="Business Tax Filing" src={banner} />
+      <BreadcrumbExample text="Business Tax Filing"/>
+      {/* <CommonBanner text="Business Tax Filing" src={banner} /> */}
       <QuickEnquiryFrom />
 
       <CommonAboutSection

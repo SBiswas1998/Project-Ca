@@ -13,6 +13,8 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import ResHeader from "../../../components/ResponsiveMemu/Header";
+import TitleSection from "../../../components/TitleSection";
+
 
 const WindingUpofCompany = () => {
   const [cardtext1, setCardText1] = useState("");
@@ -32,9 +34,8 @@ const WindingUpofCompany = () => {
   }, [WindingUpofCompanyAboutSubText]);
   return (
     <>
-      <Topbar />
       <ResHeader />
-      <CommonBanner text="Winding Up of Company" src={banner} />
+      <TitleSection text="Winding Up of Company" />
       <QuickEnquiryFrom />
       <CommonAboutSection
         text={WindingUpofCompanyAboutText}
@@ -55,7 +56,7 @@ const WindingUpofCompany = () => {
         card5="Easy to Close"
         cardtext5={cardtext5}
       />
-      <section className="hm-about-sec">
+      <section className="hm-about-sec help-with-sec">
         <Container>
           <Row>
             <Col className="hm-about-what-sec">

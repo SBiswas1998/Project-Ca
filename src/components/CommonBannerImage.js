@@ -4,23 +4,12 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import BreadcrumbExample from "./Breadcrumb";
 
-const CommonBannerImage = ({ src, text,url }) => {
-
-  const bannerStyle = {
-    background: `url(${src})`,
-    width: '100%',
-    height: '350px',
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-    backgroundRepeat: 'no-repeat',
-  };
+const CommonBannerImage = ({text,url }) => {
 
   return (
     <Container fluid className="p-0">
       <Row className="no-gutters">
         <Col xs={12} className="common-banner-image-container position-relative">
-          <img className="banner-image img-fluid" src={src}  alt="Banner" style={bannerStyle}/>
-          <div className="overlay"></div>
           <BreadcrumbExample text={text} url={url} />
         </Col>
       </Row>

@@ -234,92 +234,95 @@ export const menuItemsData = [
       },
     ],
   },
-  {
-    title: "Knowledge Bank",
-    submenu: [
-      {
-        title: "Calculators",
-        // submenu: [
-        //   {
-        //     title: "Proprietorship",
-        //     url: "/service/start_a_business/proprietorship",
-        //   },
-        //   {
-        //     title: "Partnership",
-        //     url: "/service/start_a_business/partnership",
-        //   },
-        //   {
-        //     title: "One Person Company",
-        //     url: "/service/start_a_business/one_person_company",
-        //   },
-        // ],
-      },
-      {
-        title: "Rules",
-        // submenu: [
-        //   {
-        //     title: "Business Tax Filing",
-        //     url: "/service/tax_filing/business_tax_filing",
-        //   },
-        //   {
-        //     title: "TDS Return",
-        //     url: "/service/tax_filing/TDS_return",
-        //   },
-        //   {
-        //     title: "ESI Return",
-        //     url: "/service/tax_filing/ESI_return",
-        //   },
-        //   {
-        //     title: "Cancel GST Registrations",
-        //     url: "/service/tax_filing/cancel_GST_registration",
-        //   },
-        // ],
-      },
-      {
-        title: "Forms",
-        // submenu: [
-        //   {
-        //     title: "Business Tax Filing",
-        //     url: "/service/tax_filing/business_tax_filing",
-        //   },
-        //   {
-        //     title: "TDS Return",
-        //     url: "/service/tax_filing/TDS_return",
-        //   },
-        //   {
-        //     title: "ESI Return",
-        //     url: "/service/tax_filing/ESI_return",
-        //   },
-        //   {
-        //     title: "Cancel GST Registrations",
-        //     url: "/service/tax_filing/cancel_GST_registration",
-        //   },
-        // ],
-      },
-      {
-        title: "Forms",
-        // submenu: [
-        //   {
-        //     title: "Business Tax Filing",
-        //     url: "/service/tax_filing/business_tax_filing",
-        //   },
-        //   {
-        //     title: "TDS Return",
-        //     url: "/service/tax_filing/TDS_return",
-        //   },
-        //   {
-        //     title: "ESI Return",
-        //     url: "/service/tax_filing/ESI_return",
-        //   },
-        //   {
-        //     title: "Cancel GST Registrations",
-        //     url: "/service/tax_filing/cancel_GST_registration",
-        //   },
-        // ],
-      },
+  // {
+  //   title: "Knowledge Bank",
+  //   submenu: [
+  //     {
+  //       title: "Calculators",
+  //       submenu: [
+  //         {
+  //           title: "Proprietorship",
+  //           url: "/service/start_a_business/proprietorship",
+  //         },
+  //         {
+  //           title: "Partnership",
+  //           url: "/service/start_a_business/partnership",
+  //         },
+  //         {
+  //           title: "One Person Company",
+  //           url: "/service/start_a_business/one_person_company",
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       title: "Rules",
+  //       submenu: [
+  //         {
+  //           title: "Business Tax Filing",
+  //           url: "/service/tax_filing/business_tax_filing",
+  //         },
+  //         {
+  //           title: "TDS Return",
+  //           url: "/service/tax_filing/TDS_return",
+  //         },
+  //         {
+  //           title: "ESI Return",
+  //           url: "/service/tax_filing/ESI_return",
+  //         },
+  //         {
+  //           title: "Cancel GST Registrations",
+  //           url: "/service/tax_filing/cancel_GST_registration",
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       title: "Forms",
+  //       submenu: [
+  //         {
+  //           title: "Business Tax Filing",
+  //           url: "/service/tax_filing/business_tax_filing",
+  //         },
+  //         {
+  //           title: "TDS Return",
+  //           url: "/service/tax_filing/TDS_return",
+  //         },
+  //         {
+  //           title: "ESI Return",
+  //           url: "/service/tax_filing/ESI_return",
+  //         },
+  //         {
+  //           title: "Cancel GST Registrations",
+  //           url: "/service/tax_filing/cancel_GST_registration",
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       title: "Forms",
+  //       submenu: [
+  //         {
+  //           title: "Business Tax Filing",
+  //           url: "/service/tax_filing/business_tax_filing",
+  //         },
+  //         {
+  //           title: "TDS Return",
+  //           url: "/service/tax_filing/TDS_return",
+  //         },
+  //         {
+  //           title: "ESI Return",
+  //           url: "/service/tax_filing/ESI_return",
+  //         },
+  //         {
+  //           title: "Cancel GST Registrations",
+  //           url: "/service/tax_filing/cancel_GST_registration",
+  //         },
+  //       ],
+  //     },
       
-    ],
-  },
+  //   ],
+  // },
+
+
+
   {
     title: "Careers",
     url: "/contactus",
@@ -328,9 +331,9 @@ export const menuItemsData = [
     title: "Contact Us",
     url: "/contactus",
   }, 
-  {
-    title: "Payment",
-    url: "/payment",
-  }
+  // {
+  //   title: "Payment",
+  //   url: "/payment",
+  // }
   
 ];

@@ -1,19 +1,18 @@
 import React from "react";
 import { Topbar,Footer} from "../../components/Layout";
-import CommonBanner from "../../components/CommonBanner";
-import banner from "../../assets/images/banner-5.jpg";
 import ContactFrom from "../../components/Forms/ContactFrom";
 import { Container, Row, Col } from "react-bootstrap";
 import ResHeader from "../../components/ResponsiveMemu/Header";
+import TitleSection from "../../components/TitleSection";
+
 
 const Contact = () => {
   return (
     <>
-      <Topbar />
       <ResHeader />
-      <CommonBanner text="Contact US" src={banner} url="/contactus" />
+      <TitleSection text="Contact Us"/>
       <ContactFrom />
-      <section className="hm-contactus-sec">
+      <section className="hm-contactus-sec-two">
         <Container>
           <Row className="justify-content-md-center">
             <Col md={6}>

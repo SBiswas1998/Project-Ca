@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { Footer,Topbar } from "../../../components/Layout";
+import { Footer} from "../../../components/Layout";
 import ResHeader from "../../../components/ResponsiveMemu/Header";
-import CommonBanner from "../../../components/CommonBanner";
 import CommonAboutSection from "../../../components/CommonAboutSection";
 import CommonCard from "../../../components/Card/CommonCard";
 import QuickEnquiryFrom from "../../../components/Forms/QuickEnquiryFrom";
-import banner from "../../../assets/images/herobanner-1.jpg";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -13,6 +11,8 @@ import {
   CancelGSTRegistrationAbout,
   CancelGSTRegistrationCardText,
 } from "../../../constants/Paragram";
+import TitleSection from "../../../components/TitleSection"
+
 
 const CancelGSTRegistration = () => {
   const [cardtext1, setCardText1] = useState("");
@@ -31,9 +31,8 @@ const CancelGSTRegistration = () => {
 
   return (
     <>
-      <Topbar />
       <ResHeader />
-      <CommonBanner text="Cancel GST Registration" src={banner} />
+      <TitleSection text="Cancel GST Registration"/>
       <QuickEnquiryFrom />
       <CommonAboutSection
         text={CancelGSTRegistrationAbout}
@@ -52,7 +51,7 @@ const CancelGSTRegistration = () => {
         card4="Tax Credit"
         cardtext4={cardtext4}
       />
-      <section className="hm-about-sec">
+      <section className="hm-about-sec help-with-sec">
         <Container>
           <Row>
             <Col className="hm-about-what-sec">

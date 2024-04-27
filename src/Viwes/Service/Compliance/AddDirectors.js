@@ -13,6 +13,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import ResHeader from "../../../components/ResponsiveMemu/Header";
+import TitleSection from "../../../components/TitleSection"
 
 const AddDirectors = () => {
   const [cardtext1, setCardText1] = useState("");
@@ -32,9 +33,8 @@ const AddDirectors = () => {
   }, [RemoveDirectorsCardText]);
   return (
     <>
-      <Topbar />
       <ResHeader />
-      <CommonBanner text="Add Directors" src={banner} />
+      <TitleSection text="Add Directors"/>
       <QuickEnquiryFrom />
       <CommonAboutSection
         text={AddDirectorsAboutText}
@@ -55,7 +55,7 @@ const AddDirectors = () => {
         card5="Alternate Director"
         cardtext5={cardtext5}
       />
-      <section className="hm-about-sec">
+      <section className="hm-about-sec help-with-sec">
         <Container>
           <Row>
             <Col className="hm-about-what-sec">

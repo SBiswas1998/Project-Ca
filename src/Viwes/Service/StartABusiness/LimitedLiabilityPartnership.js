@@ -13,6 +13,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import ResHeader from "../../../components/ResponsiveMemu/Header";
+import TitleSection from "../../../components/TitleSection"
 
 const LimitedLiabilityPartnership = () => {
   const [cardtext1, setCardText1] = useState("");
@@ -46,9 +47,8 @@ const LimitedLiabilityPartnership = () => {
   }, [LimitedLiabilityPartnershipCardText]);
   return (
     <>
-      <Topbar />
       <ResHeader />
-      <CommonBanner text="Limited Liability Partnership" src={banner} />
+      <TitleSection text="Limited Liability Partnership"/>
       <QuickEnquiryFrom />
       <CommonAboutSection
         text={LimitedLiabilityPartnershipAcboutText}
@@ -73,10 +73,10 @@ const LimitedLiabilityPartnership = () => {
         card7="Registered Office Proof"
         cardtext7={cardtext7}
       />
-      <section className="hm-about-sec">
+      <section className="hm-about-sec help-with-sec">
         <Container>
           <Row>
-            <Col className="hm-about-what-sec">
+            <Col className="hm-about-what-sec ">
               <h2>
                 How we help with <span> LLP registration</span>
               </h2>

@@ -18,7 +18,7 @@ const CommonAboutSection = ({ text, title, span, listItem, subtext }) => {
 
   return (
     <>
-      <section className="hm-about-sec">
+      <section className="hm-services-sec">
         <Container>
           <Row>
             <Col className="hm-about-what-sec">

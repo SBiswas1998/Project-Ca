@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { Footer,Topbar } from "../../../components/Layout";
-import CommonBanner from "../../../components/CommonBanner";
+import { Footer} from "../../../components/Layout";
 import CommonAboutSection from "../../../components/CommonAboutSection";
 import CommonCard from "../../../components/Card/CommonCard";
 import QuickEnquiryFrom from "../../../components/Forms/QuickEnquiryFrom";
-import banner from "../../../assets/images/banner.jpg";
 import {
   MOAAmendmentAboutText,
   MOAAmendmentCardText,
@@ -13,6 +11,8 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import ResHeader from "../../../components/ResponsiveMemu/Header";
+import TitleSection from "../../../components/TitleSection";
+
 
 const MOAAmendment = () => {
   const [cardtext1, setCardText1] = useState("");
@@ -32,9 +32,8 @@ const MOAAmendment = () => {
   }, [MOAAmendmentCardText]);
   return (
     <>
-      <Topbar />
       <ResHeader />
-      <CommonBanner text="MOA Amendment" src={banner} />
+      <TitleSection text="MOA Amendment"/>
       <QuickEnquiryFrom />
       <CommonAboutSection
         text={MOAAmendmentAboutText}
@@ -55,7 +54,7 @@ const MOAAmendment = () => {
         card5="Capital Clause"
         cardtext5={cardtext5}
       />
-      <section className="hm-about-sec">
+      <section className="hm-about-sec help-with-sec">
         <Container>
           <Row>
             <Col className="hm-about-what-sec">

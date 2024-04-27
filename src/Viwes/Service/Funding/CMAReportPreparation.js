@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { Footer,Topbar } from "../../../components/Layout";
-import CommonBanner from "../../../components/CommonBanner";
+import { Footer} from "../../../components/Layout";
 import CommonAboutSection from "../../../components/CommonAboutSection";
 import CommonCard from "../../../components/Card/CommonCard";
 import QuickEnquiryFrom from "../../../components/Forms/QuickEnquiryFrom";
-import banner from "../../../assets/images/banner9.jpg";
 import {
   CMAReportPreparationAboutText,
   CMAReportPreparationCardText,
@@ -13,6 +11,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import ResHeader from "../../../components/ResponsiveMemu/Header";
+import TitleSection from "../../../components/TitleSection"
 
 const CMAReportPreparation = () => {
   const [cardtext1, setCardText1] = useState("");
@@ -32,9 +31,8 @@ const CMAReportPreparation = () => {
   }, [CMAReportPreparationCardText]);
   return (
     <>
-      <Topbar />
       <ResHeader />
-      <CommonBanner text="CMA Report Preparation" src={banner} />
+      <TitleSection text="CMA Report Preparation" />
       <QuickEnquiryFrom />
       <CommonAboutSection
         text={CMAReportPreparationAboutText}
@@ -55,7 +53,7 @@ const CMAReportPreparation = () => {
         card5="Mortgage Loan"
         cardtext5={cardtext5}
       />
-      <section className="hm-about-sec">
+      <section className="hm-about-sec help-with-sec">
         <Container>
           <Row>
             <Col className="hm-about-what-sec">

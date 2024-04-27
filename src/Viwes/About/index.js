@@ -1,25 +1,22 @@
 import React from "react";
-import { Aboutsection, Footer,Topbar } from "../../components/Layout";
-import CommonBanner from "../../components/CommonBanner";
-import banner from "../../assets/images/banner-2.jpg";
+import { Aboutsection, Footer } from "../../components/Layout";
 import {
   ProfileSpan,
   ProfileText,
   ProfileTitle,
 } from "../../constants/Paragram";
-import aboutImage from "../../assets/images/hm-call.png";
+import aboutImage from "../../assets/images/aboutimg-banner.jpg";
 import OurValue from "../../components/OurValue";
 import WhatWeDo from "../../components/WhatWeDo";
 import WhyUs from "../../components/WhyUs";
 import ResHeader from "../../components/ResponsiveMemu/Header";
+import TitleSection from "../../components/TitleSection";
 
 const About = () => {
-  console.log(ProfileText);
   return (
     <>
-      <Topbar />
       <ResHeader />
-      <CommonBanner src={banner} text="About" url="/about" />
+      <TitleSection text="About"/>
       <Aboutsection
         text={ProfileText}
         title={ProfileTitle}

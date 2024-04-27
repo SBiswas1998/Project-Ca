@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Footer,Topbar } from "../../../components/Layout";
-import CommonBanner from "../../../components/CommonBanner";
+import { Footer, } from "../../../components/Layout";
 import CommonAboutSection from "../../../components/CommonAboutSection";
 import CommonCard from "../../../components/Card/CommonCard";
 import QuickEnquiryFrom from "../../../components/Forms/QuickEnquiryFrom";
@@ -13,6 +12,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import ResHeader from "../../../components/ResponsiveMemu/Header";
+import TitleSection from "../../../components/TitleSection";
 
 const CollateralFreeLoan = () => {
   const [cardtext1, setCardText1] = useState("");
@@ -32,9 +32,8 @@ const CollateralFreeLoan = () => {
   }, [CollateralFreeLoanCardText]);
   return (
     <>
-      <Topbar />
       <ResHeader />
-      <CommonBanner text="Collateral Free Loan" src={banner} />
+      <TitleSection text="Collateral Free Loan" src={banner} />
       <QuickEnquiryFrom />
 
       <CommonAboutSection
@@ -56,7 +55,7 @@ const CollateralFreeLoan = () => {
         card5="Mortgage Loan"
         cardtext5={cardtext5}
       />
-      <section className="hm-about-sec">
+      <section className="hm-about-sec help-with-sec">
         <Container>
           <Row>
             <Col className="hm-about-what-sec">

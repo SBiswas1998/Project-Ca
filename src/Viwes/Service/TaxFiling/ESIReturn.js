@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from "react";
-import { Footer,Topbar } from "../../../components/Layout";
-import CommonBanner from "../../../components/CommonBanner";
+import { Footer} from "../../../components/Layout";
 import CommonAboutSection from "../../../components/CommonAboutSection";
 import CommonCard from "../../../components/Card/CommonCard";
 import QuickEnquiryFrom from "../../../components/Forms/QuickEnquiryFrom";
-import banner from "../../../assets/images/herobanner-1.jpg";
 import {
   ESIReturnAboutText,
   ESIReturnCardText,
 } from "../../../constants/Paragram";
 import ResHeader from "../../../components/ResponsiveMemu/Header";
+import TitleSection from "../../../components/TitleSection"
+
 
 const ESIReturn = () => {
   const [cardtext1, setCardText1] = useState("");
@@ -35,9 +35,8 @@ const ESIReturn = () => {
   }, [ESIReturnCardText]);
   return (
     <>
-      <Topbar />
       <ResHeader />
-      <CommonBanner text="ESI Return" src={banner} />
+      <TitleSection  text="ESI Return"/>
       <QuickEnquiryFrom />
       <CommonAboutSection text={ESIReturnAboutText} title="ESI" span="Return" />
       <CommonCard

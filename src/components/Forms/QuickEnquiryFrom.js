@@ -3,7 +3,7 @@ import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import { registerUser, verifyOtp } from "../../actions/auth";
 import toast from "../common/toast";
-import contactimg from "../../assets/images/contactimg.png";
+import contactimg from "../../assets/images/Contact us-pana.png";
 
 const QuickEnquiryForm = () => {
   const dispatch = useDispatch();
@@ -203,7 +203,7 @@ const QuickEnquiryForm = () => {
             </div>
           </Col>
           <Col lg={6}>
-            <figure className="image-wrap image-wrap-1 bg-athens-gray-inner">
+            <figure className="">
               <img src={contactimg} alt="" className="img-fluid" />
             </figure>
           </Col>

@@ -1,5 +1,5 @@
 import React from "react";
-import contactimg from '../../assets/images/contactimg.png'
+import contactimg from '../../assets/images/contact.jpg'
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 
 const ContactForm = () => {
@@ -41,7 +41,7 @@ const ContactForm = () => {
             </div>
           </Col>
           <Col lg={6}>
-            <figure className="image-wrap image-wrap-1 bg-athens-gray-inner">
+            <figure className="image-wrap">
               <img src={contactimg} alt="" className="img-fluid" />
             </figure>
           </Col>

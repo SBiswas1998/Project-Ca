@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { Footer,Topbar } from "../../../components/Layout";
-import CommonBanner from "../../../components/CommonBanner";
+import { Footer } from "../../../components/Layout";
 import CommonAboutSection from "../../../components/CommonAboutSection";
 import CommonCard from "../../../components/Card/CommonCard";
 import QuickEnquiryFrom from "../../../components/Forms/QuickEnquiryFrom";
-import banner from "../../../assets/images/banner.jpg";
 import {
   WindingUpofLLPAboutSubText,
   WindingUpofLLPCardText,
@@ -15,6 +13,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import ResHeader from "../../../components/ResponsiveMemu/Header";
+import TitleSection from "../../../components/TitleSection"
 
 const WindingUpofLLP = () => {
   const [cardtext1, setCardText1] = useState("");
@@ -34,9 +33,9 @@ const WindingUpofLLP = () => {
   }, [WindingUpofLLPCardText]);
   return (
     <>
-      <Topbar />
+  
       <ResHeader />
-      <CommonBanner text="Winding Up of LLP" src={banner} />
+      <TitleSection text="Winding Up of LLP"/>
       <QuickEnquiryFrom />
       <CommonAboutSection
         text={WindingUpofLLPAboutText}
@@ -59,7 +58,7 @@ const WindingUpofLLP = () => {
         card5="Easy Process"
         cardtext5={cardtext5}
       />
-      <section className="hm-about-sec">
+      <section className="hm-about-sec help-with-sec">
         <Container>
           <Row>
             <Col className="hm-about-what-sec">

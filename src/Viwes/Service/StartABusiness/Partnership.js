@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Footer, Header, Topbar } from "../../../components/Layout";
-import CommonBanner from "../../../components/CommonBanner";
-import banner from "../../../assets/images/banner-8.jpg";
+import { Footer,} from "../../../components/Layout";
 import CommonAboutSection from "../../../components/CommonAboutSection";
 import {
   PartnershipAboutText,
@@ -10,6 +8,7 @@ import {
 import CommonCard from "../../../components/Card/CommonCard";
 import QuickEnquiryFrom from "../../../components/Forms/QuickEnquiryFrom";
 import ResHeader from "../../../components/ResponsiveMemu/Header";
+import TitleSection from "../../../components/TitleSection"
 
 const Partnership = () => {
   const [cardtext1, setCardText1] = useState("");
@@ -30,9 +29,8 @@ const Partnership = () => {
 
   return (
     <>
-      <Topbar />
       <ResHeader />
-      <CommonBanner src={banner} text="Partnership" />
+      <TitleSection text="Partnership" />
       <QuickEnquiryFrom />
       <CommonAboutSection
         text={PartnershipAboutText}

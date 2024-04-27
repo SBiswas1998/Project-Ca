@@ -17,107 +17,8 @@ body {
     font-style: normal;
    overflow-x: hidden;
 }
-.header {
-  background: #fff;
-  display: block;
-  clear: both;
-  position: relative;
-}
 
-.topbar {
-  background: #05044D;
-  border-bottom: 1px solid #e5e7e9;
-  position: relative;
-}
-.top-lt-info {
-  margin-left: 30%;
-}
-
-.top-info-d {
-  display: inline-block;
-  vertical-align: top;
-  color: #fff;
-  line-height: 20px;
-  font-weight: 600;
-  font-size: 15px;
-  padding: 10px 20px 10px 0px;
-}
-.top-info-d i {
-  font-size: 20px;
-  padding-right: 5px;
-  color: #ca970b;
-}
-
-.top-info-d:first-child {
-  padding-right: 15px;
-}
-
-.social-top ul {
-  margin: 0;
-  list-style: none;
-  padding: 5px 0;
-}
-
-.social-top ul li {
-  display: inline-block;
-  padding: 0 5px;
-  color: #fff;
-}
-
-.social-top ul li span {}
-
-.social-top ul li:last-child {
-  padding-right: 0;
-}
-
-.social-top ul li a {
-  color: #fff;
-  font-size: 13px;
-  padding: 0 5px;
-  letter-spacing: 0.5px;
-}
-
-span.navbar-text ul li {
-  margin-left: 26px;
-}
-span.navbar-text ul {
-  display: inline-flex;
-  list-style: none;
-}
-
-/* topbar */
-.social-media {
-  display: flex;
-  justify-content: center;
-  font-size: 26px;
-  margin-right: 20px;
-}
-.social-media > div {
-  margin-right: 31px;
-  margin-top: 14px;
-}
-.social-media a {
-  font-size: 18px !important;
-  /* color: rgb(4, 4, 99) !important; */
-  text-decoration: none !important;
-}
-.navbar {
-  height: 16vh;
-}
-
-/* navbar */
-/* demo */
-
-/* .responsive-header {
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.07), 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  background: #05044d !important;
-  color: #fff;
-  position:sticky;
-  top: 0;
-  z-index: 1000;
-  height: 0;
-} */
-
+/* Header and Navbar */
 .nav-area {
   display: flex;
   align-items: center;
@@ -126,7 +27,8 @@ span.navbar-text ul {
   padding: 10px 20px;
 }
 nav.desktop-nav {
-  margin: auto;
+  margin-left: 46%;
+  margin-top: 75px;
 }
 
 .logo {
@@ -134,8 +36,9 @@ nav.desktop-nav {
   font-size: 25px;
   color: inherit;
   margin-right: 20px;
-  /* display: none; */
 }
+
+
 
 /* menu on desktop */
 .desktop-nav .menus {
@@ -143,11 +46,14 @@ nav.desktop-nav {
   align-items: center;
   flex-wrap: wrap;
   list-style: none;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 .desktop-nav .menu-items {
   position: relative;
   font-size: 14px;
+  margin-top: -11px;
 }
 
 .desktop-nav .menu-items a {
@@ -217,6 +123,21 @@ nav.desktop-nav {
     color: #000;
     height: 50vh;
     overflow-y: scroll;
+    
+}
+.desktop-nav .dropdown .menu-items > a{
+  border-bottom: 1px solid #000;
+  padding: 1.2rem;
+}
+.desktop-nav .dropdown .menu-items button {
+  text-align: left;
+  padding: 15px;
+  font-size: 17px;
+  border-bottom: 1px solid #000;
+}
+
+.desktop-nav .dropdown .dropdown-submenu .menu-items button{
+  border-bottom: 1px solid #000;
 }
 
 .mobile-nav {
@@ -237,11 +158,10 @@ nav.desktop-nav {
   .responsive-header {
     color: #000 !important;
   }
-  .logo img {
-    width: 82px !important;
-    margin-top: 36px !important;
-    margin-left: 34px !important;
-}
+ .header-logo {
+    width: 180px !important;
+    margin-top: 46% !important;
+  }
   .banner-image {
     display: block;
     width: 100%;
@@ -262,7 +182,8 @@ nav.desktop-nav {
     background-color: transparent;
     cursor: pointer;
     position: relative;
-    margin-top: 36px;
+    margin-top: 28px;
+    margin-left: 85%;
 }
   .mobile-nav .menus {
     list-style: none;
@@ -341,87 +262,23 @@ nav.desktop-nav {
     height: 20vh;
     overflow-y: scroll;
 }
+
 }
 
 
 /* hero */
-
-.carousel-image-container {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 70vh;
-  background-size: cover !important;
-  background-position: center;
-  background-repeat: no-repeat !important;
-}
-
-.carousel-text {
-  text-align: center;
-  color: #fff;
-}
-
-.carousel-text p {
-  margin: 0;
-  font-size: 2.5rem;
-  margin-top: 20px;
-  font-weight: 600;
-}
-
-.carousel-text .bottomtext {
-  display: block;
-}
-
-.carousel-text .btn {
-  padding: 10px 20px;
-  background-color: transparent;
-  color: #fff;
-  border-radius: 5px;
-  cursor: pointer;
-  border:1px solid #fff;
-  border-radius: 10px;
-  width: 35%;
-  font-weight: 500;
-}
-
-
-
-
-/* .carousel-image {
+.sticky-header {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 70vh;
+  z-index: 1000;
+  background-color: #ffffff; /* Change the background color as needed */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow for a nice effect */
 }
-
-
-
-.carousel-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white; 
-  font-size: 35px; 
-  text-transform: capitalize;
-  font-weight: 800; 
-  z-index: 1; 
-}
-.carousel-text .subtext{
-  font-size:25px;
-  text-align: center;
-  margin-top: 30px;
-}
-.carousel-text .bottomtext {
-  font-size: 1rem;
-  text-align: center;
-  margin-left: 19%;
-}
-
-.carousel-indicators {
+.desktop-view-hero-btn{
   display: none;
-} */
-
-
+}
 
 /* about-section */
 
@@ -508,7 +365,54 @@ nav.desktop-nav {
 
 .aboutimage{
   margin-left: 15%;
-  width: 100%;
+  width: 70%;
+}
+
+.jumping-animation {
+  animation: jump 0.5s infinite alternate; /* Apply the jump animation */
+}
+
+@keyframes jump {
+  from {
+    transform: translateY(0); /* Start from original position */
+  }
+  to {
+    transform: translateY(-10px); /* Jump up by 10 pixels */
+  }
+}
+.about-list {
+  list-style: none;
+  padding: 0;
+}
+
+/* Define animation for list items */
+.animated-list-item {
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.about-list li {
+  list-style-type: none;
+}
+
+.about-list li {
+  font-size: 3.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 136%;
+  color: #0C0649;
+  margin-bottom: 15px;
+  letter-spacing: 10px;
 }
 
 /* service-section */
@@ -793,8 +697,6 @@ a.hedingnews {
 
 /* Support card */
 
-
-
 .grid-support-container > div {
   margin-top: 40px;
   display: inline-flex;
@@ -853,9 +755,6 @@ a.hedingnews {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
 }
-
-
-
 
 .material-icons.md-18 {
   font-size: 18px;
@@ -1067,26 +966,13 @@ footer {
 
 
 /* CommonBannerImage */
-.common-banner-image-container img {
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.common-banner-image-container {
-  position: relative;
-}
-nav.breadcrumb {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 30px;
+.text-center {
+  text-align: center!important;
+  text-transform: uppercase;
+  color: #05044D;
 }
 
-li.breadcrumb-item a {
-  color: #fff;
-  cursor: pointer;
-  text-decoration: none;
-}
+
 
 
 /* blog */
@@ -1150,11 +1036,16 @@ li.breadcrumb-item a {
   /* margin-top: -58px; */
 }
 
+.help-with-sec{
+  background: #F2F2F2;
+  /* padding: 5%; */
+}
+
+
 
 /* contact from */
 
 .hm-contactus-sec {
-  background: #fff;
   color: #333;
   display: block;
   clear: both;
@@ -1163,6 +1054,18 @@ li.breadcrumb-item a {
   padding-bottom: 0px;
   overflow: hidden;
 }
+
+.hm-contactus-sec-two{
+   background: #bab9b930;
+   color: #333;
+   display: block;
+   clear: both;
+   position: relative;
+   padding-top: 50px;
+   padding-bottom: 0px;
+   overflow: hidden;
+}
+
 
 .hm-contactus-title {
   padding-bottom: 80px;
@@ -1239,16 +1142,7 @@ input.form-control,textarea.form-control{
   color: #fff;
 }
 
-.image-wrap {
-  position: relative;
-  z-index: 0;
-  margin: 0;
-}
 
-/* .img-fluid {
-  max-width: 100%;
-  height: 70vh;
-} */
 
 .bg-athens-gray-inner:before {
   content: '';
@@ -1267,10 +1161,10 @@ input.form-control,textarea.form-control{
 .contact_form {
   padding: 35px 20px;
   background: #fff;
-  -webkit-box-shadow: 0 0 4px 2px rgba(174, 174, 174, .2);
   box-shadow: 0 0 4px 2px rgba(174, 174, 174, .2);
   position: relative;
   z-index: 3;
+  margin-top: 80px;
 }
 
 .address p {
@@ -1392,7 +1286,7 @@ input.form-control,textarea.form-control{
   text-decoration: none;
   z-index: 0;
   overflow: hidden;
-  height: 344px;
+  height: 510px;
 }
 .card1:before {
   content: "";
@@ -1434,22 +1328,7 @@ input.form-control,textarea.form-control{
   }
   nav.bg-body-tertiary.topbar-nav.navbar.navbar-expand-md.navbar-light {
     display: none;
-  }
- 
-  :where(.css-dev-only-do-not-override-1qfezbu).ant-carousel {
-    display: none !important;
-  }
-
-  .mobile-view-hero {
-    background-image: url('./assets/images/mobile-banner.jpg');
-    display: block;
-    height: 34vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }  
+  } 
   .text-white {
     text-align: center;
     color: #fff;
@@ -1492,11 +1371,21 @@ input.form-control,textarea.form-control{
   line-height: 40px;
   padding: 0;
 }
+.about-list {
+  list-style: none;
+  padding: 0;
+  margin-top: -30%;
+}
+.about-list li {
+  font-size: 2rem;
+  font-weight: 700;
+}
 .aboutimage {
   margin-top: 42px;
   margin-bottom: 19px;
   border-radius: 30px;
   margin-left: 0;
+  width: 100%;
 }
 .hm-services-sec {
   padding-top: 40px;
@@ -1530,14 +1419,6 @@ input.form-control,textarea.form-control{
   transition: all 0.3s ease;
   margin-top: -57%;
 }
-
-
-
-
-
-
-
-
 
 .card-container {
   margin-left: 0px;
@@ -1594,4 +1475,40 @@ img.img-fluid.QuickEnquiryimg {
 }
 
 
+/* Loader page */
 
+.patterns {
+  height: 100vh;
+}
+
+svg text {
+  letter-spacing: 10px; /* Adjust letter-spacing for smaller screens */
+  font-size: 45px; /* Use viewport units for responsive font size */
+  font-weight: 600;
+  stroke: #0C0649;
+  stroke-width: 3; /* Adjust stroke width for smaller screens */
+  text-transform: uppercase;
+  animation: textAnimate 5s infinite alternate;
+}
+
+/* Define media query for screens with a maximum width of 450px */
+@media only screen and (max-width: 450px) {
+  svg text {
+    letter-spacing: 1px; /* Further adjust letter-spacing for very small screens */
+    font-size: 12px; /* Increase font size for better visibility on small screens */
+    stroke-width:1; /* Increase stroke width for better visibility on small screens */
+  }
+}
+
+@keyframes textAnimate {
+  0% {
+    stroke-dasharray: 0 50%;
+    stroke-dashoffset: 20%;
+    fill: hsl(195, 10%, 84%);
+  }
+  100% {
+    stroke-dasharray: 50% 0;
+    stroke-dashoffset: -20%;
+    fill: hsla(0, 88%, 50%, 0);
+  }
+}

@@ -13,6 +13,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import ResHeader from "../../../components/ResponsiveMemu/Header";
+import TitleSection from "../../../components/TitleSection";
 
 const IncreaseAuthorizedCapital = () => {
   const [cardtext1, setCardText1] = useState("");
@@ -32,9 +33,8 @@ const IncreaseAuthorizedCapital = () => {
   }, [IncreaseAuthorizedCapitalCardText]);
   return (
     <>
-      <Topbar />
       <ResHeader />
-      <CommonBanner text="Increase Authorized Capital" src={banner} />
+      <TitleSection text="Increase Authorized Capital"/>
       <QuickEnquiryFrom />
       <CommonAboutSection
         text={IncreaseAuthorizedCapitalAboutText}
@@ -55,7 +55,7 @@ const IncreaseAuthorizedCapital = () => {
         card5="Board Approval"
         cardtext5={cardtext5}
       />
-      <section className="hm-about-sec">
+      <section className="hm-about-sec help-with-sec">
         <Container>
           <Row>
             <Col className="hm-about-what-sec">

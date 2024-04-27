@@ -30,7 +30,7 @@ const CommonCard = ({
 
   return (
     <>
-      <section className="hm-services-sec">
+      <section className="hm-about-sec">
         <Container>
           <Row>
             <Col className="hm-about-what-sec" xs={12} md={12} lg={12}>

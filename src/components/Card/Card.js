@@ -7,7 +7,7 @@ const Card = () => {
     <div className="grid-container">
       <div className="card-container">
         <div className="card">
-          <a href="hottub">
+          <a href="/service/start_a_business/proprietorship">
             <div className="card--display">
               <FontAwesomeIcon
                 icon={faBuilding}
@@ -57,7 +57,7 @@ const Card = () => {
 
       <div className="card-container">
         <div className="card">
-          <a href="trainthings">
+          <a href="/service/compliance/change_company_name">
             <div className="card--display">
                 <FontAwesomeIcon icon={faUsers} size="xl" style={{color: "#05044D"}}/>
               <h2>Compliance</h2>
@@ -97,7 +97,7 @@ const Card = () => {
 
       <div className="card-container">
         <div className="card">
-          <a href="trainthings">
+          <a href="/service/tax_filing/business_tax_filing">
             <div className="card--display">
                 <FontAwesomeIcon icon={faPercent} size="xl" style={{color: "#05044D"}}/>
               <h2>Tax Failing</h2>
