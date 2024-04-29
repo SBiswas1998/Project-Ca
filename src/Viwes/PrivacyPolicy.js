@@ -6,13 +6,14 @@ import banner from "../assets/images/polocies-banner.jpeg";
 import CommonAboutSection from "../components/CommonAboutSection";
 import { PrivacyPolicyAboutText } from "../constants/Paragram";
 import { Col, Container, Row } from "react-bootstrap";
+import TitleSection from "../components/TitleSection";
+
 
 const PrivacyPolicy = () => {
   return (
-    <>
-      <Topbar />
-      <ResHeader />
-      <CommonBanner text="Privacy Policy" src={banner} />
+    <>  
+      <ResHeader/>
+      <TitleSection text="Privacy Policy" src={banner} />
       <CommonAboutSection
         text={PrivacyPolicyAboutText}
         title="Privacy Policy"
