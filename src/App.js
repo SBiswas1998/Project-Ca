@@ -17,7 +17,7 @@ function App() {
     // Set isLoading to false after 5 seconds
     const timeout = setTimeout(() => {
       setIsLoading(false);
-    }, 2000);
+    }, 5000);
 
     // Clean up the timeout to prevent memory leaks
     return () => clearTimeout(timeout);
@@ -31,6 +31,7 @@ function App() {
           <Analytics />
           <SpeedInsights />
         </Suspense>
+       
       </BrowserRouter>
     </Provider>
   );

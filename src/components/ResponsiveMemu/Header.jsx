@@ -53,7 +53,7 @@ const Header = () => {
            style={{
             // boxShadow:
             //   "0 1px 3px 0 rgba(0, 0, 0, 0.07), 0 1px 2px 0 rgba(0, 0, 0, 0.05)",
-            background: scrolled ? "#fff" : "#e4dddd26",
+            background: scrolled ? "#fff" : "#fff",
             color: scrolled ? "#000" : "#000",
             position: "sticky",
             top: 0,

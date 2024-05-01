@@ -1,7 +1,4 @@
 import React from "react";
-import { Loader } from "rsuite";
-import "rsuite/dist/rsuite.css";
-
 const Loading = () => {
   return (
     <>
@@ -10,7 +7,7 @@ const Loading = () => {
         <div class="patterns">
           <svg width="100%" height="100%">
             <defs>
-              <pattern
+              {/* <pattern
                 id="polka-dots"
                 x="0"
                 y="0"
@@ -19,7 +16,7 @@ const Loading = () => {
                 patternUnits="userSpaceOnUse"
               >
                 <circle fill="#0C0649" cx="25" cy="25" r="3"></circle>
-              </pattern>
+              </pattern> */}
               <style></style>
             </defs>
 
@@ -33,9 +30,11 @@ const Loading = () => {
               {" "}
             </rect>
 
-            <text x="50%" y="50%" text-anchor="middle">
-               Welcome To Purminder <br/>
-                Kaur & Associates
+            <text x="50%" y="40%" text-anchor="middle">
+               Welcome To 
+            </text>
+            <text x="50%" y="55%" text-anchor="middle">
+              Purminder Kaur & Associates
             </text>
           </svg>
         </div>
