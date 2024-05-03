@@ -1,25 +1,20 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+
 const Loading = () => {
+  const [showText, setShowText] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowText(true);
+    }, 2000); // Adjust the delay time as needed (2000ms = 2 seconds)
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <>
       <div style={{ height: "100vh", background: "#fff" }}>
-        {/* <Loader size="lg" inverse center content="Loading..."/> */}
         <div class="patterns">
           <svg width="100%" height="100%">
-            <defs>
-              {/* <pattern
-                id="polka-dots"
-                x="0"
-                y="0"
-                width="100"
-                height="100"
-                patternUnits="userSpaceOnUse"
-              >
-                <circle fill="#0C0649" cx="25" cy="25" r="3"></circle>
-              </pattern> */}
-              <style></style>
-            </defs>
-
             <rect
               x="0"
               y="0"
@@ -29,13 +24,17 @@ const Loading = () => {
             >
               {" "}
             </rect>
-
             <text x="50%" y="40%" text-anchor="middle">
-               Welcome To 
+              {" "}
+              Welcome To{" "}
             </text>
-            <text x="50%" y="55%" text-anchor="middle">
-              Purminder Kaur & Associates
-            </text>
+            {showText && (
+              <>
+                <text x="50%" y="55%" text-anchor="middle">
+                  Purminder Kaur & Associates
+                </text>
+              </>
+            )}
           </svg>
         </div>
       </div>

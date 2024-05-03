@@ -1506,9 +1506,9 @@ img.img-fluid.QuickEnquiryimg {
 svg text {
   letter-spacing: 10px; /* Adjust letter-spacing for smaller screens */
   font-size: 45px; /* Use viewport units for responsive font size */
-  font-weight: 600;
+  font-weight: 400;
   stroke: #0C0649;
-  stroke-width: 3; /* Adjust stroke width for smaller screens */
+  stroke-width: 5; /* Adjust stroke width for smaller screens */
   text-transform: uppercase;
   animation: textAnimate 5s infinite alternate;
 }
@@ -1534,3 +1534,4 @@ svg text {
     fill: hsla(0, 88%, 50%, 0);
   }
 }
+
