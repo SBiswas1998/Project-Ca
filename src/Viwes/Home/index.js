@@ -15,7 +15,7 @@ const index = () => {
       <Hero />
       <AboutHerosection src={aboutbanner}/>
       <Servicesection />
-      <NewsSection />
+      {/* <NewsSection /> */}
       <Supportsection />
       <Footer />
     </>

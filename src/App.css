@@ -72,6 +72,8 @@ nav.desktop-nav {
   background-color: transparent;
   cursor: pointer;
   width: 100%;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 .desktop-nav button span {
@@ -417,7 +419,7 @@ nav.desktop-nav {
 }
 .animated-list-item {
   z-index: -1;
-  background-color: #141ac0db;
+  /* background-color: #141ac0db; */
   height: 60px;
   width: 0%;
   transition: width 0.5s;
@@ -427,9 +429,12 @@ nav.desktop-nav {
 
 .animated-list-item:hover{
   width: 570px; 
-  color: #fff;
+  color: #306B2E;
   padding-left: 20px;
+  font-style: italic;
 }
+
+
 
 
 
@@ -1535,3 +1540,32 @@ svg text {
   }
 }
 
+
+.circle {
+  height: 200px;
+  border-radius: 50%;
+  background: transparent;
+  position: relative;
+  animation: pulse 2s infinite;
+}
+
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+.loader-text {
+  text-align-last: center;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
