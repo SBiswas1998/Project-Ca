@@ -4,6 +4,7 @@ import {
   About,
   AddDirectors,
   AddPartner,
+  Assessment,
   BankLoanRating,
   BankLoanSyndication,
   BusinessPlanPreparation,
@@ -16,12 +17,16 @@ import {
   CopyrightRegistration,
   CreditScoreCheck,
   ESIReturn,
+  GSTRegistration,
+  GSTReturn,
+  GSTAmendment,
   Home,
   ImportExportCode,
   IncreaseAuthorizedCapital,
   LimitedLiabilityPartnership,
   MOAAmendment,
   MSMERegistration,
+  NoticeSCOTIN,
   OnePersonCompany,
   PFRegistration,
   Partnership,
@@ -49,6 +54,7 @@ import {
   WindingUpofLLP,
   WorkingCapital,
 } from "../Viwes";
+
 
 
 
@@ -271,7 +277,15 @@ const AppRouter = () => {
         exact
         element={<CopyrightRegistration />}
       />
+      <Route path="/service/GST/GST_registration" exact element={<GSTRegistration />} />
+      <Route path="/service/GST/GST_Return" exact element={<GSTReturn />} />
+      <Route path="/service/GST/Notice_SCOTIN" exact element={<NoticeSCOTIN />} />
+      <Route path="/service/GSt/GST_Amendment" exact element={<GSTAmendment />} />
+      <Route path="/service/GST/Assessment" exact element={<Assessment />} />
       <Route path="/privacy_policy" exact element={<PrivacyPolicy />} />
+
+
+
     </Routes>
   );
 };

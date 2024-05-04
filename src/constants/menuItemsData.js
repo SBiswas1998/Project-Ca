@@ -101,27 +101,27 @@ export const menuItemsData = [
         submenu: [
           {
             title: "GST Registration",
-            url: "/service/tax_filing/business_tax_filing",
+            url: "/service/GST/GST_registration",
           },
           {
             title: "GST Return",
-            url: "/service/tax_filing/TDS_return",
+            url: "/service/GST/GST_Return",
           },
           {
             title: "Notice & SCOTIN",
-            url: "/service/tax_filing/ESI_return",
+            url: "/service/GST/Notice_SCOTIN",
           },
           {
             title: "GST Amendment",
-            url: "/service/tax_filing/cancel_GST_registration",
+            url: "/service/GSt/GST_Amendment",
           },
           {
             title: "Assessment",
-            url: "/service/tax_filing/cancel_GST_registration",
+            url: "/service/GST/Assessment",
           },
           {
             title: "GST Tax Calculation",
-            url: "/service/tax_filing/cancel_GST_registration",
+            url: "/service/GST/GST_Tax_Calculation",
           },
         ],
       },

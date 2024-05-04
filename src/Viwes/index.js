@@ -46,8 +46,11 @@ import Trust from "./Service/StartABusiness/Trust";
 import SocietyRegistrations from "./Service/StartABusiness/SocietyRegistrations";
 import UdyamAadhar from "./Service/StartABusiness/UdyamAadhar"
 import ImportExportCode from "./Service/StartABusiness/ImportExportCode";
-
-
+import Assessment from "./Service/GST/Assessment";
+import GSTAmendment from "./Service/GST/GSTAmendment"
+import GSTRegistration from "./Service/GST/GSTRegistration"
+import GSTReturn from "./Service/GST/GSTReturn"
+import NoticeSCOTIN from "./Service/GST/NoticeSCOTIN";
 
 
 
@@ -99,7 +102,13 @@ export{
     WindingUpofCompany,
     UdyamAadhar,
     SocietyRegistrations,
-    Trust
+    Trust,
+    Assessment,
+    GSTAmendment,
+    GSTRegistration,
+    GSTReturn,
+    NoticeSCOTIN,
+    
 
 }
 
