@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Footer,Topbar } from "../../../components/Layout";
-import CommonBanner from "../../../components/CommonBanner";
-import banner from "../../../assets/images/banner-8.jpg";
+import { Footer, } from "../../../components/Layout";
 import CommonAboutSection from "../../../components/CommonAboutSection";
 import {
   PrivateLimitedCompanyAboutText,
@@ -10,8 +8,8 @@ import {
 import QuickEnquiryFrom from "../../../components/Forms/QuickEnquiryFrom";
 import CommonCard from "../../../components/Card/CommonCard";
 import ResHeader from "../../../components/ResponsiveMemu/Header";
-import TitleSection from "../../../components/TitleSection"
-
+import TitleSection from "../../../components/TitleSection";
+import OtherPageLoader from "../../../components/Loader/OtherPageLoader";
 
 const PrivateLimitedCompany = () => {
   const [cardtext1, setCardText1] = useState("");
@@ -19,6 +17,7 @@ const PrivateLimitedCompany = () => {
   const [cardtext3, setCardText3] = useState("");
   const [cardtext4, setCardText4] = useState("");
   const [cardtext5, setCardText5] = useState("");
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     if (PrivateLimitedCompanyCardText) {
@@ -29,31 +28,44 @@ const PrivateLimitedCompany = () => {
       setCardText5(PrivateLimitedCompanyCardText[4]?.Owning_Property);
     }
   }, [PrivateLimitedCompanyCardText]);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 3000); // 3 seconds
+  }, []);
+
   return (
     <>
-      <ResHeader />
-      <TitleSection text="Private Limited Company"/>
-      <QuickEnquiryFrom />
-      <CommonAboutSection
-        text={PrivateLimitedCompanyAboutText}
-        title="Private Limited"
-        span="Company"
-      />
-      <CommonCard
-        cardtilte="Reasons to Register a Private"
-        cardspan="Limited Company"
-        card1="Separate Legal Entity"
-        card1text={cardtext1}
-        crad2="Uninterrupted Existence"
-        cardtext2={cardtext2}
-        card3="Easy Transferability"
-        cardtext3={cardtext3}
-        card4="Borrowing Capacity"
-        cardtext4={cardtext4}
-        card5="Owning Property"
-        cardtext5={cardtext5}
-      />
-      <Footer />
+      {isLoading ? (
+        <OtherPageLoader /> // Display loader here
+      ) : (
+        <>
+          <ResHeader />
+          <TitleSection text="Private Limited Company" />
+          <QuickEnquiryFrom />
+          <CommonAboutSection
+            text={PrivateLimitedCompanyAboutText}
+            title="Private Limited"
+            span="Company"
+          />
+          <CommonCard
+            cardtilte="Reasons to Register a Private"
+            cardspan="Limited Company"
+            card1="Separate Legal Entity"
+            card1text={cardtext1}
+            crad2="Uninterrupted Existence"
+            cardtext2={cardtext2}
+            card3="Easy Transferability"
+            cardtext3={cardtext3}
+            card4="Borrowing Capacity"
+            cardtext4={cardtext4}
+            card5="Owning Property"
+            cardtext5={cardtext5}
+          />
+          <Footer />
+        </>
+      )}
     </>
   );
 };

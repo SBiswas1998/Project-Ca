@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Footer,Topbar } from "../../../components/Layout";
-import CommonBanner from "../../../components/CommonBanner";
-import banner from "../../../assets/images/banner-8.jpg";
+import { Footer } from "../../../components/Layout";
 import QuickEnquiryFrom from "../../../components/Forms/QuickEnquiryFrom";
 import CommonAboutSection from "../../../components/CommonAboutSection";
 import {
@@ -14,6 +12,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import ResHeader from "../../../components/ResponsiveMemu/Header";
 import TitleSection from "../../../components/TitleSection"
+import OtherPageLoader from "../../../components/Loader/OtherPageLoader"
 
 const LimitedLiabilityPartnership = () => {
   const [cardtext1, setCardText1] = useState("");
@@ -23,6 +22,7 @@ const LimitedLiabilityPartnership = () => {
   const [cardtext5, setCardText5] = useState("");
   const [cardtext6, setCardText6] = useState("");
   const [cardtext7, setCardText7] = useState("");
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     if (LimitedLiabilityPartnershipCardText) {
@@ -45,9 +45,23 @@ const LimitedLiabilityPartnership = () => {
       );
     }
   }, [LimitedLiabilityPartnershipCardText]);
+
+ 
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 3000); // 3 seconds
+  }, []);
+
+
   return (
     <>
-      <ResHeader />
+    {isLoading ? (
+        <OtherPageLoader /> // Display loader here
+      ) : (
+        <>
+           <ResHeader />
       <TitleSection text="Limited Liability Partnership"/>
       <QuickEnquiryFrom />
       <CommonAboutSection
@@ -120,6 +134,9 @@ const LimitedLiabilityPartnership = () => {
         </Container>
       </section>
       <Footer />
+        </>
+      )}
+ 
     </>
   );
 };

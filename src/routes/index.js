@@ -34,6 +34,7 @@ import {
   RegisteredOfficeChange,
   RemoveDirectors,
   ShareTransfer,
+  SocietyRegistrations,
   TDSReturn,
   TanRegistration,
   TemporaryGSTRegistration,
@@ -42,11 +43,12 @@ import {
   TrademarkObjection,
   TrademarkRegistration,
   TrademarkRenewal,
+  Trust,
+  UdyamAadhar,
   WindingUpofCompany,
   WindingUpofLLP,
   WorkingCapital,
 } from "../Viwes";
-
 
 
 
@@ -63,32 +65,32 @@ const AppRouter = () => {
       <Route path="/contactus" exact element={<Contact />} />
       <Route path="/payment" exact element={<Payment />} />
       <Route
-        path="/service/start_a_business/proprietorship"
+        path="/service/registration/proprietorship"
         exact
         element={<Proprietorship />}
       />
       <Route
-        path="/service/start_a_business/partnership"
+        path="/service/registration/partnership"
         exact
         element={<Partnership />}
       />
       <Route
-        path="/service/start_a_business/one_person_company"
+        path="/service/registration/one_person_company"
         exact
         element={<OnePersonCompany />}
       />
       <Route
-        path="/service/start_a_business/limited_liability_partnership"
+        path="/service/registration/limited_liability_partnership"
         exact
         element={<LimitedLiabilityPartnership />}
       />
       <Route
-        path="/service/start_a_business/private_limited_company"
+        path="/service/registration/private_limited_company"
         exact
         element={<PrivateLimitedCompany />}
       />
       <Route
-        path="/service/start_a_business/public_limited_company"
+        path="/service/registration/public_limited_company"
         exact
         element={<PublicLimitedCompany />}
       />
@@ -229,9 +231,24 @@ const AppRouter = () => {
         element={<MSMERegistration />}
       />
       <Route
-        path="/service/registrations/import_export_code"
+        path="/service/registration/import_export_code"
         exact
         element={<ImportExportCode />}
+      />
+      <Route
+        path="/service/registration/trust"
+        exact
+        element={<Trust />}
+      />
+      <Route
+        path="/service/registration/society_registrations"
+        exact
+        element={<SocietyRegistrations />}
+      />
+      <Route
+        path="/service/registration/udyam_aadhar"
+        exact
+        element={<UdyamAadhar />}
       />
 
       <Route

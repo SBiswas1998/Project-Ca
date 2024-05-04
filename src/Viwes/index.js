@@ -41,7 +41,11 @@ import TanRegistration from "./Service/Registrations/TanRegistration";
 import ProfessionalTax from "./Service/Registrations/ProfessionalTax";
 import PFRegistration from "./Service/Registrations/PFRegistration";
 import MSMERegistration from "./Service/Registrations/MSMERegistration";
-import ImportExportCode from "./Service/Registrations/ImportExportCode";
+// import ImportExportCode from "./Service/Registrations/ImportExportCode";
+import Trust from "./Service/StartABusiness/Trust";
+import SocietyRegistrations from "./Service/StartABusiness/SocietyRegistrations";
+import UdyamAadhar from "./Service/StartABusiness/UdyamAadhar"
+import ImportExportCode from "./Service/StartABusiness/ImportExportCode";
 
 
 
@@ -93,6 +97,10 @@ export{
     WindingUpofLLP,
     WorkingCapital,
     WindingUpofCompany,
+    UdyamAadhar,
+    SocietyRegistrations,
+    Trust
+
 }
 
 
