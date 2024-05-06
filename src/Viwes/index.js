@@ -51,6 +51,19 @@ import GSTAmendment from "./Service/GST/GSTAmendment"
 import GSTRegistration from "./Service/GST/GSTRegistration"
 import GSTReturn from "./Service/GST/GSTReturn"
 import NoticeSCOTIN from "./Service/GST/NoticeSCOTIN";
+import Auditing from "./Service/Auditing";
+import CapitalGain from "./Service/Advisory/CapitalGain";
+import FinancialPlanning from "./Service/Advisory/FinancialPlanning";
+import BusinessSociety from "./Service/Advisory/BusinessSociety";
+import BusinessGrowth from "./Service/Advisory/BusinessGrowth";
+import Investment from "./Service/Advisory/Investment";
+import SalePurchaseProperty from "./Service/Advisory/SalePurchaseProperty";
+
+
+
+
+
+
 
 
 
@@ -59,19 +72,25 @@ export{
     About,
     AddPartner,
     AddDirectors,
+    Auditing,
     BusinessTaxFiling,
+    BusinessSociety,
+    BusinessGrowth,
     BusinessPlanPreparation,
     BankLoanSyndication,
     BankLoanRating,
     CancelGSTRegistration,
     ChangeCompanyName,
     CMAReportPreparation,
+    CapitalGain,
     CollateralFreeLoan,
     Contact,
     CopyrightRegistration,
     CreditScoreCheck,
     ESIReturn,
+    FinancialPlanning,
     ImportExportCode,
+    Investment,
     IncreaseAuthorizedCapital,
     Home,
     MOAAmendment,
@@ -87,6 +106,7 @@ export{
     PrivacyPolicy,
     PublicLimitedCompany,
     ShareTransfer,
+    SalePurchaseProperty,
     RegisteredOfficeChange,
     RemoveDirectors,
     TanRegistration,

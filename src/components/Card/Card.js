@@ -1,11 +1,14 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBuilding, faRegistered, faClock, faUsers, faPercent ,faMoneyCheckDollar,faCalculator,faFile} from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
+
+
 
 const Card = () => {
   return (
     <div className="grid-container">
-      <div className="card-container">
+      {/* <div className="card-container">
         <div className="card">
           <a href="/service/start_a_business/proprietorship">
             <div className="card--display">
@@ -29,11 +32,11 @@ const Card = () => {
           </a>
           <div className="card--border"></div>
         </div>
-      </div>
+      </div> */}
 
       <div className="card-container">
         <div className="card">
-          <a href="worldweb">
+          <Link to="/service/registration/proprietorship">
             <div className="card--display">
               <FontAwesomeIcon
                 icon={faRegistered}
@@ -50,14 +53,14 @@ const Card = () => {
               </p>
               <p className="link">View More</p>
             </div>
-          </a>
+          </Link>
           <div className="card--border"></div>
         </div>
       </div>
 
       <div className="card-container">
         <div className="card">
-          <a href="/service/compliance/change_company_name">
+          <Link to="service/compliance/change_company_name">
             <div className="card--display">
                 <FontAwesomeIcon icon={faUsers} size="xl" style={{color: "#05044D"}}/>
               <h2>Compliance</h2>
@@ -70,14 +73,14 @@ const Card = () => {
               </p>
               <p className="link">View More</p>
             </div>
-          </a>
+          </Link>
           <div className="card--border"></div>
         </div>
       </div>
 
       <div className="card-container">
         <div className="card">
-          <a href="trainthings">
+          <Link to="/service/auditing">
             <div className="card--display">
                 <FontAwesomeIcon icon={faClock} size="xl" style={{color: "#05044D"}} />
               <h2>Auditing</h2>
@@ -90,14 +93,14 @@ const Card = () => {
               </p>
               <p className="link">View More</p>
             </div>
-          </a>
+          </Link>
           <div className="card--border"></div>
         </div>
       </div>
 
       <div className="card-container">
         <div className="card">
-          <a href="/service/tax_filing/business_tax_filing">
+          <Link to="/service/tax_filing/business_tax_filing">
             <div className="card--display">
                 <FontAwesomeIcon icon={faPercent} size="xl" style={{color: "#05044D"}}/>
               <h2>Tax Failing</h2>
@@ -109,14 +112,14 @@ const Card = () => {
               </p>
               <p className="link">View More</p>
             </div>
-          </a>
+          </Link>
           <div className="card--border"></div>
         </div>
       </div>
 
       <div className="card-container">
         <div className="card">
-          <a href="trainthings">
+          <Link to="/service/funding/business_plan_preparation">
             <div className="card--display">
                 <FontAwesomeIcon icon={faMoneyCheckDollar} size="xl" style={{color: "#05044D"}}/>
               <h2>Funding</h2>
@@ -129,7 +132,7 @@ const Card = () => {
               </p>
               <p className="link">View More</p>
             </div>
-          </a>
+          </Link>
           <div className="card--border"></div>
         </div>
       </div>

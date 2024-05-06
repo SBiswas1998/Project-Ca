@@ -127,7 +127,7 @@ export const menuItemsData = [
       },
       {
         title: "Auditing",
-        url: "",
+        url: "/service/auditing",
       },
       {
         title: "Compliance",
@@ -237,31 +237,27 @@ export const menuItemsData = [
         submenu: [
           {
             title: "Capital Gain",
-            url: "/service/tax_filing/business_tax_filing",
+            url: "/service/advisory/capital_gain",
           },
           {
             title: "Sale and Purchase Property",
-            url: "/service/tax_filing/TDS_return",
+            url: "/service/advisory/sale_purchase_property",
           },
           {
             title: "Investment",
-            url: "/service/tax_filing/ESI_return",
+            url: "/service/advisory/investment",
           },
           {
             title: "Business Growth",
-            url: "/service/tax_filing/cancel_GST_registration",
+            url: "/service/advisory/business_growth",
           },
           {
             title: "Business Society",
-            url: "/service/tax_filing/cancel_GST_registration",
-          },
-          {
-            title: "Business Society",
-            url: "/service/tax_filing/cancel_GST_registration",
+            url: "/service/advisory/business_society",
           },
           {
             title: "Financial Planning",
-            url: "/service/tax_filing/cancel_GST_registration",
+            url: "/service/advisory/financial_planning",
           },
         ],
       },

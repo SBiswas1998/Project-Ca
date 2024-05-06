@@ -1404,8 +1404,9 @@ input.form-control,textarea.form-control{
   margin-top: -30%;
 }
 .about-list li {
-  font-size: 2rem;
+  font-size: 30px;
   font-weight: 700;
+  letter-spacing: 7px;
 }
 .aboutimage {
   margin-top: 42px;
@@ -1413,6 +1414,12 @@ input.form-control,textarea.form-control{
   border-radius: 30px;
   margin-left: 0;
   width: 100%;
+}
+.loader-text {
+  font-size: 1.5rem !important;
+}
+.circle{
+  margin-top: 55% !important;
 }
 .hm-services-sec {
   padding-top: 40px;

@@ -24,7 +24,7 @@ const Footer = () => {
             <div class="row">
               <div class="col-md-5">
                 <div class="row">
-                  <div class="col-md-5">
+                  {/* <div class="col-md-5">
                     <h2>Trademark & Copyright</h2>
                     <ul class="foot-link-list">
                       <li>
@@ -43,7 +43,7 @@ const Footer = () => {
                         <a href="/trademarkcopyright/copyright_registration">Copyright Registration</a>
                       </li>
                     </ul>
-                  </div>
+                  </div> */}
                   <div class="col-md-6">
                     <h2>Legal Documentation</h2>
                     <ul class="foot-link-list">

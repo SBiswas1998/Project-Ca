@@ -53,7 +53,16 @@ import {
   WindingUpofCompany,
   WindingUpofLLP,
   WorkingCapital,
+  Auditing,
+  CapitalGain,
+  FinancialPlanning,
+  BusinessSociety,
+  BusinessGrowth,
+  Investment,
+  SalePurchaseProperty,
 } from "../Viwes";
+
+
 
 
 
@@ -282,6 +291,13 @@ const AppRouter = () => {
       <Route path="/service/GST/Notice_SCOTIN" exact element={<NoticeSCOTIN />} />
       <Route path="/service/GSt/GST_Amendment" exact element={<GSTAmendment />} />
       <Route path="/service/GST/Assessment" exact element={<Assessment />} />
+      <Route path="/service/auditing" exact element={<Auditing />} />
+      <Route path="/service/advisory/capital_gain" exact element={<CapitalGain />} />
+      <Route path="/service/advisory/financial_planning" exact element={<FinancialPlanning />} />
+      <Route path="/service/advisory/business_society" exact element={<BusinessSociety />} />
+      <Route path="/service/advisory/business_growth" exact element={<BusinessGrowth />} />
+      <Route path="/service/advisory/investment" exact element={<Investment />} />
+      <Route path="/service/advisory/sale_purchase_property" exact element={<SalePurchaseProperty />} />
       <Route path="/privacy_policy" exact element={<PrivacyPolicy />} />
 
 
