@@ -24,26 +24,26 @@ const Footer = () => {
             <div class="row">
               <div class="col-md-5">
                 <div class="row">
-                  {/* <div class="col-md-5">
-                    <h2>Trademark & Copyright</h2>
+                  <div class="col-md-5">
+                    <h2>Quick links</h2>
                     <ul class="foot-link-list">
                       <li>
-                        <a href="/trademarkcopyright/trademark_registration">Trademark Registration</a>
+                        <a href="/service/registration/proprietorship">Registration</a>
                       </li>
                       <li>
-                        <a href="/trademarkcopyright/trademark_objection">Trademark Objection</a>
+                        <a href="/service/auditing">Auditing</a>
                       </li>
                       <li>
-                        <a href="#">Trademark Assignment</a>
+                        <a href="/service/advisory/capital_gain">Advisory</a>
                       </li>
                       <li>
-                        <a href="/trademarkcopyright/trademark_renewal">Trademark Renewal</a>
+                        <a href="/service/book_keeper">Book Keeper</a>
                       </li>
                       <li>
-                        <a href="/trademarkcopyright/copyright_registration">Copyright Registration</a>
+                        <a href="/service/GST/GST_registration">GST</a>
                       </li>
                     </ul>
-                  </div> */}
+                  </div>
                   <div class="col-md-6">
                     <h2>Legal Documentation</h2>
                     <ul class="foot-link-list">
@@ -102,7 +102,7 @@ const Footer = () => {
                       <span>
                         {" "}
                         SCO 79, First Floor, Phase 11, Tarf Kumbra, Sahibzada
-                        Ajit Singh Nagar, Punjab 160062
+                        Ajit &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Singh Nagar, Punjab 160062
                       </span>
                     </a>
                   </li>

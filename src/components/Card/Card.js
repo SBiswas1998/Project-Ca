@@ -139,7 +139,7 @@ const Card = () => {
 
       <div className="card-container">
         <div className="card">
-          <a href="trainthings">
+          <Link to="/service/documentcenter">
             <div className="card--display">
                 <FontAwesomeIcon icon={faFile} size="xl" style={{color: "#05044D"}}/>
               <h2>Document Center</h2>
@@ -152,14 +152,14 @@ const Card = () => {
               </p>
               <p className="link">View More</p>
             </div>
-          </a>
+          </Link>
           <div className="card--border"></div>
         </div>
       </div>
 
       <div className="card-container">
         <div className="card">
-          <a href="trainthings">
+          <Link to="/service/accounting">
             <div className="card--display">
                 <FontAwesomeIcon icon={faCalculator} size="xl" style={{color: "#05044D"}}/>
               <h2>Accounting</h2>
@@ -171,7 +171,7 @@ const Card = () => {
               </p>
               <p className="link">View More</p>
             </div>
-          </a>
+          </Link>
           <div className="card--border"></div>
         </div>
       </div>

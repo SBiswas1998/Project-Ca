@@ -37,8 +37,8 @@ import PrivacyPolicy from "./PrivacyPolicy";
 import AddDirectors from "./Service/Compliance/AddDirectors";
 import TradeLicense from "./Service/Registrations/TradeLicense";
 import TemporaryGSTRegistration from "./Service/Registrations/TemporaryGSTRegistration";
-import TanRegistration from "./Service/Registrations/TanRegistration";
-import ProfessionalTax from "./Service/Registrations/ProfessionalTax";
+import TanRegistration from "./Service/Income Tax/TanPanRegistration";
+import ProfessionalTax from "./Service/Income Tax/ProfessionalTax";
 import PFRegistration from "./Service/Registrations/PFRegistration";
 import MSMERegistration from "./Service/Registrations/MSMERegistration";
 // import ImportExportCode from "./Service/Registrations/ImportExportCode";
@@ -58,6 +58,21 @@ import BusinessSociety from "./Service/Advisory/BusinessSociety";
 import BusinessGrowth from "./Service/Advisory/BusinessGrowth";
 import Investment from "./Service/Advisory/Investment";
 import SalePurchaseProperty from "./Service/Advisory/SalePurchaseProperty";
+import BookKeeper from "./Service/Book Keeper";
+import CapitalAssessment from "./Service/Investment/CapitalAssessment";
+import HealthInsurance from "./Service/Investment/HealthInsurance"
+import LifeInsurance from "./Service/Investment/LifeInsurance"
+import MutualfundInvestment from "./Service/Investment/MutualfundInvestment"
+import ITRFiling from "./Service/Income Tax/ITRFiling";
+import PANAadharLink from "./Service/Income Tax/PANAadharLink";
+import TaxNoticeSCOTIN from "./Service/Income Tax/NoticeSCOTIN";
+import TaxPayment from "./Service/Income Tax/TaxPayment";
+import TaxCapitalGain from "./Service/Income Tax/CapitalGain";
+import Accounting from "./Service/Accounting";
+import Documentcenter from "./Service/Documentcenter";
+
+
+
 
 
 
@@ -70,6 +85,7 @@ import SalePurchaseProperty from "./Service/Advisory/SalePurchaseProperty";
 
 export{
     About,
+    Accounting,
     AddPartner,
     AddDirectors,
     Auditing,
@@ -87,6 +103,7 @@ export{
     Contact,
     CopyrightRegistration,
     CreditScoreCheck,
+    Documentcenter,
     ESIReturn,
     FinancialPlanning,
     ImportExportCode,
@@ -128,6 +145,17 @@ export{
     GSTRegistration,
     GSTReturn,
     NoticeSCOTIN,
+    BookKeeper,
+    LifeInsurance,
+    MutualfundInvestment,
+    CapitalAssessment,
+    HealthInsurance,
+    TaxNoticeSCOTIN,
+    ITRFiling,
+    PANAadharLink,
+    TaxPayment,
+    TaxCapitalGain
+    
     
 
 }

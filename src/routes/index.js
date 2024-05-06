@@ -60,16 +60,19 @@ import {
   BusinessGrowth,
   Investment,
   SalePurchaseProperty,
+  BookKeeper,
+  LifeInsurance,
+  MutualfundInvestment,
+  CapitalAssessment,
+  HealthInsurance,
+  ITRFiling,
+  PANAadharLink,
+  TaxPayment,
+  TaxCapitalGain,
+  TaxNoticeSCOTIN,
+  Accounting,
+  Documentcenter,
 } from "../Viwes";
-
-
-
-
-
-
-
-
-
 
 const AppRouter = () => {
   return (
@@ -226,12 +229,12 @@ const AppRouter = () => {
         element={<TemporaryGSTRegistration />}
       />
       <Route
-        path="/service/registrations/tan_registration"
+        path="/service/IncomeTax/Tan_PAN_registration"
         exact
         element={<TanRegistration />}
       />
       <Route
-        path="/service/registrations/professional_tax"
+        path="/service/IncomeTax/professional_tax"
         exact
         element={<ProfessionalTax />}
       />
@@ -250,11 +253,7 @@ const AppRouter = () => {
         exact
         element={<ImportExportCode />}
       />
-      <Route
-        path="/service/registration/trust"
-        exact
-        element={<Trust />}
-      />
+      <Route path="/service/registration/trust" exact element={<Trust />} />
       <Route
         path="/service/registration/society_registrations"
         exact
@@ -286,22 +285,116 @@ const AppRouter = () => {
         exact
         element={<CopyrightRegistration />}
       />
-      <Route path="/service/GST/GST_registration" exact element={<GSTRegistration />} />
+      <Route
+        path="/service/GST/GST_registration"
+        exact
+        element={<GSTRegistration />}
+      />
       <Route path="/service/GST/GST_Return" exact element={<GSTReturn />} />
-      <Route path="/service/GST/Notice_SCOTIN" exact element={<NoticeSCOTIN />} />
-      <Route path="/service/GSt/GST_Amendment" exact element={<GSTAmendment />} />
+      <Route
+        path="/service/GST/Notice_SCOTIN"
+        exact
+        element={<NoticeSCOTIN />}
+      />
+      <Route
+        path="/service/GSt/GST_Amendment"
+        exact
+        element={<GSTAmendment />}
+      />
       <Route path="/service/GST/Assessment" exact element={<Assessment />} />
       <Route path="/service/auditing" exact element={<Auditing />} />
-      <Route path="/service/advisory/capital_gain" exact element={<CapitalGain />} />
-      <Route path="/service/advisory/financial_planning" exact element={<FinancialPlanning />} />
-      <Route path="/service/advisory/business_society" exact element={<BusinessSociety />} />
-      <Route path="/service/advisory/business_growth" exact element={<BusinessGrowth />} />
-      <Route path="/service/advisory/investment" exact element={<Investment />} />
-      <Route path="/service/advisory/sale_purchase_property" exact element={<SalePurchaseProperty />} />
+      <Route
+        path="/service/advisory/capital_gain"
+        exact
+        element={<CapitalGain />}
+      />
+      <Route
+        path="/service/advisory/financial_planning"
+        exact
+        element={<FinancialPlanning />}
+      />
+      <Route
+        path="/service/advisory/business_society"
+        exact
+        element={<BusinessSociety />}
+      />
+      <Route
+        path="/service/advisory/business_growth"
+        exact
+        element={<BusinessGrowth />}
+      />
+      <Route
+        path="/service/advisory/investment"
+        exact
+        element={<Investment />}
+      />
+      <Route
+        path="/service/advisory/sale_purchase_property"
+        exact
+        element={<SalePurchaseProperty />}
+      />
+      <Route
+        path="/service/investment/mutual_fund_investment"
+        exact
+        element={<MutualfundInvestment />}
+      />
+      <Route
+        path="/service/investment/life_insurance"
+        exact
+        element={<LifeInsurance />}
+      />
+      <Route
+        path="/service/investment/health_insurance"
+        exact
+        element={<HealthInsurance />}
+      />
+      <Route
+        path="/service/investment/capital_assessment"
+        exact
+        element={<CapitalAssessment />}
+      />
+      <Route
+        path="/service/IncomeTax/ITR_filing"
+        exact
+        element={<ITRFiling />}
+      />
+      <Route
+        path="/service/IncomeTax/ITR_filing"
+        exact
+        element={<ITRFiling />}
+      />
+      <Route
+        path="/service/IncomeTax/PAN_Aadhar_Link"
+        exact
+        element={<PANAadharLink />}
+      />
+      <Route
+        path="/service/IncomeTax/tax_payment"
+        exact
+        element={<TaxPayment />}
+      />
+      <Route
+        path="/service/IncomeTax/capital_gain"
+        exact
+        element={<TaxCapitalGain />}
+      />
+      <Route
+        path="/service/IncomeTax/notice_scotin"
+        exact
+        element={<TaxNoticeSCOTIN />}
+      />
+      <Route
+        path="/service/accounting"
+        exact
+        element={<Accounting />}
+      />
+      <Route
+        path="/service/documentcenter"
+        exact
+        element={<Documentcenter />}
+      />
+      <Route path="/service/book_keeper" exact element={<BookKeeper />} />
       <Route path="/privacy_policy" exact element={<PrivacyPolicy />} />
-
-
-
     </Routes>
   );
 };

@@ -18,6 +18,10 @@ body {
    overflow-x: hidden;
 }
 
+a{
+  text-decoration: none !important;
+}
+
 /* Header and Navbar */
 .nav-area {
   display: flex;
@@ -1402,6 +1406,9 @@ input.form-control,textarea.form-control{
   list-style: none;
   padding: 0;
   margin-top: -30%;
+}
+ul.about-list a {
+  text-decoration: none !important;
 }
 .about-list li {
   font-size: 30px;

@@ -60,39 +60,39 @@ export const menuItemsData = [
         submenu: [
           {
             title: "ITR Filing",
-            url: "frontend",
+            url: "/service/IncomeTax/ITR_filing",
           },
           {
             title: "PAN Aadhar Link ",
-            url: "frontend",
+            url: "/service/IncomeTax/PAN_Aadhar_Link",
           },
           {
             title: "Tax Payment",
-            url: "/service/registrations/temporary_GST_registration",
+            url: "/service/IncomeTax/tax_payment",
           },
           {
             title: "Professional Tax",
-            url: "/service/registrations/professional_tax",
+            url: "/service/IncomeTax/professional_tax",
           },
           {
             title: "Tan & PAN Registration",
-            url: "/service/registrations/tan_registration",
+            url: "/service/IncomeTax/Tan_PAN_registration",
           },
           {
             title: "Capital Gain",
-            url: "/service/registrations/PF_registration",
+            url: "/service/IncomeTax/capital_gain",
           },
           {
             title: "Notice & SCOTIN",
-            url: "frontend",
+            url: "/service/IncomeTax/notice_scotin",
           },
           {
             title: "Tax Calculation",
-            url: "/service/registrations/MSME_registration",
+            url: "/service/IncomeTax/tax_calculation",
           },
           {
             title: "FAQ",
-            url: "/service/registrations/import_export_code",
+            url: "/service/IncomeTax/FAQ",
           },
         ],
       },
@@ -266,26 +266,26 @@ export const menuItemsData = [
         submenu: [
           {
             title: "Mutual fund Investment",
-            url: "/service/tax_filing/business_tax_filing",
+            url: "/service/investment/mutual_fund_investment",
           },
           {
             title: "Life Insurance",
-            url: "/service/tax_filing/TDS_return",
+            url: "/service/investment/life_insurance",
           },
           {
             title: "Health Insurance",
-            url: "/service/tax_filing/ESI_return",
+            url: "/service/investment/health_insurance",
           },
           {
             title: "Capital Assessment",
-            url: "/service/tax_filing/cancel_GST_registration",
+            url: "/service/investment/capital_assessment",
           },
         ],
       },
 
       {
         title: "Book Keeper",
-        url: "seo",
+        url: "/service/book_keeper",
       },
       // {
       //   title: "Tax Planning",
