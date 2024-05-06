@@ -103,10 +103,10 @@ const Card = () => {
           <Link to="/service/tax_filing/business_tax_filing">
             <div className="card--display">
                 <FontAwesomeIcon icon={faPercent} size="xl" style={{color: "#05044D"}}/>
-              <h2>Tax Failing</h2>
+              <h2>Tax Filing</h2>
             </div>
             <div className="card--hover">
-              <h2>Tax Failing</h2>
+              <h2>Tax Filing</h2>
               <p>
                 As a chartered accountant company, we promise to guide you in all tax planning. Apart from all types of domestic tax.
               </p>
