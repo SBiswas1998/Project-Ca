@@ -8,20 +8,22 @@ import SupportCard from "../Card/SupportCard";
 const Supportsection = () => {
   return (
     <>
-    <section className="hm-services-sec">
+      <section className="hm-services-sec">
         <Container>
           <Row>
             <Col className="hm-services-title">
               <h2>
-              Reason To Choose<span> Purminder Kaur & Associates</span>
+                Reason To Choose<span> Purminder Kaur & Associates</span>
               </h2>
               <p>
-              We build trust and sustainable relationship, and have been
-              continuing this for over 8 years. Continuous Value Addition to
-              clients is what we strive for. We are partners in your growth. We
-              don't work FOR our clients, we work WITH them. Our major emphasis
-              is on understanding the clients' business & needs and formulating
-              their solutions. Thereby maintaining.
+                For over a decade, we've fostered trust and sustainable
+                relationships, continuously adding value to our clients'
+                ventures. We're not just service providers; we're partners in
+                your growth journey. Our approach isn't to work for our clients,
+                but to work with them collaboratively. With a primary focus on
+                understanding our clients' businesses and needs, we tailor
+                solutions that ensure mutual success, maintaining this
+                commitment year after year.
               </p>
             </Col>
 

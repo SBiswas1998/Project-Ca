@@ -560,11 +560,13 @@ nav.desktop-nav {
   line-height: 1.5;
   color: grey;
   font-weight: 500;
+  text-align: justify;
 }
 .card-container .card a .card--hover p.link {
   margin: 20px 0 0;
   font-weight: bold;
   color: #05044D;
+  text-align: justify;
 }
 
 /* News Section  */
@@ -828,6 +830,10 @@ a.hedingnews {
 .supportcard:hover {
   height: 420px;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
+  min-width: 318px;
+}
+.supportcard .icon :hover {
+  margin-top: -10%;
 }
 
 .supportcard:hover .info {
