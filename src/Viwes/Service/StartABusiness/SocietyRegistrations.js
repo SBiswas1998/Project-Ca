@@ -16,16 +16,10 @@ const SocietyRegistrations = () => {
 
   return (
     <>
-      {isLoading ? (
-        <OtherPageLoader /> // Display loader here
-      ) : (
-        <>
-          <ResHeader />
-          text="Society Registrations" />
-          <QuickEnquiryFrom />
-          <Footer />
-        </>
-      )}
+      <ResHeader />
+
+      <QuickEnquiryFrom />
+      <Footer />
     </>
   );
 };

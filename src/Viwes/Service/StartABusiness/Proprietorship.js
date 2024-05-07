@@ -34,12 +34,8 @@ const Proprietorship = () => {
 
   return (
     <>
-      {isLoading ? (
-        <OtherPageLoader /> // Display loader here
-      ) : (
-        <>
-          <ResHeader />
-          text="Proprietorship" />
+     <ResHeader />
+          
           <QuickEnquiryFrom />
           <CommonAboutSection
             text={ProprietorshipAboutText}
@@ -61,8 +57,6 @@ const Proprietorship = () => {
             cardtext5={cardtext5}
           />
           <Footer />
-        </>
-      )}
     </>
   );
 };

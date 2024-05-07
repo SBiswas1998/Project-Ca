@@ -16,16 +16,10 @@ const Trust = () => {
 
   return (
     <>
-      {isLoading ? (
-        <OtherPageLoader /> // Display loader here
-      ) : (
-        <>
-          <ResHeader />
-          text="Trust" />
-          <QuickEnquiryFrom />
-          <Footer />
-        </>
-      )}
+      <ResHeader />
+         
+         <QuickEnquiryFrom />
+         <Footer />
     </>
   );
 };

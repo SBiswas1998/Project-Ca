@@ -36,35 +36,29 @@ const PublicLimitedCompany = () => {
   }, []);
   return (
     <>
-      {isLoading ? (
-        <OtherPageLoader /> // Display loader here
-      ) : (
-        <>
-          <ResHeader />
-          text="Public Limited Company" />
-          <QuickEnquiryFrom />
-          <CommonAboutSection
-            text={PublicLimitedCompanyAboutText}
-            title="Public Limited"
-            span="Company"
-          />
-          <CommonCard
-            cardtilte="Reasons to Register a Limited"
-            cardspan="Company"
-            card1="Separate Legal Entity"
-            card1text={cardtext1}
-            crad2="Easy Transferability"
-            cardtext2={cardtext2}
-            card3="Owning Property"
-            cardtext3={cardtext3}
-            card4="Uninterrupted Existence"
-            cardtext4={cardtext4}
-            card5="Borrowing Capacity"
-            cardtext5={cardtext5}
-          />
-          <Footer />
-        </>
-      )}
+      <ResHeader />
+         
+         <QuickEnquiryFrom />
+         <CommonAboutSection
+           text={PublicLimitedCompanyAboutText}
+           title="Public Limited"
+           span="Company"
+         />
+         <CommonCard
+           cardtilte="Reasons to Register a Limited"
+           cardspan="Company"
+           card1="Separate Legal Entity"
+           card1text={cardtext1}
+           crad2="Easy Transferability"
+           cardtext2={cardtext2}
+           card3="Owning Property"
+           cardtext3={cardtext3}
+           card4="Uninterrupted Existence"
+           cardtext4={cardtext4}
+           card5="Borrowing Capacity"
+           cardtext5={cardtext5}
+         />
+         <Footer />
     </>
   );
 };

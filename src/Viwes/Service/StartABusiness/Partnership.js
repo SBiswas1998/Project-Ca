@@ -36,12 +36,8 @@ const Partnership = () => {
 
   return (
     <>
-      {isLoading ? (
-        <OtherPageLoader /> // Display loader here
-      ) : (
-        <>
-          <ResHeader />
-          text="Partnership" />
+     <ResHeader />
+          
           <QuickEnquiryFrom />
           <CommonAboutSection
             text={PartnershipAboutText}
@@ -63,8 +59,6 @@ const Partnership = () => {
             cardtext5={cardtext5}
           />
           <Footer />
-        </>
-      )}
     </>
   );
 };

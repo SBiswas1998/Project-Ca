@@ -16,16 +16,10 @@ const UdyamAadhar = () => {
 
   return (
     <>
-      {isLoading ? (
-        <OtherPageLoader /> // Display loader here
-      ) : (
-        <>
-          <ResHeader />
-          text="Udyam Aadhar" />
+       <ResHeader />
+          
           <QuickEnquiryFrom />
           <Footer />
-        </>
-      )}
     </>
   );
 };
