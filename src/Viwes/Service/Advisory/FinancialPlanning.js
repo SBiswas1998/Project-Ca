@@ -8,7 +8,6 @@ const FinancialPlanning = () => {
   return (
     <>
       <ResHeader />
-      text="Financial Planning" />
       <QuickEnquiryFrom />
       <Footer />
     </>

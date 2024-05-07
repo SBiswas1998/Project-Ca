@@ -8,7 +8,6 @@ const Auditing = () => {
   return (
     <>
       <ResHeader />
-      text="Auditing" />
       <QuickEnquiryFrom />
       <Footer />
     </>

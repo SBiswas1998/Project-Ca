@@ -17,7 +17,6 @@ const BusinessGrowth = () => {
   return (
     <>
       <ResHeader />
-      text="Business Growth" />
       <QuickEnquiryFrom />
       <Footer />
     </>

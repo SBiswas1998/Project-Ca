@@ -8,7 +8,7 @@ const BookKeeper = () => {
   return (
     <>
       <ResHeader />
-      <QuickEnquiryFrom title="Book Keeper" />
+      <QuickEnquiryFrom/>
       <Footer />
     </>
   );

@@ -8,7 +8,6 @@ const BusinessSociety = () => {
   return (
     <>
       <ResHeader />
-      text="Business Society" />
       <QuickEnquiryFrom />
       <Footer />
     </>

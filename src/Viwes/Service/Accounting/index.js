@@ -8,7 +8,6 @@ const Accounting = () => {
   return (
     <>
       <ResHeader />
-      text="Accounting" />
       <QuickEnquiryFrom />
       <Footer />
     </>

@@ -17,7 +17,6 @@ const SalePurchaseProperty = () => {
   return (
     <>
       <ResHeader />
-      text="Sale and Purchase Property" />
       <QuickEnquiryFrom />
       <Footer />
     </>

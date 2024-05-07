@@ -17,7 +17,6 @@ const Investment = () => {
   return (
     <>
       <ResHeader />
-      text="Investment" />
       <QuickEnquiryFrom />
       <Footer />
     </>

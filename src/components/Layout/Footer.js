@@ -54,22 +54,17 @@ const Footer = () => {
                       </li>
                       <li>
                         <a class="" href="#">
-                          Founder's Agreement{" "}
+                            UdyamAadhar{" "}
                         </a>
                       </li>
                       <li>
                         <a class="" href="#">
-                          Term Sheet
+                           Partnership
                         </a>
                       </li>
                       <li>
                         <a class="" href="#">
-                          Shareholder's Agreement
-                        </a>
-                      </li>
-                      <li>
-                        <a class="" href="#">
-                          Share Purchase Agreement
+                           FinancialPlanning
                         </a>
                       </li>
                       <li>

@@ -8,7 +8,6 @@ const CapitalGain = () => {
   return (
     <>
       <ResHeader />
-      text="Capital Gain" />
       <QuickEnquiryFrom />
       <Footer />
     </>
