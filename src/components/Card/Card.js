@@ -2,12 +2,9 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faRegistered,
-  faClock,
   faUsers,
-  faPercent,
   faMoneyCheckDollar,
   faCalculator,
-  faFile,
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import { faFileCircleCheck } from "@fortawesome/free-solid-svg-icons";
