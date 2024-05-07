@@ -45,11 +45,11 @@ const Footer = () => {
                     </ul>
                   </div>
                   <div class="col-md-6">
-                    <h2>Legal Documentation</h2>
+                    <h2>Our Services</h2>
                     <ul class="foot-link-list">
                       <li>
                         <a class="" href="#">
-                          Non- Disclosure Agreement{" "}
+                          GST Registration{" "}
                         </a>
                       </li>
                       <li>

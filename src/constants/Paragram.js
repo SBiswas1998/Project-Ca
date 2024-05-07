@@ -19,17 +19,12 @@ export const ProfileTitle = [`Our`];
 export const ProfileSpan = [`Profile`];
 
 export const ProfileText = [
-  `Purminder Kaur & Associates, established in 2011, is a Chartered Accountancy Firm incorporated by FCA Purminder Kaur. 
-    In the few years of our journey, we have taken giant strides to become a speedy growing Accounting Firm in north Region. 
-    We provide unparalleled solutions in our respective fields. We take pride in the professional and customer-centric approach 
-    towards our clients. We work on the philosophy of making Accounting easy and accessible for everyone. All clients, irrespective 
-    of the turnover or type, are guaranteed transparent, efficient and diligent service by our well qualified and trained employees 
-    and associates. Some of the best Associates in the region are employed by us.Purminder Kaur and Associates has in its clientele, 
-    an impressive customer portfolio. The client demographics range from High Net Worth Individuals, MSMEs, to Listed and Offshore 
-    companies in various countries around the world. The spectrum of industries that the clients belong to is more diverse than in 
-    any other Accounting Firm in the Tricity Region.Having made a strong foothold in the region, we aim to have our presence in all 
-    major cities in the country. With an ever growing list of satisfied and delighted customers, we see this aim manifesting into 
-    reality sooner rather than later and that motivates us to do better every day.`,
+  `Purminder Kaur & Associates, founded in 2011 by FCA Purminder Kaur, has rapidly emerged as a leading 
+  Chartered Accountancy Firm in the north region. With a commitment to simplifying accounting for all, we 
+  offer unparalleled solutions with a focus on professionalism and customer satisfaction. Our team of highly 
+  qualified associates ensures transparent, efficient, and diligent service to clients across various industries, 
+  from High Net Worth Individuals to MSMEs and offshore companies worldwide. With a diverse clientele and a vision 
+  to expand our presence nationwide, we continue to strive for excellence, driven by our growing base of satisfied customers.`,
 ];
 
 export const ProprietorshipAboutText = [
@@ -1321,8 +1316,6 @@ export const PrivacyPolicyAboutSubText = [
   },
 ];
 
-
-
 export const TradeLicenseAboutText = [
   `
   Any place of business within the corporation or municipal limits will require a Gumasta license or Trade license from the concerned State Government.
@@ -1355,10 +1348,7 @@ export const TradeLicenseCardText = [
   },
 ];
 
-
-
-
-export const TemporaryGSTRegistrationAboutText =[
+export const TemporaryGSTRegistrationAboutText = [
   `GST registration is mandatory for all entities involved in the buying or selling or providing of services in India.Goods and Services Tax or GST has been 
   implemented in India from 1st July, 2017 and casual taxable persons are also required to obtain GST registration and file GST returns. According to the GST 
   Act, “casual taxable person” means a person who occasionally undertakes transactions involving supply of goods or services or both in the course or 
@@ -1374,8 +1364,8 @@ export const TemporaryGSTRegistrationAboutText =[
   GST return filing, private limited company registration, trademark filing and more. Purminder Kaur & Associates can help casual taxable persons with 
   end-to-end GST compliance services starting from GST registration to GST return filing through a proprietary GST accounting software. The average time 
   taken to obtain GST registration is about 10 – 15 working days, subject to government processing time and client document submission. Get a free 
-  consultation on GST registration, GST accounting and GST return filing by scheduling an appointment with an Purminder Kaur & Associates Advisor`
-]
+  consultation on GST registration, GST accounting and GST return filing by scheduling an appointment with an Purminder Kaur & Associates Advisor`,
+];
 
 export const TemporaryGSTRegistrationCardText = [
   {
@@ -1393,11 +1383,9 @@ export const TemporaryGSTRegistrationCardText = [
   {
     Larger_Tax_Base: `GST is expected to increase the tax base in India significantly. Hence, the overall tax liability for businesses is expected to reduce overtime, as more and more businesses become compliant. Further, GST will use the latest in technology, including data from Aadhaar database, PAN database, etc., to make GST registration and GST return filing process, as seamless as possible`,
   },
-]
+];
 
-
-
-export const TanRegistrationAboutText =[
+export const TanRegistrationAboutText = [
   `TAN registration is required for making tax deduction or tax collection at source, remittance of TDS payments and issuance of TDS certificates.
   TAN or Tax Deduction and Collection Number (TAN) is mandatory 10 digit alpha number required to be obtained by all persons who are responsible 
   for Tax Deduction at Source (TDS) or Tax Collection at Source (TCS) on behalf of the Government. Tax deducted at source (TDS) ensures that the 
@@ -1408,8 +1396,8 @@ export const TanRegistrationAboutText =[
   On deducting tax at source, the entity registered for TAN will issue a TDS Certificate as proof of collection of tax.
   To obtain TAN, application must be made for allotment of TAN in Form 49B along with the required supporting documents. Based on the application, 
   the TAN will be allotted to the entity and the entity must quote the TAN in all TDS/TCS returns, TDS/TCS payment challans and all TDS/TCS Certificates.
-   Purminder Kaur & Associates can help you obtain your TAN registration quickly and hassle-fee. Purminder Kaur & Associates is an authorized TAN Facilitation Center.`
-]
+   Purminder Kaur & Associates can help you obtain your TAN registration quickly and hassle-fee. Purminder Kaur & Associates is an authorized TAN Facilitation Center.`,
+];
 
 export const TanRegistrationCardText = [
   {
@@ -1427,13 +1415,12 @@ export const TanRegistrationCardText = [
   {
     Validity: `Once a TAN is issued, it is valid for lifetime. However, TDS Filings must be made quarterly on the 15th day of July, October, January and May. Non-filing of TDS filings within the due date will attract a penalty.`,
   },
-]
+];
 
-export const ProfessionalTaxAboutText =[
+export const ProfessionalTaxAboutText = [
   `Professional tax registration is required for employers and persons engaged in any profession, trade or calling.Professional Tax is a tax levied on professions and trades in India. It is a state-level tax and has to be compulsorily paid by every member of staff employed in private companies. The owner of a business is responsible to deduct professional tax from the salaries of his employees and pay the amount so collected to the appropriate government department.
-  Professional tax is usually a slab-amount based on the gross income of the professional. It is deducted from his income every month. Some of the state governments that have levied professional tax are Karnataka, West Bengal, Andhra Pradesh, Maharashtra, Tamil Nadu, Gujarat, Assam, Chhattisgarh, Kerala, Meghalaya, Orissa, Tripura and Madhya Pradesh. In case of salaried employees and wage earners, Employer is liable to deduct professional tax with the State Government. In case of other class of Individuals, this tax is liable to be paid by the person himself. Purminder Kaur & Associates can help obtain professional tax registration in India`
-]
-
+  Professional tax is usually a slab-amount based on the gross income of the professional. It is deducted from his income every month. Some of the state governments that have levied professional tax are Karnataka, West Bengal, Andhra Pradesh, Maharashtra, Tamil Nadu, Gujarat, Assam, Chhattisgarh, Kerala, Meghalaya, Orissa, Tripura and Madhya Pradesh. In case of salaried employees and wage earners, Employer is liable to deduct professional tax with the State Government. In case of other class of Individuals, this tax is liable to be paid by the person himself. Purminder Kaur & Associates can help obtain professional tax registration in India`,
+];
 
 export const ProfessionalTaxCardText = [
   {
@@ -1463,22 +1450,21 @@ export const ProfessionalTaxCardText = [
     and employment. The amount of professional tax collected does
     not exceed Rs.2500 per annum.`,
   },
-]
+];
 
-export const PFRegistrationAboutText =[
+export const PFRegistrationAboutText = [
   `PF registration is applicable for all establishment which employs 20 or more persons.
   Employees Provident Fund (EPF) is a scheme controlled by the Employees’ Provident Funds and Miscellaneous Provisions Act, 1952. It is regulated under the umbrella of Employees’ Provident Fund Organisation (EPFO). PF registration is applicable for all establishment which employs 20 or more persons. PF registration can also be obtained voluntarily by establishments having less than 20 employee.
 
 The PF contribution paid by the employer is 6% of (basic salary + dearness allowance + retaining allowance). An equal contribution is payable by the employee. In case of establishments which engage less than 20 employees or meet certain other conditions, as per the EPFO rules, the contribution rate for both employee and the employer is restricted to 10%. For most employees working in the private sector, it’s the basic salary on which the contribution is calculated.
 
 It is obligatory that employees’ drawing less than Rs 15,000 per month, to become members of the EPF. As per the guidelines in EPF, employee, whose ‘basic pay’ is more than Rs. 15,000 per month, at the time of joining, is not required to make PF contributions. Nevertheless, an employee who is drawing a pay of more than Rs 15,000 can still become a member and make PF contributions, with the consent of the Employer
-  `
-]
-
+  `,
+];
 
 export const PFRegistrationCardText = [
   {
-    PF_Return : `Provident fund return must be filed by all entities having PF registration every month. PF return is due on the 25th of each month. Further, a final PF return is due on the 25th of April for the year ended on 31st March..`,
+    PF_Return: `Provident fund return must be filed by all entities having PF registration every month. PF return is due on the 25th of each month. Further, a final PF return is due on the 25th of April for the year ended on 31st March..`,
   },
   {
     APF_Payment: `Provident Fund (PF) payments are due on the 15th of each month. The employer must deposit a total of 12% or 10% of the employee wages towards PF on or before this date every month. For most entities, the PF rate of 12% would be applicable..`,
@@ -1492,22 +1478,21 @@ export const PFRegistrationCardText = [
   {
     PF_Withdrawal: `Employees who have contributed to PF can withdraw money in their PF account for various reasons by applying on the Unified Portal. PF can be withdrawn for house purchase, medical reasons, marriage or education of family members.`,
   },
-]
+];
 
-
-export const MSMERegistrationAboutText =[
+export const MSMERegistrationAboutText = [
   `PF registration is applicable for all establishment which employs 20 or more persons.
   Employees Provident Fund (EPF) is a scheme controlled by the Employees’ Provident Funds and Miscellaneous Provisions Act, 1952. It is regulated under the umbrella of Employees’ Provident Fund Organisation (EPFO). PF registration is applicable for all establishment which employs 20 or more persons. PF registration can also be obtained voluntarily by establishments having less than 20 employee.
 
 The PF contribution paid by the employer is 6% of (basic salary + dearness allowance + retaining allowance). An equal contribution is payable by the employee. In case of establishments which engage less than 20 employees or meet certain other conditions, as per the EPFO rules, the contribution rate for both employee and the employer is restricted to 10%. For most employees working in the private sector, it’s the basic salary on which the contribution is calculated.
 
 It is obligatory that employees’ drawing less than Rs 15,000 per month, to become members of the EPF. As per the guidelines in EPF, employee, whose ‘basic pay’ is more than Rs. 15,000 per month, at the time of joining, is not required to make PF contributions. Nevertheless, an employee who is drawing a pay of more than Rs 15,000 can still become a member and make PF contributions, with the consent of the Employer
-  `
-]
+  `,
+];
 
 export const MSMERegistrationCardText = [
   {
-    MSME_Registration : `MSME Registration is an optional Registration under the MSMED Act that provides Micro, Small and Medium sized enterprises with a host of benefits and access to subsidies and schemes.`,
+    MSME_Registration: `MSME Registration is an optional Registration under the MSMED Act that provides Micro, Small and Medium sized enterprises with a host of benefits and access to subsidies and schemes.`,
   },
   {
     Small_Enterprise: `A Small Enterprise in the manufacturing sector is an enterprise with more than Rs. 25 lakhs but not exceeding Rs. 5 crores of investment in plant & machinery. A Small Enterprise in the service sector is an enterprise with more than Rs. 10 lakhs but not exceeding Rs. 2 crores of investment in plant & machinery.`,
@@ -1516,15 +1501,14 @@ export const MSMERegistrationCardText = [
     Medium_Enterprise: `A Medium Enterprise in the manufacturing sector is an enterprise with more than Rs. 5 crores but not exceeding Rs. 10 crores of investment in plant & machinery. A Medium Enterprise in the service sector is an enterprise with more than Rs. 2 crores but not exceeding Rs. 5 crores of investment in plant & machinery.`,
   },
   {
-    Registratio_Criteria :  `To be classified as a MSME, Enterprises in the Manufacturing sector need to have less than Rs.10 crores of investment in plant & machinery; service Enterprises must have an investment of less than Rs.5 crores of investment in plant & machinery. `,
+    Registratio_Criteria: `To be classified as a MSME, Enterprises in the Manufacturing sector need to have less than Rs.10 crores of investment in plant & machinery; service Enterprises must have an investment of less than Rs.5 crores of investment in plant & machinery. `,
   },
   {
     Micro_Enterprises: `A Micro Enterprise in the manufacturing sector is an enterprise with less than Rs. 25 lakhs of investment in plant & machinery. A Micro Enterprise in the service sector is an enterprise with less than Rs. 10 lakhs of investment in plant & machinery.`,
   },
-]
+];
 
-
-export const ImportExportCodeAboutText =[
+export const ImportExportCodeAboutText = [
   `
   Import Export Code or IE Code is required for undertaking import of export transactions and availing benefits under schemes like SEIS or MEIS.
   Import Export (IE) Code is a registration required for persons importing or exporting goods and services from India. IE Code is issued by the 
@@ -1533,12 +1517,12 @@ export const ImportExportCodeAboutText =[
   irrespective of if they need it at the moment.
   IE Code application must be made to the Directorate General of Foreign Trade along with the necessary supporting documents. Once, the application is 
   submitted, DGFT will issue the IE Code for the entity in 15 – 20 working days or less.
-  `
-]
+  `,
+];
 
 export const ImportExportCodeCardText = [
   {
-    Importers_Require_IE_Code : `All Importers who import goods into India require an IE Code. The IE Code must be quoted while clearing customs. Also, banks require the importers IE Code while sending money abroad.`,
+    Importers_Require_IE_Code: `All Importers who import goods into India require an IE Code. The IE Code must be quoted while clearing customs. Also, banks require the importers IE Code while sending money abroad.`,
   },
   {
     No_Return_Filing: `IE Code does not require the filing of any return. Once, an IE Code is issued there are no further procedures required to maintain validity of the IE Code. Even if import or export transactions occur, there are no filings required to DGFT.`,
@@ -1547,26 +1531,15 @@ export const ImportExportCodeCardText = [
     Proprietors_can_have_IE_Code: `Even individuals who are proprietors of a business can obtain IE Code in their name. It is not necessary to incorporate a business entity for obtaining IE Code.`,
   },
   {
-    Exporters_Require_IE_Code :  `All Exporters who export goods or services from India require an IE Code. The IE Code must be quoted while sending shipments. And banks require the exporters IE Code while receiving money from abroad. `,
+    Exporters_Require_IE_Code: `All Exporters who export goods or services from India require an IE Code. The IE Code must be quoted while sending shipments. And banks require the exporters IE Code while receiving money from abroad. `,
   },
   {
     Lifetime_NO_Renewal: `IE Code is issued for the lifetime of the entity and requires no renewal. So once a IE Code is obtained, it can be used by that entity for all its import or export transactions without any further hassles.`,
-  },  
+  },
   {
     Identity_and_Business_Proof: `Identity proof like passport, drivers license, aadhaar card, voters id or ration card for the promoters with photo or person authorised to file IE code application. In case of legal entity or registered body, then partnership deed or incorporation certificate or registration certificate is required.`,
-  },  
+  },
   {
     Cancelled_Cheque_Copy: `Bank certificate as per DGFT format or cancelled cheque bearing preprinted name of applicant and account number. Bank certificate or cancelled cheque is used to verify that the applicant has an active current account with a bank in India.`,
-  },  
-]
-
-
-
-
-
-
-
-
-
-
-
+  },
+];

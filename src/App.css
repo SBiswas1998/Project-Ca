@@ -374,9 +374,9 @@ nav.desktop-nav {
   width: 70%;
 }
 
-.jumping-animation {
-  animation: jump 0.5s infinite alternate; /* Apply the jump animation */
-}
+/* .jumping-animation {
+  animation: jump 0.5s infinite alternate; 
+} */
 
 @keyframes jump {
   from {
@@ -426,16 +426,13 @@ nav.desktop-nav {
   /* background-color: #141ac0db; */
   height: 60px;
   width: 0%;
-  transition: width 0.5s;
-  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
   cursor: pointer;
 }
 
 .animated-list-item:hover{
-  width: 570px; 
+  /* width: 570px;  */
   color: #306B2E;
-  padding-left: 20px;
-  font-style: italic;
+  /* font-style: italic; */
 }
 
 
@@ -1529,15 +1526,15 @@ svg text {
   stroke: #0C0649;
   stroke-width: 5; /* Adjust stroke width for smaller screens */
   text-transform: uppercase;
-  animation: textAnimate 5s infinite alternate;
+  /* animation: textAnimate 5s infinite alternate; */
 }
 
 /* Define media query for screens with a maximum width of 450px */
 @media only screen and (max-width: 450px) {
   svg text {
-    letter-spacing: 1px; /* Further adjust letter-spacing for very small screens */
-    font-size: 12px; /* Increase font size for better visibility on small screens */
-    stroke-width:1; /* Increase stroke width for better visibility on small screens */
+    letter-spacing: 1px; 
+    font-size: 12px; 
+    stroke-width:1; 
   }
 }
 

@@ -30,7 +30,7 @@ const About = () => {
       ) : (
         <>
           <ResHeader />
-          <TitleSection text="About" />
+          {/* <TitleSection text="About" /> */}
           <Aboutsection
             text={ProfileText}
             title={ProfileTitle}
