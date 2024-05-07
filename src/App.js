@@ -13,25 +13,31 @@ const AppRouter = lazy(() => import("./routes"));
 function App() {
   const [isLoading, setIsLoading] = useState(true);
 
-  useEffect(() => {
-    // Set isLoading to false after 5 seconds
-    const timeout = setTimeout(() => {
-      setIsLoading(false);
-    }, 5000);
+  // useEffect(() => {
+  //   // Set isLoading to false after 5 seconds
+  //   const timeout = setTimeout(() => {
+  //     setIsLoading(false);
+  //   }, 5000);
 
-    // Clean up the timeout to prevent memory leaks
-    return () => clearTimeout(timeout);
-  }, []);
+  //   // Clean up the timeout to prevent memory leaks
+  //   return () => clearTimeout(timeout);
+  // }, []);
 
   return (
     <Provider store={store}>
       <BrowserRouter>
-        <Suspense fallback={<Loading />}>
-          {isLoading ? <Loading /> : <AppRouter />}
+      <Suspense fallback={<div> <Loading /></div>}>
+          <AppRouter />
           <Analytics />
           <SpeedInsights />
         </Suspense>
-       
+
+        {/* <Suspense fallback={<Loading />}>
+         
+          <AppRouter />
+
+         
+        </Suspense> */}
       </BrowserRouter>
     </Provider>
   );

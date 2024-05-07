@@ -3,12 +3,12 @@ import React, { useEffect, useState } from "react";
 const Loading = () => {
   const [showText, setShowText] = useState(false);
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowText(true);
-    }, 2000); // Adjust the delay time as needed (2000ms = 2 seconds)
-    return () => clearTimeout(timer);
-  }, []);
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     setShowText(true);
+  //   }, 2000); // Adjust the delay time as needed (2000ms = 2 seconds)
+  //   return () => clearTimeout(timer);
+  // }, []);
 
   return (
     <>
@@ -28,13 +28,10 @@ const Loading = () => {
               {" "}
               Welcome To{" "}
             </text>
-            {showText && (
-              <>
-                <text x="50%" y="55%" text-anchor="middle">
-                  Purminder Kaur & Associates
-                </text>
-              </>
-            )}
+
+            <text x="50%" y="55%" text-anchor="middle">
+              Purminder Kaur & Associates
+            </text>
           </svg>
         </div>
       </div>
