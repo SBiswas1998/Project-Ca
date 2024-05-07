@@ -16,9 +16,6 @@ function MyComponent({ title, span, text, src }) {
             <p>
               {text}
             </p>
-            <a href="/about" className="btn btn-red">
-              Read More <FontAwesomeIcon icon={faAngleRight} color="white" />
-            </a>
           </Col>
           <Col md={6}>
             <img

@@ -37,11 +37,11 @@ const Proprietorship = () => {
      <ResHeader />
           
           <QuickEnquiryFrom />
-          <CommonAboutSection
+          {/* <CommonAboutSection
             text={ProprietorshipAboutText}
             title="Proprietor"
             span="ship"
-          />
+          /> */}
           <CommonCard
             cardtilte="Reasons to Register a"
             cardspan="Proprietorship Firm"

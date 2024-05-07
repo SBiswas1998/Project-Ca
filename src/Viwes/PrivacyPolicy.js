@@ -11,7 +11,6 @@ const PrivacyPolicy = () => {
   return (
     <>
       <ResHeader />
-      text="Privacy Policy" src={banner} />
       <CommonAboutSection
         text={PrivacyPolicyAboutText}
         title="Privacy Policy"

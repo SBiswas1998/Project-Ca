@@ -3,7 +3,7 @@ import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import { registerUser, verifyOtp } from "../../actions/auth";
 import toast from "../common/toast";
-import contactimg from "../../assets/images/Contact us-pana.png";
+import contactimg from "../../assets/images/QuickEnquiryImg.png";
 import TitleSection from "../TitleSection";
 
 
@@ -206,7 +206,7 @@ const QuickEnquiryForm = ({title}) => {
           </Col>
           <Col lg={6}>
             <figure className="">
-              <img src={contactimg} alt="" className="img-fluid" />
+              <img src={contactimg} alt="" className="img-fluid" style={{marginLeft:"39%", marginTop:"8%"}} />
             </figure>
           </Col>
         </Row>

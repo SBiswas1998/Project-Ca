@@ -23,15 +23,12 @@ const WhyUs = () => {
         <Row className="justify-content-md-center">
           <Col xs={12} md={12} lg={12}>
             <p>
-              You are the master of your field, we are in our field. Most people
-              don’t service their cars at home. Instead, they bring them to a
-              professional mechanic who can keep things running smoothly and
-              spot potential issues. Small businesses need just the same
-              attention from a professional.Same if you love your car you will
-              take it for service at its authorized service station where all
-              kind of treatments are available for your car. So we have all the
-              relevant services under one roof where we can complete all legal
-              and financial compliances of your business.
+              Just as most people entrust their cars to professional mechanics
+              for maintenance, small businesses require the expertise of
+              professional accountants to ensure smooth operations and identify
+              potential issues. Similar to servicing your car at its authorized
+              station for comprehensive care, we offer a range of services under
+              one roof to address all your business's legal and financial needs.
             </p>
           </Col>
           <Col xs={12} md={6} lg={4}>

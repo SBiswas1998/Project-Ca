@@ -51,21 +51,20 @@ export const ProprietorshipAboutText = [
 
 export const ProprietorshipCardText = [
   {
-    Easy: "Proprietorship needs minimal registration. Therefore, it is one of the easiest forms of business entities to start with minimal formalities. However, after starting up a Proprietorship, it is relatively harder to open a bank account or obtain a payment gateway in the name of the business – since more registrations like VAT or Service Tax or GST Registration may be required.",
+    Easy: `Starting a proprietorship is simple with minimal registration. However, opening a bank account or obtaining a payment 
+    gateway post-startup can be challenging due to additional registrations like GST, Shop Establishment, and MSME.`,
   },
   {
-    Business_Name:
-      "Since the name of a proprietorship is not registered, a proprietorship can choose to have any name – as long as it does not infringe on a registered trademark. However, since the name is not registered, any other person can also use the same business name unless trademark registration is obtained.",
+    Business_Name:`A proprietorship can adopt any name not infringing on registered trademarks. However, without registration, 
+    others may also use the same name unless trademarked.`
   },
   {
-    Single_Promoter: `Proprietorship is the only type of business entity that can be registered and operated by one person. 
-    To register a one person company, a nominee Director is required and for all other types of entities like 
-    company or LLP or partnership firm, two or more promoters are required.`,
+    Single_Promoter: `Proprietorship allows sole ownership and operation, unique among business entities. Registering a one-person 
+    company necessitates a nominee Director, while other entities like companies or LLPs require two or more promoters.`,
   },
   {
-    Lower_Taxes: `Proprietorship with less than Rs. 3 lakhs of income is not required to pay any income tax, as proprietorship’s 
-    are taxed as the individual owing the business. However, unlike a company or LLP, a proprietorship cannot enjoy 
-    some of the tax deductions, which could potentially increase the tax liability.`,
+    Lower_Taxes: `Proprietorships with income under Rs. 5 lakhs are exempt from income tax, taxed as individuals. Yet, 
+    they lack certain tax deductions, potentially raising tax liabilities, unlike companies or LLPs.`,
   },
   {
     Easy_to: `The Proprietor and the proprietorship are one and the same for all legal purposes. Hence, there is no formality 
