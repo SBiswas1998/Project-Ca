@@ -13,7 +13,7 @@ const Supportsection = () => {
           <Row>
             <Col className="hm-services-title">
               <h2>
-                Reason To Choose<span> Purminder Kaur & Associates</span>
+                Reason To Choose<span><br/> Purminder Kaur & Associates</span>
               </h2>
               <p>
                 For over a decade, we've fostered trust and sustainable

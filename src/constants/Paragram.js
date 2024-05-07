@@ -15,8 +15,8 @@ export const AboutText = [
     associates. Some of the best Associates in the region are
     employed by us.`,
 ];
-export const ProfileTitle = [`Our`];
-export const ProfileSpan = [`Profile`];
+export const ProfileTitle = [`About`];
+export const ProfileSpan = [`Us`];
 
 export const ProfileText = [
   `Purminder Kaur & Associates, founded in 2011 by FCA Purminder Kaur, has rapidly emerged as a leading 

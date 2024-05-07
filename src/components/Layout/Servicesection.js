@@ -12,7 +12,7 @@ const Sevicesection = () => {
           <Row>
             <Col className="hm-services-title">
               <h2>
-                Our Services<span> Offerings</span>
+                We Are<span> Offerings</span>
               </h2>
             </Col>
           </Row>
