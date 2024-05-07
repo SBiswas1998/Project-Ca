@@ -1,14 +1,5 @@
 import React from "react";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import logo from "../../assets/images/ca-capka-logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faSquareInstagram,
-  faFacebook,
-  faLinkedin,
-} from "@fortawesome/free-brands-svg-icons";
 import {
   faPhone,
   faEnvelope,
@@ -34,10 +25,10 @@ const Footer = () => {
                         <a href="/service/auditing">Auditing</a>
                       </li>
                       <li>
-                        <a href="/service/advisory/capital_gain">Advisory</a>
+                        <a href="/service/IncomeTax/ITR_filing">Income Tax</a>
                       </li>
                       <li>
-                        <a href="/service/book_keeper">Book Keeper</a>
+                        <a href="/service/book_keeper">Book Keeping</a>
                       </li>
                       <li>
                         <a href="/service/GST/GST_registration">GST</a>
@@ -45,26 +36,16 @@ const Footer = () => {
                     </ul>
                   </div>
                   <div class="col-md-6">
-                    <h2>Our Services</h2>
+                    <h2>About Us</h2>
                     <ul class="foot-link-list">
                       <li>
                         <a class="" href="#">
-                          GST Registration{" "}
+                          Vision
                         </a>
                       </li>
                       <li>
                         <a class="" href="#">
-                            UdyamAadhar{" "}
-                        </a>
-                      </li>
-                      <li>
-                        <a class="" href="#">
-                           Partnership
-                        </a>
-                      </li>
-                      <li>
-                        <a class="" href="#">
-                           FinancialPlanning
+                           Mission
                         </a>
                       </li>
                       <li>

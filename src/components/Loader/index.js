@@ -1,15 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 const Loading = () => {
-  const [showText, setShowText] = useState(false);
-
-  // useEffect(() => {
-  //   const timer = setTimeout(() => {
-  //     setShowText(true);
-  //   }, 2000); // Adjust the delay time as needed (2000ms = 2 seconds)
-  //   return () => clearTimeout(timer);
-  // }, []);
-
   return (
     <>
       <div style={{ height: "100vh", background: "#fff" }}>

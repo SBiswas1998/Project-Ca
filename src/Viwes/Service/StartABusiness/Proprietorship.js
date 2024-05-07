@@ -1,13 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { Footer } from "../../../components/Layout";
-import CommonAboutSection from "../../../components/CommonAboutSection";
-import { ProprietorshipAboutText } from "../../../constants/Paragram";
 import CommonCard from "../../../components/Card/CommonCard";
 import { ProprietorshipCardText } from "../../../constants/Paragram";
 import QuickEnquiryFrom from "../../../components/Forms/QuickEnquiryFrom";
 import ResHeader from "../../../components/ResponsiveMemu/Header";
-import TitleSection from "../../../components/TitleSection";
-import OtherPageLoader from "../../../components/Loader/OtherPageLoader";
 
 const Proprietorship = () => {
   const [cardtext1, setCardText1] = useState("");
@@ -15,7 +11,6 @@ const Proprietorship = () => {
   const [cardtext3, setCardText3] = useState("");
   const [cardtext4, setCardText4] = useState("");
   const [cardtext5, setCardText5] = useState("");
-  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     if (ProprietorshipCardText) {
@@ -26,22 +21,13 @@ const Proprietorship = () => {
       setCardText5(ProprietorshipCardText[4]?.Easy_to);
     }
   }, [ProprietorshipCardText]);
-  useEffect(() => {
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 3000); // 3 seconds
-  }, []);
+  
 
   return (
     <>
      <ResHeader />
           
           <QuickEnquiryFrom />
-          {/* <CommonAboutSection
-            text={ProprietorshipAboutText}
-            title="Proprietor"
-            span="ship"
-          /> */}
           <CommonCard
             cardtilte="Reasons to Register a"
             cardspan="Proprietorship Firm"

@@ -1,11 +1,9 @@
 import React from "react";
 import { Footer } from "../components/Layout";
 import ResHeader from "../components/ResponsiveMemu/Header";
-import banner from "../assets/images/polocies-banner.jpeg";
 import CommonAboutSection from "../components/CommonAboutSection";
 import { PrivacyPolicyAboutText } from "../constants/Paragram";
 import { Col, Container, Row } from "react-bootstrap";
-import TitleSection from "../components/TitleSection";
 
 const PrivacyPolicy = () => {
   return (

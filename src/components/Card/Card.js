@@ -10,7 +10,6 @@ import { Link } from "react-router-dom";
 import { faFileCircleCheck } from "@fortawesome/free-solid-svg-icons";
 import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
 import { faSackDollar } from '@fortawesome/free-solid-svg-icons';
-// import { faCircleExclamationCheck } from '@fortawesome/free-solid-svg-icons';
 
 import { faCircleQuestion } from "@fortawesome/free-solid-svg-icons";
 
@@ -18,32 +17,6 @@ import { faCircleQuestion } from "@fortawesome/free-solid-svg-icons";
 const Card = () => {
   return (
     <div className="grid-container">
-      {/* <div className="card-container">
-        <div className="card">
-          <a href="/service/start_a_business/proprietorship">
-            <div className="card--display">
-              <FontAwesomeIcon
-                icon={faBuilding}
-                size="xl"
-                style={{ color: "#05044D"}}
-              />
-              <h2>Start A Business</h2>
-            </div>
-              
-            <div className="card--hover">
-              <h2>Start A Business</h2>
-              <p>
-                Starting a company or setting up a business is not an easy task.
-                Therefore, at Purminder Kaur & Associates we offer solutions for
-                all clients.
-              </p>
-              <p className="link">View More</p>
-            </div>
-          </a>
-          <div className="card--border"></div>
-        </div>
-      </div> */}
-
       <div className="card-container">
         <div className="card">
           <Link to="/service/registration/proprietorship">
