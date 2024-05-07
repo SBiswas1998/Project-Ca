@@ -5,8 +5,6 @@ import TitleSection from "../../../components/TitleSection";
 import QuickEnquiryFrom from "../../../components/Forms/QuickEnquiryFrom";
 import ResHeader from "../../../components/ResponsiveMemu/Header";
 
-
-
 const SalePurchaseProperty = () => {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -18,16 +16,10 @@ const SalePurchaseProperty = () => {
 
   return (
     <>
-      {isLoading ? (
-        <OtherPageLoader /> // Display loader here
-      ) : (
-        <>
-          <ResHeader />
-          <TitleSection text="Sale and Purchase Property" />
-          <QuickEnquiryFrom />
-          <Footer />
-        </>
-      )}
+      <ResHeader />
+      text="Sale and Purchase Property" />
+      <QuickEnquiryFrom />
+      <Footer />
     </>
   );
 };

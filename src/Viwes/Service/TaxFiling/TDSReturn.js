@@ -32,7 +32,6 @@ const TDSReturn = () => {
   return (
     <>
       <ResHeader />
-      <TitleSection text="TDS Return"/>
       <QuickEnquiryFrom />
       <CommonAboutSection text={TDSReturnAboutText} title="TDS" span="Return" />
       <CommonCard

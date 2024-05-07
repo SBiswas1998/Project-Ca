@@ -5,8 +5,6 @@ import TitleSection from "../../../components/TitleSection";
 import QuickEnquiryFrom from "../../../components/Forms/QuickEnquiryFrom";
 import ResHeader from "../../../components/ResponsiveMemu/Header";
 
-
-
 const BusinessGrowth = () => {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -18,16 +16,10 @@ const BusinessGrowth = () => {
 
   return (
     <>
-      {isLoading ? (
-        <OtherPageLoader /> // Display loader here
-      ) : (
-        <>
-          <ResHeader />
-          <TitleSection text="Business Growth" />
-          <QuickEnquiryFrom />
-          <Footer />
-        </>
-      )}
+      <ResHeader />
+      text="Business Growth" />
+      <QuickEnquiryFrom />
+      <Footer />
     </>
   );
 };

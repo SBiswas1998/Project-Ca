@@ -7,10 +7,11 @@ const Dropdown = ({ submenus, dropdown, depthLevel }) => {
   return (
     <ul className={`dropdown ${dropdownClass} ${dropdown ? "show" : ""}`}>
       {submenus.map((submenu, index) => (
-        <MenuItems items={submenu} key={index} depthLevel={depthLevel} />
+           <MenuItems items={submenu} depthLevel={depthLevel} />
       ))}
     </ul>
   );
 };
 
 export default Dropdown;
+

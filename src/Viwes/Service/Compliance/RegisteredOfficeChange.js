@@ -11,7 +11,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import ResHeader from "../../../components/ResponsiveMemu/Header";
-import TitleSection from "../../../components/TitleSection"
+import TitleSection from "../../../components/TitleSection";
 
 const RegisteredOfficeChange = () => {
   const [cardtext1, setCardText1] = useState("");
@@ -32,7 +32,6 @@ const RegisteredOfficeChange = () => {
   return (
     <>
       <ResHeader />
-      <TitleSection text="Registered Office Changes"/>
       <QuickEnquiryFrom />
       <CommonAboutSection
         text={RegisteredOfficeChangeAboutText}

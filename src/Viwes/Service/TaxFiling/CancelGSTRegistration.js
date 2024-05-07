@@ -32,7 +32,6 @@ const CancelGSTRegistration = () => {
   return (
     <>
       <ResHeader />
-      <TitleSection text="Cancel GST Registration"/>
       <QuickEnquiryFrom />
       <CommonAboutSection
         text={CancelGSTRegistrationAbout}

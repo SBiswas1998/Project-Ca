@@ -76,7 +76,10 @@ const MenuItems = ({ items, depthLevel }) => {
           />
         </>
       ) : (
-        <Link to={items.url}>{items.title}</Link>
+        <>
+          <Link to={items.url}>{items.title}</Link>
+        </>
+        
       )}
     </li>
   );

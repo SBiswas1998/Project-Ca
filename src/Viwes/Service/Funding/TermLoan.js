@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Footer} from "../../../components/Layout";
+import { Footer } from "../../../components/Layout";
 import CommonAboutSection from "../../../components/CommonAboutSection";
 import CommonCard from "../../../components/Card/CommonCard";
 import QuickEnquiryFrom from "../../../components/Forms/QuickEnquiryFrom";
@@ -12,7 +12,6 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import ResHeader from "../../../components/ResponsiveMemu/Header";
 import TitleSection from "../../../components/TitleSection";
-
 
 const TermLoan = () => {
   const [cardtext1, setCardText1] = useState("");
@@ -34,7 +33,7 @@ const TermLoan = () => {
   return (
     <>
       <ResHeader />
-      <TitleSection text="Term Loan" />
+      
       <QuickEnquiryFrom />
       <CommonAboutSection text={TermLoanAboutText} title="Term" span="Lone" />
       <CommonCard

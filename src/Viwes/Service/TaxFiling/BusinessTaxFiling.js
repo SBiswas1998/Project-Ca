@@ -31,10 +31,7 @@ const BusinessTaxFiling = () => {
   return (
     <>
       <ResHeader />
-      <BreadcrumbExample text="Business Tax Filing"/>
-      {/* <CommonBanner text="Business Tax Filing" src={banner} /> */}
       <QuickEnquiryFrom />
-
       <CommonAboutSection
         text={BusinessTaxFilingAboutText}
         title="Business Tax"

@@ -37,12 +37,7 @@ const OnePersonCompany = () => {
 
   return (
     <>
-      {isLoading ? (
-        <OtherPageLoader /> // Display loader here
-      ) : (
-        <>
-          <ResHeader />
-          <TitleSection text="One Person Company" />
+                <ResHeader />
           <QuickEnquiryFrom />
           <CommonAboutSection
             text={OnePersonCompanyAcboutText}
@@ -64,8 +59,6 @@ const OnePersonCompany = () => {
             cardtext5={cardtext5}
           />
           <Footer />
-        </>
-      )}
     </>
   );
 };

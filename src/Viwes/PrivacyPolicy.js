@@ -1,24 +1,21 @@
 import React from "react";
-import { Footer, Topbar } from "../components/Layout";
+import { Footer } from "../components/Layout";
 import ResHeader from "../components/ResponsiveMemu/Header";
-import CommonBanner from "../components/CommonBanner";
 import banner from "../assets/images/polocies-banner.jpeg";
 import CommonAboutSection from "../components/CommonAboutSection";
 import { PrivacyPolicyAboutText } from "../constants/Paragram";
 import { Col, Container, Row } from "react-bootstrap";
 import TitleSection from "../components/TitleSection";
 
-
 const PrivacyPolicy = () => {
   return (
-    <>  
-      <ResHeader/>
-      <TitleSection text="Privacy Policy" src={banner} />
+    <>
+      <ResHeader />
+      text="Privacy Policy" src={banner} />
       <CommonAboutSection
         text={PrivacyPolicyAboutText}
         title="Privacy Policy"
         span={`for <a href="https://capka.co.in/" target="_blank" style="text-decoration: none;">(www.capka.co.in)</a>`}
-
       />
       <section className="hm-about-sec">
         <Container>

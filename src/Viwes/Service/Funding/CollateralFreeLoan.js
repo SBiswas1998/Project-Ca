@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Footer, } from "../../../components/Layout";
+import { Footer } from "../../../components/Layout";
 import CommonAboutSection from "../../../components/CommonAboutSection";
 import CommonCard from "../../../components/Card/CommonCard";
 import QuickEnquiryFrom from "../../../components/Forms/QuickEnquiryFrom";
@@ -33,9 +33,7 @@ const CollateralFreeLoan = () => {
   return (
     <>
       <ResHeader />
-      <TitleSection text="Collateral Free Loan" src={banner} />
       <QuickEnquiryFrom />
-
       <CommonAboutSection
         text={CollateralFreeLoanAboutText}
         title="Collateral"

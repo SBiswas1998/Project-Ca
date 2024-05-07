@@ -5,8 +5,6 @@ import TitleSection from "../../../components/TitleSection";
 import QuickEnquiryFrom from "../../../components/Forms/QuickEnquiryFrom";
 import ResHeader from "../../../components/ResponsiveMemu/Header";
 
-
-
 const CapitalAssessment = () => {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -18,16 +16,9 @@ const CapitalAssessment = () => {
 
   return (
     <>
-      {isLoading ? (
-        <OtherPageLoader /> // Display loader here
-      ) : (
-        <>
-          <ResHeader />
-          <TitleSection text="Capital Assessment" />
-          <QuickEnquiryFrom />
-          <Footer />
-        </>
-      )}
+      <ResHeader />
+      <QuickEnquiryFrom />
+      <Footer />
     </>
   );
 };

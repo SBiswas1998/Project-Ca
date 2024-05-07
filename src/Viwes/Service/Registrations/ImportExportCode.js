@@ -35,7 +35,6 @@ const ImportExportCode = () => {
 
   return (
     <>
-      <Topbar />
       <ResHeader />
       <CommonBanner text="MSME Registration" src={banner} />
       <QuickEnquiryForm />

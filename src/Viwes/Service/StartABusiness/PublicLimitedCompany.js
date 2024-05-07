@@ -11,16 +11,13 @@ import ResHeader from "../../../components/ResponsiveMemu/Header";
 import TitleSection from "../../../components/TitleSection";
 import OtherPageLoader from "../../../components/Loader/OtherPageLoader";
 
-
 const PublicLimitedCompany = () => {
   const [cardtext1, setCardText1] = useState("");
   const [cardtext2, setCardText2] = useState("");
   const [cardtext3, setCardText3] = useState("");
   const [cardtext4, setCardText4] = useState("");
-  const [cardtext5, setCardText5] = useState("");  
+  const [cardtext5, setCardText5] = useState("");
   const [isLoading, setIsLoading] = useState(true);
-
-
 
   useEffect(() => {
     if (PublicLimitedCompanyCardText) {
@@ -44,7 +41,7 @@ const PublicLimitedCompany = () => {
       ) : (
         <>
           <ResHeader />
-          <TitleSection text="Public Limited Company" />
+          text="Public Limited Company" />
           <QuickEnquiryFrom />
           <CommonAboutSection
             text={PublicLimitedCompanyAboutText}
@@ -65,7 +62,6 @@ const PublicLimitedCompany = () => {
             card5="Borrowing Capacity"
             cardtext5={cardtext5}
           />
-
           <Footer />
         </>
       )}

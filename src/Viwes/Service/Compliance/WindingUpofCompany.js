@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Footer,Topbar } from "../../../components/Layout";
+import { Footer, Topbar } from "../../../components/Layout";
 import CommonBanner from "../../../components/CommonBanner";
 import CommonAboutSection from "../../../components/CommonAboutSection";
 import CommonCard from "../../../components/Card/CommonCard";
@@ -14,7 +14,6 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import ResHeader from "../../../components/ResponsiveMemu/Header";
 import TitleSection from "../../../components/TitleSection";
-
 
 const WindingUpofCompany = () => {
   const [cardtext1, setCardText1] = useState("");
@@ -35,7 +34,6 @@ const WindingUpofCompany = () => {
   return (
     <>
       <ResHeader />
-      <TitleSection text="Winding Up of Company" />
       <QuickEnquiryFrom />
       <CommonAboutSection
         text={WindingUpofCompanyAboutText}

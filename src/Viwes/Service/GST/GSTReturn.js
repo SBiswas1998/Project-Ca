@@ -5,7 +5,6 @@ import TitleSection from "../../../components/TitleSection";
 import QuickEnquiryFrom from "../../../components/Forms/QuickEnquiryFrom";
 import ResHeader from "../../../components/ResponsiveMemu/Header";
 
-
 const GSTReturn = () => {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -17,16 +16,9 @@ const GSTReturn = () => {
 
   return (
     <>
-      {isLoading ? (
-        <OtherPageLoader /> // Display loader here
-      ) : (
-        <>
-          <ResHeader />
-          <TitleSection text="GST Return" />
-          <QuickEnquiryFrom />
-          <Footer />
-        </>
-      )}
+      <ResHeader />
+      <QuickEnquiryFrom />
+      <Footer />
     </>
   );
 };

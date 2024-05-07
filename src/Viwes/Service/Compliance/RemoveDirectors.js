@@ -13,7 +13,6 @@ import Col from "react-bootstrap/Col";
 import ResHeader from "../../../components/ResponsiveMemu/Header";
 import TitleSection from "../../../components/TitleSection";
 
-
 const RemoveDirectors = () => {
   const [cardtext1, setCardText1] = useState("");
   const [cardtext2, setCardText2] = useState("");
@@ -33,7 +32,6 @@ const RemoveDirectors = () => {
   return (
     <>
       <ResHeader />
-      <TitleSection text="Remove Directors" />
       <QuickEnquiryFrom />
       <CommonAboutSection
         text={RemoveDirectorsAboutText}

@@ -4,8 +4,10 @@ import { useDispatch, useSelector } from "react-redux";
 import { registerUser, verifyOtp } from "../../actions/auth";
 import toast from "../common/toast";
 import contactimg from "../../assets/images/Contact us-pana.png";
+import TitleSection from "../TitleSection";
 
-const QuickEnquiryForm = () => {
+
+const QuickEnquiryForm = ({title}) => {
   const dispatch = useDispatch();
 
   const [name, setName] = useState("");
@@ -92,7 +94,7 @@ const QuickEnquiryForm = () => {
               <Row>
                 <Col md={12}>
                   <h2>
-                    Quick<span>Enquiry</span>
+                    Quick<span>Enquiry </span> 
                   </h2>
                   <p className="text-center">
                     Please send us your query and we'll be happy to assist you

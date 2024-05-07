@@ -32,7 +32,6 @@ const ChangeCompanyName = () => {
   return (
     <>
       <ResHeader />
-      <TitleSection text="Change Company Name"/>
       <QuickEnquiryFrom />
       <CommonAboutSection
         text={ChangeCompanyNameAboutText}

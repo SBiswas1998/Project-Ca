@@ -5,8 +5,6 @@ import TitleSection from "../../../components/TitleSection";
 import QuickEnquiryFrom from "../../../components/Forms/QuickEnquiryFrom";
 import ResHeader from "../../../components/ResponsiveMemu/Header";
 
-
-
 const NoticeSCOTIN = () => {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -18,16 +16,9 @@ const NoticeSCOTIN = () => {
 
   return (
     <>
-      {isLoading ? (
-        <OtherPageLoader /> // Display loader here
-      ) : (
-        <>
-          <ResHeader />
-          <TitleSection text="Notice Scotin" />
-          <QuickEnquiryFrom />
-          <Footer />
-        </>
-      )}
+      <ResHeader />
+      <QuickEnquiryFrom />
+      <Footer />
     </>
   );
 };

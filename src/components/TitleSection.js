@@ -4,7 +4,7 @@ const TitleSection = ({text}) => {
   return (
     <>
       <div className="title-section">
-        <h2 className="text-center">{text}</h2>
+        <h2 className="">{text}</h2>
       </div>
     </>
   );

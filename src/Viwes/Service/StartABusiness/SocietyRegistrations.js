@@ -5,7 +5,6 @@ import TitleSection from "../../../components/TitleSection";
 import QuickEnquiryFrom from "../../../components/Forms/QuickEnquiryFrom";
 import ResHeader from "../../../components/ResponsiveMemu/Header";
 
-
 const SocietyRegistrations = () => {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -22,7 +21,7 @@ const SocietyRegistrations = () => {
       ) : (
         <>
           <ResHeader />
-          <TitleSection text="Society Registrations" />
+          text="Society Registrations" />
           <QuickEnquiryFrom />
           <Footer />
         </>

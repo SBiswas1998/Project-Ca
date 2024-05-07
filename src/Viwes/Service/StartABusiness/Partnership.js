@@ -11,7 +11,6 @@ import ResHeader from "../../../components/ResponsiveMemu/Header";
 import TitleSection from "../../../components/TitleSection";
 import OtherPageLoader from "../../../components/Loader/OtherPageLoader";
 
-
 const Partnership = () => {
   const [cardtext1, setCardText1] = useState("");
   const [cardtext2, setCardText2] = useState("");
@@ -42,7 +41,7 @@ const Partnership = () => {
       ) : (
         <>
           <ResHeader />
-          <TitleSection text="Partnership" />
+          text="Partnership" />
           <QuickEnquiryFrom />
           <CommonAboutSection
             text={PartnershipAboutText}

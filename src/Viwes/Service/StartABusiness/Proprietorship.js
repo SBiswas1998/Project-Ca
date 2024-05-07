@@ -39,7 +39,7 @@ const Proprietorship = () => {
       ) : (
         <>
           <ResHeader />
-          <TitleSection text="Proprietorship" />
+          text="Proprietorship" />
           <QuickEnquiryFrom />
           <CommonAboutSection
             text={ProprietorshipAboutText}

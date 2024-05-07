@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Footer,Topbar } from "../../../components/Layout";
+import { Footer, Topbar } from "../../../components/Layout";
 import CommonBanner from "../../../components/CommonBanner";
 import CommonAboutSection from "../../../components/CommonAboutSection";
 import CommonCard from "../../../components/Card/CommonCard";
@@ -13,7 +13,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import ResHeader from "../../../components/ResponsiveMemu/Header";
-import TitleSection from "../../../components/TitleSection"
+import TitleSection from "../../../components/TitleSection";
 
 const CreditScoreCheck = () => {
   const [cardtext1, setCardText1] = useState("");
@@ -35,7 +35,6 @@ const CreditScoreCheck = () => {
   return (
     <>
       <ResHeader />
-      <TitleSection text="Credit Score Check"/>
       <QuickEnquiryFrom />
       <CommonAboutSection
         text={CreditScoreCheckAboutText}

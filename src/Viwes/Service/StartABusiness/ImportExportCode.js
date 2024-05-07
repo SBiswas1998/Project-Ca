@@ -5,7 +5,6 @@ import TitleSection from "../../../components/TitleSection";
 import QuickEnquiryFrom from "../../../components/Forms/QuickEnquiryFrom";
 import ResHeader from "../../../components/ResponsiveMemu/Header";
 
-
 const ImportExportCode = () => {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -17,16 +16,9 @@ const ImportExportCode = () => {
 
   return (
     <>
-      {isLoading ? (
-        <OtherPageLoader /> // Display loader here
-      ) : (
-        <>
-          <ResHeader />
-          <TitleSection text="Import Export Code" />
-          <QuickEnquiryFrom />
-          <Footer />
-        </>
-      )}
+      <ResHeader />
+      <QuickEnquiryFrom />
+      <Footer />
     </>
   );
 };

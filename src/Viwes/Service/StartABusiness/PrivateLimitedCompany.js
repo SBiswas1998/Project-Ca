@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Footer, } from "../../../components/Layout";
+import { Footer } from "../../../components/Layout";
 import CommonAboutSection from "../../../components/CommonAboutSection";
 import {
   PrivateLimitedCompanyAboutText,
@@ -42,7 +42,7 @@ const PrivateLimitedCompany = () => {
       ) : (
         <>
           <ResHeader />
-          <TitleSection text="Private Limited Company" />
+          text="Private Limited Company" />
           <QuickEnquiryFrom />
           <CommonAboutSection
             text={PrivateLimitedCompanyAboutText}

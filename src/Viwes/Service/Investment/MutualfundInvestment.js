@@ -5,8 +5,6 @@ import TitleSection from "../../../components/TitleSection";
 import QuickEnquiryFrom from "../../../components/Forms/QuickEnquiryFrom";
 import ResHeader from "../../../components/ResponsiveMemu/Header";
 
-
-
 const MutualfundInvestment = () => {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -18,16 +16,10 @@ const MutualfundInvestment = () => {
 
   return (
     <>
-      {isLoading ? (
-        <OtherPageLoader /> // Display loader here
-      ) : (
-        <>
-          <ResHeader />
-          <TitleSection text="Mutual fund Investment" />
-          <QuickEnquiryFrom />
-          <Footer />
-        </>
-      )}
+      <ResHeader />
+     
+      <QuickEnquiryFrom />
+      <Footer />
     </>
   );
 };

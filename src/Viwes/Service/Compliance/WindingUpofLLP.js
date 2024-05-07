@@ -13,7 +13,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import ResHeader from "../../../components/ResponsiveMemu/Header";
-import TitleSection from "../../../components/TitleSection"
+import TitleSection from "../../../components/TitleSection";
 
 const WindingUpofLLP = () => {
   const [cardtext1, setCardText1] = useState("");
@@ -33,9 +33,8 @@ const WindingUpofLLP = () => {
   }, [WindingUpofLLPCardText]);
   return (
     <>
-  
       <ResHeader />
-      <TitleSection text="Winding Up of LLP"/>
+     
       <QuickEnquiryFrom />
       <CommonAboutSection
         text={WindingUpofLLPAboutText}

@@ -5,8 +5,6 @@ import TitleSection from "../../../components/TitleSection";
 import QuickEnquiryFrom from "../../../components/Forms/QuickEnquiryFrom";
 import ResHeader from "../../../components/ResponsiveMemu/Header";
 
-
-
 const Documentcenter = () => {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -23,7 +21,7 @@ const Documentcenter = () => {
       ) : (
         <>
           <ResHeader />
-          <TitleSection text="Document Center" />
+          text="Document Center" />
           <QuickEnquiryFrom />
           <Footer />
         </>

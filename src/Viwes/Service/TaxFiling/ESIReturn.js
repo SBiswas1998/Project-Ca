@@ -36,7 +36,6 @@ const ESIReturn = () => {
   return (
     <>
       <ResHeader />
-      <TitleSection  text="ESI Return"/>
       <QuickEnquiryFrom />
       <CommonAboutSection text={ESIReturnAboutText} title="ESI" span="Return" />
       <CommonCard

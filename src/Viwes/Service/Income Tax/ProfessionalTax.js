@@ -37,36 +37,28 @@ const ProfessionalTax = () => {
 
   return (
     <>
-      {isLoading ? (
-        <OtherPageLoader /> // Display loader here
-      ) : (
-        <>
-          <ResHeader />
-          <TitleSection text="Tan & PAN Registration" />
-          <QuickEnquiryForm />
-          <CommonAboutSection
-            text={ProfessionalTaxAboutText}
-            title="Professional"
-            span="Tax"
-          />
-          <CommonCard
-            cardtilte="Reasons to Obtain"
-            cardspan="Professional Tax Registration"
-            card1="Statutory Requirement"
-            card1text={cardtext1}
-            crad2="Avoid Penalty"
-            cardtext2={cardtext2}
-            card3="Tax Deductible"
-            cardtext3={cardtext3}
-            card4="Easy Compliance"
-            cardtext4={cardtext4}
-            card5="State Government Tax"
-            cardtext5={cardtext5}
-          />
-
-          <Footer />
-        </>
-      )}
+      <ResHeader />
+      <QuickEnquiryForm />
+      <CommonAboutSection
+        text={ProfessionalTaxAboutText}
+        title="Professional"
+        span="Tax"
+      />
+      <CommonCard
+        cardtilte="Reasons to Obtain"
+        cardspan="Professional Tax Registration"
+        card1="Statutory Requirement"
+        card1text={cardtext1}
+        crad2="Avoid Penalty"
+        cardtext2={cardtext2}
+        card3="Tax Deductible"
+        cardtext3={cardtext3}
+        card4="Easy Compliance"
+        cardtext4={cardtext4}
+        card5="State Government Tax"
+        cardtext5={cardtext5}
+      />
+      <Footer />
     </>
   );
 };

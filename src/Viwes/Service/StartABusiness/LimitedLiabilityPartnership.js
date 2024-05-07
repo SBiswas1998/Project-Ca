@@ -57,12 +57,7 @@ const LimitedLiabilityPartnership = () => {
 
   return (
     <>
-    {isLoading ? (
-        <OtherPageLoader /> // Display loader here
-      ) : (
-        <>
-           <ResHeader />
-      <TitleSection text="Limited Liability Partnership"/>
+    <ResHeader />
       <QuickEnquiryFrom />
       <CommonAboutSection
         text={LimitedLiabilityPartnershipAcboutText}
@@ -134,9 +129,7 @@ const LimitedLiabilityPartnership = () => {
         </Container>
       </section>
       <Footer />
-        </>
-      )}
- 
+
     </>
   );
 };

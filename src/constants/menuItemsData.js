@@ -130,7 +130,7 @@ export const menuItemsData = [
         url: "/service/auditing",
       },
       {
-        title: "Compliance",
+        title: "ROC Statutory Compliance",
         submenu: [
           {
             title: "Change Company Name",
