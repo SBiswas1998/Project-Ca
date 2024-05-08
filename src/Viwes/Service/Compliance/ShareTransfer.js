@@ -33,11 +33,11 @@ const ShareTransfer = () => {
     <>
       <ResHeader />
       <QuickEnquiryFrom />
-      <CommonAboutSection
+      {/* <CommonAboutSection
         text={ShareTransferAboutText}
         title="Share"
         span="Transfer"
-      />
+      /> */}
       <CommonCard
         cardtilte="Reasons to Share"
         cardspan="Transfer"

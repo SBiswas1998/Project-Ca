@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import WhyUsCard from "./Card/WhyUsCard";
 
 const WhyUs = () => {
   const [expanded, setExpanded] = useState(false);
@@ -21,7 +22,7 @@ const WhyUs = () => {
           </Col>
         </Row>
         <Row className="justify-content-md-center">
-          <Col xs={12} md={12} lg={12}>
+          <Col xs={12} md={12} lg={12} className="mt-5 what-us-text">
             <p>
               Just as most people entrust their cars to professional mechanics
               for maintenance, small businesses require the expertise of
@@ -31,6 +32,8 @@ const WhyUs = () => {
               one roof to address all your business's legal and financial needs.
             </p>
           </Col>
+          <WhyUsCard />
+          {/*
           <Col xs={12} md={6} lg={4}>
             <div className="blog-1">
               <h5>Keep Your Business Healthy by regular monitoring</h5>
@@ -110,16 +113,9 @@ const WhyUs = () => {
                 your business. However, we take a step back and objectively look
                 at the big picture to find the best way to support the longevity
                 of your business.
-                {/* The life of a business owner can be isolating, especially when you’re
-                left with a pile of receipts and invoices to plow through at
-                the end of the month or the year. It doesn’t have to be that
-                way. As the saying goes,’Many hands make light work’; and
-                partnering with Purminder Kaur & Associates who has a
-                qualified and efficient team with expertise to guide you
-                through your journey will set you up for lasting success. */}
               </p>
             </div>
-          </Col>
+          </Col> */}
         </Row>
       </Container>
     </section>

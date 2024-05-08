@@ -59,11 +59,11 @@ const LimitedLiabilityPartnership = () => {
     <>
     <ResHeader />
       <QuickEnquiryFrom />
-      <CommonAboutSection
+      {/* <CommonAboutSection
         text={LimitedLiabilityPartnershipAcboutText}
         title="Limited Liability"
         span="Partnership"
-      />
+      /> */}
       <CommonCard
         cardtilte="Reasons to Register a Limited"
         cardspan="Liability Partnership"

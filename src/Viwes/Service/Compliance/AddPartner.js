@@ -33,11 +33,11 @@ const AddPartner = () => {
     <>
       <ResHeader />
       <QuickEnquiryFrom />
-      <CommonAboutSection
+      {/* <CommonAboutSection
         text={AddPartnerAboutText}
         title="Add"
         span="Partner"
-      />
+      /> */}
       <CommonCard
         cardtilte="Duties and Rights"
         cardspan="of a LLP Partner"

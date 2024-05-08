@@ -2,7 +2,6 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Card from "../Card/Card";
 import SupportCard from "../Card/SupportCard";
 
 const Supportsection = () => {
@@ -13,7 +12,10 @@ const Supportsection = () => {
           <Row>
             <Col className="hm-services-title">
               <h2>
-                Reason To Choose<span><br/> Purminder Kaur & Associates</span>
+                Reason To Choose
+                <span>
+                  <br /> Purminder Kaur & Associates
+                </span>
               </h2>
               <p>
                 For over a decade, we've fostered trust and sustainable
@@ -26,10 +28,12 @@ const Supportsection = () => {
                 commitment year after year.
               </p>
             </Col>
-
-            <Col>
+            <Col xs lg="7">
               <SupportCard />
             </Col>
+          </Row>
+          <Row>
+            
           </Row>
         </Container>
       </section>

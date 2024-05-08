@@ -39,11 +39,11 @@ const PublicLimitedCompany = () => {
       <ResHeader />
          
          <QuickEnquiryFrom />
-         <CommonAboutSection
+         {/* <CommonAboutSection
            text={PublicLimitedCompanyAboutText}
            title="Public Limited"
            span="Company"
-         />
+         /> */}
          <CommonCard
            cardtilte="Reasons to Register a Limited"
            cardspan="Company"

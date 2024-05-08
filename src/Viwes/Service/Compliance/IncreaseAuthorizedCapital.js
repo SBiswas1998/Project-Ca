@@ -35,11 +35,11 @@ const IncreaseAuthorizedCapital = () => {
     <>
       <ResHeader />
       <QuickEnquiryFrom />
-      <CommonAboutSection
+      {/* <CommonAboutSection
         text={IncreaseAuthorizedCapitalAboutText}
         title="Increase Authorized"
         span="Capital"
-      />
+      /> */}
       <CommonCard
         cardtilte="Reasons to Increase "
         cardspan="In Authorized Capital"

@@ -37,28 +37,28 @@ const OnePersonCompany = () => {
 
   return (
     <>
-                <ResHeader />
-          <QuickEnquiryFrom />
-          <CommonAboutSection
+      <ResHeader />
+      <QuickEnquiryFrom />
+      {/* <CommonAboutSection
             text={OnePersonCompanyAcboutText}
             title="One Person"
             span="Company"
-          />
-          <CommonCard
-            cardtilte="Reasons to Register a"
-            cardspan="One Person Company"
-            card1="Single Promoter"
-            card1text={cardtext1}
-            crad2="Uninterrupted Existence"
-            cardtext2={cardtext2}
-            card3="Easy Transferability"
-            cardtext3={cardtext3}
-            card4="Borrowing Capacity"
-            cardtext4={cardtext4}
-            card5="Owning Property"
-            cardtext5={cardtext5}
-          />
-          <Footer />
+          /> */}
+      <CommonCard
+        cardtilte="Reasons to Register a"
+        cardspan="One Person Company"
+        card1="Single Promoter"
+        card1text={cardtext1}
+        crad2="Uninterrupted Existence"
+        cardtext2={cardtext2}
+        card3="Easy Transferability"
+        cardtext3={cardtext3}
+        card4="Borrowing Capacity"
+        cardtext4={cardtext4}
+        card5="Owning Property"
+        cardtext5={cardtext5}
+      />
+      <Footer />
     </>
   );
 };

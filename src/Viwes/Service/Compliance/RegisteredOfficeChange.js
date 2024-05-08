@@ -33,11 +33,11 @@ const RegisteredOfficeChange = () => {
     <>
       <ResHeader />
       <QuickEnquiryFrom />
-      <CommonAboutSection
+      {/* <CommonAboutSection
         text={RegisteredOfficeChangeAboutText}
         title="Registered Office"
         span="Changes"
-      />
+      /> */}
       <CommonCard
         cardtilte="Reasons to Registered"
         cardspan="Office Changes"

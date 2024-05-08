@@ -39,11 +39,11 @@ const Partnership = () => {
      <ResHeader />
           
           <QuickEnquiryFrom />
-          <CommonAboutSection
+          {/* <CommonAboutSection
             text={PartnershipAboutText}
             title="Partner"
             span="ship"
-          />
+          /> */}
           <CommonCard
             cardtilte="Reasons to Register a"
             cardspan="Partnership"

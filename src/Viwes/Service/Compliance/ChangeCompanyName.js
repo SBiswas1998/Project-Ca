@@ -33,11 +33,11 @@ const ChangeCompanyName = () => {
     <>
       <ResHeader />
       <QuickEnquiryFrom />
-      <CommonAboutSection
+      {/* <CommonAboutSection
         text={ChangeCompanyNameAboutText}
         title="Change Company"
         span="Name"
-      />
+      /> */}
       <CommonCard
         cardtilte="Reasons to Company"
         cardspan="Name Change"

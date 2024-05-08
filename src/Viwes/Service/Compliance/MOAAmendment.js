@@ -33,11 +33,11 @@ const MOAAmendment = () => {
     <>
       <ResHeader />
       <QuickEnquiryFrom />
-      <CommonAboutSection
+      {/* <CommonAboutSection
         text={MOAAmendmentAboutText}
         title="MOA"
         span="Amendment"
-      />
+      /> */}
       <CommonCard
         cardtilte="Major Clauses in"
         cardspan="Memorandum of Association"

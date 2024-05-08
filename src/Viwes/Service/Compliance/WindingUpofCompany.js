@@ -35,11 +35,11 @@ const WindingUpofCompany = () => {
     <>
       <ResHeader />
       <QuickEnquiryFrom />
-      <CommonAboutSection
+      {/* <CommonAboutSection
         text={WindingUpofCompanyAboutText}
         title="Winding Up ofy"
         span="Company"
-      />
+      /> */}
       <CommonCard
         cardtilte="Reasons to Winding"
         cardspan="Up of a Company"

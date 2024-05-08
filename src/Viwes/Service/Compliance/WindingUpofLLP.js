@@ -36,13 +36,13 @@ const WindingUpofLLP = () => {
       <ResHeader />
      
       <QuickEnquiryFrom />
-      <CommonAboutSection
+      {/* <CommonAboutSection
         text={WindingUpofLLPAboutText}
         title="Winding Up"
         span="of LLP"
         subtext={WindingUpofLLPAboutSubText}
         listItem={WindingUpofLLPListItems}
-      />
+      /> */}
       <CommonCard
         cardtilte="Reasons to Wind"
         cardspan="Up LLP"

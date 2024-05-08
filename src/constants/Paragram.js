@@ -51,25 +51,20 @@ export const ProprietorshipAboutText = [
 
 export const ProprietorshipCardText = [
   {
-    Easy: `Starting a proprietorship is simple with minimal registration. However, opening a bank account or obtaining a payment 
-    gateway post-startup can be challenging due to additional registrations like GST, Shop Establishment, and MSME.`,
+    Easy: `Starting a proprietorship is easy, but banking and payment gateway setup post-startup can be challenging due to GST, Shop Establishment, and MSME registrations.`,
   },
   {
-    Business_Name:`A proprietorship can adopt any name not infringing on registered trademarks. However, without registration, 
-    others may also use the same name unless trademarked.`
+    Business_Name:`A proprietorship can choose any name not infringing on trademarks, but without registration, others may use it.`
   },
   {
-    Single_Promoter: `Proprietorship allows sole ownership and operation, unique among business entities. Registering a one-person 
-    company necessitates a nominee Director, while other entities like companies or LLPs require two or more promoters.`,
+    Single_Promoter: `Proprietorship permits sole ownership, unique in business. One-person company needs one nominee Director others require two or more promoters.`,
   },
   {
     Lower_Taxes: `Proprietorships with income under Rs. 5 lakhs are exempt from income tax, taxed as individuals. Yet, 
     they lack certain tax deductions, potentially raising tax liabilities, unlike companies or LLPs.`,
   },
   {
-    Easy_to: `The Proprietor and the proprietorship are one and the same for all legal purposes. Hence, there is no formality 
-    for winding up or closing a proprietorship. In most cases, to close a proprietorship, only the tax registrations 
-    obtained in the name of the proprietor must be cancelled.`,
+    Easy_to: `The proprietorship and proprietor are legally inseparable. Closing one requires canceling tax registrations.`,
   },
 ];
 
@@ -134,32 +129,25 @@ export const OnePersonCompanyAcboutText = [
 
 export const OnePersonCompanyCardText = [
   {
-    Single_Promoter: `One Person Company is the only type of corporate entity that can be started and operated by a single 
-        promoter with limited liability protection in India. A corporate form of legal entity in One Person Company ensures that 
-        the business has perpertual existence and easy ownership transferability.`,
+    Single_Promoter: `In India, a One Person Company is a unique corporate entity allowing single promoters limited liability protection.
+     This structure ensures perpetual existence and easy ownership transferability.`,
   },
   {
-    Uninterrupted_Existence: `A company has ‘perpetual succession’, meaning uninterrupted existence until it is legally 
-        dissolved. A company being a separate legal person, is unaffected by the death or other departure of any member and continues 
-        to be in existence irrespective of the changes in ownership.`,
+    Uninterrupted_Existence: `A company, with perpetual succession, remains unaffected by member changes, ensuring uninterrupted existence.`,
   },
 
   {
-    Easy_Transferability: `Ownership of a business can be easily transferred in a company by transferring shares. The signing, 
-        filing and transfer of share transfer form and share certificates is sufficient to transfer ownership of a company. In a one 
-        person company, the ownership can be transferred by altering the shareholding, directorship and nominee director information.`,
+    Easy_Transferability: `Ownership transfer in a company is swift via share transfer. Signed forms and certificates facilitate it. 
+    In one-person companies, altering shareholding, directorship, and nominee director suffices.`,
   },
 
   {
-    Borrowing_Capacity: `Banks and Financial Institutions prefer to provide funding to a company rather than partnership firms 
-        or proprietary concerns. However, a one person company cannot issue different types of equity security, as it can only be owned 
-        by one person at all times.`,
+    Borrowing_Capacity: `Banks favor funding companies over partnerships or sole proprietorships. However, one-person companies can't 
+    issue diverse equity due to sole ownership.`,
   },
 
   {
-    Owning_Property: `A company being an artificial person, can acquire, own, enjoy and alienate, property in its name. 
-        The property owned by a company could be machinery, building, intangible assets, land, residential property, factory, etc., 
-        Further, the nominee director cannot claim any ownership of the company while serving as a nominee director.`,
+    Owning_Property: `A company, as a legal entity, may own property such as machinery, buildings, and land. Nominee directors have no ownership rights.`,
   },
 ];
 
@@ -245,30 +233,24 @@ export const PrivateLimitedCompanyAboutText = [
 
 export const PrivateLimitedCompanyCardText = [
   {
-    Separate_Legal_Entity: `Private Limited Company is a legal entity and a juristic person established under the Companies Act. 
-        Hence, a company has a range of legal capacities including opening of a bank account, hiring of employees, taking on equity or 
-        obtaining licenses and more as an independent corporate entity. The members (Shareholders/Directors) of a company have no 
-        personal liability to the creditors of a company for company’s debts`,
+    Separate_Legal_Entity: `A Private Limited Company, under the Companies Act, has legal capacities like bank accounts, hiring, 
+    equity, licenses, with member liability protection.`,
   },
   {
-    Uninterrupted_Existence: `Private Limited Company has ‘perpetual succession’, meaning uninterrupted existence until it is 
-        legally dissolved. A company being a separate legal person, is unaffected by the death or other departure of any member and 
-        continues to be in existence irrespective of the changes in ownership.`,
+    Uninterrupted_Existence: `A Private Limited Company has perpetual succession, meaning uninterrupted existence regardless of ownership changes.`,
   },
   {
-    Easy_Transferability: `Ownership of a business can be easily transferred in a company by transferring shares. The signing, 
-        filing and transfer of share transfer form and share certificates is sufficient to transfer ownership of a company. In a 
-        private limited company, the consent of other shareholders maybe required to effect share transfers.`,
+    Easy_Transferability: `Shares transfer in a company facilitates ownership exchange. Signing, filing, and transferring share 
+    forms and certificates typically suffice. In private limited firms, shareholder consent might be necessary.`,
   },
   {
-    Borrowing_Capacity: `Private Limited Companies can raise equity funds in India. Companies can also issue equity shares, 
-        preference shares, debentures and accept deposits with RBI permission. Banks and Financial Institutions prefer to provide 
-        funding to a company rather than partnership firms or proprietary concerns.`,
+    Borrowing_Capacity: `Private Limited Companies in India can raise equity funds by issuing shares, preference shares, debentures, 
+    and accepting deposits with RBI approval. Banks and Financial Institutions favor funding such entities over partnerships or sole 
+    proprietorships.`,
   },
   {
-    Owning_Property: `Private Limited Company being an artificial person, can acquire, own, enjoy and alienate, property in its 
-        name. The property owned by a company could be machinery, building, intangible assets, land, residential property, factory,
-        , etc., No shareholder can make a claim upon the property of the company – as long as the company is a going concern`,
+    Owning_Property: `A Private Limited Company, as an artificial person, can own various assets like machinery, buildings, land, etc. 
+    Shareholders cannot claim its property, ensuring its integrity.`,
   },
 ];
 
@@ -1400,19 +1382,26 @@ export const TanRegistrationAboutText = [
 
 export const TanRegistrationCardText = [
   {
-    TAN: `PAN is a 10 character alpha-numeric code issued by the Income Tax Department for persons responsible for deducting or collecting tax at source. All most all for-profit entities and not-for-profit entities are required to obtain TAN`,
+    TAN: `PAN is a 10 character alpha-numeric code issued by the Income Tax Department for persons responsible for 
+    deducting or collecting tax at source. All most all for-profit entities and not-for-profit entities are required 
+    to obtain TAN.`,
   },
   {
-    TDS_Payments: `Tax Deducted at Source must be paid into authorized bank, quoting the TAN and using Challan 281. TDS during the preceding month must be paid before the 7th day of the following month.`,
+    TDS_Payments: `Tax Deducted at Source must be paid into authorized bank, quoting the TAN and using Challan 281. 
+    TDS during the preceding month must be paid before the 7th day of the following month.`,
   },
   {
-    TAN_Facilitation_Center: `Purminder Kaur & Associates is a authorized TAN facilitation center. Therefore, Purminder Kaur & Associates can help you obtain TAN hassle-free and quickly. Just send the TAN application along with the supporting documents and we will help you get your TAN quickly `,
+    TAN_Facilitation_Center: `Purminder Kaur & Associates is a authorized TAN facilitation center. Therefore, 
+    Purminder Kaur & Associates can help you obtain TAN hassle-free and quickly. Just send the TAN application along 
+    with the supporting documents and we will help you get your TAN quickly. `,
   },
   {
-    Proprietorship: `Salaried individuals are not required to deduct tax at source. However, individuals running a proprietorship are required to obtain TAN and deduct tax at source when required.`,
+    Proprietorship: `Salaried individuals are not required to deduct tax at source. However, individuals running a 
+    proprietorship are required to obtain TAN and deduct tax at source when required.`,
   },
   {
-    Validity: `Once a TAN is issued, it is valid for lifetime. However, TDS Filings must be made quarterly on the 15th day of July, October, January and May. Non-filing of TDS filings within the due date will attract a penalty.`,
+    Validity: `Once a TAN is issued, it is valid for lifetime. However, TDS Filings must be made quarterly on the 
+    15th day of July, October, January and May. Non-filing of TDS filings within the due date will attract a penalty.`,
   },
 ];
 

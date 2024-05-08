@@ -22,15 +22,10 @@ const CommonCard = ({
   cardtext7,
   card8,
   cardtext8,
-
-
 }) => {
-
-
-
   return (
     <>
-      <section className="hm-about-sec">
+      <section className="hm-services-sec">
         <Container>
           <Row>
             <Col className="hm-about-what-sec" xs={12} md={12} lg={12}>
@@ -39,8 +34,103 @@ const CommonCard = ({
               </h2>
             </Col>
           </Row>
-
           <div class="card-container">
+          <Row>
+            <Col  xs={12} md={3} lg={3}>
+              <a class="card1" href="#">
+                <h3>{card1}</h3>
+                <p class="small">{card1text}</p>
+                <div class="go-corner" href="#">
+                  <div class="go-arrow">→</div>
+                </div>
+              </a>
+            </Col>
+            <Col xs={12} md={3} lg={3}>
+              <a class="card1" href="#">
+                <h3>{crad2}</h3>
+                <p class="small">{cardtext2}</p>
+                <div class="go-corner" href="#">
+                  <div class="go-arrow">→</div>
+                </div>
+              </a>
+            </Col>
+
+            <Col xs={12} md={3} lg={3}>
+              <a class="card1" href="#">
+                <h3>{card3}</h3>
+                <p class="small">{cardtext3}</p>
+                <div class="go-corner" href="#">
+                  <div class="go-arrow">→</div>
+                </div>
+              </a>
+            </Col>
+
+            <Col xs={12} md={3} lg={3}>
+              <a class="card1" href="#">
+                <h3>{card4}</h3>
+                <p class="small">{cardtext4}</p>
+                <div class="go-corner" href="#">
+                  <div class="go-arrow">→</div>
+                </div>
+              </a>
+            </Col>
+
+            <Col xs={12} md={3} lg={3}>
+            {cardtext5 && card5 ? (
+               <a class="card1" href="#">
+               <h3>{card5}</h3>
+               <p class="small">{cardtext5}</p>
+               <div class="go-corner" href="#">
+                 <div class="go-arrow">→</div>
+               </div>
+             </a>
+            ) : null}
+            </Col>
+
+
+            <Col xs={12} md={3} lg={3}>
+            {cardtext6 && card6 ? (
+              <a className="card1" href="#">
+                <h3>{card6}</h3>
+                <p className="small">{cardtext6}</p>
+                <div className="go-corner" href="#">
+                  <div className="go-arrow">→</div>
+                </div>
+              </a>
+            ) : null}
+            </Col>
+
+            <Col xs={12} md={3} lg={3}>
+            {cardtext7 && card7 ? (
+              <a className="card1" href="#">
+                <h3>{card7}</h3>
+                <p className="small">{cardtext7}</p>
+                <div className="go-corner" href="#">
+                  <div className="go-arrow">→</div>
+                </div>
+              </a>
+            ) : null}
+            </Col>
+
+            <Col xs={12} md={3} lg={3}>
+            {cardtext8 && card8 ? (
+              <a className="card1" href="#">
+                <h3>{card8}</h3>
+                <p className="small">{cardtext8}</p>
+                <div className="go-corner" href="#">
+                  <div className="go-arrow">→</div>
+                </div>
+              </a>
+            ) : null}
+            
+            </Col>
+          </Row>
+          
+          
+          </div>
+          
+
+          {/* <div class="card-container">
             <a class="card1" href="#">
               <h3>{card1}</h3>
               <p class="small">{card1text}</p>
@@ -65,56 +155,15 @@ const CommonCard = ({
               </div>
             </a>
 
-            <a class="card1" href="#">
-              <h3>{card4}</h3>
-              <p class="small">{cardtext4}</p>
-              <div class="go-corner" href="#">
-                <div class="go-arrow">→</div>
-              </div>
-            </a>
+           
 
            
 
-            {cardtext5 && card5 ? (
-               <a class="card1" href="#">
-               <h3>{card5}</h3>
-               <p class="small">{cardtext5}</p>
-               <div class="go-corner" href="#">
-                 <div class="go-arrow">→</div>
-               </div>
-             </a>
-            ) : null}
+           
 
-
-            {cardtext6 && card6 ? (
-              <a className="card1" href="#">
-                <h3>{card6}</h3>
-                <p className="small">{cardtext6}</p>
-                <div className="go-corner" href="#">
-                  <div className="go-arrow">→</div>
-                </div>
-              </a>
-            ) : null}
-
-            {cardtext7 && card7 ? (
-              <a className="card1" href="#">
-                <h3>{card7}</h3>
-                <p className="small">{cardtext7}</p>
-                <div className="go-corner" href="#">
-                  <div className="go-arrow">→</div>
-                </div>
-              </a>
-            ) : null}
-            {cardtext8 && card8 ? (
-              <a className="card1" href="#">
-                <h3>{card8}</h3>
-                <p className="small">{cardtext8}</p>
-                <div className="go-corner" href="#">
-                  <div className="go-arrow">→</div>
-                </div>
-              </a>
-            ) : null}
-          </div>
+            
+            
+          </div> */}
         </Container>
       </section>
     </>

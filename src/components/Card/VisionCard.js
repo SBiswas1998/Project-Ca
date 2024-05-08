@@ -13,7 +13,7 @@ const VisionCard = () => {
         <Col sm={12} md={4}>
           <div className="supportcard">
             <div className="icon">
-              <FontAwesomeIcon icon={faEye} style={{ color: "#05044D" }} />
+              <FontAwesomeIcon icon={faEye} style={{ color: "#F47A25" }} />
             </div>
             <p className="title">Our Vision</p>
             <p className="text">
@@ -26,7 +26,7 @@ const VisionCard = () => {
         <Col sm={12} md={4}>
           <div className="supportcard">
             <div className="icon">
-              <FontAwesomeIcon icon={faRocket} style={{ color: "#05044D" }} />
+              <FontAwesomeIcon icon={faRocket} style={{ color: "#03C03C" }} />
             </div>
             <p className="title">Our Mission</p>
             <p className="text">
@@ -38,7 +38,7 @@ const VisionCard = () => {
         <Col sm={12} md={4}>
           <div className="supportcard">
             <div className="icon">
-              <FontAwesomeIcon icon={faHeart} style={{ color: "#05044D" }} />
+              <FontAwesomeIcon icon={faHeart} style={{ color: "#D2122E" }} />
             </div>
             <p className="title">Our Values</p>
             <p className="text">

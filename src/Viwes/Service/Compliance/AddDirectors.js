@@ -35,11 +35,11 @@ const AddDirectors = () => {
     <>
       <ResHeader />
       <QuickEnquiryFrom />
-      <CommonAboutSection
+      {/* <CommonAboutSection
         text={AddDirectorsAboutText}
         title="Add"
         span="Directors"
-      />
+      /> */}
       <CommonCard
         cardtilte="Types of Director "
         cardspan="in a Company "

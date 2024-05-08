@@ -2,15 +2,12 @@ import React, { useEffect, useState } from "react";
 import { Footer } from "../../../components/Layout";
 import ResHeader from "../../../components/ResponsiveMemu/Header";
 import QuickEnquiryForm from "../../../components/Forms/QuickEnquiryFrom";
-import CommonAboutSection from "../../../components/CommonAboutSection";
 import {
   TanRegistrationAboutText,
   TanRegistrationCardText,
 } from "../../../constants/Paragram";
 import CommonCard from "../../../components/Card/CommonCard";
 import { Col, Container, Row } from "react-bootstrap";
-import OtherPageLoader from "../../../components/Loader/OtherPageLoader";
-import TitleSection from "../../../components/TitleSection";
 
 const TanRegistration = () => {
   const [cardtext1, setCardText1] = useState("");
@@ -18,7 +15,6 @@ const TanRegistration = () => {
   const [cardtext3, setCardText3] = useState("");
   const [cardtext4, setCardText4] = useState("");
   const [cardtext5, setCardText5] = useState("");
-  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     if (TanRegistrationCardText) {
@@ -30,21 +26,15 @@ const TanRegistration = () => {
     }
   }, [TanRegistrationCardText]);
 
-  useEffect(() => {
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 3000); // 3 seconds
-  }, []);
-
   return (
     <>
       <ResHeader />
       <QuickEnquiryForm />
-      <CommonAboutSection
-        text={TanRegistrationAboutText}
+      {/* <CommonAboutSection
+        text={}
         title="Tan"
         span="Registration"
-      />
+      /> */}
       <CommonCard
         cardtilte="Reasons to"
         cardspan="Register a TAN"

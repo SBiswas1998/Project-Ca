@@ -33,11 +33,11 @@ const RemoveDirectors = () => {
     <>
       <ResHeader />
       <QuickEnquiryFrom />
-      <CommonAboutSection
+      {/* <CommonAboutSection
         text={RemoveDirectorsAboutText}
         title="Remove"
         span="Directors"
-      />
+      /> */}
       <CommonCard
         cardtilte="Types of Director "
         cardspan="in a Company "
