@@ -88,7 +88,7 @@ export const menuItemsData = [
           },
           {
             title: "Tax Calculation",
-            url: "/service/IncomeTax/tax_calculation",
+            url: "/service/IncomeTax/TaxCalculation",
           },
           {
             title: "FAQ",

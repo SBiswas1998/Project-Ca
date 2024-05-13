@@ -20,6 +20,7 @@ function MyComponent({ title, span, text, src }) {
               alt="aboutimage"
               src={src}
               className="aboutimage jumping-animation"
+            
             />
           </Col>
         </Row>

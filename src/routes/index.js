@@ -72,7 +72,10 @@ import {
   TaxNoticeSCOTIN,
   Accounting,
   Documentcenter,
+  TaxCalculator,
+  GSTCalculator,
 } from "../Viwes";
+
 
 const AppRouter = () => {
   return (
@@ -382,6 +385,16 @@ const AppRouter = () => {
         path="/service/IncomeTax/notice_scotin"
         exact
         element={<TaxNoticeSCOTIN />}
+      />
+      <Route
+        path="/service/IncomeTax/TaxCalculation"
+        exact
+        element={<TaxCalculator />}
+      />
+      <Route
+        path="/service/GST/GST_Tax_Calculation"
+        exact
+        element={<GSTCalculator />}
       />
       <Route
         path="/service/accounting"

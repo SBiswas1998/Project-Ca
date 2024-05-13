@@ -70,6 +70,9 @@ import TaxPayment from "./Service/Income Tax/TaxPayment";
 import TaxCapitalGain from "./Service/Income Tax/CapitalGain";
 import Accounting from "./Service/Accounting";
 import Documentcenter from "./Service/Documentcenter";
+import TaxCalculator from "./Service/Income Tax/TaxCalculation";
+import GSTCalculator from "./Service/GST/GSTTaxCalation";
+
 
 
 
@@ -154,7 +157,9 @@ export{
     ITRFiling,
     PANAadharLink,
     TaxPayment,
-    TaxCapitalGain
+    TaxCapitalGain,
+    TaxCalculator,
+    GSTCalculator
     
     
 

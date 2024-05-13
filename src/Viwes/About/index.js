@@ -5,7 +5,7 @@ import {
   ProfileText,
   ProfileTitle,
 } from "../../constants/Paragram";
-import aboutImage from "../../assets/images/aboutimg-banner.jpg";
+import aboutImage from "../../assets/images/profileImgOne.jpg";
 import OurValue from "../../components/OurValue";
 import WhatWeDo from "../../components/WhatWeDo";
 import WhyUs from "../../components/WhyUs";
