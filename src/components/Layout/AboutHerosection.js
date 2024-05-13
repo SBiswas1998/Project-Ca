@@ -2,12 +2,19 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-
-
-function AboutHerosection({src }) {
+function AboutHerosection({ src }) {
   return (
     <section className="hm-about-sec">
       <Container>
+        <div className="text-center mt-5 mb-5 hero-banner-sub-text-top">
+          <h1>
+            {" "}
+            <b>Welcome to Purminder Kaur & Associates</b>
+          </h1>
+          <h3>
+            <b>One Stop solutions for all financial needs</b>
+          </h3>
+        </div>
         <Row className="justify-content-md-center">
           <Col md={6}>
             <ul className="about-list">
@@ -32,9 +39,18 @@ function AboutHerosection({src }) {
             <img
               alt="aboutimage"
               src={src}
-              className="aboutimage jumping-animation"
+              className="homeaboutimage jumping-animation"
             />
           </Col>
+          <div className="text-center mt-5 mb-5 hero-banner-sub-text">
+            <h1>
+              {" "}
+              <b>Welcome to Purminder Kaur & Associates</b>
+            </h1>
+            <h3>
+              <b>One Stop solutions for all financial needs</b>
+            </h3>
+          </div>
         </Row>
       </Container>
     </section>

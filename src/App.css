@@ -47,6 +47,16 @@ nav.desktop-nav {
   color: #05044D;
 }
 
+.text-center.mt-5.mb-5.hero-banner-sub-text {
+  margin-top: -5px !important;
+}
+
+img.homeaboutimage.jumping-animation {
+  width: 70%;
+  margin-top: -10%;
+  margin-left: 25%;
+}
+
 
 
 /* menu on desktop */
@@ -162,9 +172,25 @@ nav.desktop-nav {
 .mobile-nav {
   display: none;
 }
+.hero-banner-sub-text-top{
+  display: none;
+}
 
 /* menu on mobile */
 @media screen and (max-width: 960px) {
+  .hero-banner-sub-text-top {
+    display: block;
+    margin-top: -27% !important;
+    margin-bottom: 46% !important;
+}
+img.homeaboutimage.jumping-animation {
+  width: 100%;
+  margin-top: 1%;
+  margin-left: 0;
+}
+
+
+
   .header-phone a{
     display: none;
   }
@@ -283,6 +309,10 @@ nav.desktop-nav {
   .mobile-nav .dropdown .dropdown-submenu {
     height: 20vh;
     overflow-y: scroll;
+}
+.text-center.mt-5.mb-5.hero-banner-sub-text {
+  margin-top: -5px !important;
+  display: none;
 }
 
 }
@@ -406,6 +436,7 @@ nav.desktop-nav {
 .about-list {
   list-style: none;
   padding: 0;
+  margin-top: -10%;
 }
 
 /* Define animation for list items */
