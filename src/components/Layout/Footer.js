@@ -94,17 +94,16 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link to="#">
-                      <FontAwesomeIcon icon={faPhone} /> &nbsp;
-                      <a href="tel:+91 9646874599">+91 964-687-4599</a> 
-                    </Link>
+                    <a href="tel:+91 964-687-4599">
+                      <FontAwesomeIcon icon={faPhone} />
+                      &nbsp;&nbsp; +91 964-687-4599
+                    </a>
                   </li>
                   <li>
-                    <Link to="#">
-                      <FontAwesomeIcon icon={faEnvelope} />
-                      &nbsp;&nbsp;&nbsp;
-                      <a href="mailto:info@capka.co.in">info@capka.co.in</a>
-                    </Link>
+                    <a href="mailto:info@capka.co.in">
+                      <FontAwesomeIcon icon={faEnvelope}/>{" "}
+                      &nbsp;&nbsp; info@capka.co.in
+                    </a>
                   </li>
                 </ul>
               </div>
