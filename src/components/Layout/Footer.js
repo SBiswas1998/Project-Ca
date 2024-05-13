@@ -7,8 +7,6 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 
-
-
 const Footer = () => {
   return (
     <>
@@ -56,6 +54,11 @@ const Footer = () => {
                         </Link>
                       </li>
                       <li>
+                        <Link class="" to="/about">
+                          Value
+                        </Link>
+                      </li>
+                      <li>
                         <Link class="" to="/privacy_policy">
                           Privacy Policy
                         </Link>
@@ -93,14 +96,14 @@ const Footer = () => {
                   <li>
                     <Link to="#">
                       <FontAwesomeIcon icon={faPhone} /> &nbsp;
-                      <a href="tel:+91 964-687-4599">+91 964-687-4599</a>
+                      <a href="tel:+91 9646874599">+91 964-687-4599</a> 
                     </Link>
                   </li>
                   <li>
                     <Link to="#">
                       <FontAwesomeIcon icon={faEnvelope} />
                       &nbsp;&nbsp;&nbsp;
-                      <Link to="mailto:info@capka.co.in">info@capka.co.in</Link>
+                      <a href="mailto:info@capka.co.in">info@capka.co.in</a>
                     </Link>
                   </li>
                 </ul>
