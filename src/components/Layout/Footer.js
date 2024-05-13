@@ -30,7 +30,9 @@ const Footer = () => {
                         <Link to="/service/auditing">Auditing</Link>
                       </li>
                       <li>
-                        <Link to="/service/IncomeTax/ITR_filing">Income Tax</Link>
+                        <Link to="/service/IncomeTax/ITR_filing">
+                          Income Tax
+                        </Link>
                       </li>
                       <li>
                         <Link to="/service/book_keeper">Book Keeping</Link>
@@ -55,7 +57,7 @@ const Footer = () => {
                       </li>
                       <li>
                         <Link class="" to="/privacy_policy">
-                          Values
+                          Privacy Policy
                         </Link>
                       </li>
                     </ul>
@@ -91,7 +93,7 @@ const Footer = () => {
                   <li>
                     <Link to="#">
                       <FontAwesomeIcon icon={faPhone} /> &nbsp;
-                      <Link to="tel:+91 964-687-4599">+91 964-687-4599</Link>
+                      <a href="tel:+91 964-687-4599">+91 964-687-4599</a>
                     </Link>
                   </li>
                   <li>
@@ -115,11 +117,7 @@ const Footer = () => {
                   {new Date().getFullYear()} Created by Purminder Kaur.
                 </p>
               </div>
-              <div class="col-md-4 text-end">
-                <a class="" href="/privacy_policy">
-                  Privacy Policy
-                </a>
-              </div>
+              <div class="col-md-4 text-end"></div>
             </div>
           </div>
         </div>
