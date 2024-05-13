@@ -35,13 +35,13 @@ const Contact = () => {
                     SCF- 79, First Floor, Phase – XI, Mohali, Punjab – 160062
                   </li>
                   <li>
-                    <strong>Phone : </strong> 0172-5122215
+                    <strong>Phone : </strong> <a href="tel:+0172-5122215" style={{color:"#000"}} >0172-5122215</a> 
                   </li>
                   <li>
-                    <strong>Email: </strong> info@capka.co.in
+                    <strong>Email: </strong> <a href="mailto:info@capka.co.in" style={{color:"#000"}}>info@capka.co.in</a>         info@capka.co.in
                   </li>
                   <li>
-                    <strong>Website: </strong> www.capka.co.in
+                    <strong>Website: </strong> <a href="https://capka.co.in/" style={{color:"#000"}}> www.capka.co.in</a>
                   </li>
                 </ul>
               </div>
