@@ -83,8 +83,8 @@ export const menuItemsData = [
             url: "/service/IncomeTax/capital_gain",
           },
           {
-            title: "Notice & SCOTIN",
-            url: "/service/IncomeTax/notice_scotin",
+            title: "Notice & Scrutiny",
+            url: "/service/IncomeTax/notice_Scrutiny",
           },
           {
             title: "Tax Calculation",
@@ -108,8 +108,8 @@ export const menuItemsData = [
             url: "/service/GST/GST_Return",
           },
           {
-            title: "Notice & SCOTIN",
-            url: "/service/GST/Notice_SCOTIN",
+            title: "Notice & Scrutiny",
+            url: "/service/GST/Notice_Scrutiny",
           },
           {
             title: "GST Amendment",
@@ -284,8 +284,8 @@ export const menuItemsData = [
       },
 
       {
-        title: "Book Keeper",
-        url: "/service/book_keeper",
+        title: "Book Keeping",
+        url: "/service/book_keeping",
       },
       // {
       //   title: "Tax Planning",

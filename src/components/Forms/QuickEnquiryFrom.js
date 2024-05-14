@@ -4,7 +4,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { registerUser, verifyOtp } from "../../actions/auth";
 import toast from "../common/toast";
 import contactimg from "../../assets/images/QuickEnquiryImg.png";
-import TitleSection from "../TitleSection";
 
 
 const QuickEnquiryForm = ({title}) => {
@@ -39,7 +38,6 @@ const QuickEnquiryForm = ({title}) => {
       text: text,
     };
     dispatch(registerUser(userData));
-
     if (user_data?.status === 200) {
       toast.success("OTP sent to your email");
     } 
@@ -72,18 +70,36 @@ const QuickEnquiryForm = ({title}) => {
     };
     dispatch(verifyOtp(userData, otp));
     if(otpStatus?.status === 200 ){
-      toast.success("OTP verified successfully and user registered successfully");
+      toast.success("OTP verified successfully and Submit your quire");
+      clearFormFields();
     }
    else if(otpStatus?.status === 400 ){
       toast.error("Otp must be 6 digits");
     }
     else if (otpStatus?.status === 409) {
       toast.error("Invalid OTP");
-    }
-
-    
-    
+    } 
   };
+
+
+  const clearFormFields = () => {
+    setName('');
+    setEmail('');
+    setPhone('');
+    setCity('');
+    setText('');
+    setOTP('');
+  };
+
+
+
+
+
+
+
+
+
+
 
   return (
     <section className="hm-contactus-sec">

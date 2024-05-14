@@ -26,7 +26,7 @@ import {
   LimitedLiabilityPartnership,
   MOAAmendment,
   MSMERegistration,
-  NoticeSCOTIN,
+  NoticeScrutiny,
   OnePersonCompany,
   PFRegistration,
   Partnership,
@@ -74,8 +74,8 @@ import {
   Documentcenter,
   TaxCalculator,
   GSTCalculator,
+  NoticeSCOTIN,
 } from "../Viwes";
-
 
 const AppRouter = () => {
   return (
@@ -295,7 +295,7 @@ const AppRouter = () => {
       />
       <Route path="/service/GST/GST_Return" exact element={<GSTReturn />} />
       <Route
-        path="/service/GST/Notice_SCOTIN"
+        path="/service/GST/Notice_Scrutiny"
         exact
         element={<NoticeSCOTIN />}
       />
@@ -382,7 +382,7 @@ const AppRouter = () => {
         element={<TaxCapitalGain />}
       />
       <Route
-        path="/service/IncomeTax/notice_scotin"
+        path="/service/IncomeTax/notice_Scrutiny"
         exact
         element={<TaxNoticeSCOTIN />}
       />
@@ -396,17 +396,13 @@ const AppRouter = () => {
         exact
         element={<GSTCalculator />}
       />
-      <Route
-        path="/service/accounting"
-        exact
-        element={<Accounting />}
-      />
+      <Route path="/service/accounting" exact element={<Accounting />} />
       <Route
         path="/service/documentcenter"
         exact
         element={<Documentcenter />}
       />
-      <Route path="/service/book_keeper" exact element={<BookKeeper />} />
+      <Route path="/service/book_keeping" exact element={<BookKeeper />} />
       <Route path="/privacy_policy" exact element={<PrivacyPolicy />} />
     </Routes>
   );

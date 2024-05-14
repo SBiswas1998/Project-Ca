@@ -48,7 +48,7 @@ nav.desktop-nav {
 }
 
 .text-center.mt-5.mb-5.hero-banner-sub-text {
-  margin-top: -5px !important;
+  margin-top: 33px !important;
 }
 
 img.homeaboutimage.jumping-animation {
@@ -139,7 +139,7 @@ img.homeaboutimage.jumping-animation {
   border-bottom: 1px solid #000; 
 }
 .desktop-nav .dropdown.show a{
-  border-bottom: 1px solid #000;
+  text-align: justify;
 }
 
 .desktop-nav .dropdown .dropdown-submenu {

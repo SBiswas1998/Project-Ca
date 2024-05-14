@@ -33,7 +33,7 @@ const Footer = () => {
                         </Link>
                       </li>
                       <li>
-                        <Link to="/service/book_keeper">Book Keeping</Link>
+                        <Link to="/service/book_keeping">Book Keeping</Link>
                       </li>
                       <li>
                         <Link to="/service/GST/GST_registration">GST</Link>
@@ -101,8 +101,8 @@ const Footer = () => {
                   </li>
                   <li>
                     <a href="mailto:info@capka.co.in">
-                      <FontAwesomeIcon icon={faEnvelope}/>{" "}
-                      &nbsp;&nbsp; info@capka.co.in
+                      <FontAwesomeIcon icon={faEnvelope} /> &nbsp;&nbsp;
+                      info@capka.co.in
                     </a>
                   </li>
                 </ul>
