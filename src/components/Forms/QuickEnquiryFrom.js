@@ -1,12 +1,11 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import { registerUser, verifyOtp } from "../../actions/auth";
 import toast from "../common/toast";
 import contactimg from "../../assets/images/QuickEnquiryImg.png";
 
-
-const QuickEnquiryForm = ({title}) => {
+const QuickEnquiryForm = () => {
   const dispatch = useDispatch();
 
   const [name, setName] = useState("");
@@ -15,13 +14,19 @@ const QuickEnquiryForm = ({title}) => {
   const [city, setCity] = useState("");
   const [text, setText] = useState("");
   const [otp, setOTP] = useState("");
+  const [userId, setUserId] = useState(null);
 
   const user_data = useSelector((state) => state.auth.user_data);
   const otpStatus = useSelector((state) => state.auth.otpStatus);
-  console.log("otpStatus",otpStatus?.data)
+  console.log("otpStatus", otpStatus);
+  console.log("user_data", user_data);
+  console.log("userId", userId);
+
+  // setUserId(user_data?.data?._id);
+
 
   const handleSignUp = () => {
-    if (name == "" || phone == "" || city == "") {
+    if (name === "" || phone === "" || city === "") {
       toast.error("Please enter a valid input");
       return false;
     }
@@ -38,15 +43,7 @@ const QuickEnquiryForm = ({title}) => {
       text: text,
     };
     dispatch(registerUser(userData));
-    if (user_data?.status === 200) {
-      toast.success("OTP sent to your email");
-    } 
-    else if (user_data?.status === 400){
-      toast.error("Phone number must be 10 digits");
-    }
-    else if (user_data?.status === 409) {
-      toast.error("Your email or phone already exists");
-    }
+    toast.success("OTP sent to your email");
   };
 
   const isValidEmail = (email) => {
@@ -56,7 +53,7 @@ const QuickEnquiryForm = ({title}) => {
   };
 
   const handleverifyOtp = () => {
-    if (otp == "") {
+    if (otp === "") {
       toast.error("Please enter a valid input");
       return false;
     }
@@ -67,39 +64,28 @@ const QuickEnquiryForm = ({title}) => {
       phone: phone,
       city: city,
       text: text,
+      _id: user_data?.data?._id,
     };
+    console.log("userData",userData)
     dispatch(verifyOtp(userData, otp));
-    if(otpStatus?.status === 200 ){
-      toast.success("OTP verified successfully and Submit your quire");
+    if (otpStatus?.status === 200) {
+      toast.success("OTP verified successfully and Submit your query");
       clearFormFields();
-    }
-   else if(otpStatus?.status === 400 ){
+    } else if (otpStatus?.status === 400) {
       toast.error("Otp must be 6 digits");
-    }
-    else if (otpStatus?.status === 409) {
+    } else if (otpStatus?.status === 409) {
       toast.error("Invalid OTP");
-    } 
+    }
   };
-
 
   const clearFormFields = () => {
-    setName('');
-    setEmail('');
-    setPhone('');
-    setCity('');
-    setText('');
-    setOTP('');
+    setName("");
+    setEmail("");
+    setPhone("");
+    setCity("");
+    setText("");
+    setOTP("");
   };
-
-
-
-
-
-
-
-
-
-
 
   return (
     <section className="hm-contactus-sec">
@@ -110,7 +96,7 @@ const QuickEnquiryForm = ({title}) => {
               <Row>
                 <Col md={12}>
                   <h2>
-                    Quick<span>Enquiry </span> 
+                    Quick<span>Enquiry </span>
                   </h2>
                   <p className="text-center">
                     Please send us your query and we'll be happy to assist you
@@ -173,7 +159,8 @@ const QuickEnquiryForm = ({title}) => {
                     />
                   </Form.Group>
                 </Col>
-                {user_data.status === 200 && (
+
+                
                   <>
                     <Col md={6}>
                       <Form.Group>
@@ -181,12 +168,7 @@ const QuickEnquiryForm = ({title}) => {
                           type="text"
                           placeholder="Enter your otp *"
                           value={otp}
-                          onChange={(e) => {
-                            // Validate input using regex and update state
-                            const value = e.target.value.replace(/\D/g, ""); // Remove non-numeric characters
-                            setOTP(value);
-                          }}
-                          pattern="[0-9]*" // Accept only numeric values
+                          onChange={(e) => setOTP(e.target.value)}
                         />
                       </Form.Group>
                     </Col>
@@ -197,32 +179,36 @@ const QuickEnquiryForm = ({title}) => {
                         className="btn-send"
                         onClick={handleverifyOtp}
                       >
-                        submit
+                        Submit
                       </Button>
                     </Col>
                   </>
-                )}
+               
 
-                {/* Other form fields */}
-
-                {user_data.status !== 200 && (
-                  <Col xs={12} className="text-center">
-                    <Button
-                      variant="primary"
-                      type="submit"
-                      className="btn-send"
-                      onClick={handleSignUp}
-                    >
-                      Continue
-                    </Button>
-                  </Col>
-                )}
+                {!user_data ||
+                  (user_data.length === 0 && (
+                    <Col xs={12} className="text-center">
+                      <Button
+                        variant="primary"
+                        type="submit"
+                        className="btn-send"
+                        onClick={handleSignUp}
+                      >
+                        Continue
+                      </Button>
+                    </Col>
+                  ))}
               </Row>
             </div>
           </Col>
           <Col lg={6}>
             <figure className="">
-              <img src={contactimg} alt="" className="img-fluid" style={{marginLeft:"39%", marginTop:"8%"}} />
+              <img
+                src={contactimg}
+                alt=""
+                className="img-fluid"
+                style={{ marginLeft: "39%", marginTop: "8%" }}
+              />
             </figure>
           </Col>
         </Row>

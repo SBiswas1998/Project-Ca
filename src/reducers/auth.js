@@ -11,7 +11,7 @@ import {
     VERIFY_EMAIL,
     REMOVE_EMAIL,
     REMOVE_OTP,
-    RESET_PASSOWRD
+    RESET_PASSWORD
 } from "../actions/type";
 
 
@@ -37,7 +37,8 @@ export default (state = initialState,action)=>{
 
     switch (type){
         case REGISTER_RESPONSE:
-            console.log("payload---",payload)
+            console.log("payload---",payload?.data?._id)
+            localStorage.setItem('_id',payload?.data?._id)
             return{
                 ...state,
                 // signup_res: payload,
@@ -86,7 +87,7 @@ export default (state = initialState,action)=>{
                 ...state,
                 changePassword:payload
             }
-        case RESET_PASSOWRD:
+        case RESET_PASSWORD:
             return{
                 ...state,
                 ressetPassword:payload

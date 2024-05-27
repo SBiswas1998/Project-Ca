@@ -75,6 +75,7 @@ import {
   TaxCalculator,
   GSTCalculator,
   NoticeSCOTIN,
+  Schedule,
 } from "../Viwes";
 
 const AppRouter = () => {
@@ -404,6 +405,7 @@ const AppRouter = () => {
       />
       <Route path="/service/book_keeping" exact element={<BookKeeper />} />
       <Route path="/privacy_policy" exact element={<PrivacyPolicy />} />
+      <Route path="/schedule-call" exact element={<Schedule />} />
     </Routes>
   );
 };

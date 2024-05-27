@@ -9,6 +9,8 @@ import Navbar from "./Navbar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhoneSquare } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { Button } from "react-bootstrap";
+
 
 
 
@@ -82,13 +84,16 @@ const Header = () => {
             </Col>
             <Col>
               <div className="header-phone text-end ml-5">
-                <a href="tel:+91 964-687-4599">
+                <Button>
+                  <a href="/schedule-call"> Schedule a Call</a>
+                 </Button>
+                {/* <a href="tel:+91 964-687-4599">
                   <FontAwesomeIcon icon={faPhoneSquare} size="xl" />
                   &nbsp;&nbsp; +91 964-687-4599
                 </a> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
                 <a href="mailto:info@capka.co.in">
                 <FontAwesomeIcon icon={faEnvelope} size="xl" /> &nbsp;&nbsp; 
-                  info@capka.co.in</a>
+                  info@capka.co.in</a> */}
               </div>
               <Navbar />
               <MobileNav />

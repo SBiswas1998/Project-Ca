@@ -7,11 +7,14 @@ export const VERIFY_EMAIL ="VERIFY_EMAIL";
 export const VERIFY_OTP = "VERIFY_OTP";
 export const VALIDATE_OTP = "VALIDATE_OTP"
 export const RESEND_OTP = "RESEND_OTP"
-export const REMOVE_EMAIL = "ROMOVE_EMAIL";
+export const REMOVE_EMAIL = "REMOVE_EMAIL";
 export const REMOVE_FORGOT_PASSWORD ="REMOVE_FORGOT_PASSWORD";
 export const REMOVE_OTP = "REMOVE_OTP"
-export const RESET_PASSOWRD = "RESET-PASSOWRD"
-export const CHANGE_PASSWORD = "CHANGE_PASSOWRD"
+export const RESET_PASSWORD = "RESET-PASSWORD"
+export const CHANGE_PASSWORD = "CHANGE_PASSWORD"
  
 
 export const SHOW_TOAST = "SHOW_TOAST"
+
+
+export const BOOK_SLOTS = "BOOK_SLOTS"

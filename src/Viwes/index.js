@@ -72,6 +72,8 @@ import Accounting from "./Service/Accounting";
 import Documentcenter from "./Service/Documentcenter";
 import TaxCalculator from "./Service/Income Tax/TaxCalculation";
 import GSTCalculator from "./Service/GST/GSTTaxCalation";
+import Schedule from "./Schedule";
+
 
 
 
@@ -159,7 +161,8 @@ export{
     TaxPayment,
     TaxCapitalGain,
     TaxCalculator,
-    GSTCalculator
+    GSTCalculator,
+    Schedule
     
     
 
