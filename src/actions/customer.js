@@ -23,10 +23,9 @@ export const bookingSlots = (data)=>async dispatch =>{
         console.log("config",config)
         // Make the API call
         let response = await apiCall(config, dispatch);
-        console.log("response----->>>>>",response)
 
         if(response.status == 400){
-            console.log("Errror")
+            console.log("Error")
         }
 
         // Dispatch the response to the reducer
