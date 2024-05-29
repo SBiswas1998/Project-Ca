@@ -32,7 +32,7 @@ a{
 }
 nav.desktop-nav {
   margin-left: 46%;
-  margin-top: 75px;
+  margin-top: 26px;
 }
 
 .logo {
@@ -461,10 +461,10 @@ img.homeaboutimage.jumping-animation {
 
 .about-list li {
   font-size: 3rem;
-  font-weight: 800;
+  font-weight: 600;
   text-transform: uppercase;
   line-height: 136%;
-  color: #0C0649;
+  color: #CFD6DD;
   margin-bottom: 25px;
   letter-spacing: 10px;
   cursor: pointer;
@@ -477,7 +477,7 @@ img.homeaboutimage.jumping-animation {
 }
 
 .animated-list-item:hover{
-  color: #E35C18;
+  color: #0C0649;
 }
 
 
@@ -500,6 +500,7 @@ img.homeaboutimage.jumping-animation {
 .hm-services-title p {
   font-size: 16px;
   margin: 0;
+  text-align: justify;
 }
 
 .hm-services-sec h2 {
@@ -1839,38 +1840,59 @@ svg text {
 /* call schedule */
 
 .calender {
-  margin-left: 45%;
+  /* margin-top: px; */
+  padding: 50px;
+  margin: 24px;
+  border-radius: 20px;
 }
-.booking-from p{
+
+.left-side {
+  padding: 50px;
+  margin: 24px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+}
+
+.react-datepicker__month-container {
+  float: left;
+  width: 500px;
+  height: 40vh;
+}
+
+
+
+.booking-form p{
   text-align: center;
   font-size: medium;
   font-weight: 700;
   text-transform: uppercase;
 }
 
-.booking-from{
+.booking-form {
   padding: 2rem 1rem 0;
+ 
 }
 
-
-.booking-from .input {
+.booking-form .input {
   display: flex;
   flex-direction: column-reverse;
   position: relative;
   padding-top: 1.5rem;
+  margin-top: 30px;
 }
-.booking-from .input + .input {
+
+.booking-form .input + .input {
   margin-top: 1rem;
 }
 
-.booking-from .input-label {
+.booking-form .input-label {
   color: #8597a3;
   position: absolute;
   top: 1.5rem;
   transition: 0.25s ease;
 }
 
-.booking-from .input-field {
+.booking-form .input-field {
   border: 0;
   z-index: 1;
   background-color: transparent;
@@ -1880,21 +1902,21 @@ svg text {
   padding: 0.25rem 0;
 }
 
-.booking-from .input-field:focus, .input-field:valid {
+.booking-form .input-field:focus, .input-field:valid {
   outline: 0;
   border-bottom-color: #05044D;
 }
-.booking-from .input-field:focus + .input-label, .input-field:valid + .input-label {
+.booking-form .input-field:focus + .input-label, .input-field:valid + .input-label {
   color: #05044D;
   transform: translateY(-1.5rem);
 }
 
 
-.booking-from .action {
+.booking-form .action {
   margin-top: 1rem;
 }
 
-.booking-from .action-button {
+.booking-form .action-button {
   font: inherit;
   font-size: 1.25rem;
   padding: 1em;
@@ -1906,6 +1928,20 @@ svg text {
   border: 0;
   margin-top: 1.5rem;
 }
-.booking-from .action-button:focus {
+.booking-form .action-button:focus {
   outline: 0;
+}
+
+
+.Schedule-call{
+    border: 1px solid #000;
+    background: transparent;
+    border-radius: 20px;
+    margin-top: 8px;
+}
+
+.Schedule-call:hover{
+    background: transparent;
+    color: #fff;
+    border: 1px solid #05044D;
 }

@@ -84,7 +84,7 @@ const Header = () => {
             </Col>
             <Col>
               <div className="header-phone text-end ml-5">
-                <Button>
+                <Button className="Schedule-call">
                   <a href="/schedule-call"> Schedule a Call</a>
                  </Button>
                 {/* <a href="tel:+91 964-687-4599">

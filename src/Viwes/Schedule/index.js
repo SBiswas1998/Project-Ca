@@ -3,20 +3,20 @@ import ResHeader from "../../components/ResponsiveMemu/Header";
 import { Footer } from "../../components/Layout";
 import DatePicker from "../../components/DatePicker";
 import TimeSlots from "../../components/TimeSlots";
-import axios from "axios";
-import { Button, Modal } from 'antd';
+import { Button, Modal } from "antd";
 import { useDispatch } from "react-redux";
 import { bookingSlots } from "../../actions/customer";
 import toast from "../../components/common/toast";
-
+import Swal from "sweetalert2";
+import { Container, Row, Col } from "react-bootstrap"; // Import react-bootstrap components
 
 
 const Schedule = () => {
   const dispatch = useDispatch();
 
-  const [selectedDate, setSelectedDate] = useState(null);
+  const [selectedDate, setSelectedDate] = useState(new Date());
   const [selectedTime, setSelectedTime] = useState(null);
-  const [bookedSlots, setBookedSlots] = useState(null);
+  const [bookedSlots, setBookedSlots] = useState([]);
   const [isModalVisible, setIsModalVisible] = useState(false);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -24,54 +24,47 @@ const Schedule = () => {
 
   const timeSlots = [
     "10:00AM",
-    "10:15AM",
     "10:30AM",
-    "10:45AM",
     "11:00AM",
-    "11:15AM",
     "11:30AM",
-    "11:45AM",
     "12:00PM",
-    "12:15PM",
     "12:30PM",
-    "12:45AM",
     "1:00PM",
-    "1:15PM",
     "1:30PM",
-    "1:45PM",
+    "2:00PM",
+    "2:30PM",
     "3:00PM",
-    "3:15PM",
     "3:30PM",
-    "3:45PM",
     "4:00PM",
-    "4:15PM",
     "4:30PM",
-    "4:45PM",
     "5:00PM",
-    "5:15PM",
     "5:30PM",
-    "5:45PM",
     "6:00PM",
-    "6:15PM",
     "6:30PM",
-    "6:45PM",
   ];
+  
 
- 
-  const handleTimeSlotSelection = (time) => {
-    setSelectedTime(time);
+  const handleDateSelection = (date) => {
+    setSelectedDate(date);
     setIsModalVisible(true);
   };
+
+  const handleTimeSlotSelection = (time) => {
+    setSelectedTime(time);
+  };
+
   const isValidEmail = (email) => {
-    // Regular expression for email validation
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
   };
 
-
-  const handleBooking = ()=>{
+  const handleBooking = () => {
     if (name === "" || phone === "" || email === "") {
-      toast.error("Please enter a valid input");
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Please enter a valid input",
+      });
       return false;
     }
 
@@ -79,56 +72,103 @@ const Schedule = () => {
       toast.error("Please enter a valid email address");
       return;
     }
+
     const parsedDate = new Date(selectedDate);
-    let bookData ={
-      name : name,
+    let bookData = {
+      name: name,
       email: email,
       phone: phone,
       date: parsedDate,
-      time: selectedTime
-    }
+      time: selectedTime,
+    };
+
     dispatch(bookingSlots(bookData));
-    toast.success("Booking successfully");
-  }
+    setBookedSlots([...bookedSlots, { date: parsedDate, time: selectedTime }]);
 
+    const dateKey = selectedDate.toISOString().split("T")[0];
+    const bookedSlotsForDate =
+      JSON.parse(localStorage.getItem("bookedSlots")) || {};
+    bookedSlotsForDate[dateKey] = bookedSlotsForDate[dateKey] || [];
+    bookedSlotsForDate[dateKey].push(selectedTime);
+    localStorage.setItem("bookedSlots", JSON.stringify(bookedSlotsForDate));
 
+    Swal.fire({
+      title: "Success!",
+      text: "Booking successfully",
+      icon: "success",
+      confirmButtonText: "OK",
+    }).then(() => {
+      setIsModalVisible(false);
+      clearFormFields();
+    });
+  };
+
+  const clearFormFields = () => {
+    setName("");
+    setEmail("");
+    setPhone("");
+  };
+
+  // Load booked slots from localStorage on component mount
+  useEffect(() => {
+    const storedBookedSlots = JSON.parse(localStorage.getItem("bookedSlots")) || {};
+    const bookedSlotsArray = [];
+    Object.keys(storedBookedSlots).forEach(dateKey => {
+      storedBookedSlots[dateKey].forEach(time => {
+        bookedSlotsArray.push({ date: new Date(dateKey), time });
+      });
+    });
+    setBookedSlots(bookedSlotsArray);
+  }, []);
 
   return (
     <>
       <ResHeader />
-      <h1 className="text-center mt-5">30 Minute Accounting Consultation</h1>
-      <p className="text-center mt-3">
-        One of our accounting professionals will reach out to you by phone for
-        this call.
-      </p>
-      <div className="calender">
-        <DatePicker
-          selectedDate={selectedDate}
-          setSelectedDate={setSelectedDate}
-        />
-      </div>
-      {selectedDate && (
-        <div>
-          <h2 className="text-center mt-5">Available Time Slots</h2>
-          <TimeSlots
-            timeSlots={timeSlots}
-            bookedSlots={bookedSlots}
-            selectTimeSlot={handleTimeSlotSelection}
-          />
-        </div>
-      )}
-
+      <Container>
+        <Row>
+          <Col xs={12} md={6} className="mb-5">
+            <div className="left-side">
+              <h1 className="text-center mt-5">
+                30 Minute Accounting Consultation
+              </h1>
+              <p className="text-center mt-3">
+                One of our accounting professionals will reach out to you by
+                phone for this call.
+              </p>
+            </div>
+          </Col>
+          <Col xs={12} md={6}>
+            <div className="calender">
+              <DatePicker
+                selectedDate={selectedDate}
+                setSelectedDate={handleDateSelection}
+                className="date-picker" // Apply the date-picker class
+              />
+            </div>
+          </Col>
+        </Row>
+      </Container>
       <Modal
         title="Book Appointment"
         visible={isModalVisible}
-        onOk={() => setIsModalVisible(false)}
         onCancel={() => setIsModalVisible(false)}
         footer={null}
         className="booking-modal"
       >
-        <div  className="booking-from">
-          <p>Selected Date: {selectedDate && selectedDate.toDateString()}</p>
-          <p>Selected Time: {selectedTime}</p>
+        <div className="booking-form">
+          {selectedDate && (
+            <>
+              <p>Selected Date: {selectedDate.toDateString()}</p>
+              <p>Selected Time: {selectedTime}</p>
+            </>
+          )}
+
+          <TimeSlots
+            timeSlots={timeSlots}
+            bookedSlots={bookedSlots}
+            selectTimeSlot={handleTimeSlotSelection}
+            selectedDate={selectedDate}
+          />
 
           <div className="input">
             <input
@@ -159,8 +199,7 @@ const Schedule = () => {
               name="phone"
               value={phone}
               onChange={(e) => {
-                // Validate input using regex and update state
-                const value = e.target.value.replace(/\D/g, ""); // Remove non-numeric characters
+                const value = e.target.value.replace(/\D/g, "");
                 setPhone(value);
               }}
               pattern="[0-9]*"
@@ -168,7 +207,9 @@ const Schedule = () => {
             />
             <label className="input-label">Phone</label>
           </div>
-          <button className="action-button" onClick={handleBooking}>Book Appointment</button>
+          <button className="action-button" onClick={handleBooking}>
+            Book Appointment
+          </button>
         </div>
       </Modal>
 

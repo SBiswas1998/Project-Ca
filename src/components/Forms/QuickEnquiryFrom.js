@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { registerUser, verifyOtp } from "../../actions/auth";
 import toast from "../common/toast";
 import contactimg from "../../assets/images/QuickEnquiryImg.png";
+import Swal from 'sweetalert2';
 
 const QuickEnquiryForm = () => {
   const dispatch = useDispatch();
@@ -18,20 +19,36 @@ const QuickEnquiryForm = () => {
 
   const user_data = useSelector((state) => state.auth.user_data);
   const otpStatus = useSelector((state) => state.auth.otpStatus);
-  console.log("otpStatus", otpStatus);
-  console.log("user_data", user_data);
-  console.log("userId", userId);
+  const customerId =  localStorage.getItem('_id')
+  // setUserId(customerId)
+
+  console.log("user_data======", user_data?.message);
+  console.log("otpStatus======>>>>>>>>>>>>>>", otpStatus?.data?.message);
+  console.log("customerId", customerId);
+
+  const popupMessage = user_data?.message
+
+  console.log("popupMessage", popupMessage)
+
 
   // setUserId(user_data?.data?._id);
 
 
   const handleSignUp = () => {
     if (name === "" || phone === "" || city === "") {
-      toast.error("Please enter a valid input");
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Please enter a valid input',
+      });
       return false;
     }
     if (!isValidEmail(email)) {
-      toast.error("Please enter a valid email address");
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Please enter a valid email address',
+      });
       return;
     }
 
@@ -43,8 +60,17 @@ const QuickEnquiryForm = () => {
       text: text,
     };
     dispatch(registerUser(userData));
-    toast.success("OTP sent to your email");
   };
+
+  useEffect(() => {
+    if (user_data?.message) {
+      Swal.fire({
+        icon: 'success',
+        title: 'Success',
+        text: user_data.message,
+      });
+    }
+  }, [user_data]);
 
   const isValidEmail = (email) => {
     // Regular expression for email validation
@@ -52,32 +78,40 @@ const QuickEnquiryForm = () => {
     return emailRegex.test(email);
   };
 
-  const handleverifyOtp = () => {
+  const handleVerifyOtp =()=>{
     if (otp === "") {
-      toast.error("Please enter a valid input");
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Please enter a valid input',
+      });
       return false;
     }
-    const userData = {
+     const userData = {
       otp: otp,
       name: name,
       email: email,
       phone: phone,
       city: city,
       text: text,
-      _id: user_data?.data?._id,
+      _id: customerId,
     };
-    console.log("userData",userData)
-    dispatch(verifyOtp(userData, otp));
-    if (otpStatus?.status === 200) {
-      toast.success("OTP verified successfully and Submit your query");
-      clearFormFields();
-    } else if (otpStatus?.status === 400) {
-      toast.error("Otp must be 6 digits");
-    } else if (otpStatus?.status === 409) {
-      toast.error("Invalid OTP");
-    }
-  };
+    dispatch(verifyOtp(userData))
+    
+  }
 
+
+  useEffect(() => {
+    if (otpStatus?.data?.message) {
+      Swal.fire({
+        icon: 'success',
+        title: 'Success',
+        text: otpStatus?.data?.message,
+      });
+      clearFormFields()
+    }
+  }, [otpStatus]);
+  
   const clearFormFields = () => {
     setName("");
     setEmail("");
@@ -159,19 +193,50 @@ const QuickEnquiryForm = () => {
                     />
                   </Form.Group>
                 </Col>
+                {!user_data.status === true && (
+                  <Col xs={12} className="text-center">
+                  <Button
+                    variant="primary"
+                    type="submit"
+                    className="btn-send"
+                    onClick={handleSignUp}
+                  >
+                    Continue
+                  </Button>
+                </Col>
+               
+                )}
 
                 
+                
+                {user_data.status === true && (
                   <>
                     <Col md={6}>
-                      <Form.Group>
-                        <Form.Control
-                          type="text"
-                          placeholder="Enter your otp *"
-                          value={otp}
-                          onChange={(e) => setOTP(e.target.value)}
-                        />
-                      </Form.Group>
-                    </Col>
+                  <Form.Group>
+                    <Form.Control
+                      type="text"
+                      placeholder="Enter your otp *"
+                      value={otp}
+                      onChange={(e) => setOTP(e.target.value)}
+                    />
+                  </Form.Group>
+                </Col>
+                  <Col xs={12} className="text-center">
+                  <Button
+                    variant="primary"
+                    type="submit"
+                    className="btn-send"
+                    onClick={handleVerifyOtp}   
+                  >
+                    Submit
+                  </Button>
+                </Col>
+                  </>
+                  
+                )}
+
+                {/* <>
+                    
                     <Col xs={12} className="text-center">
                       <Button
                         variant="primary"
@@ -182,22 +247,7 @@ const QuickEnquiryForm = () => {
                         Submit
                       </Button>
                     </Col>
-                  </>
-               
-
-                {!user_data ||
-                  (user_data.length === 0 && (
-                    <Col xs={12} className="text-center">
-                      <Button
-                        variant="primary"
-                        type="submit"
-                        className="btn-send"
-                        onClick={handleSignUp}
-                      >
-                        Continue
-                      </Button>
-                    </Col>
-                  ))}
+                  </> */}
               </Row>
             </div>
           </Col>

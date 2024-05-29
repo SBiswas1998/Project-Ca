@@ -1,9 +1,9 @@
 import { BOOK_SLOTS } from "./type";
 import {apiCall} from "../api"
 
-// const base_url = "https://project-ca-backend.vercel.app"
+const base_url = "https://testing-node-vercel-livid.vercel.app"
 
-const base_url = "http://localhost:3004"
+// const base_url = "http://localhost:3010"
 
 
 
@@ -23,6 +23,7 @@ export const bookingSlots = (data)=>async dispatch =>{
         console.log("config",config)
         // Make the API call
         let response = await apiCall(config, dispatch);
+        console.log("response",response);
 
         if(response.status == 400){
             console.log("Error")
