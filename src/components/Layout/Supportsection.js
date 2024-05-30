@@ -7,10 +7,10 @@ import SupportCard from "../Card/SupportCard";
 const Supportsection = () => {
   return (
     <>
-      <section className="hm-services-sec">
+      <section className="hm-support-sec">
         <Container>
           <Row>
-            <Col className="hm-services-title">
+            <Col className="hm-support-title">
               <h2>
                 Reason To Choose
                 <span>
@@ -28,7 +28,7 @@ const Supportsection = () => {
                 commitment year after year.
               </p>
             </Col>
-            <Col xs lg="7">
+            <Col xs lg="8">
               <SupportCard />
             </Col>
           </Row>

@@ -766,6 +766,49 @@ a.hedingnews {
 }
 
 /* Support card */
+.hm-support-sec{
+  display: block;
+  clear: both;
+  position: relative;
+  background: #fff;
+  padding-top: 80px;
+  padding-bottom: 20px;
+}
+
+.hm-support-title p {
+  font-size: 16px;
+  margin: 10px;
+  text-align: justify;
+  margin-top: 28px;
+}
+
+.hm-support-sec h2 {
+  font-size: 35px;
+  position: relative;
+  text-align: center;
+  color: #050521;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.hm-support-sec h2 span {
+  color: #05044D;
+  font-weight: 700;
+}
+
+.hm-support-sec h2:after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: #05044D;
+  left: 0;
+  right: 0;
+  margin: 4px auto 0;
+  position: absolute;
+  top: 100%;
+}
 
 .grid-support-container > div {
   margin-top: 40px;
@@ -792,6 +835,7 @@ a.hedingnews {
   flex-direction: column;
   cursor: pointer;
   transition: all 0.3s ease;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 .support-Limited-card {
@@ -1944,4 +1988,80 @@ svg text {
     background: transparent;
     color: #fff;
     border: 1px solid #05044D;
+}
+
+
+
+/* vision-card */
+
+.vision-card {
+  width:350px;
+  display:inline-block;
+  margin-left:50px;
+  margin-top:50px 
+}
+
+.vision-card .card {
+  position:relative;
+  overflow:hidden;
+  width:350px;
+  margin:0 auto;
+  background:#fff;
+  padding:20px;
+  box-sizing:border-box;
+  text-align:center;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  height: 290px;
+  cursor: pointer;
+}
+
+.vision-card .content .title {
+  margin-top: 21px;
+  font-size: 20px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+
+
+.vision-card .card .layer {
+  z-index:1;
+  position:absolute;
+  top:calc(100% - 2px);
+  height:100%;
+  width:100%;
+  left:0;
+  background:linear-gradient(to left , orange, tomato);
+  transition:0.5s;  
+  opacity: .2;
+  cursor: pointer !important;
+}
+.vision-card .card .content {
+  z-index:2; 
+  position:relative;
+}
+
+.vision-card .card:hover  .layer{
+  top:0;
+}
+
+.vision-card .card .content p {
+  font-size:14px;
+  line-height:24px;
+  color:#000;
+  margin-top: 30px;
+  
+}
+.vision-card .card .content .icon {
+  font-size: 3rem;
+}
+
+.vision-card .card .conte nt .details h2 {
+font-size:18px;
+color:white;
+}
+
+.vision-card .card:hover .content .details h2 span {
+  color:white;
+  position:relative
 }
