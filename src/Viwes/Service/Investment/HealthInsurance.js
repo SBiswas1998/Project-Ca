@@ -4,20 +4,47 @@ import { Footer } from "../../../components/Layout";
 import TitleSection from "../../../components/TitleSection";
 import QuickEnquiryFrom from "../../../components/Forms/QuickEnquiryFrom";
 import ResHeader from "../../../components/ResponsiveMemu/Header";
+import { Col, Container, Row } from "react-bootstrap";
 
 const HealthInsurance = () => {
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 3000); // 3 seconds
-  }, []);
-
   return (
     <>
       <ResHeader />
       <QuickEnquiryFrom />
+      <section className="hm-services-sec">
+        <Container>
+          <Row>
+            <Col className="hm-about-what-sec" xs={12} md={12} lg={12}>
+              <h2>Health Insurance</h2>
+            </Col>
+          </Row>
+          <Row className="justify-content-md-center">
+            <Col xs={12} md={12} lg={12} className="mt-5 what-us-text">
+              <p>
+                Health insurance is an essential component of financial planning
+                and healthcare access, ensuring individuals and families have
+                coverage for medical expenses. Comprehensive health insurance
+                typically covers a range of services, including doctor visits,
+                hospital stays, prescription medications, preventive care, and
+                more. It provides a safety net against unexpected medical costs,
+                shielding policyholders from potentially crippling expenses.
+                Additionally, health insurance promotes regular healthcare
+                utilization, leading to early detection and treatment of
+                illnesses, ultimately improving overall health outcomes. Access
+                to affordable health insurance for all is crucial for creating a
+                healthier and more equitable society, where individuals can seek
+                medical care without fear of financial burden. Through various
+                government programs, employer-sponsored plans, and individual
+                policies, efforts are made to expand coverage and make
+                healthcare accessible to everyone, regardless of socioeconomic
+                status. By ensuring universal access to health insurance,
+                communities can thrive, individuals can lead healthier lives,
+                and the burden of healthcare costs can be shared equitably.
+              </p>
+            </Col>
+          </Row>
+        </Container>
+      </section>
       <Footer />
     </>
   );

@@ -4,20 +4,43 @@ import { Footer } from "../../../components/Layout";
 import TitleSection from "../../../components/TitleSection";
 import QuickEnquiryFrom from "../../../components/Forms/QuickEnquiryFrom";
 import ResHeader from "../../../components/ResponsiveMemu/Header";
+import { Col, Container, Row } from "react-bootstrap";
 
 const TaxPayment = () => {
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 3000); // 3 seconds
-  }, []);
-
   return (
     <>
       <ResHeader />
       <QuickEnquiryFrom />
+      <section className="hm-services-sec">
+        <Container>
+          <Row>
+            <Col className="hm-about-what-sec" xs={12} md={12} lg={12}>
+              <h2>Tax Payment</h2>
+            </Col>
+          </Row>
+          <Row className="justify-content-md-center">
+            <Col xs={12} md={12} lg={12} className="mt-5 what-us-text">
+              <p>
+                When filing your taxes, it's crucial to include all relevant
+                information to ensure accuracy and compliance. Begin by clearly
+                stating your full name, address, and Social Security number or
+                taxpayer identification number. Next, specify the tax year being
+                filed and the type of tax return (e.g., individual income tax,
+                corporate tax). Provide details of your income sources,
+                including wages, interest, dividends, and any other taxable
+                earnings. Deductions and credits play a significant role in
+                reducing your tax liability, so list all eligible expenses and
+                credits, such as mortgage interest, charitable contributions,
+                and education expenses. Ensure you accurately report any tax
+                payments made throughout the year, including withholding from
+                wages, estimated tax payments, and any credits applied. Finally,
+                review your paragraph for completeness and accuracy before
+                submitting your tax return to the appropriate tax authority.
+              </p>
+            </Col>
+          </Row>
+        </Container>
+      </section>
       <Footer />
     </>
   );
