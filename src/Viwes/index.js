@@ -12,14 +12,6 @@ import BusinessTaxFiling from "./Service/TaxFiling/BusinessTaxFiling";
 import TDSReturn from "./Service/TaxFiling/TDSReturn";
 import ESIReturn from "./Service/TaxFiling/ESIReturn";
 import CancelGSTRegistration from "./Service/TaxFiling/CancelGSTRegistration";
-import BankLoanSyndication from "./Service/Funding/BankLoanSyndication";
-import CollateralFreeLoan from "./Service/Funding/CollateralFreeLoan";
-import WorkingCapital from "./Service/Funding/WorkingCapital";
-import TermLoan from "./Service/Funding/TermLoan";
-import CreditScoreCheck from "./Service/Funding/CreditScoreCheck";
-import BankLoanRating from "./Service/Funding/BankLoanRating";
-import CMAReportPreparation from "./Service/Funding/CMAReportPreparation";
-import BusinessPlanPreparation from "./Service/Funding/BusinessPlanPreparation";
 import ChangeCompanyName from "./Service/Compliance/ChangeCompanyName";
 import WindingUpofLLP from "./Service/Compliance/WindingUpofLLP";
 import WindingUpofCompany from "./Service/Compliance/WindingUpofCompany";
@@ -41,7 +33,6 @@ import TanRegistration from "./Service/Income Tax/TanPanRegistration";
 import ProfessionalTax from "./Service/Income Tax/ProfessionalTax";
 import PFRegistration from "./Service/Registrations/PFRegistration";
 import MSMERegistration from "./Service/Registrations/MSMERegistration";
-// import ImportExportCode from "./Service/Registrations/ImportExportCode";
 import Trust from "./Service/StartABusiness/Trust";
 import SocietyRegistrations from "./Service/StartABusiness/SocietyRegistrations";
 import UdyamAadhar from "./Service/StartABusiness/UdyamAadhar"
@@ -73,6 +64,19 @@ import Documentcenter from "./Service/Documentcenter";
 import TaxCalculator from "./Service/Income Tax/TaxCalculation";
 import GSTCalculator from "./Service/GST/GSTTaxCalation";
 import Schedule from "./Schedule";
+import BusinessLoan from "./Service/Funding/BusinessLoan";
+import HouseLoan from "./Service/Funding/HouseLoan"
+import LoanonProperty from "./Service/Funding/LoanonProperty"
+import MSMELoan from "./Service/Funding/MSMELoan"
+import TeamLoan from "./Service/Funding/TeamLoan"
+import WorkingCapitalLoan from "./Service/Funding/WorkingCapitalLoan"
+import BookAccounting from "./Service/Book Keeper/Accounting"
+import BackReconciliation from "./Service/Book Keeper/BankReconciliation"
+import MonthlyReview from "./Service/Book Keeper/MonthlyReview"
+import PFESI from "./Service/Book Keeper/PFESIRegistration"
+import BookProfessionalTax from "./Service/Book Keeper/ProfessionalTax";
+import Visit from "./Service/Book Keeper/Visit";
+import Vouching from "./Service/Book Keeper/Vouching";
 
 
 
@@ -97,17 +101,12 @@ export{
     BusinessTaxFiling,
     BusinessSociety,
     BusinessGrowth,
-    BusinessPlanPreparation,
-    BankLoanSyndication,
-    BankLoanRating,
+    BusinessLoan,
     CancelGSTRegistration,
     ChangeCompanyName,
-    CMAReportPreparation,
     CapitalGain,
-    CollateralFreeLoan,
     Contact,
     CopyrightRegistration,
-    CreditScoreCheck,
     Documentcenter,
     ESIReturn,
     FinancialPlanning,
@@ -138,9 +137,7 @@ export{
     TrademarkObjection,
     TrademarkRenewal,
     TradeLicense,
-    TermLoan,
     WindingUpofLLP,
-    WorkingCapital,
     WindingUpofCompany,
     UdyamAadhar,
     SocietyRegistrations,
@@ -160,9 +157,21 @@ export{
     PANAadharLink,
     TaxPayment,
     TaxCapitalGain,
-    TaxCalculator,
     GSTCalculator,
-    Schedule
+    Schedule,
+    HouseLoan,
+    LoanonProperty,
+    MSMELoan,
+    TeamLoan,
+    WorkingCapitalLoan,
+    BookAccounting,
+    BackReconciliation,
+    MonthlyReview,
+    PFESI,
+    BookProfessionalTax,
+    Visit,
+    Vouching,
+
     
     
 

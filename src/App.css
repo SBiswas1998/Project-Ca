@@ -31,7 +31,7 @@ a{
   padding: 10px 20px;
 }
 nav.desktop-nav {
-  margin-left: 46%;
+  margin-left: 40%;
   margin-top: 26px;
 }
 
@@ -2064,4 +2064,12 @@ color:white;
 .vision-card .card:hover .content .details h2 span {
   color:white;
   position:relative
+}
+
+
+.otherhero-text {
+  margin-top: 20% !important;
+  text-align: justify;
+  letter-spacing: 2px;
+  line-height: 30px;
 }

@@ -13,7 +13,7 @@ const BookKeeper = () => {
         <Container>
           <Row>
             <Col className="hm-about-what-sec" xs={12} md={12} lg={12}>
-              <h2>BookKeeper</h2>
+              <h2>Book Keeping</h2>
             </Col>
           </Row>
           <Row className="justify-content-md-center">

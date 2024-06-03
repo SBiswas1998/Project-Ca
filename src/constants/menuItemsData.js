@@ -175,61 +175,32 @@ export const menuItemsData = [
         ],
       },
       {
-        title: "Tax Filing",
-        submenu: [
-          {
-            title: "Business Tax Filing",
-            url: "/service/tax_filing/business_tax_filing",
-          },
-          {
-            title: "TDS Return",
-            url: "/service/tax_filing/TDS_return",
-          },
-          {
-            title: "ESI Return",
-            url: "/service/tax_filing/ESI_return",
-          },
-          {
-            title: "Cancel GST Registrations",
-            url: "/service/tax_filing/cancel_GST_registration",
-          },
-        ],
-      },
-      {
         title: "Funding",
         submenu: [
           {
-            title: "Business Lone",
-            url: "/service/funding/business_plan_preparation",
+            title: "Business Loan",
+            url: "/service/funding/businessLoan",
           },
           {
-            title: " MSME Lone",
-            url: "/service/funding/CMA_report_preparation",
+            title: " MSME Loan",
+            url: "/service/funding/msmeloan",
           },
           {
-            title: "House Lone",
-            url: "/service/funding/bank_loan_rating",
+            title: "House Loan",
+            url: "/service/funding/homeloan",
           },
           {
             title: "Loan on Property",
-            url: "/service/funding/credit_score_check",
+            url: "/service/funding/loan_on_property",
           },
           {
-            title: "Team Lone",
-            url: "/service/funding/term_loan",
+            title: "Team Loan",
+            url: "/service/funding/teamloan",
           },
           {
-            title: " Working Capital Lone",
-            url: "/service/funding/working_capital",
+            title: " Working Capital Loan",
+            url: "/service/funding/working_capital_loan",
           },
-          // {
-          //   title: "Collateral Freelone",
-          //   url: "/service/funding/credit_score_check",
-          // },
-          // {
-          //   title: "Bank Lone Syndication",
-          //   url: "/service/funding/bank_loan_syndication",
-          // },
         ],
       },
       {
@@ -285,117 +256,43 @@ export const menuItemsData = [
 
       {
         title: "Book Keeping",
-        url: "/service/book_keeping",
+        submenu: [
+          {
+            title: "Bank Reconciliation",
+            url: "/service/bookkeeping/bankreconciliation",
+          },
+          {
+            title: "Vouching",
+            url: "/service/bookkeeping/vouching",
+          },
+          {
+            title: "Accounting",
+            url: "/service/bookkeeping/accounting",
+          },
+          {
+            title: "P. F & ESI Registration",
+            url: "/service/bookkeepeing/PFESIRegistration",
+          },
+          {
+            title: "Visit",
+            url: "/service/bookkeeping/visit",
+          },
+          {
+            title: "Professional Tax ",
+            url: "/service/bookkeeping/professionaltax",
+          },
+          {
+            title: "Monthly Review",
+            url: "/Service/Book Keeper/MonthlyReview",
+          },
+        ],
       },
-      // {
-      //   title: "Tax Planning",
-      //   url: "seo",
-      // },
-      // {
-      //   title: "SSI (Aadhar Udyog Registration)",
-      //   url: "seo",
-      // },
-      // {
-      //   title: "ISO Certification",
-      //   url: "seo",
-      // },
-      // {
-      //   title: "Shop & Act Establishment Registration",
-      //   url: "seo",
-      // },
     ],
   },
-  // {
-  //   title: "Knowledge Bank",
-  //   submenu: [
-  //     {
-  //       title: "Calculators",
-  //       submenu: [
-  //         {
-  //           title: "Proprietorship",
-  //           url: "/service/registration/proprietorship",
-  //         },
-  //         {
-  //           title: "Partnership",
-  //           url: "/service/registration/partnership",
-  //         },
-  //         {
-  //           title: "One Person Company",
-  //           url: "/service/registration/one_person_company",
-  //         },
-  //       ],
-  //     },
-  //     {
-  //       title: "Rules",
-  //       submenu: [
-  //         {
-  //           title: "Business Tax Filing",
-  //           url: "/service/tax_filing/business_tax_filing",
-  //         },
-  //         {
-  //           title: "TDS Return",
-  //           url: "/service/tax_filing/TDS_return",
-  //         },
-  //         {
-  //           title: "ESI Return",
-  //           url: "/service/tax_filing/ESI_return",
-  //         },
-  //         {
-  //           title: "Cancel GST Registrations",
-  //           url: "/service/tax_filing/cancel_GST_registration",
-  //         },
-  //       ],
-  //     },
-  //     {
-  //       title: "Forms",
-  //       submenu: [
-  //         {
-  //           title: "Business Tax Filing",
-  //           url: "/service/tax_filing/business_tax_filing",
-  //         },
-  //         {
-  //           title: "TDS Return",
-  //           url: "/service/tax_filing/TDS_return",
-  //         },
-  //         {
-  //           title: "ESI Return",
-  //           url: "/service/tax_filing/ESI_return",
-  //         },
-  //         {
-  //           title: "Cancel GST Registrations",
-  //           url: "/service/tax_filing/cancel_GST_registration",
-  //         },
-  //       ],
-  //     },
-  //     {
-  //       title: "Forms",
-  //       submenu: [
-  //         {
-  //           title: "Business Tax Filing",
-  //           url: "/service/tax_filing/business_tax_filing",
-  //         },
-  //         {
-  //           title: "TDS Return",
-  //           url: "/service/tax_filing/TDS_return",
-  //         },
-  //         {
-  //           title: "ESI Return",
-  //           url: "/service/tax_filing/ESI_return",
-  //         },
-  //         {
-  //           title: "Cancel GST Registrations",
-  //           url: "/service/tax_filing/cancel_GST_registration",
-  //         },
-  //       ],
-  //     },
-
-  //   ],
-  // },
-
-  // {
-  //   title: "Careers",
-  //   url: "/contactus",
-  // },
+  {
+    title: "Rules and Acts",
+    url: "/about",
+  },
   {
     title: "Contact Us",
     url: "/contactus",

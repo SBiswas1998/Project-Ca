@@ -2,14 +2,12 @@ import React, { useEffect, useState } from "react";
 import { Footer } from "../../../components/Layout";
 import CommonAboutSection from "../../../components/CommonAboutSection";
 import {
-  PartnershipAboutText,
   PartnershipCardText,
 } from "../../../constants/Paragram";
 import CommonCard from "../../../components/Card/CommonCard";
 import QuickEnquiryFrom from "../../../components/Forms/QuickEnquiryFrom";
 import ResHeader from "../../../components/ResponsiveMemu/Header";
-import TitleSection from "../../../components/TitleSection";
-import OtherPageLoader from "../../../components/Loader/OtherPageLoader";
+import { Col, Container, Row } from "react-bootstrap";
 
 const Partnership = () => {
   const [cardtext1, setCardText1] = useState("");
@@ -28,22 +26,13 @@ const Partnership = () => {
       setCardText5(PartnershipCardText[4]?.Bank_Account);
     }
   }, [PartnershipCardText]);
-  useEffect(() => {
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 3000); // 3 seconds
-  }, []);
 
   return (
     <>
      <ResHeader />
           
           <QuickEnquiryFrom />
-          {/* <CommonAboutSection
-            text={PartnershipAboutText}
-            title="Partner"
-            span="ship"
-          /> */}
+
           <CommonCard
             cardtilte="Reasons to Register a"
             cardspan="Partnership"

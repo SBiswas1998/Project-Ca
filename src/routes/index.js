@@ -5,17 +5,11 @@ import {
   AddDirectors,
   AddPartner,
   Assessment,
-  BankLoanRating,
-  BankLoanSyndication,
-  BusinessPlanPreparation,
   BusinessTaxFiling,
-  CMAReportPreparation,
   CancelGSTRegistration,
   ChangeCompanyName,
-  CollateralFreeLoan,
   Contact,
   CopyrightRegistration,
-  CreditScoreCheck,
   ESIReturn,
   GSTRegistration,
   GSTReturn,
@@ -26,7 +20,6 @@ import {
   LimitedLiabilityPartnership,
   MOAAmendment,
   MSMERegistration,
-  NoticeScrutiny,
   OnePersonCompany,
   PFRegistration,
   Partnership,
@@ -43,7 +36,6 @@ import {
   TDSReturn,
   TanRegistration,
   TemporaryGSTRegistration,
-  TermLoan,
   TradeLicense,
   TrademarkObjection,
   TrademarkRegistration,
@@ -52,7 +44,6 @@ import {
   UdyamAadhar,
   WindingUpofCompany,
   WindingUpofLLP,
-  WorkingCapital,
   Auditing,
   CapitalGain,
   FinancialPlanning,
@@ -72,11 +63,22 @@ import {
   TaxNoticeSCOTIN,
   Accounting,
   Documentcenter,
-  TaxCalculator,
   GSTCalculator,
   NoticeSCOTIN,
   Schedule,
+  BusinessLoan,
+  MSMELoan,
+  HouseLoan,
+  LoanonProperty,
+  TeamLoan,
+  BookAccounting,
+  MonthlyReview,
+  PFESI,
+  BookProfessionalTax,
+  Visit,
+  Vouching,
 } from "../Viwes";
+import BankReconciliation from "../Viwes/Service/Book Keeper/BankReconciliation";
 
 const AppRouter = () => {
   return (
@@ -137,41 +139,70 @@ const AppRouter = () => {
         element={<CancelGSTRegistration />}
       />
       <Route
-        path="/service/funding/bank_loan_syndication"
+        path="/service/funding/businessLoan"
         exact
-        element={<BankLoanSyndication />}
+        element={<BusinessLoan />}
       />
       <Route
-        path="/service/funding/collateral_free_loan"
+        path="/service/funding/msmeloan"
         exact
-        element={<CollateralFreeLoan />}
+        element={<MSMELoan />}
       />
       <Route
-        path="/service/funding/working_capital"
+        path="/service/funding/homeloan"
         exact
-        element={<WorkingCapital />}
-      />
-      <Route path="/service/funding/term_loan" exact element={<TermLoan />} />
-      <Route
-        path="/service/funding/credit_score_check"
-        exact
-        element={<CreditScoreCheck />}
+        element={<HouseLoan />}
       />
       <Route
-        path="/service/funding/bank_loan_rating"
+        path="/service/funding/loan_on_property"
         exact
-        element={<BankLoanRating />}
+        element={<LoanonProperty />}
       />
       <Route
-        path="/service/funding/CMA_report_preparation"
+        path="/service/funding/teamloan"
         exact
-        element={<CMAReportPreparation />}
+        element={<TeamLoan />}
+      />
+
+      <Route
+        path="/service/bookkeeping/accounting"
+        exact
+        element={< BookAccounting/>}
       />
       <Route
-        path="/service/funding/business_plan_preparation"
+        path="/service/funding/teamloan"
         exact
-        element={<BusinessPlanPreparation />}
+        element={< MonthlyReview/>}
       />
+      <Route
+        path="/service/bookkeepeing/PFESIRegistration"
+        exact
+        element={< PFESI/>}
+      />
+      <Route
+        path="/service/bookkeeping/professionaltax"
+        exact
+        element={< BookProfessionalTax/>}
+      />
+      <Route
+        path="/service/bookkeeping/visit"
+        exact
+        element={< Visit/>}
+      />
+      <Route
+        path="/service/bookkeeping/vouching"
+        exact
+        element={< Vouching/>}
+      />
+      <Route
+        path="/service/bookkeeping/bankreconciliation"
+        exact
+        element={< BankReconciliation/>}
+      />
+      
+
+
+
       <Route
         path="/service/compliance/change_company_name"
         exact
@@ -386,11 +417,6 @@ const AppRouter = () => {
         path="/service/IncomeTax/notice_Scrutiny"
         exact
         element={<TaxNoticeSCOTIN />}
-      />
-      <Route
-        path="/service/IncomeTax/TaxCalculation"
-        exact
-        element={<TaxCalculator />}
       />
       <Route
         path="/service/GST/GST_Tax_Calculation"

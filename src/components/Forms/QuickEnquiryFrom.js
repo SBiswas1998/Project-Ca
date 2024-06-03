@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import { registerUser, verifyOtp } from "../../actions/auth";
-import toast from "../common/toast";
 import contactimg from "../../assets/images/QuickEnquiryImg.png";
 import Swal from 'sweetalert2';
 
@@ -22,15 +21,7 @@ const QuickEnquiryForm = () => {
   const customerId =  localStorage.getItem('_id')
   // setUserId(customerId)
 
-  console.log("user_data======", user_data?.message);
-  console.log("otpStatus======>>>>>>>>>>>>>>", otpStatus?.data?.message);
-  console.log("customerId", customerId);
-
-  const popupMessage = user_data?.message
-
-  console.log("popupMessage", popupMessage)
-
-
+ const popupMessage = user_data?.message
   // setUserId(user_data?.data?._id);
 
 
@@ -234,20 +225,6 @@ const QuickEnquiryForm = () => {
                   </>
                   
                 )}
-
-                {/* <>
-                    
-                    <Col xs={12} className="text-center">
-                      <Button
-                        variant="primary"
-                        type="submit"
-                        className="btn-send"
-                        onClick={handleverifyOtp}
-                      >
-                        Submit
-                      </Button>
-                    </Col>
-                  </> */}
               </Row>
             </div>
           </Col>
