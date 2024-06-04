@@ -8,18 +8,13 @@ const GSTAmendment = () => {
   return (
     <>
       <ResHeader />
-      <QuickEnquiryFrom />
-      <section className="hm-services-sec">
-        <Container>
-          <Row>
-            <Col className="hm-about-what-sec" xs={12} md={12} lg={12}>
-              <h2>GST Amendment</h2>
-            </Col>
-          </Row>
-          <Row className="justify-content-md-center">
-            <Col xs={12} md={12} lg={12} className="mt-5 what-us-text">
-              <p>
-                When crafting a paragraph regarding GST (Goods and Services Tax)
+      <ResHeader />
+      <Container fluid>
+        <Row className="justify-content-center">
+          <Col xs={12} md={5}>
+            <p className="mt-5 otherhero-text">
+              <h1 className="text-center mb-4">GST Amendment</h1>
+              When crafting a paragraph regarding GST (Goods and Services Tax)
                 amendment, it's crucial to convey key details concisely. Here's
                 a template: "The recent amendment to the Goods and Services Tax
                 (GST) has brought about significant changes in the taxation
@@ -37,11 +32,15 @@ const GSTAmendment = () => {
                 challenges. Overall, the GST amendment marks a pivotal step
                 towards [state the broader impact or objective, such as
                 fostering transparency, fairness, or economic stability]."
-              </p>
-            </Col>
-          </Row>
-        </Container>
-      </section>
+    
+            </p>
+          </Col>
+          <Col xs={12} md={7}>
+            <QuickEnquiryFrom />
+          </Col>
+        </Row>
+      </Container>
+      
       <Footer />
     </>
   );

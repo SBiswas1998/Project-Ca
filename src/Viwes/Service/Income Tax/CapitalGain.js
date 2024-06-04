@@ -8,37 +8,33 @@ const CapitalGain = () => {
   return (
     <>
       <ResHeader />
-      <QuickEnquiryFrom />
-      <section className="hm-services-sec">
-        <Container>
-          <Row>
-            <Col className="hm-about-what-sec" xs={12} md={12} lg={12}>
-              <h2>Capital Gain</h2>
-            </Col>
-          </Row>
-          <Row className="justify-content-md-center">
-            <Col xs={12} md={12} lg={12} className="mt-5 what-us-text">
-              <p>
-                When reporting capital gains for income tax purposes, it's
-                crucial to provide all relevant information accurately. Begin by
-                detailing the asset sold, including its description, acquisition
-                date, and sale date. Specify the sale proceeds and the original
-                purchase price to calculate the capital gain. Deduct any
-                allowable expenses related to the sale, such as brokerage fees
-                or commissions, to arrive at the net capital gain. Identify the
-                applicable tax rate based on the duration of the asset's
-                ownership, whether it's short-term or long-term. Ensure
-                compliance with any tax regulations or reporting requirements
-                specific to your jurisdiction. Accurate record-keeping and
-                documentation are essential to support your capital gain
-                calculations and tax filings. Consulting a tax professional for
-                guidance can help navigate complexities and maximize tax
-                efficiency.
-              </p>
-            </Col>
-          </Row>
-        </Container>
-      </section>
+      <Container fluid>
+        <Row className="justify-content-center">
+          <Col xs={12} md={5}>
+            <p className="mt-5 otherhero-text">
+              <h1 className="text-center mb-4">Capital Gain</h1>
+              When reporting capital gains for income tax purposes, it's crucial
+              to provide all relevant information accurately. Begin by detailing
+              the asset sold, including its description, acquisition date, and
+              sale date. Specify the sale proceeds and the original purchase
+              price to calculate the capital gain. Deduct any allowable expenses
+              related to the sale, such as brokerage fees or commissions, to
+              arrive at the net capital gain. Identify the applicable tax rate
+              based on the duration of the asset's ownership, whether it's
+              short-term or long-term. Ensure compliance with any tax
+              regulations or reporting requirements specific to your
+              jurisdiction. Accurate record-keeping and documentation are
+              essential to support your capital gain calculations and tax
+              filings. Consulting a tax professional for guidance can help
+              navigate complexities and maximize tax efficiency.
+            </p>
+          </Col>
+          <Col xs={12} md={7}>
+            <QuickEnquiryFrom />
+          </Col>
+        </Row>
+      </Container>
+
       <Footer />
     </>
   );

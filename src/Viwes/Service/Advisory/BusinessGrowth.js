@@ -8,18 +8,12 @@ const BusinessGrowth = () => {
   return (
     <>
       <ResHeader />
-      <QuickEnquiryFrom />
-      <section className="hm-services-sec">
-        <Container>
-          <Row>
-            <Col className="hm-about-what-sec" xs={12} md={12} lg={12}>
-              <h2>Business Growth</h2>
-            </Col>
-          </Row>
-          <Row className="justify-content-md-center">
-            <Col xs={12} md={12} lg={12} className="mt-5 what-us-text">
-              <p>
-                Business and society are deeply intertwined, especially in the
+      <Container fluid>
+        <Row className="justify-content-center">
+          <Col xs={12} md={5}>
+            <p className="mt-5 otherhero-text">
+              <h1 className="text-center mb-4">Business Growth</h1>
+              Business and society are deeply intertwined, especially in the
                 realm of finance. Financial institutions and markets play a
                 pivotal role in driving economic growth and development,
                 impacting every facet of society. Companies rely on financial
@@ -37,11 +31,13 @@ const BusinessGrowth = () => {
                 society underscores the importance of sustainable and ethical
                 financial practices in fostering a thriving, equitable, and
                 resilient economy.
-              </p>
-            </Col>
-          </Row>
-        </Container>
-      </section>
+            </p>
+          </Col>
+          <Col xs={12} md={7}>
+            <QuickEnquiryFrom />
+          </Col>
+        </Row>
+      </Container>
       <Footer />
     </>
   );

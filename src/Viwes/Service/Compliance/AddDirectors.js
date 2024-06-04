@@ -1,19 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { Footer, Topbar } from "../../../components/Layout";
-import CommonBanner from "../../../components/CommonBanner";
-import CommonAboutSection from "../../../components/CommonAboutSection";
+import { Footer} from "../../../components/Layout";
 import CommonCard from "../../../components/Card/CommonCard";
 import QuickEnquiryFrom from "../../../components/Forms/QuickEnquiryFrom";
-import banner from "../../../assets/images/banner.jpg";
-import {
-  AddDirectorsAboutText,
-  RemoveDirectorsCardText,
-} from "../../../constants/Paragram";
+import {RemoveDirectorsCardText} from "../../../constants/Paragram";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import ResHeader from "../../../components/ResponsiveMemu/Header";
-import TitleSection from "../../../components/TitleSection";
 
 const AddDirectors = () => {
   const [cardtext1, setCardText1] = useState("");
@@ -35,11 +28,6 @@ const AddDirectors = () => {
     <>
       <ResHeader />
       <QuickEnquiryFrom />
-      {/* <CommonAboutSection
-        text={AddDirectorsAboutText}
-        title="Add"
-        span="Directors"
-      /> */}
       <CommonCard
         cardtilte="Types of Director "
         cardspan="in a Company "

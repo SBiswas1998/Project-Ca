@@ -73,6 +73,7 @@ img.homeaboutimage.jumping-animation {
   position: relative;
   font-size: 14px;
   margin-top: -11px;
+  height: 40px;
 }
 
 .desktop-nav .menu-items a {
@@ -80,6 +81,10 @@ img.homeaboutimage.jumping-animation {
   font-size: inherit;
   color: inherit;
   text-decoration: none;
+  margin-left: -7px;
+}
+.desktop-nav .menu-items a:hover {
+  color: #050494;
 }
 
 .desktop-nav .menu-items button {
@@ -97,6 +102,9 @@ img.homeaboutimage.jumping-animation {
 
 .desktop-nav button span {
   margin-left: 3px;
+}
+.desktop-nav button:hover {
+  color: #050494;
 }
 
 .desktop-nav .menu-items > a, .desktop-nav .menu-items button {
@@ -130,13 +138,14 @@ img.homeaboutimage.jumping-animation {
   background-color: #fff;
   border-radius: 0.5rem;
   display: none;
+
 }
 
 .desktop-nav .dropdown.show {
   display: block;
   color: #000;
   min-width: 300px;
-  border-bottom: 1px solid #000; 
+  /* border-bottom: 1px solid #000;  */
 }
 .desktop-nav .dropdown.show a{
   text-align: justify;
@@ -147,6 +156,7 @@ img.homeaboutimage.jumping-animation {
     left: 100%;
     top: -7px;
     color: #000;
+  
     /* height: 50vh;
     overflow-y: scroll; */
     
@@ -154,7 +164,11 @@ img.homeaboutimage.jumping-animation {
 
 .desktop-nav .dropdown .dropdown-submenu .menu-items > a {
   padding: 1rem;
-  border-bottom: 1px solid #000;
+  height: 40px;
+  /* border-bottom: 1px solid #000; */
+}
+.desktop-nav .dropdown .dropdown-submenu .menu-items > a:hover {
+ color: #050494;
 }
 
 .desktop-nav .dropdown .dropdown-submenu .menu-items > a:not(:last-child) {
@@ -166,7 +180,7 @@ img.homeaboutimage.jumping-animation {
   text-align: left;
   padding: 15px;
   font-size: 17px;
-  border-bottom: 1px solid #000;
+  /* border-bottom: 1px solid #000; */
 }
 
 .mobile-nav {

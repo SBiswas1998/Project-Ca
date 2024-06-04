@@ -8,18 +8,12 @@ const Auditing = () => {
   return (
     <>
       <ResHeader />
-      <QuickEnquiryFrom />
-      <section className="hm-services-sec">
-        <Container>
-          <Row>
-            <Col className="hm-about-what-sec" xs={12} md={12} lg={12}>
-              <h2>Auditing</h2>
-            </Col>
-          </Row>
-          <Row className="justify-content-md-center">
-            <Col xs={12} md={12} lg={12} className="mt-5 what-us-text">
-              <p>
-                Auditing is a systematic process aimed at evaluating the
+      <Container fluid>
+        <Row className="justify-content-center">
+          <Col xs={12} md={5}>
+            <p className="mt-5 otherhero-text">
+              <h1 className="text-center mb-4">Auditing</h1>
+              Auditing is a systematic process aimed at evaluating the
                 effectiveness of an organization’s internal controls, risk
                 management, and governance processes to ensure compliance with
                 laws, regulations, and internal policies. The scope of an audit
@@ -36,11 +30,13 @@ const Auditing = () => {
                 audited areas and outlines steps for corrective action, thereby
                 providing a roadmap for continuous improvement and assurance to
                 stakeholders.
-              </p>
-            </Col>
-          </Row>
-        </Container>
-      </section>
+            </p>
+          </Col>
+          <Col xs={12} md={7}>
+            <QuickEnquiryFrom />
+          </Col>
+        </Row>
+      </Container>
       <Footer />
     </>
   );

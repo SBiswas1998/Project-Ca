@@ -1,7 +1,5 @@
-import React, { useEffect, useState } from "react";
-import OtherPageLoader from "../../../components/Loader/OtherPageLoader";
+import React from "react";
 import { Footer } from "../../../components/Layout";
-import TitleSection from "../../../components/TitleSection";
 import QuickEnquiryFrom from "../../../components/Forms/QuickEnquiryFrom";
 import ResHeader from "../../../components/ResponsiveMemu/Header";
 import { Col, Container, Row } from "react-bootstrap";
@@ -10,18 +8,12 @@ const TaxPayment = () => {
   return (
     <>
       <ResHeader />
-      <QuickEnquiryFrom />
-      <section className="hm-services-sec">
-        <Container>
-          <Row>
-            <Col className="hm-about-what-sec" xs={12} md={12} lg={12}>
-              <h2>Tax Payment</h2>
-            </Col>
-          </Row>
-          <Row className="justify-content-md-center">
-            <Col xs={12} md={12} lg={12} className="mt-5 what-us-text">
-              <p>
-                When filing your taxes, it's crucial to include all relevant
+      <Container fluid>
+        <Row className="justify-content-center">
+          <Col xs={12} md={5}>
+            <p className="mt-5 otherhero-text">
+              <h1 className="text-center mb-4">Tax Payment</h1>
+              When filing your taxes, it's crucial to include all relevant
                 information to ensure accuracy and compliance. Begin by clearly
                 stating your full name, address, and Social Security number or
                 taxpayer identification number. Next, specify the tax year being
@@ -36,11 +28,13 @@ const TaxPayment = () => {
                 wages, estimated tax payments, and any credits applied. Finally,
                 review your paragraph for completeness and accuracy before
                 submitting your tax return to the appropriate tax authority.
-              </p>
-            </Col>
-          </Row>
-        </Container>
-      </section>
+            </p>
+          </Col>
+          <Col xs={12} md={7}>
+            <QuickEnquiryFrom />
+          </Col>
+        </Row>
+      </Container>
       <Footer />
     </>
   );

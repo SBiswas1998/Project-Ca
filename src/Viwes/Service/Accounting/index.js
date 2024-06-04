@@ -8,18 +8,12 @@ const Accounting = () => {
   return (
     <>
       <ResHeader />
-      <QuickEnquiryFrom />
-      <section className="hm-services-sec">
-        <Container>
-          <Row>
-            <Col className="hm-about-what-sec" xs={12} md={12} lg={12}>
-              <h2>Accounting</h2>
-            </Col>
-          </Row>
-          <Row className="justify-content-md-center">
-            <Col xs={12} md={12} lg={12} className="mt-5 what-us-text">
-              <p>
-                Accounting plays a crucial role in the financial management of
+      <Container fluid>
+        <Row className="justify-content-center">
+          <Col xs={12} md={5}>
+            <p className="mt-5 otherhero-text">
+              <h1 className="text-center mb-4">Accounting</h1>
+               Accounting plays a crucial role in the financial management of
                 any business, providing essential information that aids in
                 decision-making. It involves the systematic recording,
                 reporting, and analysis of financial transactions, ensuring
@@ -33,11 +27,13 @@ const Accounting = () => {
                 records, accounting ensures transparency and builds trust with
                 stakeholders, thereby supporting the overall integrity of
                 financial reporting.
-              </p>
-            </Col>
-          </Row>
-        </Container>
-      </section>
+            </p>
+          </Col>
+          <Col xs={12} md={7}>
+            <QuickEnquiryFrom />
+          </Col>
+        </Row>
+      </Container>
       <Footer />
     </>
   );

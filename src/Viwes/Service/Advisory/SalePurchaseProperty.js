@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Footer } from "../../../components/Layout";
 import QuickEnquiryFrom from "../../../components/Forms/QuickEnquiryFrom";
 import ResHeader from "../../../components/ResponsiveMemu/Header";
@@ -8,18 +8,12 @@ const SalePurchaseProperty = () => {
   return (
     <>
       <ResHeader />
-      <QuickEnquiryFrom />
-      <section className="hm-services-sec">
-        <Container>
-          <Row>
-            <Col className="hm-about-what-sec" xs={12} md={12} lg={12}>
-              <h2>Sale Purchase Property</h2>
-            </Col>
-          </Row>
-          <Row className="justify-content-md-center">
-            <Col xs={12} md={12} lg={12} className="mt-5 what-us-text">
-              <p>
-                The sale and purchase of property is a significant financial
+      <Container fluid>
+        <Row className="justify-content-center">
+          <Col xs={12} md={5}>
+            <p className="mt-5 otherhero-text">
+              <h1 className="text-center mb-4">Sale Purchase Property</h1>
+              The sale and purchase of property is a significant financial
                 transaction that involves the transfer of ownership from the
                 seller to the buyer. This process requires careful consideration
                 of various financial aspects, including valuation, financing,
@@ -35,11 +29,13 @@ const SalePurchaseProperty = () => {
                 involved to ensure a smooth and equitable exchange, ultimately
                 impacting personal or corporate financial portfolios
                 significantly.
-              </p>
-            </Col>
-          </Row>
-        </Container>
-      </section>
+            </p>
+          </Col>
+          <Col xs={12} md={7}>
+            <QuickEnquiryFrom />
+          </Col>
+        </Row>
+      </Container>
       <Footer />
     </>
   );

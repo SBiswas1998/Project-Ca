@@ -1,15 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { Footer } from "../../../components/Layout";
 import ResHeader from "../../../components/ResponsiveMemu/Header";
-import CommonAboutSection from "../../../components/CommonAboutSection";
-import {
-  ProfessionalTaxAboutText,
-  ProfessionalTaxCardText,
-} from "../../../constants/Paragram";
+import { ProfessionalTaxCardText } from "../../../constants/Paragram";
 import CommonCard from "../../../components/Card/CommonCard";
-import TitleSection from "../../../components/TitleSection";
 import QuickEnquiryForm from "../../../components/Forms/QuickEnquiryFrom";
-import OtherPageLoader from "../../../components/Loader/OtherPageLoader";
+import { Col, Container, Row } from "react-bootstrap";
+
 
 const ProfessionalTax = () => {
   const [cardtext1, setCardText1] = useState("");
@@ -17,7 +13,6 @@ const ProfessionalTax = () => {
   const [cardtext3, setCardText3] = useState("");
   const [cardtext4, setCardText4] = useState("");
   const [cardtext5, setCardText5] = useState("");
-  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     if (ProfessionalTaxCardText) {
@@ -29,21 +24,33 @@ const ProfessionalTax = () => {
     }
   }, [ProfessionalTaxCardText]);
 
-  useEffect(() => {
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 3000); // 3 seconds
-  }, []);
-
   return (
     <>
       <ResHeader />
-      <QuickEnquiryForm />
-      <CommonAboutSection
-        text={ProfessionalTaxAboutText}
-        title="Professional"
-        span="Tax"
-      />
+      <Container fluid>
+        <Row className="justify-content-center">
+          <Col xs={12} md={5}>
+            <p className="mt-5 otherhero-text">
+              <h1 className="text-center mb-4">ProfessionalTax</h1>
+              Professional tax registration is essential for employers and
+              individuals engaged in any profession, trade, or calling in India.
+              This state-level tax, applicable in states like Karnataka, West
+              Bengal, Maharashtra, and others, is compulsory for all private
+              company employees. Employers are responsible for deducting
+              professional tax from employee salaries and remitting it to the
+              respective state government. The tax amount is typically based on
+              the individual's gross income and is deducted monthly. Purminder
+              Kaur & Associates provides professional tax registration services
+              in India, ensuring compliance and facilitating smooth operations
+              for businesses and professionals.
+            </p>
+          </Col>
+          <Col xs={12} md={7}>
+            <QuickEnquiryForm />
+          </Col>
+        </Row>
+      </Container>
+
       <CommonCard
         cardtilte="Reasons to Obtain"
         cardspan="Professional Tax Registration"

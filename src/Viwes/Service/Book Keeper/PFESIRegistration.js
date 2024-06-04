@@ -8,38 +8,33 @@ const PFESIRegistration = () => {
   return (
     <>
       <ResHeader />
-      <QuickEnquiryFrom />
-      <section className="hm-services-sec">
-        <Container>
-          <Row>
-            <Col className="hm-about-what-sec" xs={12} md={12} lg={12}>
-              <h2>PF & ESI Registration</h2>
-            </Col>
-          </Row>
-          <Row className="justify-content-md-center">
-            <Col xs={12} md={12} lg={12} className="mt-5 what-us-text">
-              <p>
-                Registering for Provident Fund (PF) and Employee State Insurance
-                (ESI) is imperative for financial stability and compliance in
-                bookkeeping. PF registration mandates employers to contribute a
-                percentage of their employees' salary towards a retirement fund,
-                ensuring financial security post-employment. Similarly, ESI
-                registration requires employers to contribute towards a health
-                insurance scheme for their employees, covering medical expenses
-                and providing social security. These registrations not only
-                fulfill legal obligations but also demonstrate an employer's
-                commitment to employee welfare and financial well-being. Proper
-                documentation and adherence to regulatory guidelines during the
-                registration process are crucial for maintaining accurate
-                financial records and ensuring seamless bookkeeping practices.
-                Compliance with PF and ESI regulations not only fosters trust
-                between employers and employees but also fosters a healthy work
-                environment conducive to productivity and growth.
-              </p>
-            </Col>
-          </Row>
-        </Container>
-      </section>
+      <Container fluid>
+        <Row className="justify-content-center">
+          <Col xs={12} md={5}>
+            <p className="mt-5 otherhero-text">
+              <h1 className="text-center mb-4">PF & ESI Registration</h1>
+              In this month's financial review, we delve into the meticulous
+              world of bookkeeping, where every entry counts. With a keen eye on
+              accuracy, we meticulously documented all financial transactions,
+              ensuring they align seamlessly with our company's records. Through
+              careful reconciliation of accounts, we maintained a clear and
+              concise overview of our financial health. Each ledger entry was
+              scrutinized, discrepancies addressed promptly, and adjustments
+              made where necessary to maintain the integrity of our financial
+              statements. As we navigated through the month's financial
+              landscape, we identified areas of improvement, streamlining
+              processes to enhance efficiency and reduce potential errors.
+              Looking ahead, we remain committed to upholding the highest
+              standards of financial stewardship, knowing that each entry is not
+              just a number but a reflection of our dedication to sound
+              financial management.
+            </p>
+          </Col>
+          <Col xs={12} md={7}>
+            <QuickEnquiryFrom />
+          </Col>
+        </Row>
+      </Container>
       <Footer />
     </>
   );

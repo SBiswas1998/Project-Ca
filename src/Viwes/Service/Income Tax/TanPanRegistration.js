@@ -2,10 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Footer } from "../../../components/Layout";
 import ResHeader from "../../../components/ResponsiveMemu/Header";
 import QuickEnquiryForm from "../../../components/Forms/QuickEnquiryFrom";
-import {
-  TanRegistrationAboutText,
-  TanRegistrationCardText,
-} from "../../../constants/Paragram";
+import { TanRegistrationCardText } from "../../../constants/Paragram";
 import CommonCard from "../../../components/Card/CommonCard";
 import { Col, Container, Row } from "react-bootstrap";
 
@@ -29,12 +26,34 @@ const TanRegistration = () => {
   return (
     <>
       <ResHeader />
-      <QuickEnquiryForm />
-      {/* <CommonAboutSection
-        text={}
-        title="Tan"
-        span="Registration"
-      /> */}
+      <Container fluid>
+        <Row className="justify-content-center">
+          <Col xs={12} md={5}>
+            <p className="mt-5 otherhero-text">
+              <h1 className="text-center mb-4">Tan & PAN Registration</h1>
+              Tax Deduction and Collection Account Number (TAN) and Permanent
+              Account Number (PAN) are essential registrations for financial and
+              taxation activities in India. TAN is a unique identifier required
+              for entities responsible for deducting or collecting tax at the
+              source. This number ensures that tax deducted at source (TDS) is
+              tracked and accounted for by the Income Tax Department. Without
+              TAN, businesses cannot deduct TDS, making it a crucial component
+              for compliance with tax regulations. On the other hand, PAN serves
+              as a universal identification key for individuals and entities
+              involved in financial transactions. It is mandatory for various
+              activities such as opening a bank account, filing income tax
+              returns, and conducting high-value transactions. PAN helps in
+              tracking the financial activities of taxpayers and prevents tax
+              evasion. Both TAN and PAN are vital for maintaining transparency
+              and accountability in the financial ecosystem, ensuring smooth and
+              lawful financial operations.
+            </p>
+          </Col>
+          <Col xs={12} md={7}>
+            <QuickEnquiryForm />
+          </Col>
+        </Row>
+      </Container>
       <CommonCard
         cardtilte="Reasons to"
         cardspan="Register a TAN"

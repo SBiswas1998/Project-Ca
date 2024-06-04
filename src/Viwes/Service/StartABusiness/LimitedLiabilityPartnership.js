@@ -1,18 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { Footer } from "../../../components/Layout";
 import QuickEnquiryFrom from "../../../components/Forms/QuickEnquiryFrom";
-import CommonAboutSection from "../../../components/CommonAboutSection";
-import {
-  LimitedLiabilityPartnershipAcboutText,
-  LimitedLiabilityPartnershipCardText,
-} from "../../../constants/Paragram";
+import {LimitedLiabilityPartnershipCardText} from "../../../constants/Paragram";
 import CommonCard from "../../../components/Card/CommonCard";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import ResHeader from "../../../components/ResponsiveMemu/Header";
-import TitleSection from "../../../components/TitleSection"
-import OtherPageLoader from "../../../components/Loader/OtherPageLoader"
 
 const LimitedLiabilityPartnership = () => {
   const [cardtext1, setCardText1] = useState("");
@@ -22,7 +16,6 @@ const LimitedLiabilityPartnership = () => {
   const [cardtext5, setCardText5] = useState("");
   const [cardtext6, setCardText6] = useState("");
   const [cardtext7, setCardText7] = useState("");
-  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     if (LimitedLiabilityPartnershipCardText) {
@@ -46,24 +39,32 @@ const LimitedLiabilityPartnership = () => {
     }
   }, [LimitedLiabilityPartnershipCardText]);
 
- 
-
-  useEffect(() => {
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 3000); // 3 seconds
-  }, []);
-
 
   return (
     <>
     <ResHeader />
-      <QuickEnquiryFrom />
-      {/* <CommonAboutSection
-        text={LimitedLiabilityPartnershipAcboutText}
-        title="Limited Liability"
-        span="Partnership"
-      /> */}
+    <Container fluid>
+        <Row className="justify-content-center">
+          <Col xs={12} md={5}>
+            <p className="mt-5 otherhero-text">
+              <h1 className="text-center mb-4">Limited Liability Partnership</h1>
+              Limited Liability Partnerships (LLPs) offer limited liability
+              protection, ideal for small businesses. Introduced in 2010, LLPs
+              have gained popularity with over 1 lakh registrations by September
+              2014. Unlike traditional partnerships, LLPs provide individual
+              liability protection and management rights to partners. They're
+              easy to incorporate and manage, suitable for professionals and
+              small family-owned businesses. Purminder Kaur & Associates
+              specializes in LLP registration services, with an average
+              processing time of 15-20 working days. Schedule a free
+              consultation for LLP registration and business setup.
+            </p>
+          </Col>
+          <Col xs={12} md={7}>
+            <QuickEnquiryFrom />
+          </Col>
+        </Row>
+      </Container>
       <CommonCard
         cardtilte="Reasons to Register a Limited"
         cardspan="Liability Partnership"

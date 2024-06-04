@@ -8,18 +8,12 @@ const FinancialPlanning = () => {
   return (
     <>
       <ResHeader />
-      <QuickEnquiryFrom />
-      <section className="hm-services-sec">
-        <Container>
-          <Row>
-            <Col className="hm-about-what-sec" xs={12} md={12} lg={12}>
-              <h2>Financial Planning</h2>
-            </Col>
-          </Row>
-          <Row className="justify-content-md-center">
-            <Col xs={12} md={12} lg={12} className="mt-5 what-us-text">
-              <p>
-                Financial planning in finance involves creating a comprehensive
+      <Container fluid>
+        <Row className="justify-content-center">
+          <Col xs={12} md={5}>
+            <p className="mt-5 otherhero-text">
+              <h1 className="text-center mb-4">Financial Planning</h1>
+              Financial planning in finance involves creating a comprehensive
                 strategy to manage an individual's or organization's financial
                 resources effectively. It encompasses setting financial goals,
                 budgeting, saving, investing, and managing debt. The process
@@ -37,11 +31,13 @@ const FinancialPlanning = () => {
                 dynamic and ongoing process that provides a roadmap to financial
                 stability and growth, ensuring that resources are used
                 efficiently and effectively.
-              </p>
-            </Col>
-          </Row>
-        </Container>
-      </section>
+            </p>
+          </Col>
+          <Col xs={12} md={7}>
+            <QuickEnquiryFrom />
+          </Col>
+        </Row>
+      </Container>
       <Footer />
     </>
   );

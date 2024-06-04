@@ -8,18 +8,12 @@ const GSTReturn = () => {
   return (
     <>
       <ResHeader />
-      <QuickEnquiryFrom />
-      <section className="hm-services-sec">
-        <Container>
-          <Row>
-            <Col className="hm-about-what-sec" xs={12} md={12} lg={12}>
-              <h2>GST Return</h2>
-            </Col>
-          </Row>
-          <Row className="justify-content-md-center">
-            <Col xs={12} md={12} lg={12} className="mt-5 what-us-text">
-              <p>
-                When preparing a GST return, it's crucial to include all
+      <Container fluid>
+        <Row className="justify-content-center">
+          <Col xs={12} md={5}>
+            <p className="mt-5 otherhero-text">
+              <h1 className="text-center mb-4">GST Return</h1>
+              When preparing a GST return, it's crucial to include all
                 pertinent information accurately. Begin by stating the reporting
                 period, clearly indicating the start and end dates. Next, list
                 the total sales or supplies made during the period,
@@ -33,11 +27,14 @@ const GSTReturn = () => {
                 applied to each transaction category. Maintaining meticulous
                 records and adhering to reporting guidelines will facilitate a
                 smooth GST return process.
-              </p>
-            </Col>
-          </Row>
-        </Container>
-      </section>
+    
+            </p>
+          </Col>
+          <Col xs={12} md={7}>
+            <QuickEnquiryFrom />
+          </Col>
+        </Row>
+      </Container>
       <Footer />
     </>
   );

@@ -8,18 +8,12 @@ const CapitalGain = () => {
   return (
     <>
       <ResHeader />
-      <QuickEnquiryFrom />
-      <section className="hm-services-sec">
-        <Container>
-          <Row>
-            <Col className="hm-about-what-sec" xs={12} md={12} lg={12}>
-              <h2>Capital Gain</h2>
-            </Col>
-          </Row>
-          <Row className="justify-content-md-center">
-            <Col xs={12} md={12} lg={12} className="mt-5 what-us-text">
-              <p>
-                Capital gain in finance refers to the profit realized from the
+      <Container fluid>
+        <Row className="justify-content-center">
+          <Col xs={12} md={5}>
+            <p className="mt-5 otherhero-text">
+              <h1 className="text-center mb-4">Capital Gain</h1>
+              Capital gain in finance refers to the profit realized from the
                 sale of an asset, such as stocks, bonds, real estate, or other
                 investments, when the sale price exceeds the purchase price.
                 This gain is classified into two categories: short-term and
@@ -36,11 +30,13 @@ const CapitalGain = () => {
                 Understanding capital gains is essential for effective financial
                 planning and wealth management, as it impacts the overall
                 profitability of investment portfolios.
-              </p>
-            </Col>
-          </Row>
-        </Container>
-      </section>
+            </p>
+          </Col>
+          <Col xs={12} md={7}>
+            <QuickEnquiryFrom />
+          </Col>
+        </Row>
+      </Container>
       <Footer />
     </>
   );
