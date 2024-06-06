@@ -59,6 +59,11 @@ const Footer = () => {
                         </Link>
                       </li>
                       <li>
+                        <Link class="" to="/event">
+                          Event
+                        </Link>
+                      </li>
+                      <li>
                         <Link class="" to="/privacy_policy">
                           Privacy Policy
                         </Link>

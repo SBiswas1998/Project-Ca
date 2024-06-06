@@ -77,6 +77,7 @@ import PFESI from "./Service/Book Keeper/PFESIRegistration"
 import BookProfessionalTax from "./Service/Book Keeper/ProfessionalTax";
 import Visit from "./Service/Book Keeper/Visit";
 import Vouching from "./Service/Book Keeper/Vouching";
+import Event from "./Event"
 
 
 
@@ -171,10 +172,7 @@ export{
     BookProfessionalTax,
     Visit,
     Vouching,
-
-    
-    
-
+    Event
 }
 
 

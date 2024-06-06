@@ -77,6 +77,7 @@ import {
   BookProfessionalTax,
   Visit,
   Vouching,
+  Event,
 } from "../Viwes";
 import BankReconciliation from "../Viwes/Service/Book Keeper/BankReconciliation";
 
@@ -432,6 +433,7 @@ const AppRouter = () => {
       <Route path="/service/book_keeping" exact element={<BookKeeper />} />
       <Route path="/privacy_policy" exact element={<PrivacyPolicy />} />
       <Route path="/schedule-call" exact element={<Schedule />} />
+      <Route path="/event" exact element={<Event />} />
     </Routes>
   );
 };

@@ -205,9 +205,9 @@ img.homeaboutimage.jumping-animation {
 
 
 
-  .header-phone a{
+  /* .header-phone a{
     display: none;
-  }
+  } */
   :where(.css-1qfezbu).ant-carousel {
     display: none !important;
 }
@@ -2086,4 +2086,33 @@ color:white;
   text-align: justify;
   letter-spacing: 2px;
   line-height: 30px;
+}
+
+/* Event image college */
+
+.fBDmlz {
+  width: 800px !important;
+  /* font-family: Helvetica,Arial,sans-serif; */
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+
+a#left-tabs-example-tab-first, a#left-tabs-example-tab-second {
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  color: #fff;
+  background-color: #05044D;
+}
+.nav-link {
+  display: block;
+  padding: .5rem 1rem;
+  color: #000;
+  text-decoration: none;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
 }
