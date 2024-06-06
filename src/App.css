@@ -202,6 +202,9 @@ img.homeaboutimage.jumping-animation {
   margin-top: 1%;
   margin-left: 0;
 }
+.react-datepicker__month-container {
+  width: 230px !important;
+}
 
 
 
@@ -435,39 +438,7 @@ img.homeaboutimage.jumping-animation {
   margin-top: 45px;
 }
 
-/* .jumping-animation {
-  animation: jump 0.5s infinite alternate; 
-} */
 
-@keyframes jump {
-  from {
-    transform: translateY(0); /* Start from original position */
-  }
-  to {
-    transform: translateY(-10px); /* Jump up by 10 pixels */
-  }
-}
-.about-list {
-  list-style: none;
-  padding: 0;
-  margin-top: -10%;
-}
-
-/* Define animation for list items */
-.animated-list-item {
-  opacity: 0;
-  animation: fadeIn 1s ease forwards;
-}
-
-/* Keyframes for fade-in animation */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 
 .about-list li {
   list-style-type: none;
@@ -1830,12 +1801,11 @@ svg text {
     flex-basis: calc(100% - 20px);
   }
   .why-us .why-card {
-    margin-left: 8%;
+    margin-left: 0;
   }
   .why-us .why-card .face{
     width: 280px;
   }
-
 }
 
 /* tax-calculator */
@@ -1898,10 +1868,11 @@ svg text {
 /* call schedule */
 
 .calender {
-  /* margin-top: px; */
   padding: 50px;
   margin: 24px;
   border-radius: 20px;
+  /* Add this to ensure padding and margins are proportionate */
+  box-sizing: border-box;
 }
 
 .left-side {
@@ -1909,13 +1880,42 @@ svg text {
   margin: 24px;
   border: 1px solid #ccc;
   border-radius: 20px;
+  box-sizing: border-box;
 }
 
 .react-datepicker__month-container {
-  float: left;
-  width: 500px;
+  width: 550px;
   height: 40vh;
+  box-sizing: border-box;
 }
+
+@media (max-width: 768px) {
+  .calender,
+  .left-side {
+    padding: 30px;
+    margin: -1px;
+  }
+  
+  .react-datepicker__month-container {
+    height: 40vh;
+    width: 300px;
+    width: 280px !important;
+}
+}
+
+@media (max-width: 480px) {
+  .calender,
+  .left-side {
+    padding: 20px;
+    margin: 12px;
+  }
+  
+  .react-datepicker__month-container {
+    height: 40vh;
+    width: 280px !important;
+  }
+}
+
 
 
 
@@ -2116,3 +2116,16 @@ a#left-tabs-example-tab-first, a#left-tabs-example-tab-second {
   text-decoration: none;
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
 }
+
+@media screen and (max-width: 960px) {
+  .vision-card .card {
+    height: 350px;
+    cursor: pointer;
+    margin-left: -55px;
+    width: 300px;
+}
+.Schedule-call {
+  font-size: 14px;
+}
+}
+

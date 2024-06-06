@@ -23,7 +23,7 @@ export const menuItemsData = [
           },
           {
             title: "One Person Company",
-            url: "/service/registration/one_person_company",
+            url: "/service/registration/OnePersonCompany",
           },
           {
             title: "Limited Liability Partnership",
@@ -287,7 +287,7 @@ export const menuItemsData = [
           },
           {
             title: "Monthly Review",
-            url: "/Service/Book Keeper/MonthlyReview",
+            url: "/Service/bookkeeping/MonthlyReview",
           },
         ],
       },
@@ -295,7 +295,7 @@ export const menuItemsData = [
   },
   {
     title: "Rules and Acts",
-    url: "/about",
+    url: "/",
   },
   {
     title: "Contact Us",

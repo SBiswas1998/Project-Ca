@@ -50,10 +50,10 @@ const Card = () => {
                 size="xl"
                 style={{ color: "#05044D" }}
               />
-              <h2>Compliance</h2>
+              <h2>ROC</h2>
             </div>
             <div className="card--hover">
-              <h2>Compliance</h2>
+              <h2>ROC</h2>
               <p>
                 We provide comprehensive services tailored to ensure businesses
                 adhere to diverse reporting and regulatory standards while
@@ -95,21 +95,22 @@ const Card = () => {
 
       <div className="card-container">
         <div className="card">
-          <Link to="/service/tax_filing/business_tax_filing">
+          <Link to="/service/bookkeeping/bankreconciliation">
             <div className="card--display">
               <FontAwesomeIcon
                 icon={faFileCircleCheck}
                 size="xl"
                 style={{ color: "#05044D" }}
               />
-              <h2>Tax Filing</h2>
+              <h2>Book Keeping</h2>
             </div>
             <div className="card--hover">
-              <h2>Tax Filing</h2>
+              <h2>Book Keeping</h2>
               <p>
-                As a chartered accountancy firm, we pledge to provide
-                comprehensive guidance on tax planning, encompassing all aspects
-                of domestic taxation.
+                As a Book Keeping, my primary responsibilities encompass
+                maintaining accurate financial records, including managing
+                accounts payable and receivable, reconciling bank statements,
+                and ensuring compliance with relevant financial regulations..
               </p>
               <p className="link">View More</p>
             </div>
@@ -120,7 +121,7 @@ const Card = () => {
 
       <div className="card-container">
         <div className="card">
-          <Link to="/service/funding/business_plan_preparation">
+          <Link to="/service/funding/businessLoan">
             <div className="card--display">
               <FontAwesomeIcon
                 icon={faMoneyCheckDollar}

@@ -3,7 +3,7 @@ import ResHeader from "../../components/ResponsiveMemu/Header";
 import { Footer } from "../../components/Layout";
 import DatePicker from "../../components/DatePicker";
 import TimeSlots from "../../components/TimeSlots";
-import { Button, Modal } from "antd";
+import { Modal } from "antd";
 import { useDispatch } from "react-redux";
 import { bookingSlots } from "../../actions/customer";
 import toast from "../../components/common/toast";

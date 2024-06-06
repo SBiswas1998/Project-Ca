@@ -8,7 +8,6 @@ const GSTAmendment = () => {
   return (
     <>
       <ResHeader />
-      <ResHeader />
       <Container fluid>
         <Row className="justify-content-center">
           <Col xs={12} md={5}>

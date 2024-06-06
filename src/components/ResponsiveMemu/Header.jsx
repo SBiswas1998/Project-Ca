@@ -6,9 +6,6 @@ import { Link } from "react-router-dom";
 import Logo from "../../assets/images/ca_logo.png";
 import MobileNav from "./MobileNav";
 import Navbar from "./Navbar";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPhoneSquare } from "@fortawesome/free-solid-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { Button } from "react-bootstrap";
 
 
