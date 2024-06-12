@@ -1,8 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import {PhoneOutlined,CalendarOutlined} from "@ant-design/icons";
+import { FloatButton } from "antd";
 
-function AboutHerosection({ src }) {
+const AboutHerosection = ({ src }) => {
+  const [open, setOpen] = useState(true);
+
+  const handleClick = () => {
+    setOpen((prevOpen) => !prevOpen);
+  };
+
   return (
     <section className="hm-about-sec">
       <Container>
@@ -41,6 +49,20 @@ function AboutHerosection({ src }) {
               src={src}
               className="homeaboutimage jumping-animation"
             />
+            <FloatButton.Group
+              open={open}
+              trigger="click"
+              onClick={handleClick}
+              style={{
+                right: 24,
+              }}
+              icon={<CalendarOutlined />}
+            >
+               <Link to="/schedule-call">
+                   <FloatButton icon={<PhoneOutlined />} />
+              </Link>
+             
+            </FloatButton.Group>
           </Col>
           <div className="text-center mt-5 mb-5 hero-banner-sub-text">
             <h1>
@@ -55,6 +77,6 @@ function AboutHerosection({ src }) {
       </Container>
     </section>
   );
-}
+};
 
 export default AboutHerosection;

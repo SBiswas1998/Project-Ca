@@ -1,7 +1,5 @@
-import React, { useEffect, useState } from "react";
-import OtherPageLoader from "../../../components/Loader/OtherPageLoader";
+import React from "react";
 import { Footer } from "../../../components/Layout";
-import TitleSection from "../../../components/TitleSection";
 import QuickEnquiryFrom from "../../../components/Forms/QuickEnquiryFrom";
 import ResHeader from "../../../components/ResponsiveMemu/Header";
 import { Col, Container, Row } from "react-bootstrap";
@@ -10,17 +8,11 @@ const CapitalAssessment = () => {
   return (
     <>
       <ResHeader />
-      <QuickEnquiryFrom />
-      <section className="hm-services-sec">
-        <Container>
-          <Row>
-            <Col className="hm-about-what-sec" xs={12} md={12} lg={12}>
-              <h2>Capital Assessment</h2>
-            </Col>
-          </Row>
-          <Row className="justify-content-md-center">
-            <Col xs={12} md={12} lg={12} className="mt-5 what-us-text">
-              <p>
+      <Container fluid>
+        <Row className="justify-content-center">
+          <Col xs={12} md={5}>
+            <p className="mt-5 otherhero-text">
+              <h1 className="text-center mb-4">Capital Assessment</h1>
                 When writing a paragraph for Capital Assessment, it's crucial to
                 include all pertinent information succinctly. Start with a clear
                 introduction, stating the purpose of the assessment and any
@@ -37,11 +29,13 @@ const CapitalAssessment = () => {
                 maintain clarity and coherence throughout, ensuring that the
                 reader understands the importance and implications of the
                 capital assessment.
-              </p>
-            </Col>
-          </Row>
-        </Container>
-      </section>
+            </p>
+          </Col>
+          <Col xs={12} md={7}>
+            <QuickEnquiryFrom />
+          </Col>
+        </Row>
+      </Container>
       <Footer />
     </>
   );

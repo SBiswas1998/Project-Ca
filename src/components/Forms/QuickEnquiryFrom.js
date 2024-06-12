@@ -116,7 +116,17 @@ const QuickEnquiryForm = () => {
     <section className="hm-contactus-sec">
       <Container>
         <Row>
-          <Col lg={6} className="mt-s">
+        <Col lg={5}>
+            <figure className="">
+              <img
+                src={contactimg}
+                alt=""
+                className="contact-image"
+                // style={{ marginLeft: "0", marginTop: "16%" }}
+              />
+            </figure>
+          </Col>
+          <Col lg={7} className="mt-s">
             <div className="contact_form">
               <Row>
                 <Col md={12}>
@@ -197,8 +207,6 @@ const QuickEnquiryForm = () => {
                 </Col>
                
                 )}
-
-                
                 
                 {user_data.status === true && (
                   <>
@@ -227,16 +235,6 @@ const QuickEnquiryForm = () => {
                 )}
               </Row>
             </div>
-          </Col>
-          <Col lg={6}>
-            <figure className="">
-              <img
-                src={contactimg}
-                alt=""
-                className="img-fluid"
-                style={{ marginLeft: "39%", marginTop: "8%" }}
-              />
-            </figure>
           </Col>
         </Row>
       </Container>

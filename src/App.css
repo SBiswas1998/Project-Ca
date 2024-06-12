@@ -449,7 +449,7 @@ img.homeaboutimage.jumping-animation {
   font-weight: 600;
   text-transform: uppercase;
   line-height: 136%;
-  color: #CFD6DD;
+  color: #0C0649;
   margin-bottom: 25px;
   letter-spacing: 10px;
   cursor: pointer;
@@ -462,7 +462,7 @@ img.homeaboutimage.jumping-animation {
 }
 
 .animated-list-item:hover{
-  color: #0C0649;
+  color: #CFD6DD;
 }
 
 
@@ -475,6 +475,16 @@ img.homeaboutimage.jumping-animation {
   background: #bab9b930;
   padding-top: 80px;
   padding-bottom: 20px;
+}
+.navItenCon {
+  display: flex;
+  margin-left: 30px;
+  gap: 50px;
+  margin-bottom: 40px;
+}
+
+.navItenCon .card h2{
+  font-size: 20px;
 }
 
 .hm-services-title {
@@ -521,13 +531,14 @@ img.homeaboutimage.jumping-animation {
   margin-top: 40px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust column width as needed */
-  gap: 20px; /* Adjust gap between grid items as needed */
+  gap: 30px; /* Adjust gap between grid items as needed */
 }
 
 .card-container {
   flex: 300px;
   margin: 10px;
 }
+
 .card-container .card {
   font-weight: bold;
   position: relative;
@@ -553,10 +564,24 @@ img.homeaboutimage.jumping-animation {
   color: #05044D;
   margin-left: -70% !important;
 }
+.card-display h2 {
+  text-align: center;
+  font-size:25px;
+  color: #05044D;
+  margin-top: 30%;
+}
+
+
 .card-container .card a .card--hover h2 {
   margin: 20px 0;
   color: #05044D;
   font-size: 25px;
+}
+.card-container .card a .card-hover h2 {
+  margin: 20px 0;
+  color: #05044D;
+  font-size: 25px;
+  text-align: center;
 }
 .card-container .card a:hover {
   transform: translate(-30px, -30px);
@@ -568,7 +593,17 @@ img.homeaboutimage.jumping-animation {
 .card-container .card a:hover .card--display {
   display: none;
 }
+
+.card-container .card a:hover .card-display {
+  display: none;
+}
+
 .card-container .card a:hover .card--hover {
+  display: block;
+  border-radius: 15px;
+}
+
+.card-container .card a:hover .card-hover {
   display: block;
   border-radius: 15px;
 }
@@ -579,7 +614,19 @@ img.homeaboutimage.jumping-animation {
   display: none;
 
 }
+.card-container .card a .card-hover {
+  display: none;
+
+}
 .card-container .card a .card--hover p {
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.5;
+  color: grey;
+  font-weight: 500;
+  text-align: justify;
+}
+.card-container .card a .card-hover p {
   font-size: 13px;
   font-weight: normal;
   line-height: 1.5;
@@ -1273,7 +1320,7 @@ input.form-control,textarea.form-control{
   box-shadow: 0 0 4px 2px rgba(174, 174, 174, .2);
   position: relative;
   z-index: 3;
-  margin-top: 80px;
+  margin-top: 143px;
 }
 
 .address p {
@@ -1583,9 +1630,9 @@ ul.about-list a {
 .support-Limited-card {
   margin-left: 0px;
 }
-img.img-fluid.QuickEnquiryimg {
+/* img.img-fluid.QuickEnquiryimg {
   margin-left: 0% !important;
-}
+} */
 }
 .ant-carousel .slick-dots li button {
   width: 10px;
@@ -2086,6 +2133,7 @@ color:white;
   text-align: justify;
   letter-spacing: 2px;
   line-height: 30px;
+  padding: 0 70px 0 70px;
 }
 
 /* Event image college */
@@ -2127,5 +2175,12 @@ a#left-tabs-example-tab-first, a#left-tabs-example-tab-second {
 .Schedule-call {
   font-size: 14px;
 }
+}
+
+
+.contact-image{
+  height: 500px;
+  margin-top: 70px;
+  margin-left: -30px;
 }
 

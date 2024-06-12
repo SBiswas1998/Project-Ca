@@ -1,7 +1,5 @@
-import React, { useEffect, useState } from "react";
-import OtherPageLoader from "../../../components/Loader/OtherPageLoader";
+import React from "react";
 import { Footer } from "../../../components/Layout";
-import TitleSection from "../../../components/TitleSection";
 import QuickEnquiryFrom from "../../../components/Forms/QuickEnquiryFrom";
 import ResHeader from "../../../components/ResponsiveMemu/Header";
 import { Col, Container, Row } from "react-bootstrap";
@@ -10,18 +8,12 @@ const LifeInsurance = () => {
   return (
     <>
       <ResHeader />
-      <QuickEnquiryFrom />
-      <section className="hm-services-sec">
-        <Container>
-          <Row>
-            <Col className="hm-about-what-sec" xs={12} md={12} lg={12}>
-              <h2>Life Insurance</h2>
-            </Col>
-          </Row>
-          <Row className="justify-content-md-center">
-            <Col xs={12} md={12} lg={12} className="mt-5 what-us-text">
-              <p>
-                Life insurance is a crucial financial tool designed to provide
+      <Container fluid>
+        <Row className="justify-content-center">
+          <Col xs={12} md={5}>
+            <p className="mt-5 otherhero-text">
+              <h1 className="text-center mb-4">Life Insurance</h1>
+              Life insurance is a crucial financial tool designed to provide
                 protection and peace of mind for individuals and their loved
                 ones. It offers financial security by providing a lump sum
                 payment in the event of the policyholder's death, which can help
@@ -39,11 +31,13 @@ const LifeInsurance = () => {
                 your needs and consult with a financial advisor to select the
                 right life insurance policy that aligns with your goals and
                 circumstances.
-              </p>
-            </Col>
-          </Row>
-        </Container>
-      </section>
+            </p>
+          </Col>
+          <Col xs={12} md={7}>
+            <QuickEnquiryFrom />
+          </Col>
+        </Row>
+      </Container>      
       <Footer />
     </>
   );

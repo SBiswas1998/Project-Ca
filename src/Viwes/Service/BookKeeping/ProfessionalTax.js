@@ -12,22 +12,17 @@ const ProfessionalTax = () => {
         <Row className="justify-content-center">
           <Col xs={12} md={5}>
             <p className="mt-5 otherhero-text">
-              <h1 className="text-center mb-4">PF & ESI Registration</h1>
-              In this month's financial review, we delve into the meticulous
-              world of bookkeeping, where every entry counts. With a keen eye on
-              accuracy, we meticulously documented all financial transactions,
-              ensuring they align seamlessly with our company's records. Through
-              careful reconciliation of accounts, we maintained a clear and
-              concise overview of our financial health. Each ledger entry was
-              scrutinized, discrepancies addressed promptly, and adjustments
-              made where necessary to maintain the integrity of our financial
-              statements. As we navigated through the month's financial
-              landscape, we identified areas of improvement, streamlining
-              processes to enhance efficiency and reduce potential errors.
-              Looking ahead, we remain committed to upholding the highest
-              standards of financial stewardship, knowing that each entry is not
-              just a number but a reflection of our dedication to sound
-              financial management.
+              <h1 className="text-center mb-4">Professional Tax</h1>
+              Professional Tax is a state-imposed levy on individuals earning
+              income through employment, trade, or profession. For bookkeeping
+              purposes, it is crucial to record and remit this tax periodically
+              to the respective state government. Typically, the employer
+              deducts it from the salary of employees and deposits it on their
+              behalf. Accurate documentation of professional tax payments
+              ensures compliance and avoids penalties. It's also essential to
+              maintain up-to-date records of tax slab rates, payment due dates,
+              and returns filed. This streamlined approach helps in managing
+              finances efficiently and ensures adherence to state regulations.
             </p>
           </Col>
           <Col xs={12} md={7}>

@@ -1,6 +1,7 @@
 import { 
     REGISTER_RESPONSE,
     VERIFY_OTP,
+    GET_NAVITEMS,
 } from "./type";
 
 import { apiCall } from "../api";
@@ -70,6 +71,36 @@ export const verifyOtp = (data)=>async dispatch =>{
     } catch (error) {
         dispatch({
             type: VERIFY_OTP,
+            payload: error.response
+        })
+        console.error('Error otp user:', error);
+        // Handle the error
+    }
+}
+export const getNavItems = (data)=>async dispatch =>{
+    try {
+        // Configure the request
+        let config = {
+            method: 'POST',
+            withCredentials: true,
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            url: `${base_url}/api/v1/navitem/getnavitem`, // Assuming baseUrl is defined somewhere
+            data: data // Send the entire data object
+        };
+        // Make the API call
+        let response = await apiCall(config, dispatch);
+
+        // Dispatch the response to the reducer
+        dispatch({
+            type: GET_NAVITEMS,
+            payload: response
+        });
+    } catch (error) {
+        dispatch({
+            type: GET_NAVITEMS,
             payload: error.response
         })
         console.error('Error otp user:', error);

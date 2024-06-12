@@ -7,6 +7,7 @@ import PrivacyPolicy from "./PrivacyPolicy";
 import Accounting from "./Service/Accounting";
 import Schedule from "./Schedule";
 import Auditing from "./Service/Auditing";
+import AllSubNavItem from "./AllSubNavItem";
 
 // Registration Links
 import Proprietorship from "./Service/Registration/Proprietorship";
@@ -71,6 +72,23 @@ import MSMELoan from "./Service/Funding/MSMELoan";
 import TeamLoan from "./Service/Funding/TeamLoan";
 import WorkingCapitalLoan from "./Service/Funding/WorkingCapitalLoan";
 
+
+// ROC
+
+import AddDirectors from "./Service/ROC/AddDirectors";
+import AddPartner from "./Service/ROC/AddPartner";
+import ChangeCompanyName from "./Service/ROC/ChangeCompanyName";
+import IncreaseAuthorizedCapital from "./Service/ROC/IncreaseAuthorizedCapital";
+
+
+
+
+
+
+
+
+
+
 export {
   // Single links
 
@@ -81,6 +99,7 @@ export {
   Auditing,
   Schedule,
   Accounting,
+  AllSubNavItem,
 
   // Registration Links
   OnePersonCompany,
@@ -142,4 +161,12 @@ export {
   Investment,
   PrivacyPolicy,
   SalePurchaseProperty,
+
+
+
+  // ROC
+  AddDirectors,
+  AddPartner,
+  ChangeCompanyName,
+  IncreaseAuthorizedCapital
 };

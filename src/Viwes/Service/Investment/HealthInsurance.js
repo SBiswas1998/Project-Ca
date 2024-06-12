@@ -10,18 +10,12 @@ const HealthInsurance = () => {
   return (
     <>
       <ResHeader />
-      <QuickEnquiryFrom />
-      <section className="hm-services-sec">
-        <Container>
-          <Row>
-            <Col className="hm-about-what-sec" xs={12} md={12} lg={12}>
-              <h2>Health Insurance</h2>
-            </Col>
-          </Row>
-          <Row className="justify-content-md-center">
-            <Col xs={12} md={12} lg={12} className="mt-5 what-us-text">
-              <p>
-                Health insurance is an essential component of financial planning
+      <Container fluid>
+        <Row className="justify-content-center">
+          <Col xs={12} md={5}>
+            <p className="mt-5 otherhero-text">
+              <h1 className="text-center mb-4">Health Insurance</h1>
+              Health insurance is an essential component of financial planning
                 and healthcare access, ensuring individuals and families have
                 coverage for medical expenses. Comprehensive health insurance
                 typically covers a range of services, including doctor visits,
@@ -40,11 +34,13 @@ const HealthInsurance = () => {
                 status. By ensuring universal access to health insurance,
                 communities can thrive, individuals can lead healthier lives,
                 and the burden of healthcare costs can be shared equitably.
-              </p>
-            </Col>
-          </Row>
-        </Container>
-      </section>
+            </p>
+          </Col>
+          <Col xs={12} md={7}>
+            <QuickEnquiryFrom />
+          </Col>
+        </Row>
+      </Container>
       <Footer />
     </>
   );

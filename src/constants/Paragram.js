@@ -908,7 +908,7 @@ export const WindingUpofCompanyAboutSubText = [
 ];
 
 export const AddPartnerAboutText = [
-  `Partners in a LLP are responsible for the carrying on the business of the LLP. Any person over the age of 18 years 
+  ` Partners in a LLP are responsible for the carrying on the business of the LLP. Any person over the age of 18 years 
     can become a Partner in a LLP. Partners in a LLP are responsible for the carrying on the business of the LLP. To add 
     a Partner to a LLP, the person proposing to become a Partner must obtain a digital signature certificate (DSC) and 
     director identification number (DIN). DIN can be obtained for any person who is above the age of 18. The nationality 

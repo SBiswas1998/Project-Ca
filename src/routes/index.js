@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes,useParams } from "react-router-dom";
 import {
   // Single link
   About,
@@ -72,11 +72,19 @@ import {
   SalePurchaseProperty,
 
 
+    // ROC
+    AddDirectors,
+    AddPartner,
+    ChangeCompanyName,
+    AllSubNavItem
+
+
 
 
 } from "../Viwes";
 
 const AppRouter = () => {
+  
   return (
     <Routes>
       {/* Single links */}
@@ -89,7 +97,7 @@ const AppRouter = () => {
       <Route path="/event" exact element={<Event />} />
       <Route path="/service/accounting" exact element={<Accounting />} />
       <Route path="/service/auditing" exact element={<Auditing />} />
-
+      <Route path="/service/:navname" element={<AllSubNavItem />} />
       {/* end single links */}
 
       {/* start  Registration Links*/}
@@ -322,6 +330,28 @@ const AppRouter = () => {
       />
 
       {/* end  Advisory links */}
+
+
+      {/* start ROC Link */}
+      <Route
+        path="/service/ROC/add_directors"
+        exact
+        element={<AddDirectors />}
+      />
+      <Route
+        path="/service/ROC/add_partner"
+        exact
+        element={<AddPartner />}
+      />
+      <Route
+        path="/service/ROC/change_company_name"
+        exact
+        element={<ChangeCompanyName />}
+      />
+
+      {/* end ROC Link */}
+
+
     </Routes>
   );
 };
