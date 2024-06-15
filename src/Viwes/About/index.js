@@ -22,7 +22,8 @@ const About = () => {
         span={ProfileSpan}
         src={aboutImage}
       />
-      {/* <OurValue />
+      <OurValue />
+      {/* 
       <WhatWeDo />
       <WhyUs /> */}
       <Footer />
