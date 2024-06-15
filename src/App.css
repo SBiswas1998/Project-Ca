@@ -224,13 +224,16 @@ img.homeaboutimage.jumping-animation {
     color: #000 !important;
   }
  .header-logo {
-    width: 180px !important;
+    width: 133px !important;
     margin-top: 46% !important;
   }
   .banner-image {
     display: block;
     width: 100%;
     height: 220px !important;
+  }
+  .header-phone{
+    display: none;
   }
 
   .desktop-nav {
@@ -568,7 +571,8 @@ img.homeaboutimage.jumping-animation {
   text-align: center;
   font-size:25px;
   color: #05044D;
-  margin-top: 30%;
+  margin-top: 30%
+  ;
 }
 
 
