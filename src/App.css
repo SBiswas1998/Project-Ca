@@ -222,11 +222,13 @@ img.homeaboutimage.jumping-animation {
 }
   .responsive-header {
     color: #000 !important;
+    height: 9vh !important;
   }
- .header-logo {
-    width: 133px !important;
+  .header-logo {
+    width: 97px !important;
     margin-top: 46% !important;
-  }
+    margin-left: 14px;
+}
   .banner-image {
     display: block;
     width: 100%;
