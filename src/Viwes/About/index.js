@@ -23,9 +23,8 @@ const About = () => {
         src={aboutImage}
       />
       <OurValue />
-      {/* 
       <WhatWeDo />
-      <WhyUs /> */}
+      <WhyUs />
       <Footer />
     </>
   )
