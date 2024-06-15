@@ -205,6 +205,13 @@ img.homeaboutimage.jumping-animation {
 .react-datepicker__month-container {
   width: 230px !important;
 }
+.vision-card {
+  width: 200px !important;
+  /* display: inline-block; */
+  margin-left: 74px !important;
+  margin-top: 50px !important;
+  margin-bottom: 40px !important;
+}
 
 
 
@@ -2117,6 +2124,7 @@ svg text {
   line-height:24px;
   color:#000;
   margin-top: 30px;
+  text-align: center;
   
 }
 .vision-card .card .content .icon {

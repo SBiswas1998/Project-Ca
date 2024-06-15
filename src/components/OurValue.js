@@ -17,9 +17,9 @@ const OurValue = () => {
             </Col>
           </Row>
           <Row>
-            <Col sm={10} md={12} lg={12} className="d-flex justify-content-center">
-              <VisionCard/>
-            </Col>
+            <VisionCard/>
+            {/* <Col sm={12} md={12} lg={12} className="d-flex justify-content-center">
+            </Col> */}
           </Row>
         </Container>
       </section>
