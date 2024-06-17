@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import {PhoneOutlined,CalendarOutlined} from "@ant-design/icons";
+import {CalendarOutlined} from "@ant-design/icons";
 import { FloatButton } from "antd";
 
 const AboutHerosection = ({ src }) => {
@@ -15,18 +15,18 @@ const AboutHerosection = ({ src }) => {
     <section className="hm-about-sec">
       <Container>
         <div className="text-center mt-5 mb-5 hero-banner-sub-text-top">
-          <h1>
+          <h1 className="home-subtitle">
             {" "}
-            <b>Welcome to Purminder Kaur & Associates</b>
+               Welcome to <br/>Purminder Kaur & Associates
           </h1>
-          <h3>
-            <b>One Stop solutions for all financial needs</b>
-          </h3>
+          <h6 className="home-subtext">
+            One Stop solutions for all financial needs
+          </h6>
         </div>
         <Row className="justify-content-md-center">
           <Col md={6}>
             <ul className="about-list">
-              <Link to="/service/IncomeTax/ITR_filing">
+              <Link to="/taxtion">
                 <li className="animated-list-item">Taxation</li>
               </Link>
               <Link to="/service/auditing">
@@ -59,7 +59,7 @@ const AboutHerosection = ({ src }) => {
               icon={<CalendarOutlined />}
             >
                <Link to="/schedule-call">
-                   <FloatButton icon={<PhoneOutlined />} />
+                   <FloatButton icon={<CalendarOutlined />} />
               </Link>
              
             </FloatButton.Group>
@@ -69,9 +69,9 @@ const AboutHerosection = ({ src }) => {
               {" "}
               <b>Welcome to Purminder Kaur & Associates</b>
             </h1>
-            <h3>
-              <b>One Stop solutions for all financial needs</b>
-            </h3>
+            <h6 className="home-subtext">
+              One Stop solutions for all financial needs
+            </h6>
           </div>
         </Row>
       </Container>

@@ -8,6 +8,9 @@ import Accounting from "./Service/Accounting";
 import Schedule from "./Schedule";
 import Auditing from "./Service/Auditing";
 import AllSubNavItem from "./AllSubNavItem";
+import Taxtion from "./Taxtion";
+
+
 
 // Registration Links
 import Proprietorship from "./Service/Registration/Proprietorship";
@@ -100,6 +103,7 @@ export {
   Schedule,
   Accounting,
   AllSubNavItem,
+  Taxtion,
 
   // Registration Links
   OnePersonCompany,

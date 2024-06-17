@@ -8,32 +8,18 @@ const Supportsection = () => {
   return (
     <>
       <section className="hm-support-sec">
-        <Container>
+      <Container>
           <Row>
-            <Col className="hm-support-title">
+            <Col className="hm-services-title">
               <h2>
-                Reason To Choose
-                <span>
-                  <br /> Purminder Kaur & Associates
-                </span>
+              Reason To Choose <span> Purminder Kaur & Associates</span>
               </h2>
-              <p>
-                For over a decade, we've fostered trust and sustainable
-                relationships, continuously adding value to our clients'
-                ventures. We're not just service providers; we're partners in
-                your growth journey. Our approach isn't to work for our clients,
-                but to work with them collaboratively. With a primary focus on
-                understanding our clients' businesses and needs, we tailor
-                solutions that ensure mutual success, maintaining this
-                commitment year after year.
-              </p>
-            </Col>
-            <Col xs lg="8">
-              <SupportCard />
             </Col>
           </Row>
           <Row>
-            
+            <Col className="">
+            <SupportCard />
+            </Col>
           </Row>
         </Container>
       </section>

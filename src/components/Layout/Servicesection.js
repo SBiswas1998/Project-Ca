@@ -7,7 +7,7 @@ import Card from "../Card/Card";
 const Sevicesection = () => {
   return (
     <>
-      <section className="hm-services-sec">
+      <section className="hm-services-sec" id="service">
         <Container>
           <Row>
             <Col className="hm-services-title">

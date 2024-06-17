@@ -9,6 +9,7 @@ export const menuItemsData = [
   },
   {
     title: "Services",
+    url: "/service",
     
     submenu: [
       {

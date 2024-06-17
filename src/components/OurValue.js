@@ -18,8 +18,6 @@ const OurValue = () => {
           </Row>
           <Row>
             <VisionCard/>
-            {/* <Col sm={12} md={12} lg={12} className="d-flex justify-content-center">
-            </Col> */}
           </Row>
         </Container>
       </section>

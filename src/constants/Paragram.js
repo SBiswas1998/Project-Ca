@@ -19,12 +19,7 @@ export const ProfileTitle = [`About`];
 export const ProfileSpan = [`Us`];
 
 export const ProfileText = [
-  `Purminder Kaur & Associates, founded in 2011 by FCA Purminder Kaur, has rapidly emerged as a leading 
-  Chartered Accountancy Firm in the north region. With a commitment to simplifying accounting for all, we 
-  offer unparalleled solutions with a focus on professionalism and customer satisfaction. Our team of highly 
-  qualified associates ensures transparent, efficient, and diligent service to clients across various industries, 
-  from High Net Worth Individuals to MSMEs and offshore companies worldwide. With a diverse clientele and a vision 
-  to expand our presence nationwide, we continue to strive for excellence, driven by our growing base of satisfied customers.`,
+  ``,
 ];
 
 export const ProprietorshipAboutText = [

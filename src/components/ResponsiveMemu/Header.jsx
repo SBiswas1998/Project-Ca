@@ -9,6 +9,8 @@ import Navbar from "./Navbar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhoneSquare } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { NewsSection, Topbar } from "../Layout";
+
 
 
 
@@ -64,7 +66,7 @@ const Header = () => {
             position: "sticky",
             top: 0,
             zIndex: 1000,
-            height: scrolled ? "18vh" : "18vh", // Change height to auto to ensure content is visible
+            height: scrolled ? "14vh" : "14vh", // Change height to auto to ensure content is visible
             transition: "background-color 0.3s ease", // Smooth transition for background color change
           }}
         >
@@ -76,16 +78,14 @@ const Header = () => {
                     src={Logo}
                     alt=""
                     className="header-logo"
-                    style={{ width: "200px", marginTop: "-26px" }}
+                    style={{ width: "150px", marginTop: "-26px" }}
                   />
                 </Link>
               </div>
             </Col>
             <Col>
-              <div className="header-phone text-end ml-5">
-                {/* <Button className="Schedule-call">
-                  <a href="/schedule-call"> Schedule a Call</a>
-                 </Button> */}
+            <Topbar/>
+              {/* <div className="header-phone text-end ml-5">
                 <a href="tel:+91 964-687-4599">
                   <FontAwesomeIcon icon={faPhoneSquare} size="xl" />
                   &nbsp;&nbsp; +91 964-687-4599
@@ -93,8 +93,9 @@ const Header = () => {
                 <a href="mailto:info@capka.co.in">
                 <FontAwesomeIcon icon={faEnvelope} size="xl" /> &nbsp;&nbsp; 
                   info@capka.co.in</a>
-              </div>
+              </div> */}
               <Navbar />
+              {/* <NewsSection/> */}
               <MobileNav />
             </Col>
           </Row>

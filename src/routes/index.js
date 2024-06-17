@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Routes,useParams } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import {
   // Single link
   About,
@@ -76,7 +76,8 @@ import {
     AddDirectors,
     AddPartner,
     ChangeCompanyName,
-    AllSubNavItem
+    AllSubNavItem,
+    Taxtion
 
 
 
@@ -95,9 +96,11 @@ const AppRouter = () => {
       <Route path="/privacy_policy" exact element={<PrivacyPolicy />} />
       <Route path="/schedule-call" exact element={<Schedule />} />
       <Route path="/event" exact element={<Event />} />
+      <Route path="/taxtion" exact element={<Taxtion />} />
       <Route path="/service/accounting" exact element={<Accounting />} />
       <Route path="/service/auditing" exact element={<Auditing />} />
       <Route path="/service/:navname" element={<AllSubNavItem />} />
+
       {/* end single links */}
 
       {/* start  Registration Links*/}

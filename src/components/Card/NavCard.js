@@ -1,46 +1,72 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { getNavItems } from "../../actions/auth";
-import { Col, Container, Row } from "react-bootstrap";
+import { Col, Container, Row, Spinner } from "react-bootstrap";
 
 const NavCard = () => {
   const dispatch = useDispatch();
   const { navname } = useParams();
 
   const nav_data = useSelector((state) => state.auth.navitems?.data);
+  const [loading, setLoading] = useState(true);
+
   console.log("nav_data", nav_data);
 
   // Fetch nav items when the component mounts or when navname changes
   useEffect(() => {
-    dispatch(getNavItems({ navname }));
+    setLoading(true);
+    dispatch(getNavItems({ navname })).then(() => setLoading(false));
   }, [navname, dispatch]);
 
   return (
     <>
-      <Container >
+      <Container>
         <Row>
           <Col>
-            <div className="card-container">
+            {loading ? (
+              <div className="text-center my-4">
+                <Spinner animation="border" />
+              </div>
+            ) : (
               <Row>
                 {nav_data?.data?.map((item, index) => (
-                  <Col key={index} xs={12} sm={6} md={4} lg={3} className="mb-4">
-                    <div className="card">
-                      <Link to={`${item.url}`}>
-                        <div className="card-display">
-                          <h2>{item.subnavname}</h2>
+                  <Col
+                    key={index}
+                    xs={12}
+                    sm={6}
+                    md={4}
+                    lg={4}
+                    className="mb-4"
+                  >
+                    <div className="nav-cards">
+                      <div className="information [ navcard ]">
+                        <span className="tag">{item.subnavname}</span>
+                        <p class="info">{item.text}</p>
+                        <div className="nav-card-body">
+                          <button class="button">
+                            <span>Learn more</span>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              height="24px"
+                              viewBox="0 0 24 24"
+                              width="24px"
+                              fill="none"
+                            >
+                              <path d="M0 0h24v24H0V0z" fill="none" />
+                              <path
+                                d="M16.01 11H4v2h12.01v3L20 12l-3.99-4v3z"
+                                fill="currentColor"
+                              />
+                            </svg>
+                          </button>
                         </div>
-                        <div className="card-hover">
-                          <h2>{item.subnavname}</h2>
-                          <p>{item.text}</p>
-                        </div>
-                      </Link>
-                      <div className="card--border"></div>
+                      </div>
                     </div>
                   </Col>
                 ))}
               </Row>
-            </div>
+            )}
           </Col>
         </Row>
       </Container>

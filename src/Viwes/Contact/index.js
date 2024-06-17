@@ -1,20 +1,10 @@
-import React, { useState, useEffect } from "react";
-import { Topbar, Footer } from "../../components/Layout";
+import React from "react";
+import {  Footer } from "../../components/Layout";
 import ContactFrom from "../../components/Forms/ContactFrom";
 import { Container, Row, Col } from "react-bootstrap";
 import ResHeader from "../../components/ResponsiveMemu/Header";
-import TitleSection from "../../components/TitleSection";
 
 const Contact = () => {
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 2000);
-
-    return () => clearTimeout(timer);
-  }, []);
 
   return (
     <>

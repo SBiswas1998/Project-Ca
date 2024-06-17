@@ -10,7 +10,6 @@ import toast from "../../components/common/toast";
 import Swal from "sweetalert2";
 import { Container, Row, Col } from "react-bootstrap"; // Import react-bootstrap components
 
-
 const Schedule = () => {
   const dispatch = useDispatch();
 
@@ -42,7 +41,6 @@ const Schedule = () => {
     "6:00PM",
     "6:30PM",
   ];
-  
 
   const handleDateSelection = (date) => {
     setSelectedDate(date);
@@ -111,10 +109,11 @@ const Schedule = () => {
 
   // Load booked slots from localStorage on component mount
   useEffect(() => {
-    const storedBookedSlots = JSON.parse(localStorage.getItem("bookedSlots")) || {};
+    const storedBookedSlots =
+      JSON.parse(localStorage.getItem("bookedSlots")) || {};
     const bookedSlotsArray = [];
-    Object.keys(storedBookedSlots).forEach(dateKey => {
-      storedBookedSlots[dateKey].forEach(time => {
+    Object.keys(storedBookedSlots).forEach((dateKey) => {
+      storedBookedSlots[dateKey].forEach((time) => {
         bookedSlotsArray.push({ date: new Date(dateKey), time });
       });
     });
@@ -124,30 +123,23 @@ const Schedule = () => {
   return (
     <>
       <ResHeader />
-      <Container>
-        <Row>
-          <Col xs={12} md={6} className="mb-5">
-            <div className="left-side">
-              <h1 className="text-center mt-5">
-                30 Minute Accounting Consultation
-              </h1>
-              <p className="text-center mt-3">
-                One of our accounting professionals will reach out to you by
-                phone for this call.
-              </p>
-            </div>
-          </Col>
-          <Col xs={12} md={6}>
-            <div className="calender">
-              <DatePicker
-                selectedDate={selectedDate}
-                setSelectedDate={handleDateSelection}
-                className="date-picker" // Apply the date-picker class
-              />
-            </div>
-          </Col>
-        </Row>
-      </Container>
+      <div className="container-calendar">
+        <div className="product-details">
+          <h1>30 Minute Accounting Consultation</h1>
+          <p>
+            One of our accounting professionals will reach out to you by phone
+            for this call.
+          </p>
+        </div>
+        <div className="product-image">
+          <DatePicker
+            selectedDate={selectedDate}
+            setSelectedDate={handleDateSelection}
+            className="date-picker"
+          />
+        </div>
+      </div>
+
       <Modal
         title="Book Appointment"
         visible={isModalVisible}

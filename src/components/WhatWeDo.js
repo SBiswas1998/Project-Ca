@@ -5,10 +5,10 @@ import Col from "react-bootstrap/Col";
 
 const WhatWeDo = () => {
   return (
-    <section className="hm-about-sec">
+    <section className="hm-About-sec">
       <Container>
         <Row>
-          <Col className="hm-about-what-sec">
+          <Col className="hm-About-what-sec">
             <h2>
               What <span> We Do</span>
             </h2>
