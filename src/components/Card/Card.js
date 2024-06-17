@@ -176,9 +176,9 @@ const Card = () => {
                     We assess finances, forecast yearly to keep your business
                     healthy and prosperous.
                   </div>
-                </div>
                 <Link to="/service/accounting"> View More
                 </Link>
+                </div>
               </div>
             </div>
           </Col>
@@ -203,9 +203,9 @@ const Card = () => {
                     Comprehensive financial assessment and forecasting ensure
                     your business remains healthy and prosperous.
                   </div>
-                </div>
                 <Link to="/service/advisory/capital_gain"> View More
                 </Link>
+                </div>
               </div>
             </div>
           </Col>
