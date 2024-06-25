@@ -45,7 +45,10 @@ const NavCard = () => {
                         <p class="info">{item.text}</p>
                         <div className="nav-card-body">
                           <button class="button">
+                            <Link to={item.url}>
+                            
                             <span>Learn more</span>
+                            </Link>
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               height="24px"

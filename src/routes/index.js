@@ -10,6 +10,7 @@ import {
   PrivacyPolicy,
   Auditing,
   Accounting,
+  RulesAndActs,
 
   // Registration Links
   OnePersonCompany,
@@ -99,6 +100,7 @@ const AppRouter = () => {
       <Route path="/taxtion" exact element={<Taxtion />} />
       <Route path="/service/accounting" exact element={<Accounting />} />
       <Route path="/service/auditing" exact element={<Auditing />} />
+      <Route path="/rules_acts" exact element={<RulesAndActs />} />
       <Route path="/service/:navname" element={<AllSubNavItem />} />
 
       {/* end single links */}

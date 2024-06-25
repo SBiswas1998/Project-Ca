@@ -36,9 +36,10 @@ const Card = () => {
                   <div className="desc">
                     Incorporating a company or firm marks the initial stride
                     towards initiating a business venture in India.
+                    <br/>
+                    <Link to="/service/registration/proprietorship" className="card-link text-dark"> View More</Link>
                   </div>
-                <Link to="/service/registration/proprietorship"> View More
-                </Link>
+               
                 </div>
               </div>
             </div>
@@ -59,9 +60,11 @@ const Card = () => {
                     We offer services ensuring business compliance with
                     reporting and regulatory standards, supporting growth and
                     development.
+                    <br/>
+                    <Link to="/service/ROC/change_company_name" className="card-link text-dark"> View More
+                    </Link>
                   </div>
-                  <Link to="/service/ROC/change_company_name"> View More
-                  </Link>
+                 
                 </div>
               </div>
             </div>
@@ -81,9 +84,10 @@ const Card = () => {
                   <div className="desc">
                     An audit is vital for safeguarding and growing your business
                     by identifying risks and improvement opportunities.
-                  </div>
-                  <Link to="/service/auditing"> View More
+                    <br/>
+                  <Link to="/service/auditing" className="card-link text-dark"> View More
                   </Link>
+                  </div>
                 </div>
               </div>
             </div>
@@ -104,10 +108,11 @@ const Card = () => {
                     Maintain financial records, manage accounts
                     payable/receivable, reconcile bank statements, and ensure
                     regulatory compliance.
+                    <br/>
+                <Link to="/service/bookkeeping/bankreconciliation" className="card-link text-dark"> View More
+                </Link>
                   </div>
                 </div>
-                <Link to="/service/bookkeeping/bankreconciliation"> View More
-                </Link>
               </div>
             </div>
           </Col>
@@ -130,9 +135,10 @@ const Card = () => {
                   <div className="desc">
                     Outline business funding needs succinctly specify amount,
                     purpose, and potential sources.
-                  </div>
-                  <Link to="/service/funding/businessLoan"> View More
+                    <br/>
+                  <Link to="/service/funding/businessLoan" className="card-link text-dark"> View More
                   </Link>
+                  </div>
                 </div>
               </div>
             </div>
@@ -153,10 +159,11 @@ const Card = () => {
                     Document management software for accountants is vital for a
                     paperless home office, ensuring secure, retrievable digital
                     documents.
+                    <br/>
+                <Link to="/service/investment/mutual_fund_investment" className="card-link text-dark"> View More
+                </Link>
                   </div>
                 </div>
-                <Link to="/service/investment/mutual_fund_investment"> View More
-                </Link>
               </div>
             </div>
           </Col>
@@ -175,9 +182,10 @@ const Card = () => {
                   <div className="desc">
                     We assess finances, forecast yearly to keep your business
                     healthy and prosperous.
-                  </div>
-                <Link to="/service/accounting"> View More
+                    <br/>
+                <Link to="/service/accounting" className="card-link text-dark"> View More
                 </Link>
+                  </div>
                 </div>
               </div>
             </div>
@@ -202,9 +210,10 @@ const Card = () => {
                   <div className="desc">
                     Comprehensive financial assessment and forecasting ensure
                     your business remains healthy and prosperous.
-                  </div>
-                <Link to="/service/advisory/capital_gain"> View More
+                    <br/>
+                <Link to="/service/advisory/capital_gain" className="card-link text-dark"> View More
                 </Link>
+                  </div>
                 </div>
               </div>
             </div>
@@ -233,9 +242,10 @@ const Card = () => {
                   <div className="desc">
                     GST Simplifying tax compliance and optimizing financial
                     operations for your business.
-                  </div>
-                  <Link to="/service/GST/GST_Return"> View More
+                    <br/>
+                  <Link to="/service/GST/GST_Return" className="card-link text-dark"> View More
                 </Link>
+                  </div>
                 </div>
 
               </div>
@@ -262,9 +272,10 @@ const Card = () => {
                   <div className="desc">
                     Optimize your income tax strategy for maximum savings and
                     compliance.
-                  </div>
-                  <Link to="/service/IncomeTax/ITR_filing"> View More
+                    <br/>
+                  <Link to="/service/IncomeTax/ITR_filing" className="card-link text-dark"> View More
                 </Link>
+                  </div>
                 </div>
               </div>
             </div>
@@ -289,9 +300,10 @@ const Card = () => {
                   <div className="desc">
                     Expertly manage your taxes to ensure compliance and maximize
                     savings for your financial success.
-                  </div>
-                  <Link to="/taxtion"> View More
+                    <br/>
+                  <Link to="/taxtion" className="card-link text-dark"> View More
                 </Link>
+                  </div>
                 </div>
               </div>
             </div>

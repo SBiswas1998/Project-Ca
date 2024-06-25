@@ -636,7 +636,7 @@ img.homeaboutimage.jumping-animation {
 
 /* card */
 .card-wrapper {
-  height: 40vh;
+  height: 45vh;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -653,7 +653,7 @@ img.homeaboutimage.jumping-animation {
   flex-direction: column;
   overflow: hidden;
   /* margin: 10px; */
-  height: 35vh;
+  height: 40vh;
 }
 
 .card:hover,
@@ -2565,4 +2565,48 @@ a#left-tabs-example-tab-second {
   height: 500px;
   margin-top: 70px;
   margin-left: -30px;
+}
+
+.card-link{
+  font-weight: 600;
+}
+
+.rules-section{
+  margin-bottom: 30%;
+  margin-top: 5%;
+  text-transform: capitalize;
+}
+.rules-section td{
+
+  text-transform: capitalize;
+}
+
+.modal-body-custom {
+  max-height: 60vh; /* Adjust the height as needed */
+  overflow-y: auto;
+}
+
+.modal-content-custom {
+  white-space: pre-wrap; /* Preserve whitespace and wrap long lines */
+  font-size: 14px; /* Adjust the font size as needed */
+  padding: 10px;
+  background-color: #f8f9fa; /* Light grey background */
+  border-radius: 4px;
+  border: 1px solid #dee2e6;
+}
+.modal-content-custom p {
+  margin-top: 0%
+}
+
+.modal-title {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.modal-footer .btn {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+}
+.clickable-cell {
+  cursor: pointer;
 }

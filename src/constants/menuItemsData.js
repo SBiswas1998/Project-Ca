@@ -9,8 +9,6 @@ export const menuItemsData = [
   },
   {
     title: "Services",
-    url: "/service",
-    
     submenu: [
       {
         title: "Registrations",
@@ -305,7 +303,7 @@ export const menuItemsData = [
   },
   {
     title: "Rules and Acts",
-    url: "/",
+    url: "/rules_acts",
   },
   {
     title: "Contact Us",
