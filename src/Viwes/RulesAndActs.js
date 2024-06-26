@@ -565,9 +565,7 @@ const RulesAndActs = () => {
                   </Tabs>
                 </section>
               </Tab>
-              <Tab eventKey="contact" title="Contact">
-                Tab content for Contact
-              </Tab>
+             
             </Tabs>
           </Col>
         </Row>
