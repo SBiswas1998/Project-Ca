@@ -2,6 +2,7 @@ import {
     REGISTER_RESPONSE,
     VERIFY_OTP,
     GET_NAVITEMS,
+    CONTACT_US,
 } from "./type";
 
 import { apiCall } from "../api";
@@ -105,6 +106,43 @@ export const getNavItems = (data)=>async dispatch =>{
         })
         console.error('Error otp user:', error);
         // Handle the error
+    }
+}
+
+
+export const contactUs = (data)=>async dispatch =>{
+    console.log("data",data)
+    try {
+        // Configure the request
+        let config = {
+            method: 'POST',
+            withCredentials: true,
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            url: `${base_url}/api/v1/customer/contactUs`, // Assuming baseUrl is defined somewhere
+            data:data // Send the entire data object as a JSON string
+        };
+
+        console.log("config",config)
+
+        // Make the API call
+        let response = await apiCall(config, dispatch);
+        console.log("response",response);
+
+
+        // Dispatch the response to the reducer
+        dispatch({
+            type: CONTACT_US,
+            payload: response.data // Ensure you send response data
+        });
+    } catch (error) {
+        dispatch({
+            type: CONTACT_US,
+            payload: error.response ? error.response.data : 'An error occurred'
+        });
+        console.error('Error registering user:', error.response);
     }
 }
 

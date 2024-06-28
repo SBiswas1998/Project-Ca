@@ -12,7 +12,8 @@ import {
     REMOVE_EMAIL,
     REMOVE_OTP,
     RESET_PASSWORD,
-    GET_NAVITEMS
+    GET_NAVITEMS,
+    CONTACT_US
 } from "../actions/type";
 
 
@@ -29,7 +30,8 @@ const initialState ={
     changePassword: null,
     emailCheck:null,
     ressetPassword:null,
-    navitems:[]
+    navitems:[],
+    contactUsStatus: null
 
 
 }
@@ -113,6 +115,11 @@ export default (state = initialState,action)=>{
             return{
                 ...state,
                 navitems:payload
+            }
+        case CONTACT_US:
+            return{
+                ...state,
+                contactUsStatus:payload
             }
         default:
             return state;

@@ -1,0 +1,16 @@
+/* Adjust modal width and handle overflow */
+.modal-90w {
+    max-width: 60vw; /* Example: set maximum width to 90% of viewport width */
+  }
+  
+  /* Ensure content can scroll horizontally if necessary */
+  .modal-content {
+    overflow-y: scroll;
+    height: 80vh;
+  }
+  
+  /* Style for modal body content */
+  .modal-body-content {
+    padding: 15px; /* Example padding */
+  }
+  

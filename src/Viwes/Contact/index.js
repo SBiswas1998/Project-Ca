@@ -13,16 +13,16 @@ const Contact = () => {
       <section className="hm-contactus-sec-two">
         <Container>
           <Row className="justify-content-md-center">
-            <Col md={6}>
-              <h2 className="hm-about-title">
+            <Col md={4}>
+              <h2 className="hm-about-title contact-from">
                   Contact <span>Us</span>
               </h2>
               <div className="address">
                 <p>Purminder Kaur & Associates</p>
                 <ul>
-                  <li>
+                  <li className="office-address">
                     <strong>Address : </strong>
-                    SCF- 79, First Floor, Phase – XI, Mohali, Punjab – 160062
+                    SCF- 78-79, First Floor,  <br /> Phase – XI,Mohali, Punjab – 160062
                   </li>
                   <li>
                     <strong>Phone : </strong> <a href="tel:+0172-5122215" style={{color:"#000"}} >0172-5122215</a> 
@@ -36,10 +36,10 @@ const Contact = () => {
                 </ul>
               </div>
             </Col>
-            <Col md={6}>
+            <Col md={8} className="map-center">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6862.740014143434!2d76.74565!3d30.679863999999995!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fec52046e35e3%3A0xc40943b5b4664914!2sPurminder%20Kaur%20%26%20Associates!5e0!3m2!1sen!2sus!4v1713257681353!5m2!1sen!2sus"
-                width="720"
+                width="950"
                 height="450"
                 style={{ border: "0" }}
                 allowfullscreen=""

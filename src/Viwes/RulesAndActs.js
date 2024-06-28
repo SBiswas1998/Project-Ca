@@ -26,9 +26,10 @@ import NoticeDemandContent from "../components/content/NoticeDemandContent";
 import ReturnWealthContect from "../components/content/ReturnWealthContect";
 import WealthDefinitionsContent from "../components/content/WealthDefinitionsContent";
 import WealthShortTitleContent from "../components/content/WealthShortTitleContent";
-
-
-
+import LifeInterestTable from "../components/content/APPENDIXContent";
+import ModalTableComponents from "../components/ModalTableComponents";
+import PreliminaryContect from "../components/content/PreliminaryContect";
+import DeterminationIncomeCentent from "../components/content/DeterminationIncomeCentent";
 
 const RulesAndActs = () => {
   const [key, setKey] = useState("GST Rules");
@@ -37,7 +38,10 @@ const RulesAndActs = () => {
 
   const [modalShow, setModalShow] = useState(false);
   const [modalContent, setModalContent] = useState("");
-  const [rulesContent, setContent] = useState("");
+  const [newTableContent, setNewTableContent] = useState([]);
+  const [tableModalShow, setTableModalShow] = useState(false);
+
+  console.log("PreliminaryContect", newTableContent);
 
   const handleModalOpen = (content) => {
     setModalContent(content);
@@ -45,6 +49,42 @@ const RulesAndActs = () => {
   };
 
   const handleModalClose = () => setModalShow(false);
+
+  const handleTableOpen = (content) => {
+    let tableRows;
+  
+    if (content === 'PreliminaryContect' && PreliminaryContect) {
+      tableRows = PreliminaryContect.map((item) => (
+        <tr
+          key={item.id}
+          onClick={() => handleModalOpen(item.link)}
+          className="clickable-cell"
+        >
+          <td>{item.id}</td>
+          <td>{item.title}</td>
+        </tr>
+      ));
+    } else if (content === 'DeterminationIncomeCentent' && DeterminationIncomeCentent) {
+      tableRows = DeterminationIncomeCentent.map((item) => (
+        <tr
+          key={item.id}
+          onClick={() => handleModalOpen(item.link)}
+          className="clickable-cell"
+        >
+          <td>{item.id}</td>
+          <td>{item.title}</td>
+        </tr>
+      ));
+    } else {
+      // Handle case where the selected content is not defined
+      tableRows = null; // Or any other fallback content or logic
+    }
+  
+    setNewTableContent(tableRows); // Update the state with table rows
+    setTableModalShow(true); // Open the modal
+  };
+
+  const handleTableModalClose = () => setTableModalShow(false);
 
   return (
     <>
@@ -272,11 +312,26 @@ const RulesAndActs = () => {
                         <tbody>
                           <tr>
                             <td>1</td>
-                            <td>PRELIMINARY</td>
+                            <td
+                              onClick={() =>
+                                handleTableOpen("PreliminaryContect")
+                              }
+                              className="clickable-cell"
+                            >
+                              PRELIMINARY
+                            </td>
                           </tr>
                           <tr>
                             <td>2</td>
-                            <td>DETERMINATION OF INCOME</td>
+                            <td
+                              onClick={() =>
+                                handleTableOpen("DeterminationIncomeCentent")
+                              }
+                              className="clickable-cell"
+                            >
+                              {" "}
+                              DETERMINATION OF INCOME
+                            </td>
                           </tr>
                           <tr>
                             <td>3</td>
@@ -387,22 +442,6 @@ const RulesAndActs = () => {
                             <td>25</td>
                             <td> MISCELLANEOUS</td>
                           </tr>
-                          <tr>
-                            <td>26</td>
-                            <td> APPENDIX I</td>
-                          </tr>
-                          <tr>
-                            <td>27</td>
-                            <td> APPENDIX IA</td>
-                          </tr>
-                          <tr>
-                            <td>28</td>
-                            <td> APPENDIX III</td>
-                          </tr>
-                          <tr>
-                            <td>29</td>
-                            <td> Appendix IV</td>
-                          </tr>
                         </tbody>
                       </Table>
                     </Tab>
@@ -414,111 +453,191 @@ const RulesAndActs = () => {
                         <tbody>
                           <tr>
                             <td>1</td>
-                            <td onClick={()=>handleModalOpen(WealthShortTitleContent)} className="clickable-cell">Short Title and Commencement</td>
+                            <td
+                              onClick={() =>
+                                handleModalOpen(WealthShortTitleContent)
+                              }
+                              className="clickable-cell"
+                            >
+                              Short Title and Commencement
+                            </td>
                           </tr>
                           <tr>
                             <td>2</td>
-                            <td onClick={()=>handleModalOpen(WealthDefinitionsContent)} className="clickable-cell">
-                            Definitions
+                            <td
+                              onClick={() =>
+                                handleModalOpen(WealthDefinitionsContent)
+                              }
+                              className="clickable-cell"
+                            >
+                              Definitions
                             </td>
                           </tr>
                           <tr>
                             <td>3</td>
-                            <td onClick={()=>handleModalOpen(ReturnWealthContect)} className="clickable-cell">
-                            3 Form of return of net wealth
+                            <td
+                              onClick={() =>
+                                handleModalOpen(ReturnWealthContect)
+                              }
+                              className="clickable-cell"
+                            >
+                              3 Form of return of net wealth
                             </td>
                           </tr>
                           <tr>
                             <td>4</td>
-                            <td onClick={()=>handleModalOpen(NoticeDemandContent)} className="clickable-cell">
-                            Notice of Demand
+                            <td
+                              onClick={() =>
+                                handleModalOpen(NoticeDemandContent)
+                              }
+                              className="clickable-cell"
+                            >
+                              Notice of Demand
                             </td>
                           </tr>
                           <tr>
                             <td>5</td>
-                            <td onClick={()=>handleModalOpen(AppealCommissionerContent)} className="clickable-cell">
-                            Appeal to the Commissioner (Appeals)
+                            <td
+                              onClick={() =>
+                                handleModalOpen(AppealCommissionerContent)
+                              }
+                              className="clickable-cell"
+                            >
+                              Appeal to the Commissioner (Appeals)
                             </td>
                           </tr>
                           <tr>
                             <td>6</td>
-                            <td onClick={()=>handleModalOpen(FormAppealContent)} className="clickable-cell">
-                            Form of Appeal to Appellate Tribunal
+                            <td
+                              onClick={() => handleModalOpen(FormAppealContent)}
+                              className="clickable-cell"
+                            >
+                              Form of Appeal to Appellate Tribunal
                             </td>
                           </tr>
                           <tr>
                             <td>7</td>
-                            <td onClick={()=>handleModalOpen(ApplicationContent)} className="clickable-cell">
+                            <td
+                              onClick={() =>
+                                handleModalOpen(ApplicationContent)
+                              }
+                              className="clickable-cell"
+                            >
                               {" "}
                               Application for reference to High Court
                             </td>
                           </tr>
                           <tr>
                             <td>8</td>
-                            <td onClick={()=>handleModalOpen(AuthorisedRepresentativesContent)} className="clickable-cell">
+                            <td
+                              onClick={() =>
+                                handleModalOpen(
+                                  AuthorisedRepresentativesContent
+                                )
+                              }
+                              className="clickable-cell"
+                            >
                               {" "}
                               Authorised Representatives
                             </td>
                           </tr>
                           <tr>
                             <td>9</td>
-                            <td onClick={()=>handleModalOpen(DisclosureContent)} className="clickable-cell">
+                            <td
+                              onClick={() => handleModalOpen(DisclosureContent)}
+                              className="clickable-cell"
+                            >
                               {" "}
                               Disclosure of Information Respecting Assessees
                             </td>
                           </tr>
                           <tr>
                             <td>10</td>
-                            <td onClick={()=>handleModalOpen(SearchContent)} className="clickable-cell">
+                            <td
+                              onClick={() => handleModalOpen(SearchContent)}
+                              className="clickable-cell"
+                            >
                               {" "}
                               Search and seizure
                             </td>
                           </tr>
                           <tr>
                             <td>11</td>
-                            <td onClick={()=>handleModalOpen(JurisdictionContent)} className="clickable-cell">
+                            <td
+                              onClick={() =>
+                                handleModalOpen(JurisdictionContent)
+                              }
+                              className="clickable-cell"
+                            >
                               {" "}
-                              Rule 3A Jurisdiction of  Valuation Officers
+                              Rule 3A Jurisdiction of Valuation Officers
                             </td>
                           </tr>
                           <tr>
                             <td>12</td>
-                            <td onClick={()=>handleModalOpen(ConditionsContent)} className="clickable-cell">
+                            <td
+                              onClick={() => handleModalOpen(ConditionsContent)}
+                              className="clickable-cell"
+                            >
                               {" "}
-                              Rule 3B Conditions for reference to Valuation Officers
+                              Rule 3B Conditions for reference to Valuation
+                              Officers
                             </td>
                           </tr>
                           <tr>
                             <td>13</td>
-                            <td onClick={()=>handleModalOpen(InspectionContent)} className="clickable-cell">
+                            <td
+                              onClick={() => handleModalOpen(InspectionContent)}
+                              className="clickable-cell"
+                            >
                               {" "}
                               Rule 3C Inspection
                             </td>
                           </tr>
                           <tr>
                             <td>14</td>
-                            <td onClick={()=>handleModalOpen(authorityContent)} className="clickable-cell">
+                            <td
+                              onClick={() => handleModalOpen(authorityContent)}
+                              className="clickable-cell"
+                            >
                               {" "}
                               Rule 11 Prescribed authority
                             </td>
                           </tr>
                           <tr>
                             <td>15</td>
-                            <td onClick={()=>handleModalOpen(calculatingContent)} className="clickable-cell">
+                            <td
+                              onClick={() =>
+                                handleModalOpen(calculatingContent)
+                              }
+                              className="clickable-cell"
+                            >
                               {" "}
-                              Rule 12 Procedure to be followed in calculating interest
+                              Rule 12 Procedure to be followed in calculating
+                              interest
                             </td>
                           </tr>
                           <tr>
                             <td>15</td>
-                            <td onClick={()=>handleModalOpen(sharejewelleryContent)} className="clickable-cell">
+                            <td
+                              onClick={() =>
+                                handleModalOpen(sharejewelleryContent)
+                              }
+                              className="clickable-cell"
+                            >
                               {" "}
-                              Rule 13 Forms for certificate of valuation of shares/jewellery, etc
+                              Rule 13 Forms for certificate of valuation of
+                              shares/jewellery, etc
                             </td>
                           </tr>
                           <tr>
                             <td>16</td>
-                            <td>
+                            <td
+                              onClick={() =>
+                                handleModalOpen(<LifeInterestTable />)
+                              }
+                              className="clickable-cell"
+                            >
                               {" "}
                               APPENDIX
                             </td>
@@ -537,15 +656,34 @@ const RulesAndActs = () => {
                         <tbody>
                           <tr>
                             <td>1</td>
-                            <td onClick={()=>handleModalOpen(ShorttitleContect)} className="clickable-cell">Short title and commencement</td>
+                            <td
+                              onClick={() => handleModalOpen(ShorttitleContect)}
+                              className="clickable-cell"
+                            >
+                              Short title and commencement
+                            </td>
                           </tr>
                           <tr>
                             <td>2</td>
-                            <td onClick={()=>handleModalOpen(definitionsContent)} className="clickable-cell">Definitions</td>
+                            <td
+                              onClick={() =>
+                                handleModalOpen(definitionsContent)
+                              }
+                              className="clickable-cell"
+                            >
+                              Definitions
+                            </td>
                           </tr>
                           <tr>
                             <td>3</td>
-                            <td onClick={()=>handleModalOpen(determinationContent)} className="clickable-cell">Determination of Fair market value</td>
+                            <td
+                              onClick={() =>
+                                handleModalOpen(determinationContent)
+                              }
+                              className="clickable-cell"
+                            >
+                              Determination of Fair market value
+                            </td>
                           </tr>
                           <tr>
                             <td>4</td>
@@ -565,8 +703,8 @@ const RulesAndActs = () => {
                   </Tabs>
                 </section>
               </Tab>
-              <Tab eventKey="contact" title="Contact">
-                Tab content for Contact
+              <Tab eventKey="GST Law" title="GST Law">
+                Tab content for
               </Tab>
             </Tabs>
           </Col>
@@ -577,6 +715,24 @@ const RulesAndActs = () => {
         show={modalShow}
         handleClose={handleModalClose}
         content={modalContent}
+      />
+      <ModalTableComponents
+        show={tableModalShow}
+        onHide={handleTableModalClose}
+        handleClose={handleTableModalClose}
+        content={
+          <Table striped bordered hover>
+            <thead>
+              <tr>
+                <th>SL.NO</th>
+                <th>Name</th>
+              </tr>
+            </thead>
+            <tbody>
+              {newTableContent} {/* Render table rows */}
+            </tbody>
+          </Table>
+        }
       />
     </>
   );

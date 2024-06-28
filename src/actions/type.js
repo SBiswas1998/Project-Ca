@@ -13,6 +13,7 @@ export const REMOVE_OTP = "REMOVE_OTP"
 export const RESET_PASSWORD = "RESET-PASSWORD"
 export const CHANGE_PASSWORD = "CHANGE_PASSWORD"
 export const GET_NAVITEMS = "GET_NAVITEMS"
+export const CONTACT_US = "CONTACT_US"
  
 
 export const SHOW_TOAST = "SHOW_TOAST"

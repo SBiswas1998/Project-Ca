@@ -146,7 +146,7 @@ img.homeaboutimage.jumping-animation {
 .desktop-nav .dropdown {
   position: absolute;
   right: 0;
-  left: auto;
+  left: 66px;
   box-shadow: 0 10px 15px -3px rgba(46, 41, 51, 0.08),
     0 4px 6px -2px rgba(71, 63, 79, 0.16);
   font-size: 0.875rem;
@@ -1550,6 +1550,9 @@ textarea.form-control {
   background: #f2f2f5;
   height: 94vh;
 }
+.contact-from {
+  margin-left: 29px !important;
+}
 
 .contact_form {
   padding: 35px 20px;
@@ -1560,11 +1563,12 @@ textarea.form-control {
 }
 
 .address p {
-  text-align: center;
+  text-align: start;
   margin-bottom: 10px;
   margin-top: 18px;
   font-size: 20px;
   font-weight: 600;
+  margin-left: 35px !important;
 }
 
 .address ul li {
@@ -1573,6 +1577,9 @@ textarea.form-control {
   margin-bottom: 10px;
   margin-top: 20px;
 }
+/* .map-center{
+  margin-top: -20px;
+} */
 
 /* countdown */
 
