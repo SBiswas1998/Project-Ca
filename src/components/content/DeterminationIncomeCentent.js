@@ -38,6 +38,24 @@ import UDThresholdsContent from "./11UDThresholdsContent";
 import UCDetermination from "./11UCDetermination";
 import UBFairContent from "./11UBFairContent";
 import UAEComputationContent from "./11UAEComputationContent";
+import DCalculationContent from "./9DCalculationContent";
+import UACPrescribedContent from "./11UACPrescribedContent";
+import UABDeterminationContent from "./11UABDeterminationContent";
+import UAADeterminationContent from "./11UAADeterminationContent";
+import UAADeterminationMarketContent from "./11UADeterminationContent";
+import TFormContent from "./11TFormContent";
+import SComputationContent from "./11SComputationContent";
+import RIncidentalContent from "./11RIncidentalContent";
+import QComputationContent from "./11QComputationContent";
+import PTonnageContent from "./11PTonnageContent";
+import OBGuidelinesContent from "./11OBGuidelinesContent";
+import OAGuidelinesContent from "./11OAGuidelinesContent";
+import OCertificateContent from "./11OCertificateContent";
+import NOtherConetnt from "./11NOtherConetnt";
+import MAAFormContent from "./11MAAFormContent";
+import MAFormContent from "./11MAFormContent";
+import MProcedureContent from "./11MProcedureContent";
+import LApplicationContent from "./11LApplicationContent";
 
 
 const DeterminationIncomeCentent = [
@@ -779,67 +797,67 @@ const DeterminationIncomeCentent = [
     {
       id: 145,
       title: "11L Application for approval of an association or institution or for recommendation of a project or scheme by the National Committee",
-      link: FiveDConditionsContent
+      link: LApplicationContent
     },
     {
       id: 146,
       title: "11M Procedure before the National Committee",
-      link: FiveDConditionsContent
+      link: MProcedureContent
     },
     {
       id: 147,
       title: "11MA Form of report by an approved association or institution under clause (ii) of sub-section (4) of section 35AC",
-      link: FiveDConditionsContent
+      link: MAFormContent
     },
     {
       id: 148,
       title: "11MAA Form of report by public sector company or local authority or association or institution, which is carrying out a notified eligible project or scheme, under clause (ii) of sub-section (5) of section 35AC.",
-      link: FiveDConditionsContent
+      link: MAAFormContent
     },
     {
       id: 149,
       title: "11N Other provisions",
-      link: FiveDConditionsContent
+      link: NOtherConetnt
     },
     {
       id: 150,
       title: "11O Certificate of payment or expenditure in respect of eligible projects or schemes notified under section 35AC",
-      link: FiveDConditionsContent
+      link:  OCertificateContent
     },
     {
       id: 151,
       title: "11OA Guidelines for notification of affordable housing project as specified business under section 35AD.",
-      link: FiveDConditionsContent
+      link: OAGuidelinesContent
     },
     {
       id: 152,
       title: "11OB Guidelines for notification of a semiconductor wafer fabrication manufacturing unit as specified business under section 35AD.",
-      link: FiveDConditionsContent
+      link: OBGuidelinesContent
     },
     {
       id: 153,
       title: "11P Tonnage tax scheme for shipping companies.",
-      link: FiveDConditionsContent
+      link: PTonnageContent
     },
     {
       id: 154,
       title: "11Q Computation of deemed tonnage.",
-      link: FiveDConditionsContent
+      link: QComputationContent
     },
     {
       id: 155,
       title: "11R Incidental activities for purposes of relevant shipping income.",
-      link: FiveDConditionsContent
+      link: RIncidentalContent
     },
     {
       id: 156,
       title: "11S Computation of average of net tonnage for charter-in of tonnage.",
-      link: FiveDConditionsContent
+      link: SComputationContent
     },
     {
       id: 157,
       title: "11T Form of report of an accountant under clause (ii) of section 115VW.",
-      link: FiveDConditionsContent
+      link: TFormContent
     },
     {
       id: 158,
@@ -850,27 +868,27 @@ const DeterminationIncomeCentent = [
     {
       id: 159,
       title: "11UA Determination of Fair Market Value",
-      link: FiveDConditionsContent
+      link: UAADeterminationMarketContent
     },
     {
       id: 160,
       title: "11UAA Determination of Fair Market Value for share other than quoted share",
-      link: FiveDConditionsContent
+      link: UAADeterminationContent
     },
     {
       id: 161,
       title: "11UAB Determination of fair market value for inventory",
-      link: FiveDConditionsContent
+      link: UABDeterminationContent
     },
     {
       id: 162,
       title: "11UAC Prescribed class of persons for the purpose of clause (XI) of the proviso to clause (x) of sub-section (2) section 56",
-      link: FiveDConditionsContent
+      link: UACPrescribedContent
     },
     {
       id: 162,
       title: "9D Calculation of taxable interest relating to contribution in a provident fund or recognised",
-      link: FiveDConditionsContent
+      link: DCalculationContent
     },
     
     {
