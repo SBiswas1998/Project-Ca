@@ -4,7 +4,7 @@ import Button from "react-bootstrap/Button";
 
 const ModalComponent = ({ show, handleClose, content }) => {
   return (
-    <Modal show={show} onHide={handleClose} centered>
+    <Modal show={show} onHide={handleClose} centered dialogClassName="modal-90w">
       <Modal.Header closeButton>
         <Modal.Title>Declaration Details</Modal.Title>
       </Modal.Header>

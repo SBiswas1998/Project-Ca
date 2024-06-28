@@ -71,6 +71,16 @@ import CPrescribedContent from "./11CPrescribedContent";
 import BConditionsContent from "./11BConditionsContent";
 import AARequirementsContent from "./11AARequirementsContent";
 import AMedicalConetent from "./11AMedicalConetent";
+import DeterminationIncomeContent from "./11DeterminationIncomeContent";
+import TenVBStatementContent from "./10VBStatementContent";
+import TenVAApprovalContent from "./10VAApprovalContent";
+import TenVGuidelinesContent from "./10VGuidelinesContent";
+import TenUFRemunerationContent from "./10UFRemunerationContent";
+import TenUEProcedureContent from "./10UEProcedureContent";
+import TenUDReferenceContent from "./10UDReferenceContent";
+import TenUCTimeConetnt from "./10UCTimeConetnt";
+import NoticeContent from "./NoticeContent";
+import TenUADeterminationContent from "./10UADeterminationContent";
 
 
 const DeterminationIncomeCentent = [
@@ -677,54 +687,54 @@ const DeterminationIncomeCentent = [
     {
       id: 120,
       title: "10UA Determination of consequences of impermissible avoidance arrangement",
-      link: FiveDConditionsContent
+      link: TenUADeterminationContent
     },
     {
       id: 121,
-      title: "Notice, Forms for reference under section 144BA",
-      link: FiveDConditionsContent
+      title: "10UB Notice, Forms for reference under section 144BA",
+      link: NoticeContent
     },
     {
       id: 122,
       title: "10UC Time limits",
-      link: FiveDConditionsContent
+      link: TenUCTimeConetnt
     },
     {
       id: 123,
       title: "10UD Reference to the Approving Panel",
-      link: FiveDConditionsContent
+      link: TenUDReferenceContent
     },
     
     {
       id: 124,
       title: "10UE Procedure before the Approving Panel",
-      link: FiveDConditionsContent
+      link: TenUEProcedureContent
     },
     {
       id: 125,
       title: "10UF Remuneration",
-      link: FiveDConditionsContent
+      link: TenUFRemunerationContent
     },
     {
       id: 126,
       title: "10V Guidelines for application of section 9A",
-      link: FiveDConditionsContent
+      link: TenVGuidelinesContent
     },
     {
       id: 127,
       title: "10VA Approval of the fund",
-      link: FiveDConditionsContent
+      link: TenVAApprovalContent
     },
     {
       id: 128,
       title: "10VB Statement to be furnished by the fund",
-      link: FiveDConditionsContent
+      link: TenVBStatementContent
     },
     
     {
       id: 129,
       title: "11 Determination of income from transactions with non-residents",
-      link: FiveDConditionsContent
+      link: DeterminationIncomeContent
     },
     
     {
