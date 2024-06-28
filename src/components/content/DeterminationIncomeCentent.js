@@ -91,6 +91,15 @@ import TenTGMutualContent from "./10TGMutualContent";
 import TenTFSafeHarbourContent from "./10TFSafeHarbourContent";
 import TenTEProcedureContent from "./10TEProcedureContent";
 import TenTDSafeHarbourContent from "./10TDSafeHarbourContent";
+import TenTCEligibleContent from "./10TCEligibleContent";
+import TenTBEligibleContent from "./10TBEligibleContent";
+import TenTADefinitionsContent from "./10TADefinitionsContent";
+import TenSRenewingContent from "./10SRenewingContent";
+import TenRBReliefContent from "./10RBReliefContent";
+import TenRCancellationContent from "./10RCancellationContent";
+import TenRAProcedureContent from "./10RAProcedureContent";
+import TenQRevisionContent from "./10QRevisionContent";
+import TenPComplianceContent from "./10PComplianceContent";
 
 
 const DeterminationIncomeCentent = [
@@ -594,34 +603,35 @@ const DeterminationIncomeCentent = [
     {
       id: 100,
       title: "10P Compliance Audit of the agreement",
-      link: FiveDConditionsContent
+      link: TenPComplianceContent
+      
     },
     {
       id: 101,
       title: "10Q Revision of an agreement",
-      link: FiveDConditionsContent
+      link: TenQRevisionContent
     },
     {
       id: 102,
       title: "10R Cancellation of an agreement",
-      link: FiveDConditionsContent
+      link: TenRCancellationContent
     },
     
     {
       id: 103,
       title: "10RA Procedure for giving effect to rollback provision of an Agreement",
-      link: FiveDConditionsContent
+      link: TenRAProcedureContent
     },
 
     {
       id: 104,
       title: "10RB Relief in tax payable under sub-section (1) of section 115JB due to operation of subsection (2D) of section 115JB",
-      link: FiveDConditionsContent
+      link: TenRBReliefContent
     },
     {
       id: 105,
       title: "10S Renewing an agreement",
-      link: FiveDConditionsContent
+      link: TenSRenewingContent
     },
     {
       id: 106,
@@ -631,17 +641,17 @@ const DeterminationIncomeCentent = [
     {
       id: 107,
       title: "10TA Definitions",
-      link: FiveDConditionsContent
+      link: TenTADefinitionsContent
     },
     {
       id: 108,
       title: "10TB Eligible assessee",
-      link: FiveDConditionsContent
+      link: TenTBEligibleContent
     },
     {
       id: 109,
       title: "10TC Eligible international transaction",
-      link: FiveDConditionsContent
+      link: TenTCEligibleContent
     },
     
     {
