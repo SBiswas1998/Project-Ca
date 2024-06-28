@@ -703,7 +703,7 @@ const RulesAndActs = () => {
                   </Tabs>
                 </section>
               </Tab>
-              <Tab eventKey="contact" title="Contact">
+              <Tab eventKey="GST Law" title="GST Law">
                 Tab content for Contact
               </Tab>
             </Tabs>
