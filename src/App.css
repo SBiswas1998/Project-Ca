@@ -727,6 +727,7 @@ img.homeaboutimage.jumping-animation {
 .information {
   background-color: #fff;
   padding: 1.5rem;
+  height: 50vh;
 }
 .information .tag {
   display: inline-block;

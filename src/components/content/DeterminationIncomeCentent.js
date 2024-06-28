@@ -81,6 +81,16 @@ import TenUDReferenceContent from "./10UDReferenceContent";
 import TenUCTimeConetnt from "./10UCTimeConetnt";
 import NoticeContent from "./NoticeContent";
 import TenUADeterminationContent from "./10UADeterminationContent";
+import TenUChapterContent from "./10UChapterContent";
+import TenTHDProcedureContent from "./10THDProcedureContent";
+import TenTHCSafeContent from "./10THCSafeContent";
+import TenTHBEligibleContent from "./10THBEligibleContent";
+import TenTHAEligibleContent from "./10THAEligibleContent";
+import TenTHSafeHarbourContent from "./10THSafeHarbourContent";
+import TenTGMutualContent from "./10TGMutualContent";
+import TenTFSafeHarbourContent from "./10TFSafeHarbourContent";
+import TenTEProcedureContent from "./10TEProcedureContent";
+import TenTDSafeHarbourContent from "./10TDSafeHarbourContent";
 
 
 const DeterminationIncomeCentent = [
@@ -637,52 +647,52 @@ const DeterminationIncomeCentent = [
     {
       id: 110,
       title: "10TD Safe Harbour",
-      link: FiveDConditionsContent
+      link: TenTDSafeHarbourContent
     },
     {
       id: 111,
       title: "10TE Procedure",
-      link: FiveDConditionsContent
+      link: TenTEProcedureContent
     },
     {
       id: 112,
       title: "10TF Safe Harbour Rules not apply in certain cases",
-      link: FiveDConditionsContent
+      link: TenTFSafeHarbourContent
     },
     {
       id: 113,
       title: "10TG Mutual Agreement Procedure not to apply",
-      link: FiveDConditionsContent
+      link: TenTGMutualContent
     },
     {
       id: 114,
       title: "10TH Safe Harbour Rules for Specified Domestic Transactions",
-      link: FiveDConditionsContent
+      link: TenTHSafeHarbourContent
     },
     {
       id: 115,
       title: "10THA Eligible assessee",
-      link: FiveDConditionsContent
+      link: TenTHAEligibleContent
     },
     {
       id: 116,
       title: "10THB Eligible specified domestic transaction",
-      link: FiveDConditionsContent
+      link: TenTHBEligibleContent
     },
     {
       id: 117,
       title: "10THC Safe Harbour",
-      link: FiveDConditionsContent
+      link: TenTHCSafeContent
     },
     {
       id: 118,
       title: "10THD Procedure",
-      link: FiveDConditionsContent
+      link: TenTHDProcedureContent
     },
     {
       id: 119,
       title: "10U Chapter X-A not to apply in certain cases",
-      link: FiveDConditionsContent
+      link: TenUChapterContent
     },
     {
       id: 120,
