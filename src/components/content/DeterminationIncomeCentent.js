@@ -29,6 +29,15 @@ import TwoDBOtherContent from "./2DBOtherContent";
 import UACAComputationContent from "./11UACAComputationContent";
 import ABBBFormContent from "./5ACReportContent";
 import TwoDCAComputationContent from "./2DCAComputationContent";
+import EightADComputatioContent from "./8ADComputatioContent";
+import EightACComputationContent from "./8ACComputationContent";
+import TwoDDComputationContent from "./2DDComputationContent";
+import UFMannerContent from "./11UFMannerContent";
+import UEIndirectContent from "./11UEIndirectContent";
+import UDThresholdsContent from "./11UDThresholdsContent";
+import UCDetermination from "./11UCDetermination";
+import UBFairContent from "./11UBFairContent";
+import UAEComputationContent from "./11UAEComputationContent";
 
 
 const DeterminationIncomeCentent = [
@@ -867,47 +876,47 @@ const DeterminationIncomeCentent = [
     {
       id: 163,
       title: "11UAE Computation of Fair Market Value of Capital Assets for the purposes of section 50B of the Income-tax Act",
-      link: FiveDConditionsContent
+      link: UAEComputationContent
     },
     {
       id: 164,
       title: "11UB Fair market value of assets in certain cases",
-      link: FiveDConditionsContent
+      link: UBFairContent
     },
     {
       id: 165,
       title: "11UC Determination of Income attributable to assets in India",
-      link: FiveDConditionsContent
+      link: UCDetermination
     },
     {
       id: 166,
       title: "11UD Thresholds for the purposes of significant economic presence",
-      link: FiveDConditionsContent
+      link: UDThresholdsContent
     },
     {
       id: 167,
       title: "11UE  Indirect transfer prior to 28th May, 2012 of assets situate in India",
-      link: FiveDConditionsContent
-    },
+      link: UEIndirectContent
+    }, 
     {
       id: 168,
       title: "11UF Manner of furnishing undertaking under rule 11UE",
-      link: FiveDConditionsContent
+      link: UFMannerContent
     },
     {
       id: 170,
       title: "2DD Computation of exempt income of specified fund for the purposes of clause (23FF) of section 10",
-      link: FiveDConditionsContent
+      link: TwoDDComputationContent
     },
     {
       id: 171,
       title: "8AC Computation of short term capital gains and written down value under section 50 where depreciation on goodwill has been obtained",
-      link: FiveDConditionsContent
+      link: EightACComputationContent
     },
     {
       id: 172,
       title: "8AD Computation of capital gains for the purposes of sub-section (1B) of section 45",
-      link: FiveDConditionsContent
+      link: EightADComputatioContent
     },
     {
       id: 173,
