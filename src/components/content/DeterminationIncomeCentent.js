@@ -56,6 +56,21 @@ import MAAFormContent from "./11MAAFormContent";
 import MAFormContent from "./11MAFormContent";
 import MProcedureContent from "./11MProcedureContent";
 import LApplicationContent from "./11LApplicationContent";
+import KGuidelinesContent from "./11KGuidelinesContent";
+import JGuidelinesContent from "./11JGuidelinesContent";
+import IFunctionsContent from "./11IFunctionsContent";
+import HHeadquartersContent from "./11HHeadquartersContent";
+import GCompositionContent from "./11GCompositionContent";
+import FGeneralContent from "./11FGeneralContent";
+import EEStatementContent from "./11EEStatementContent";
+import EAGuidelinesContent from "./11EAGuidelinesContent";
+import EApplicationContent from "./11EApplicationContent";
+import DDSpecifiedContent from "./11DDSpecifiedContent";
+import DPermanentContent from "./11DPermanentContent";
+import CPrescribedContent from "./11CPrescribedContent";
+import BConditionsContent from "./11BConditionsContent";
+import AARequirementsContent from "./11AARequirementsContent";
+import AMedicalConetent from "./11AMedicalConetent";
 
 
 const DeterminationIncomeCentent = [
@@ -715,84 +730,84 @@ const DeterminationIncomeCentent = [
     {
       id: 130,
       title: "11A Medical authority for certifying autism, cerebral palsy and multiple disabilities and certificate to be obtained from the medical authority for the purposes of deduction under section 80DD and section 80U",
-      link: FiveDConditionsContent
+      link: AMedicalConetent
     },
     
     {
       id: 131,
       title: "11AA Requirements for approval of an institution or fund under section 80G",
-      link: FiveDConditionsContent
+      link: AARequirementsContent
     },
     
     {
       id: 132,
       title: "11B Conditions for allowance for deduction under section 80G",
-      link: FiveDConditionsContent
+      link: BConditionsContent
     },
     
     {
       id: 133,
       title: "11C Prescribed fields for the purposes of deduction in respect of remuneration received from foreign employers or Indian concerns under section 80RRA",
-      link: FiveDConditionsContent
+      link: CPrescribedContent
     },
     
     {
       id: 134,
       title: "11D Permanent physical disabilities for the purposes of deduction under section 80U",
-      link: FiveDConditionsContent
+      link: DPermanentContent
     },
     {
       id: 135,
       title: "11DD Specified diseases and ailments for the purposeS of deduction under section 80DDB",
-      link: FiveDConditionsContent
+      link: DDSpecifiedContent
     },
     {
       id: 136,
       title: "11E Application for approval of agreement under section 80-O",
-      link: FiveDConditionsContent
+      link: EApplicationContent
     },
     {
       id: 137,
       title: "11EA Guidelines for specifying industrially backward districts for the purpose of deduction under sub-section (5) of section 80-IB",
-      link: FiveDConditionsContent
+      link: EAGuidelinesContent
     },
     
     {
       id: 138,
       title: "11EE Statement under the simplified procedure for taxation of retail traders, etc., under Chapter XII-C",
-      link: FiveDConditionsContent
+      link: EEStatementContent
     },
     {
       id: 139,
       title: "11F General",
-      link: FiveDConditionsContent
+      link: FGeneralContent
     },
     
     {
       id: 140,
       title: "11G Composition of the National Committee",
-      link: FiveDConditionsContent
+      link: GCompositionContent
     },
     
     {
       id: 141,
       title: "11H Headquarters and Secretariat",
-      link: FiveDConditionsContent
+      link: HHeadquartersContent
     },
     {
       id: 142,
       title: "11I Functions ",
-      link: FiveDConditionsContent
+      link: IFunctionsContent
     },
     {
       id: 143,
       title: "11J Guidelines for approval of associations and institutions ",
-      link: FiveDConditionsContent
+      link: JGuidelinesContent
     },
     {
       id: 144,
       title: "11K Guidelines for recommending projects or schemes ",
-      link: FiveDConditionsContent
+      link: KGuidelinesContent
     },
     {
       id: 145,
