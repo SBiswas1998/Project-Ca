@@ -105,6 +105,36 @@ import TenNAmendmentsContent from "./10NAmendmentsContent";
 import TenMARollContent from "./10MARollContent";
 import TenMTermsContent from "./10MTermsContent";
 import TenLProcedurContent from "./10LProcedurContent";
+import TenJWithdrawalContent from "./10JWithdrawalContent";
+import TenIApplicationContent from "./10IApplicationContent";
+import TenHPreContent from "./10HPreContent";
+import TenGPersonsContent from "./10GPersonsContent";
+import TenFMeaningContent from "./10FMeaningContent";
+import TenEReportContent from "./10EReportContent";
+import TenDBFurnishingContent from "./10DBFurnishingContent";
+import TenDAInformationConent from "./10DAInformationConent";
+import TenDInformationConetnt from "./10DInformationConetnt";
+import TenCBComputationContent from "./10CBComputationContent";
+import TenCAComputationContent from "./10CAComputationContent";
+import TenCMostContent from "./10CMostContent";
+import TenBDeterminationContent from "./10BDeterminationContent";
+import TenAMeaningContent from "./10AMeaningContent";
+import TenDeterminationContent from "./10DeterminationContent";
+import NineCConditions from "./9CConditions";
+import NineBDeductionContent from "./9BDeductionContent";
+import NineADeductionContent from "./9ADeductionContent";
+import NineRoyaltiesContent from "./9RoyaltiesContent";
+import EightDMethodContent from "./8DMethodContent";
+import EightCComputationContent from "./8CComputationContent";
+import EightBGuidelinesContent from "./8BGuidelinesContent";
+import EightABAttributionContent from "./8ABAttributionContent";
+import EightAAMethodContent from "./8AAMethodContent";
+import EightAConditions from "./8AConditions";
+import EightIncomeContent from "./8IncomeContent";
+import SevenBIncomeContent from "./7BIncomeContent";
+import SevenAIncomeContent from "./7AIncomeContent";
+import SevenIncomeContent from "./7IncomeContent";
+import SixHFormContent from "./6HFormContent";
 
 
 const DeterminationIncomeCentent = [
@@ -426,157 +456,157 @@ const DeterminationIncomeCentent = [
     {
       id: 65,
       title: "6GA Form of report of audit to be furnished under sub-section (2) of section 44DA ",
-      link: FiveDConditionsContent
+      link: SixHFormContent
     },
     {
       id: 66,
       title: "6H Form of report of an accountant under sub-section (3) of section 50B ",
-      link: FiveDConditionsContent
+      link: SixHFormContent
     },
     {
       id: 67,
       title: "7 Income which is partially agricultural and partially from business",
-      link: FiveDConditionsContent
+      link: SevenIncomeContent
     },
     {
       id: 68,
       title: "7A Income from the manufacture of rubber",
-      link: FiveDConditionsContent
+      link: SevenAIncomeContent
     },
     {
       id: 69,
       title: "7B Income from the manufacture of coffee",
-      link: FiveDConditionsContent
+      link: SevenBIncomeContent
     },
     {
       id: 70,
       title: "8 Income from the manufacture of tea",
-      link: FiveDConditionsContent
+      link: EightIncomeContent
     },
     {
       id: 71,
       title: "8A Conditions for the grant of development allowance",
-      link: FiveDConditionsContent
+      link: EightAConditions
     },
     {
       id: 72,
       title: "8AA Method of determination of period of holding of capital assets in certain cases",
-      link: FiveDConditionsContent
+      link: EightAAMethodContent
     },
     {
       id: 73,
       title: "8AB Attribution of income taxable under sub-section (4) of section 45 to the capital assets remaining with the specified entity, under section 48 ",
-      link: FiveDConditionsContent
+      link: EightABAttributionContent
     },
     {
       id: 74,
       title: "8B Guidelines for notification of zero coupon bond",
-      link: FiveDConditionsContent
+      link: EightBGuidelinesContent
     },
     {
       id: 75,
       title: "8C Computation of pro rata amount of discount on a zero coupon bond for the purpose of clause (iiia) of sub-section (1) of section 36",
-      link: FiveDConditionsContent
+      link: EightCComputationContent
     },
     {
       id: 76,
       title: "8D Method for determining amount of expenditure in relation to income not includible in total income",
-      link: FiveDConditionsContent
+      link: EightDMethodContent
     },
     {
       id: 77,
       title: "9 Royalties or copyright fees, etc., for literary or artistic work ",
-      link: FiveDConditionsContent
+      link: NineRoyaltiesContent
     },
     {
       id: 78,
       title: "9A Deduction in respect of expenditure on production of feature films",
-      link: FiveDConditionsContent
+      link: NineADeductionContent
     },
     {
       id: 79,
       title: "9B Deduction in respect of expenditure on acquisition of distribution rights of feature films",
-      link: FiveDConditionsContent
+      link: NineBDeductionContent
     },
     {
       id: 80,
       title: "9C Conditions for carrying forward or set off of accumulated loss and unabsorbed depreciation allowance in case of amalgamation",
-      link: FiveDConditionsContent
+      link: NineCConditions
     },
     {
       id: 81,
       title: "10 Determination of income in the case of non-residents",
-      link: FiveDConditionsContent
+      link: TenDeterminationContent
     },
     {
       id: 82,
       title: "10A Meaning of expressions used in computation of arm's length price",
-      link: FiveDConditionsContent
+      link: TenAMeaningContent
     },
     {
       id: 83,
       title: "10B Determination of arm's length price under section 92C",
-      link: FiveDConditionsContent
+      link: TenBDeterminationContent
     },
     {
       id: 84,
       title: "10C Most appropriate method",
-      link: FiveDConditionsContent
+      link: TenCMostContent
     },
     {
       id: 84,
       title: "10CA Computation of arm's length price in certain cases",
-      link: FiveDConditionsContent
+      link: TenCAComputationContent
     },
     {
       id: 85,
       title: "10CB Computation of interest income pursuant to secondary adjustments",
-      link: FiveDConditionsContent
+      link: TenCBComputationContent
     },
     {
       id: 86,
       title: "10D Information and documents to be kept and maintained under section 92D",
-      link: FiveDConditionsContent
+      link: TenDInformationConetnt
     },
     {
       id: 87,
       title: "10DA Information and documents to be kept and maintained under proviso to sub-section (1) of section 92D and to be furnished in terms of sub-section (4) of section 92D",
-      link: FiveDConditionsContent
+      link:  TenDAInformationConent
     },
     {
       id: 88,
       title: "10DB Furnishing of Report in respect of an International Group",
-      link: FiveDConditionsContent
+      link: TenDBFurnishingContent
     },
     {
       id: 89,
       title: "10E Report from an accountant to be furnished under section 92E",
-      link: FiveDConditionsContent
+      link: TenEReportContent
     },
     {
       id: 90,
       title: "10F Meaning of expressions used in matters in respect of advance pricing agreement",
-      link: FiveDConditionsContent
+      link: TenFMeaningContent
     },
     {
       id: 91,
       title: "10G Persons eligible to apply",
-      link: FiveDConditionsContent
+      link: TenGPersonsContent
     },
     {
       id: 92,
       title: "10H Pre-filing Consultation",
-      link: FiveDConditionsContent
+      link: TenHPreContent
     },
     {
       id: 93,
       title: "10I Application for advance pricing agreement",
-      link: FiveDConditionsContent
+      link: TenIApplicationContent
     },
     {
       id: 94,
       title: "10J Withdrawal of application for agreement",
-      link: FiveDConditionsContent
+      link: TenJWithdrawalContent
     },
     {
       id: 95,
