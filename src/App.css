@@ -2571,6 +2571,13 @@ a#left-tabs-example-tab-second {
   transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
 }
 
+.contact-image {
+  height: 400px;
+  margin-top: 50%;
+  margin-left: 10%;
+  width: 250px;
+  display: block !important;
+}
 @media screen and (max-width: 960px) {
   .vision-card .card {
     height: 350px;
@@ -2582,15 +2589,24 @@ a#left-tabs-example-tab-second {
   .Schedule-call {
     font-size: 14px;
   }
+  .contact-image {
+    display: none !important;
+  }
+  .text-center {
+    font-size: 30px;
+  }
+
+  .otherhero-text {
+    padding: 20px;
+}
+ .contact {
+  margin-left: -10px !important;
+  margin-top: -48px !important;
+}
 }
 
 
-.contact-image {
-  height: 400px;
-  margin-top: 50%;
-  margin-left: 10%;
-  width: 250px;
-}
+
 
 .card-link {
   font-weight: 600;
@@ -2642,10 +2658,6 @@ a#left-tabs-example-tab-second {
 .clickable-cell {
   cursor: pointer;
 }
-
-
-
-
 
 .contact input[type="text"],
 .contact input[type="email"],
