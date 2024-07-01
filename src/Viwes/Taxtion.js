@@ -11,8 +11,8 @@ const Taxtion = () => {
       <Container fluid>
         <Row className="justify-content-center">
           <Col xs={12} md={5}>
-            <p className="mt-5 otherhero-text">
-              <h1 className="text-center mb-4">TAXATION</h1>
+            <p className="otherhero-text">
+              <h1 className="text-center">TAXATION</h1>
               Taxation is a system where a government collects financial
               contributions from its citizens and businesses to fund public
               services and infrastructure. Taxes can be levied on income,

@@ -6,7 +6,6 @@ import CommonCard from "../../../components/Card/CommonCard";
 import QuickEnquiryForm from "../../../components/Forms/QuickEnquiryFrom";
 import { Col, Container, Row } from "react-bootstrap";
 
-
 const ProfessionalTax = () => {
   const [cardtext1, setCardText1] = useState("");
   const [cardtext2, setCardText2] = useState("");
@@ -27,11 +26,11 @@ const ProfessionalTax = () => {
   return (
     <>
       <ResHeader />
-      <Container fluid>
+      <Container>
         <Row className="justify-content-center">
           <Col xs={12} md={5}>
-            <p className="mt-5 otherhero-text">
-              <h1 className="text-center mb-4">ProfessionalTax</h1>
+            <p className="otherhero-text">
+              <h1 className="text-center">ProfessionalTax</h1>
               Professional tax registration is essential for employers and
               individuals engaged in any profession, trade, or calling in India.
               This state-level tax, applicable in states like Karnataka, West

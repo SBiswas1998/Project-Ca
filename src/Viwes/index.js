@@ -83,6 +83,15 @@ import AddDirectors from "./Service/ROC/AddDirectors";
 import AddPartner from "./Service/ROC/AddPartner";
 import ChangeCompanyName from "./Service/ROC/ChangeCompanyName";
 import IncreaseAuthorizedCapital from "./Service/ROC/IncreaseAuthorizedCapital";
+import MoaAmendment from "./Service/ROC/MoaAmendment";
+import RegisteredOfficeChange from "./Service/ROC/RegisteredOfficeChange";
+import RemoveDirectors from "./Service/ROC/RemoveDirectors";
+import ShareTransfer from "./Service/ROC/ShareTransfer";
+import WindingUpOfCompany from "./Service/ROC/WindingUpOfCompany";
+import WindingUpOfLLP from "./Service/ROC/WindingUpOfLLP";
+import StatutoryCompliance from "./Service/ROC/StatutoryCompliance";
+
+
 
 
 
@@ -174,5 +183,12 @@ export {
   AddDirectors,
   AddPartner,
   ChangeCompanyName,
-  IncreaseAuthorizedCapital
+  IncreaseAuthorizedCapital,
+  MoaAmendment,
+  RegisteredOfficeChange,
+  RemoveDirectors,
+  ShareTransfer,
+  WindingUpOfCompany,
+  WindingUpOfLLP,
+  StatutoryCompliance
 };

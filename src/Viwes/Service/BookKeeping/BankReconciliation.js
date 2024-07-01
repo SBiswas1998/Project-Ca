@@ -8,11 +8,11 @@ const BankReconciliation = () => {
   return (
     <>
       <ResHeader />
-      <Container fluid>
+      <Container>
         <Row className="justify-content-center">
           <Col xs={12} md={5}>
-            <p className="mt-5 otherhero-text">
-              <h1 className="text-center mb-4">Bank Reconciliation</h1>
+            <p className="otherhero-text">
+              <h1 className="text-center">Bank Reconciliation</h1>
               Bank reconciliation is a crucial process in bookkeeping that
               involves comparing the bank statement balance with the company's
               ledger balance to identify and resolve discrepancies. This ensures

@@ -8,11 +8,11 @@ const Assessment = () => {
   return (
     <>
       <ResHeader />
-      <Container fluid>
+      <Container>
         <Row className="justify-content-center">
           <Col xs={12} md={5}>
-            <p className="mt-5 otherhero-text">
-              <h1 className="text-center mb-4">Assessment</h1>
+            <p className="otherhero-text">
+              <h1 className="text-center">Assessment</h1>
               The Goods and Services Tax (GST) has been a significant
               game-changer in the Indian economy. Introduced in 2017, it has
               simplified the indirect tax system by consolidating multiple taxes

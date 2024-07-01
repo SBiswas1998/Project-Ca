@@ -78,7 +78,15 @@ import {
     AddPartner,
     ChangeCompanyName,
     AllSubNavItem,
-    Taxtion
+    Taxtion,
+    MoaAmendment,
+    RegisteredOfficeChange,
+    RemoveDirectors,
+    IncreaseAuthorizedCapital,
+    ShareTransfer,
+    WindingUpOfCompany,
+    WindingUpOfLLP,
+    StatutoryCompliance
 
 
 
@@ -352,6 +360,46 @@ const AppRouter = () => {
         path="/service/ROC/change_company_name"
         exact
         element={<ChangeCompanyName />}
+      />
+      <Route
+        path="/service/ROC/MoaAmendment"
+        exact
+        element={<MoaAmendment />}
+      />
+      <Route
+        path="/service/ROC/RegisteredOfficeChange"
+        exact
+        element={<RegisteredOfficeChange />}
+      />
+      <Route
+        path="/service/ROC/RemoveDirectors"
+        exact
+        element={<RemoveDirectors />}
+      />
+      <Route
+        path="/service/ROC/IncreaseAuthorizedCapital"
+        exact
+        element={<IncreaseAuthorizedCapital />}
+      />
+      <Route
+        path="/service/ROC/ShareTransfer"
+        exact
+        element={<ShareTransfer />}
+      />
+      <Route
+        path="/service/ROC/WindingUpOfCompany"
+        exact
+        element={<WindingUpOfCompany />}
+      />
+      <Route
+        path="/service/ROC/WindingUpOfLLP"
+        exact
+        element={<WindingUpOfLLP />}
+      />
+      <Route
+        path="/service/ROC/StatutoryCompliance"
+        exact
+        element={<StatutoryCompliance/>}
       />
 
       {/* end ROC Link */}

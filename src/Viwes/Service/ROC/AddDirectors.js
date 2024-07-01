@@ -31,11 +31,11 @@ const AddDirectors = () => {
   return (
     <>
       <ResHeader />
-      <Container fluid>
+      <Container>
         <Row className="justify-content-center">
           <Col xs={12} md={5}>
-            <p className="mt-5 otherhero-text">
-              <h1 className="text-center mb-4">Add Directors</h1>
+            <p className="otherhero-text">
+              <h1 className="text-center">Add Directors</h1>
               Directors are living individuals elected by shareholders to manage
               a company's affairs as outlined in its Memorandum and Articles of
               Association. Since a company is an artificial entity, it acts

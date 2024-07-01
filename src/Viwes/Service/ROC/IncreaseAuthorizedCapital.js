@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Footer } from "../../../components/Layout";
 import CommonCard from "../../../components/Card/CommonCard";
 import QuickEnquiryFrom from "../../../components/Forms/QuickEnquiryFrom";
-import {IncreaseAuthorizedCapitalCardText,} from "../../../constants/Paragram";
+import { IncreaseAuthorizedCapitalCardText } from "../../../constants/Paragram";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -27,11 +27,11 @@ const IncreaseAuthorizedCapital = () => {
   return (
     <>
       <ResHeader />
-      <Container fluid>
+      <Container>
         <Row className="justify-content-center">
           <Col xs={12} md={5}>
-            <p className="mt-5 otherhero-text">
-              <h1 className="text-center mb-4">Increase Authorized Capital</h1>
+            <p className="otherhero-text">
+              <h1 className="text-center">Increase Authorized Capital</h1>
               Increasing the authorized capital of a company requires a board
               resolution and filing forms with the Registrar of Companies.
               Authorized capital determines the number of shares a company can

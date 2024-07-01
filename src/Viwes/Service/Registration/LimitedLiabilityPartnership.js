@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Footer } from "../../../components/Layout";
 import QuickEnquiryFrom from "../../../components/Forms/QuickEnquiryFrom";
-import {LimitedLiabilityPartnershipCardText} from "../../../constants/Paragram";
+import { LimitedLiabilityPartnershipCardText } from "../../../constants/Paragram";
 import CommonCard from "../../../components/Card/CommonCard";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -39,15 +39,14 @@ const LimitedLiabilityPartnership = () => {
     }
   }, [LimitedLiabilityPartnershipCardText]);
 
-
   return (
     <>
-    <ResHeader />
-    <Container fluid>
+      <ResHeader />
+      <Container>
         <Row className="justify-content-center">
           <Col xs={12} md={5}>
-            <p className="mt-5 otherhero-text">
-              <h1 className="text-center mb-4">Limited Liability Partnership</h1>
+            <p className="otherhero-text">
+              <h1 className="text-center">Limited Liability Partnership</h1>
               Limited Liability Partnerships (LLPs) offer limited liability
               protection, ideal for small businesses. Introduced in 2010, LLPs
               have gained popularity with over 1 lakh registrations by September
@@ -130,7 +129,6 @@ const LimitedLiabilityPartnership = () => {
         </Container>
       </section>
       <Footer />
-
     </>
   );
 };

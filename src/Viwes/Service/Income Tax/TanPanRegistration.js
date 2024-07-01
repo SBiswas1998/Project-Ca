@@ -26,11 +26,11 @@ const TanRegistration = () => {
   return (
     <>
       <ResHeader />
-      <Container fluid>
+      <Container>
         <Row className="justify-content-center">
           <Col xs={12} md={5}>
-            <p className="mt-5 otherhero-text">
-              <h1 className="text-center mb-4">Tan & PAN Registration</h1>
+            <p className="otherhero-text">
+              <h1 className="text-center">Tan & PAN Registration</h1>
               Tax Deduction and Collection Account Number (TAN) and Permanent
               Account Number (PAN) are essential registrations for financial and
               taxation activities in India. TAN is a unique identifier required

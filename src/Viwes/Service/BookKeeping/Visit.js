@@ -8,11 +8,11 @@ const Visit = () => {
   return (
     <>
       <ResHeader />
-      <Container fluid>
+      <Container>
         <Row className="justify-content-center">
           <Col xs={12} md={5}>
-            <p className="mt-5 otherhero-text">
-              <h1 className="text-center mb-4">Visit</h1>
+            <p className="otherhero-text">
+              <h1 className="text-center">Visit</h1>
               Welcome to Visit for Clients, your trusted partner in bookkeeping
               excellence. Our team is dedicated to simplifying your financial
               management, allowing you to focus on what you do best—growing your

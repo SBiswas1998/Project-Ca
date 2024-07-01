@@ -26,22 +26,21 @@ const Proprietorship = () => {
   return (
     <>
       <ResHeader />
-      <Container fluid>
+      <Container>
         <Row className="justify-content-center">
           <Col xs={12} md={5}>
-            <p className="mt-5 otherhero-text">
-              <h1 className="text-center mb-4">Proprietorship</h1>
-              A proprietorship, also known as a sole proprietorship, is an
-              unregistered business owned and operated by one individual. Common
-              among small businesses in India's informal sectors,
-              proprietorships have minimal regulatory requirements but lack
-              benefits like limited liability. While the government doesn't
-              offer specific proprietorship registration, tax and business
-              registrations under the proprietor's name establish its existence.
-              Purminder Kaur & Associates offers quick proprietorship
-              registration services, completed within 3 to 5 working days.
-              Contact us for expert guidance on setting up a proprietorship in
-              India.
+            <p className="otherhero-text">
+              <h1 className="text-center">Proprietorship</h1>A proprietorship,
+              also known as a sole proprietorship, is an unregistered business
+              owned and operated by one individual. Common among small
+              businesses in India's informal sectors, proprietorships have
+              minimal regulatory requirements but lack benefits like limited
+              liability. While the government doesn't offer specific
+              proprietorship registration, tax and business registrations under
+              the proprietor's name establish its existence. Purminder Kaur &
+              Associates offers quick proprietorship registration services,
+              completed within 3 to 5 working days. Contact us for expert
+              guidance on setting up a proprietorship in India.
             </p>
           </Col>
           <Col xs={12} md={7}>

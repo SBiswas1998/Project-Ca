@@ -8,11 +8,11 @@ const Trust = () => {
   return (
     <>
       <ResHeader />
-      <Container fluid>
+      <Container>
         <Row className="justify-content-center">
           <Col xs={12} md={5}>
-            <p className="mt-5 otherhero-text">
-              <h1 className="text-center mb-4">Trust</h1>
+            <p className="otherhero-text">
+              <h1 className="text-center">Trust</h1>
               Establishing a trust is a pivotal step for financial institutions
               aiming to formalize their operations and ensure legal recognition.
               Trusts serve as a structured framework for managing funds, assets,

@@ -26,11 +26,11 @@ const OnePersonCompany = () => {
   return (
     <>
       <ResHeader />
-      <Container fluid>
+      <Container>
         <Row className="justify-content-center">
           <Col xs={12} md={5}>
-            <p className="mt-5 otherhero-text">
-              <h1 className="text-center mb-4">One Person Company</h1>
+            <p className="otherhero-text">
+              <h1 className="text-center">One Person Company</h1>
               The One Person Company (OPC) is a modern business structure
               introduced under the Companies Act, 2013, catering to solo
               entrepreneurs seeking limited liability protection. It allows a

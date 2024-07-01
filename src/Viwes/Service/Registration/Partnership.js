@@ -28,24 +28,21 @@ const Partnership = () => {
   return (
     <>
       <ResHeader />
-      <Container fluid>
+      <Container>
         <Row className="justify-content-center">
           <Col xs={12} md={5}>
-            <p className="mt-5 otherhero-text">
-              <h1 className="text-center mb-4">Partnership</h1>
+            <p className="otherhero-text">
+              <h1 className="text-center">Partnership</h1>
               Partnership firms, whether registered or unregistered, are popular
-              among small businesses in the unorganized sector with multiple
-              promoters. Managed and owned by a group of individuals for profit,
-              these firms cater to small and medium-sized enterprises. Although
-              starting a partnership firm is straightforward, the emergence of
-              Limited Liability Partnerships (LLPs) in India has diminished the
-              prevalence of traditional partnerships due to the advantages
-              offered by LLPs. Partnership firms are categorized into registered
-              and unregistered types, with registration being recommended for
-              the benefits it provides. The establishment of a partnership firm
-              entails drafting a partnership deed among the partners. Purminder
-              Kaur & Associates offers assistance in establishing both
-              registered and unregistered partnership firms in India.
+              among small businesses in India's unorganized sector. Managed by a
+              group of individuals for profit, these firms cater to small and
+              medium-sized enterprises. The rise of Limited Liability
+              Partnerships has reduced traditional partnerships due to
+              the advantages LLPs offer. Registration of partnership firms is
+              recommended for its benefits. Establishing a partnership firm
+              involves drafting a partnership deed among the partners. Purminder
+              Kaur & Associates assists in setting up both registered and
+              unregistered partnership firms in India.
             </p>
           </Col>
           <Col xs={12} md={7}>

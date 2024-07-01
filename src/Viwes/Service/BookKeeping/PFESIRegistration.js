@@ -8,11 +8,11 @@ const PFESIRegistration = () => {
   return (
     <>
       <ResHeader />
-      <Container fluid>
+      <Container>
         <Row className="justify-content-center">
           <Col xs={12} md={5}>
-            <p className="mt-5 otherhero-text">
-              <h1 className="text-center mb-4">PF & ESI Registration</h1>
+            <p className="otherhero-text">
+              <h1 className="text-center">PF & ESI Registration</h1>
               In this month's financial review, we delve into the meticulous
               world of bookkeeping, where every entry counts. With a keen eye on
               accuracy, we meticulously documented all financial transactions,

@@ -27,11 +27,11 @@ const PublicLimitedCompany = () => {
     <>
       <ResHeader />
 
-      <Container fluid>
+      <Container>
         <Row className="justify-content-center">
           <Col xs={12} md={5}>
-            <p className="mt-5 otherhero-text">
-              <h1 className="text-center mb-4">Public Limited Company</h1>
+            <p className="otherhero-text">
+              <h1 className="text-center">Public Limited Company</h1>
               Public Limited Company (PLC) is ideal for medium to large
               businesses seeking public equity capital. It offers limited
               liability to owners and can sell shares to investors for capital

@@ -27,11 +27,11 @@ const AddPartner = () => {
   return (
     <>
       <ResHeader />
-      <Container fluid>
+      <Container>
         <Row className="justify-content-center">
           <Col xs={12} md={5}>
-            <p className="mt-5 otherhero-text">
-              <h1 className="text-center mb-4">Add Partner</h1>
+            <p className="otherhero-text">
+              <h1 className="text-center">Add Partner</h1>
               Partners in a Limited Liability Partnership (LLP) are crucial for
               its operations. Anyone above 18 years old can become a partner. To
               join an LLP, individuals need a Digital Signature Certificate

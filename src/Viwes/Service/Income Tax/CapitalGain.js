@@ -8,11 +8,11 @@ const CapitalGain = () => {
   return (
     <>
       <ResHeader />
-      <Container fluid>
+      <Container>
         <Row className="justify-content-center">
           <Col xs={12} md={5}>
-            <p className="mt-5 otherhero-text">
-              <h1 className="text-center mb-4">Capital Gain</h1>
+            <p className="otherhero-text">
+              <h1 className="text-center">Capital Gain</h1>
               When reporting capital gains for income tax purposes, it's crucial
               to provide all relevant information accurately. Begin by detailing
               the asset sold, including its description, acquisition date, and

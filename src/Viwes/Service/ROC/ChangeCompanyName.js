@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Footer } from "../../../components/Layout";
 import CommonCard from "../../../components/Card/CommonCard";
 import QuickEnquiryFrom from "../../../components/Forms/QuickEnquiryFrom";
-import {ChangeCompanyNameCardText,} from "../../../constants/Paragram";
+import { ChangeCompanyNameCardText } from "../../../constants/Paragram";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -27,11 +27,11 @@ const ChangeCompanyName = () => {
   return (
     <>
       <ResHeader />
-      <Container fluid>
+      <Container>
         <Row className="justify-content-center">
           <Col xs={12} md={5}>
-            <p className="mt-5 otherhero-text">
-              <h1 className="text-center mb-4">Change Company Name</h1>
+            <p className="otherhero-text">
+              <h1 className="text-center">Change Company Name</h1>
               The name of a company or LLP can be changed with approval from the
               Board of Directors and shareholders. Promoters can initiate this
               change for reasons like business model alteration or rebranding.

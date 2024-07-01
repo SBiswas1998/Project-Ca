@@ -8,11 +8,11 @@ const ITRFiling = () => {
   return (
     <>
       <ResHeader />
-      <Container fluid>
+      <Container>
         <Row className="justify-content-center">
           <Col xs={12} md={5}>
-            <p className="mt-5 otherhero-text">
-              <h1 className="text-center mb-4">ITR Filing</h1>
+            <p className="otherhero-text">
+              <h1 className="text-center">ITR Filing</h1>
               When filing your Income Tax Return (ITR), it's crucial to include
               all pertinent information accurately. Begin by providing your
               personal details, including your full name, permanent account

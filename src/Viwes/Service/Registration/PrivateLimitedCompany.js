@@ -26,22 +26,17 @@ const PrivateLimitedCompany = () => {
   return (
     <>
       <ResHeader />
-      <Container fluid>
+      <Container>
         <Row className="justify-content-center">
           <Col xs={12} md={5}>
-            <p className="mt-5 otherhero-text">
-              <h1 className="text-center mb-4">Private Limited Company</h1>
-              Private Limited Company (PLC) is the preferred corporate entity in
-              India due to its advantages. With PLC registration governed by the
-              Ministry of Corporate Affairs, Companies Act, 2013, and Companies
-              Incorporation Rules, 2014, it requires a minimum of two
-              shareholders and directors. PLCs offer limited liability
-              protection, equity fund-raising options, separate legal entity
-              status, and perpetual existence, making them ideal for small to
-              large businesses. Purminder Kaur & Associates specializes in PLC
-              registration and other company formations, with an average
-              processing time of 10-15 working days. Schedule a free
-              consultation for PLC registration and business setup assistance.
+            <p className="otherhero-text">
+              <h1 className="text-center">Private Limited Company</h1>A Private
+              Limited Company (PLC) in India, governed by the Companies Act,
+              2013, and the Companies Incorporation Rules, 2014, requires a
+              minimum of two shareholders and directors. Offering limited
+              liability, fundraising options, and perpetual existence, PLCs are
+              ideal for various businesses. Purminder Kaur & Associates
+              specializes in PLC registration with a 10-15 day processing time.
             </p>
           </Col>
           <Col xs={12} md={7}>

@@ -8,11 +8,11 @@ const NoticeSCOTIN = () => {
   return (
     <>
       <ResHeader />
-      <Container fluid>
+      <Container>
         <Row className="justify-content-center">
           <Col xs={12} md={5}>
-            <p className="mt-5 otherhero-text">
-              <h1 className="text-center mb-4">Notice scrutiny</h1>
+            <p className="otherhero-text">
+              <h1 className="text-center">Notice scrutiny</h1>
               Notice scrutiny is a critical process for financial institutions
               to ensure compliance with regulatory requirements and address any
               discrepancies or issues promptly. As part of regulatory oversight,

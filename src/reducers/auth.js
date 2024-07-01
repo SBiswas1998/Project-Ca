@@ -41,7 +41,7 @@ export default (state = initialState,action)=>{
 
     switch (type){
         case REGISTER_RESPONSE:
-            console.log("payload---",payload?.data?._id)
+            console.log("payload---",payload)
             localStorage.setItem('_id',payload?.data?._id)
             return{
                 ...state,

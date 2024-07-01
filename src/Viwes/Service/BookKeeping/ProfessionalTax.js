@@ -8,11 +8,11 @@ const ProfessionalTax = () => {
   return (
     <>
       <ResHeader />
-      <Container fluid>
+      <Container>
         <Row className="justify-content-center">
           <Col xs={12} md={5}>
-            <p className="mt-5 otherhero-text">
-              <h1 className="text-center mb-4">Professional Tax</h1>
+            <p className="otherhero-text">
+              <h1 className="text-center">Professional Tax</h1>
               Professional Tax is a state-imposed levy on individuals earning
               income through employment, trade, or profession. For bookkeeping
               purposes, it is crucial to record and remit this tax periodically

@@ -8,11 +8,11 @@ const MutualfundInvestment = () => {
   return (
     <>
       <ResHeader />
-      <Container fluid>
+      <Container>
         <Row className="justify-content-center">
           <Col xs={12} md={5}>
-            <p className="mt-5 otherhero-text">
-              <h1 className="text-center mb-4">Mutual fund Investment</h1>
+            <p className="otherhero-text">
+              <h1 className="text-center">Mutual fund Investment</h1>
               Mutual funds offer a gateway to diversified investment
               opportunities, catering to both seasoned investors and novices
               alike. With a mutual fund, your investment is pooled with that of

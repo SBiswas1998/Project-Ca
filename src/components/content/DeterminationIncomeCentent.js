@@ -100,6 +100,11 @@ import TenRCancellationContent from "./10RCancellationContent";
 import TenRAProcedureContent from "./10RAProcedureContent";
 import TenQRevisionContent from "./10QRevisionContent";
 import TenPComplianceContent from "./10PComplianceContent";
+import TenOFurnishingContent from "./10OFurnishingContent";
+import TenNAmendmentsContent from "./10NAmendmentsContent";
+import TenMARollContent from "./10MARollContent";
+import TenMTermsContent from "./10MTermsContent";
+import TenLProcedurContent from "./10LProcedurContent";
 
 
 const DeterminationIncomeCentent = [
@@ -576,29 +581,29 @@ const DeterminationIncomeCentent = [
     {
       id: 95,
       title: "10L Procedure",
-      link: FiveDConditionsContent
+      link: TenLProcedurContent
     },
     {
       id: 96,
       title: "10M Terms of the agreement",
-      link: FiveDConditionsContent
+      link: TenMTermsContent
     },
     {
       id: 97,
       title: "10MA. Roll Back of the Agreement",
-      link: FiveDConditionsContent
+      link: TenMARollContent
     },
     
     {
       id: 98,
       title: "10N Amendments to Application",
-      link: FiveDConditionsContent
+      link: TenNAmendmentsContent
     },
     
     {
       id: 99,
       title: "10O Furnishing of Annual Compliance Report",
-      link: FiveDConditionsContent
+      link: TenOFurnishingContent
     },
     {
       id: 100,

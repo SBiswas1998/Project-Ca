@@ -8,11 +8,11 @@ const UdyamAadhar = () => {
   return (
     <>
       <ResHeader />
-      <Container fluid>
+      <Container>
         <Row className="justify-content-center">
           <Col xs={12} md={5}>
-            <p className="mt-5 otherhero-text">
-              <h1 className="text-center mb-4">Udyam Aadhar</h1>
+            <p className="otherhero-text">
+              <h1 className="text-center">Udyam Aadhar</h1>
               Udyam Aadhar registration holds paramount importance for financial
               entities aiming to avail themselves of various government schemes
               and benefits. Whether it's a micro, small, or medium-sized

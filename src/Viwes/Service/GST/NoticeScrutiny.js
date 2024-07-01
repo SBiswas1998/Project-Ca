@@ -8,11 +8,11 @@ const NoticeScrutiny = () => {
   return (
     <>
       <ResHeader />
-      <Container fluid>
+      <Container>
         <Row className="justify-content-center">
           <Col xs={12} md={5}>
-            <p className="mt-5 otherhero-text">
-              <h1 className="text-center mb-4">GST Notice Scrutiny</h1>
+            <p className="otherhero-text">
+              <h1 className="text-center">GST Notice Scrutiny</h1>
               When composing a paragraph for GST Notice Scrutiny, it's crucial
               to include all pertinent details concisely and clearly. Start by
               introducing the purpose of the notice, which typically involves a

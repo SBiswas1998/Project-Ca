@@ -8,12 +8,11 @@ const SocietyRegistrations = () => {
   return (
     <>
       <ResHeader />
-      <Container fluid>
+      <Container>
         <Row className="justify-content-center">
           <Col xs={12} md={5}>
-            <p className="mt-5 otherhero-text">
-              <h1 className="text-center mb-4">Society Registrations</h1>
-              
+            <p className="otherhero-text">
+              <h1 className="text-center">Society Registrations</h1>
               Society registration is essential for financial institutions
               seeking to establish a legal entity for their operations. Whether
               it's a cooperative society, credit union, or other financial

@@ -3,7 +3,7 @@ import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import { registerUser, verifyOtp } from "../../actions/auth";
 import contactimg from "../../assets/images/QuickEnquiryImg.png";
-import Swal from 'sweetalert2';
+import Swal from "sweetalert2";
 
 const QuickEnquiryForm = () => {
   const dispatch = useDispatch();
@@ -18,27 +18,28 @@ const QuickEnquiryForm = () => {
 
   const user_data = useSelector((state) => state.auth.user_data);
   const otpStatus = useSelector((state) => state.auth.otpStatus);
-  const customerId =  localStorage.getItem('_id')
-  // setUserId(customerId)
+  const customerId = localStorage.getItem("_id");
+  console.log("customerId",customerId)
+  
+  console.log("otpStatus",otpStatus)
 
- const popupMessage = user_data?.message
+  const popupMessage = user_data?.message;
   // setUserId(user_data?.data?._id);
-
 
   const handleSignUp = () => {
     if (name === "" || phone === "" || city === "") {
       Swal.fire({
-        icon: 'error',
-        title: 'Oops...',
-        text: 'Please enter a valid input',
+        icon: "error",
+        title: "Oops...",
+        text: "Please enter a valid input",
       });
       return false;
     }
     if (!isValidEmail(email)) {
       Swal.fire({
-        icon: 'error',
-        title: 'Oops...',
-        text: 'Please enter a valid email address',
+        icon: "error",
+        title: "Oops...",
+        text: "Please enter a valid email address",
       });
       return;
     }
@@ -56,8 +57,8 @@ const QuickEnquiryForm = () => {
   useEffect(() => {
     if (user_data?.message) {
       Swal.fire({
-        icon: 'success',
-        title: 'Success',
+        icon: "success",
+        title: "Success",
         text: user_data.message,
       });
     }
@@ -69,16 +70,16 @@ const QuickEnquiryForm = () => {
     return emailRegex.test(email);
   };
 
-  const handleVerifyOtp =()=>{
+  const handleVerifyOtp = () => {
     if (otp === "") {
       Swal.fire({
-        icon: 'error',
-        title: 'Oops...',
-        text: 'Please enter a valid input',
+        icon: "error",
+        title: "Oops...",
+        text: "Please enter a valid input",
       });
       return false;
     }
-     const userData = {
+    const userData = {
       otp: otp,
       name: name,
       email: email,
@@ -87,22 +88,21 @@ const QuickEnquiryForm = () => {
       text: text,
       _id: customerId,
     };
-    dispatch(verifyOtp(userData))
-    
-  }
-
+    dispatch(verifyOtp(userData));
+    clearFormFields()
+  };
 
   useEffect(() => {
     if (otpStatus?.data?.message) {
       Swal.fire({
-        icon: 'success',
-        title: 'Success',
+        icon: "success",
+        title: "Success",
         text: otpStatus?.data?.message,
       });
-      clearFormFields()
+      clearFormFields();
     }
   }, [otpStatus]);
-  
+
   const clearFormFields = () => {
     setName("");
     setEmail("");
@@ -116,124 +116,110 @@ const QuickEnquiryForm = () => {
     <section className="hm-contactus-sec">
       <Container>
         <Row>
-        <Col lg={5}>
+          <Col lg={5}>
             <figure className="">
-              <img
-                src={contactimg}
-                alt=""
-                className="contact-image"
-                // style={{ marginLeft: "0", marginTop: "16%" }}
-              />
+              <img src={contactimg} alt="" className="contact-image" />
             </figure>
           </Col>
           <Col lg={7} className="mt-s">
-            <div className="contact_form">
-              <Row>
-                <Col md={12}>
-                  <h2>
-                    Quick<span>Enquiry </span>
-                  </h2>
-                  <p className="text-center">
-                    Please send us your query and we'll be happy to assist you
-                  </p>
-                </Col>
-                <Col md={6}>
-                  <Form.Group>
-                    <Form.Control
-                      type="text"
-                      placeholder="Enter Name *"
-                      value={name}
-                      onChange={(e) => setName(e.target.value)}
-                    />
-                  </Form.Group>
-                </Col>
-                <Col md={6}>
-                  <Form.Group>
-                    <Form.Control
-                      type="email"
-                      placeholder="Enter Email Address *"
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
-                    />
-                  </Form.Group>
-                </Col>
-                <Col md={6}>
-                  <Form.Group>
-                    <Form.Control
-                      type="text"
-                      placeholder="Enter Phone Number *"
-                      value={phone}
-                      onChange={(e) => {
-                        // Validate input using regex and update state
-                        const value = e.target.value.replace(/\D/g, ""); // Remove non-numeric characters
-                        setPhone(value);
-                      }}
-                      pattern="[0-9]*" // Accept only numeric values
-                    />
-                  </Form.Group>
-                </Col>
+            <div className="contact">
+              <h3>Quick Contact</h3>
+              <h4>Contact us today, and get reply with in 24 hours!</h4>
+              <fieldset>
+                <input
+                  placeholder="Your name"
+                  type="text"
+                  tabindex="1"
+                  required
+                  autofocus
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                />
+              </fieldset>
+              <fieldset>
+                <input
+                  placeholder="Your Email Address"
+                  type="email"
+                  tabindex="2"
+                  required
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+              </fieldset>
+              <fieldset>
+                <input
+                  placeholder="Your Phone Number"
+                  type="tel"
+                  tabindex="3"
+                  required
+                  value={phone}
+                  onChange={(e) => {
+                    // Validate input using regex and update state
+                    const value = e.target.value.replace(/\D/g, ""); // Remove non-numeric characters
+                    setPhone(value);
+                  }}
+                  pattern="[0-9]*"
+                />
+              </fieldset>
+              <fieldset>
+                <input
+                  placeholder="Your city"
+                  type="text"
+                  tabindex="1"
+                  required
+                  autofocus
+                  value={city}
+                  onChange={(e) => setCity(e.target.value)}
+                />
+              </fieldset>
+              <fieldset>
+                <textarea
+                  placeholder="Type your Message Here...."
+                  tabindex="3"
+                  required
+                  onChange={(e) => setText(e.target.value)}
+                ></textarea>
+              </fieldset>
 
-                <Col md={6}>
-                  <Form.Group>
-                    <Form.Control
+              {user_data.status === true && (
+                <>
+                  <fieldset>
+                    <input
+                      placeholder="Enter your OTP"
                       type="text"
-                      placeholder="Enter Your City *"
-                      value={city}
-                      onChange={(e) => setCity(e.target.value)}
+                      tabindex="1"
+                      required
+                      autofocus
+                      onChange={(e) => setOTP(e.target.value)}
                     />
-                  </Form.Group>
-                </Col>
-                <Col xs={12}>
-                  <Form.Group>
-                    <Form.Control
-                      as="textarea"
-                      value={text}
-                      rows={5}
-                      placeholder="Type your message here"
-                      onChange={(e) => setText(e.target.value)}
-                    />
-                  </Form.Group>
-                </Col>
-                {!user_data.status === true && (
-                  <Col xs={12} className="text-center">
-                  <Button
-                    variant="primary"
+                  </fieldset>
+                  <fieldset>
+                    <button
+                      name="submit"
+                      type="submit"
+                      id="contact-submit"
+                      data-submit="...Sending"
+                      onClick={handleVerifyOtp}
+                    >
+                      Submit
+                    </button>
+                  </fieldset>
+                </>
+              )}
+
+              {!user_data.status === true && (
+                <fieldset>
+                  <button
+                    name="submit"
                     type="submit"
-                    className="btn-send"
+                    id="contact-submit"
+                    data-submit="...Sending"
                     onClick={handleSignUp}
                   >
                     Continue
-                  </Button>
-                </Col>
-               
-                )}
-                
-                {user_data.status === true && (
-                  <>
-                    <Col md={6}>
-                  <Form.Group>
-                    <Form.Control
-                      type="text"
-                      placeholder="Enter your otp *"
-                      value={otp}
-                      onChange={(e) => setOTP(e.target.value)}
-                    />
-                  </Form.Group>
-                </Col>
-                  <Col xs={12} className="text-center">
-                  <Button
-                    variant="primary"
-                    type="submit"
-                    className="btn-send"
-                    onClick={handleVerifyOtp}   
-                  >
-                    Submit
-                  </Button>
-                </Col>
-                  </>
-                  
-                )}
-              </Row>
+                  </button>
+                </fieldset>
+              )}
             </div>
           </Col>
         </Row>
