@@ -160,6 +160,14 @@ import SixAAEConditionsContent from "./6AAEConditionsContent";
 import SixAADGuidelinesContent from "./6AADGuidelinesContent";
 import SixAACPrescribedContent from "./6AACPrescribedContent";
 import SixAABStatementContent from "./6AABStatementContent";
+import SixAAAPrescribedConetnt from "./6AAAPrescribedConetnt";
+import SixAAPrescribedActivities from "./6AAPrescribedActivities";
+import SixAExpenditureContent from "./6AExpenditureContent";
+import SixPrescribedAuthorityContent from "./6PrescribedAuthorityContent";
+import FiveGOptionFormContent from "./5GOptionFormContent";
+import FiveFPrescribedContent from "./5FPrescribedContent";
+import FiveEConditionsContent from "./5EConditionsContent";
+import FiveDConditionsSubject from "./5DConditionsSubject";
 
 
 const DeterminationIncomeCentent = [
@@ -306,42 +314,42 @@ const DeterminationIncomeCentent = [
     {
       id: 29,
       title: "5D Conditions subject to which approval is to be granted to a Scientific Research Association under clause (ii) of sub-section (1) of section 35",
-      link: FiveDConditionsContent
+      link: FiveDConditionsSubject
     },
     {
       id: 30,
       title: "5E Conditions subject to which approval is to be granted to a University, College or other Institution under clause (ii) and clause (iii) of sub-section (1) of section 35",
-      link: FiveDConditionsContent
+      link: FiveEConditionsContent
     },
     {
       id: 31,
       title: "5F Prescribed authority, guidelines, form, manner and conditions for approval under clause (iia) of sub-section (1) of section 35",
-      link: FiveDConditionsContent
+      link: FiveFPrescribedContent
     },
     {
       id: 32,
       title: "5G Option form for taxation of income from patent under section 115BBF",
-      link: FiveDConditionsContent
+      link: FiveGOptionFormContent
     },
     {
       id: 33,
       title: "6 Prescribed authority for expenditure on scientific research",
-      link: FiveDConditionsContent
+      link: SixPrescribedAuthorityContent
     },
     {
       id: 34,
       title: "6A.Expenditure for obtaining right to use spectrum for telecommunication services",
-      link: FiveDConditionsContent
+      link: SixAExpenditureContent
     },
     {
       id: 35,
       title: "6AA Prescribed activities for export markets development allowance.",
-      link: FiveDConditionsContent
+      link: SixAAPrescribedActivities
     },
     {
       id: 36,
       title: "6AAA Prescribed authority for the purposes of sections 35CC and 35CCA",
-      link: FiveDConditionsContent
+      link: SixAAAPrescribedConetnt
     },
     {
       id: 37,

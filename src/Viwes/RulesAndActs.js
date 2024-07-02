@@ -30,6 +30,9 @@ import LifeInterestTable from "../components/content/APPENDIXContent";
 import ModalTableComponents from "../components/ModalTableComponents";
 import PreliminaryContect from "../components/content/PreliminaryContect";
 import DeterminationIncomeCentent from "../components/content/DeterminationIncomeCentent";
+import AssessmentProcedureContent from "../components/content/AssessmentProcedureContent/AssessmentProcedureContent";
+import AvoidanceContent from "../components/content/AvoidanceContent";
+import RegistrationFirmsContent from "../components/content/RegistrationFirmsContent/RegistrationFirmsContent";
 
 const RulesAndActs = () => {
   const [key, setKey] = useState("GST Rules");
@@ -64,7 +67,8 @@ const RulesAndActs = () => {
           <td>{item.title}</td>
         </tr>
       ));
-    } else if (content === 'DeterminationIncomeCentent' && DeterminationIncomeCentent) {
+    } 
+    else if (content === 'DeterminationIncomeCentent' && DeterminationIncomeCentent) {
       tableRows = DeterminationIncomeCentent.map((item) => (
         <tr
           key={item.id}
@@ -75,7 +79,32 @@ const RulesAndActs = () => {
           <td>{item.title}</td>
         </tr>
       ));
-    } else {
+    }
+    else if (content === 'AssessmentProcedureContent' && AssessmentProcedureContent) {
+      tableRows = AssessmentProcedureContent.map((item) => (
+        <tr
+          key={item.id}
+          onClick={() => handleModalOpen(item.link)}
+          className="clickable-cell"
+        >
+          <td>{item.id}</td>
+          <td>{item.title}</td>
+        </tr>
+      ));
+    }
+    else if (content === 'RegistrationFirmsContent' && RegistrationFirmsContent) {
+      tableRows = RegistrationFirmsContent.map((item) => (
+        <tr
+          key={item.id}
+          onClick={() => handleModalOpen(item.link)}
+          className="clickable-cell"
+        >
+          <td>{item.id}</td>
+          <td>{item.title}</td>
+        </tr>
+      ));
+    }
+    else {
       // Handle case where the selected content is not defined
       tableRows = null; // Or any other fallback content or logic
     }
@@ -335,11 +364,21 @@ const RulesAndActs = () => {
                           </tr>
                           <tr>
                             <td>3</td>
-                            <td>ASSESSMENT PROCEDURE</td>
+                            <td
+                              onClick={() =>
+                                handleTableOpen("AssessmentProcedureContent")
+                              }
+                              className="clickable-cell"
+                            >ASSESSMENT PROCEDURE</td>
                           </tr>
                           <tr>
                             <td>4</td>
-                            <td>AVOIDANCE OF REPETITIVE APPEALS</td>
+                            <td
+                              onClick={() =>
+                                handleModalOpen(AvoidanceContent)
+                              }
+                              className="clickable-cell"
+                            >AVOIDANCE OF REPETITIVE APPEALS</td>
                           </tr>
                           <tr>
                             <td>5</td>
@@ -347,7 +386,12 @@ const RulesAndActs = () => {
                           </tr>
                           <tr>
                             <td>6</td>
-                            <td>REGISTRATION OF FIRMS</td>
+                            <td
+                              onClick={() =>
+                                handleTableOpen("RegistrationFirmsContent")
+                              }
+                              className="clickable-cell"
+                            >REGISTRATION OF FIRMS</td>
                           </tr>
                           <tr>
                             <td>7</td>

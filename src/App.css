@@ -2600,7 +2600,7 @@ a#left-tabs-example-tab-second {
     padding: 20px;
 }
  .contact {
-  margin-left: -10px !important;
+  margin-left: -1px !important;
   margin-top: -48px !important;
 }
 }
