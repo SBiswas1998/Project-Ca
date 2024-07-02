@@ -155,6 +155,11 @@ import SixABAComputationContent from "./6ABAComputationContent";
 import SixABFormContent from "./6ABFormContent";
 import SixAAHMeaningContent from "./6AAHMeaningContent";
 import SixAAGConditionsContent from "./6AAGConditionsContent";
+import SixAAFGuidelinesContent from "./6AAFGuidelinesContent";
+import SixAAEConditionsContent from "./6AAEConditionsContent";
+import SixAADGuidelinesContent from "./6AADGuidelinesContent";
+import SixAACPrescribedContent from "./6AACPrescribedContent";
+import SixAABStatementContent from "./6AABStatementContent";
 
 
 const DeterminationIncomeCentent = [
@@ -341,713 +346,708 @@ const DeterminationIncomeCentent = [
     {
       id: 37,
       title: "6AAB Statement of expenditure for claiming deduction under section 35CC",
-      link: FiveDConditionsContent
+      link: SixAABStatementContent
     },
     {
       id: 38,
-      title: "6AAB Statement of expenditure for claiming deduction under section 35CC",
-      link: FiveDConditionsContent
+      title: "6AAC Prescribed authority for the purposes of section 35CCB",
+      link: SixAACPrescribedContent
     },
     {
       id: 39,
-      title: "6AAC Prescribed authority for the purposes of section 35CCB",
-      link: FiveDConditionsContent
+      title: "6AAD Guidelines for approval of agricultural extension project under section 35CCC",
+      link: SixAADGuidelinesContent
     },
     {
       id: 40,
-      title: "6AAD Guidelines for approval of agricultural extension project under section 35CCC",
-      link: FiveDConditionsContent
+      title: "6AAE Conditions subject to which an agricultural extension project is to be notified under section 35CCC",
+      link: SixAAEConditionsContent
     },
     {
       id: 41,
-      title: "6AAE Conditions subject to which an agricultural extension project is to be notified under section 35CCC",
-      link: FiveDConditionsContent
+      title: "6AAF Guidelines for approval of skill development project under section 35 CCD",
+      link: <SixAAFGuidelinesContent/>
     },
     {
       id: 42,
-      title: "6AAF Guidelines for approval of skill development project under section 35 CCD",
-      link: FiveDConditionsContent
-    },
-    {
-      id: 43,
       title: "6AAG Conditions subject to which a skill development project is to be notified under section 35CCD",
       link: <SixAAGConditionsContent/>
     },
     {
-      id: 44,
+      id: 43,
       title: "6AAH Meaning of expressions used in rule 6AAF and rule 6AAG",
       link: <SixAAHMeaningContent/>,
     },
     {
-      id: 45,
+      id: 44,
       title: "6AB Form of audit report for claiming deductions under sections 35D and 35E",
       link: SixABFormContent
     },
     {
-      id: 46,
+      id: 45,
       title: "6ABA Computation of aggregate average advances for the purposes of clause (viia) of sub-section (1) of section 36",
       link: SixABAComputationContent
     },
     {
-      id: 47,
+      id: 46,
       title: "6ABAA Infrastructure facility under clause (d) of the Explanation to clause (viii) of sub-section (1) of section 36",
       link: SixABAAInfrastructureContent
     },
     {
-      id: 48,
+      id: 47,
       title: "6ABB Form of report for claiming deduction under clause (xi) of sub-section (1) of section 36",
       link: SixABBFormConent
     },
     {
-      id: 49,
+      id: 48,
       title: "6ABBA-Other electronic modes",
       link: SixABBAOtherConetnt
     },
     {
-      id: 50,
+      id: 49,
       title: "6AC Limits and conditions for allowance of expenditure in certain cases",
       link: SixACLimitsContent
     },
     {
-      id: 51,
+      id: 50,
       title: "6B Expenditure on advertisement",
       link: SixBExpenditureContent
     },
     {
-      id: 52,
+      id: 51,
       title: "6C Expenditure on residential accommodation including guest houses",
       link: SixCExpenditureContent
     },
     {
-      id: 53,
+      id: 52,
       title: "6D Expenditure in connection with travelling, etc",
       link: SixDExpenditureContent
     },
     {
-      id: 54,
+      id: 53,
       title: "6DD Cases and circumstances in which a payment or aggregate of payments exceeding ten thousand rupees may be made to a person in a day, otherwise than by an account payee cheque drawn on a bank or account payee bank draft",
       link: SixDDCasesContent
     },
     {
-      id: 55,
+      id: 54,
       title: "6DDA Conditions that a stock exchange is required to fulfil to be notified as a recognised stock exchange for the purposes of clause (d) of proviso to clause (5) of section 43",
       link: SixDDAConditionsContent
     },
     {
-      id: 56,
+      id: 55,
       title: "6DDB Notification of a recognised stock exchange for the purposes of clause (d) of proviso to clause (5) of section 43",
       link: SixDDBNotificationContent
     },
     {
-      id: 57,
+      id: 56,
       title: "6DDC Conditions that a recognised association is required to fulfil to be notified as a recognised association for the purposes of clause (e) of the proviso to clause (5) of section 43",
       link: SixDDCConditionsContent
     },
     {
-      id: 58,
+      id: 57,
       title: "6DDD Notification of a recognised association for the purposes of clause (e) of the proviso to clause (5) of section 43",
       link: SixDDDNotificationContent
     },
     {
-      id: 60,
+      id: 58,
       title: "6E Limits of reserve for unexpired risks",
       link: FiveDConditionsContent
     },
     {
-      id: 61,
+      id: 59,
       title: "6EA Special provision regarding interest on bad and doubtful debts of financial institutions, banks, etc.",
       link: SixEASpecialContent
     },
     {
-      id: 62,
+      id: 60,
       title: "6EB Categories of bad or doubtful debts in the case of a public company under clause (b) of section 43D",
       link: SixEBCategoriesConetnt
     },
     {
-      id: 63,
+      id: 61,
       title: "6F Books of account and other documents to be kept and maintained under section 44AA(3) by persons carrying on certain professions",
       link: SixFBooksConetnt
     },
     {
-      id: 64,
+      id: 62,
       title: "6G Report of audit of accounts to be furnished under section 44AB",
       link: SixGReportContent
     },
     {
-      id: 65,
+      id: 63,
       title: "6GA Form of report of audit to be furnished under sub-section (2) of section 44DA ",
       link: SixHFormContent
     },
     {
-      id: 66,
+      id: 64,
       title: "6H Form of report of an accountant under sub-section (3) of section 50B ",
       link: SixHFormContent
     },
     {
-      id: 67,
+      id: 65,
       title: "7 Income which is partially agricultural and partially from business",
       link: SevenIncomeContent
     },
     {
-      id: 68,
+      id: 65,
       title: "7A Income from the manufacture of rubber",
       link: SevenAIncomeContent
     },
     {
-      id: 69,
+      id: 66,
       title: "7B Income from the manufacture of coffee",
       link: SevenBIncomeContent
     },
     {
-      id: 70,
+      id: 67,
       title: "8 Income from the manufacture of tea",
       link: EightIncomeContent
     },
     {
-      id: 71,
+      id: 68,
       title: "8A Conditions for the grant of development allowance",
       link: EightAConditions
     },
     {
-      id: 72,
+      id: 69,
       title: "8AA Method of determination of period of holding of capital assets in certain cases",
       link: EightAAMethodContent
     },
     {
-      id: 73,
+      id: 70,
       title: "8AB Attribution of income taxable under sub-section (4) of section 45 to the capital assets remaining with the specified entity, under section 48 ",
       link: EightABAttributionContent
     },
     {
-      id: 74,
+      id: 71,
       title: "8B Guidelines for notification of zero coupon bond",
       link: EightBGuidelinesContent
     },
     {
-      id: 75,
+      id: 72,
       title: "8C Computation of pro rata amount of discount on a zero coupon bond for the purpose of clause (iiia) of sub-section (1) of section 36",
       link: EightCComputationContent
     },
     {
-      id: 76,
+      id: 73,
       title: "8D Method for determining amount of expenditure in relation to income not includible in total income",
       link: EightDMethodContent
     },
     {
-      id: 77,
+      id: 74,
       title: "9 Royalties or copyright fees, etc., for literary or artistic work ",
       link: NineRoyaltiesContent
     },
     {
-      id: 78,
+      id: 75,
       title: "9A Deduction in respect of expenditure on production of feature films",
       link: NineADeductionContent
     },
     {
-      id: 79,
+      id: 76,
       title: "9B Deduction in respect of expenditure on acquisition of distribution rights of feature films",
       link: NineBDeductionContent
     },
     {
-      id: 80,
+      id: 77,
       title: "9C Conditions for carrying forward or set off of accumulated loss and unabsorbed depreciation allowance in case of amalgamation",
       link: NineCConditions
     },
     {
-      id: 81,
+      id: 78,
       title: "10 Determination of income in the case of non-residents",
       link: TenDeterminationContent
     },
     {
-      id: 82,
+      id: 79,
       title: "10A Meaning of expressions used in computation of arm's length price",
       link: TenAMeaningContent
     },
     {
-      id: 83,
+      id: 80,
       title: "10B Determination of arm's length price under section 92C",
       link: TenBDeterminationContent
     },
     {
-      id: 84,
+      id: 81,
       title: "10C Most appropriate method",
       link: TenCMostContent
     },
     {
-      id: 84,
+      id: 82,
       title: "10CA Computation of arm's length price in certain cases",
       link: TenCAComputationContent
     },
     {
-      id: 85,
+      id: 83,
       title: "10CB Computation of interest income pursuant to secondary adjustments",
       link: TenCBComputationContent
     },
     {
-      id: 86,
+      id: 84,
       title: "10D Information and documents to be kept and maintained under section 92D",
       link: TenDInformationConetnt
     },
     {
-      id: 87,
+      id: 85,
       title: "10DA Information and documents to be kept and maintained under proviso to sub-section (1) of section 92D and to be furnished in terms of sub-section (4) of section 92D",
       link:  TenDAInformationConent
     },
     {
-      id: 88,
+      id: 86,
       title: "10DB Furnishing of Report in respect of an International Group",
       link: TenDBFurnishingContent
     },
     {
-      id: 89,
+      id: 87,
       title: "10E Report from an accountant to be furnished under section 92E",
       link: TenEReportContent
     },
     {
-      id: 90,
+      id: 88,
       title: "10F Meaning of expressions used in matters in respect of advance pricing agreement",
       link: TenFMeaningContent
     },
     {
-      id: 91,
+      id: 89,
       title: "10G Persons eligible to apply",
       link: TenGPersonsContent
     },
     {
-      id: 92,
+      id: 90,
       title: "10H Pre-filing Consultation",
       link: TenHPreContent
     },
     {
-      id: 93,
+      id: 91,
       title: "10I Application for advance pricing agreement",
       link: TenIApplicationContent
     },
     {
-      id: 94,
+      id: 92,
       title: "10J Withdrawal of application for agreement",
       link: TenJWithdrawalContent
     },
     {
-      id: 95,
+      id: 93,
       title: "10L Procedure",
       link: TenLProcedurContent
     },
     {
-      id: 96,
+      id: 94,
       title: "10M Terms of the agreement",
       link: TenMTermsContent
     },
     {
-      id: 97,
+      id: 95,
       title: "10MA. Roll Back of the Agreement",
       link: TenMARollContent
     },
     
     {
-      id: 98,
+      id: 96,
       title: "10N Amendments to Application",
       link: TenNAmendmentsContent
     },
     
     {
-      id: 99,
+      id: 97,
       title: "10O Furnishing of Annual Compliance Report",
       link: TenOFurnishingContent
     },
     {
-      id: 100,
+      id: 98,
       title: "10P Compliance Audit of the agreement",
       link: TenPComplianceContent
       
     },
     {
-      id: 101,
+      id: 99,
       title: "10Q Revision of an agreement",
       link: TenQRevisionContent
     },
     {
-      id: 102,
+      id: 100,
       title: "10R Cancellation of an agreement",
       link: TenRCancellationContent
     },
     
     {
-      id: 103,
+      id: 101,
       title: "10RA Procedure for giving effect to rollback provision of an Agreement",
       link: TenRAProcedureContent
     },
 
     {
-      id: 104,
+      id: 102,
       title: "10RB Relief in tax payable under sub-section (1) of section 115JB due to operation of subsection (2D) of section 115JB",
       link: TenRBReliefContent
     },
     {
-      id: 105,
+      id: 103,
       title: "10S Renewing an agreement",
       link: TenSRenewingContent
     },
     {
-      id: 106,
+      id: 104,
       title: "10T Miscellaneous",
       link: FiveDConditionsContent
     },
     {
-      id: 107,
+      id: 105,
       title: "10TA Definitions",
       link: TenTADefinitionsContent
     },
     {
-      id: 108,
+      id: 106,
       title: "10TB Eligible assessee",
       link: TenTBEligibleContent
     },
     {
-      id: 109,
+      id: 107,
       title: "10TC Eligible international transaction",
       link: TenTCEligibleContent
     },
     
     {
-      id: 110,
+      id: 108,
       title: "10TD Safe Harbour",
       link: TenTDSafeHarbourContent
     },
     {
-      id: 111,
+      id: 109,
       title: "10TE Procedure",
       link: TenTEProcedureContent
     },
     {
-      id: 112,
+      id: 110,
       title: "10TF Safe Harbour Rules not apply in certain cases",
       link: TenTFSafeHarbourContent
     },
     {
-      id: 113,
+      id: 111,
       title: "10TG Mutual Agreement Procedure not to apply",
       link: TenTGMutualContent
     },
     {
-      id: 114,
+      id: 112,
       title: "10TH Safe Harbour Rules for Specified Domestic Transactions",
       link: TenTHSafeHarbourContent
     },
     {
-      id: 115,
+      id: 113,
       title: "10THA Eligible assessee",
       link: TenTHAEligibleContent
     },
     {
-      id: 116,
+      id: 114,
       title: "10THB Eligible specified domestic transaction",
       link: TenTHBEligibleContent
     },
     {
-      id: 117,
+      id: 115,
       title: "10THC Safe Harbour",
       link: TenTHCSafeContent
     },
     {
-      id: 118,
+      id: 116,
       title: "10THD Procedure",
       link: TenTHDProcedureContent
     },
     {
-      id: 119,
+      id: 117,
       title: "10U Chapter X-A not to apply in certain cases",
       link: TenUChapterContent
     },
     {
-      id: 120,
+      id: 118,
       title: "10UA Determination of consequences of impermissible avoidance arrangement",
       link: TenUADeterminationContent
     },
     {
-      id: 121,
+      id: 119,
       title: "10UB Notice, Forms for reference under section 144BA",
       link: NoticeContent
     },
     {
-      id: 122,
+      id: 120,
       title: "10UC Time limits",
       link: TenUCTimeConetnt
     },
     {
-      id: 123,
+      id: 121,
       title: "10UD Reference to the Approving Panel",
       link: TenUDReferenceContent
     },
     
     {
-      id: 124,
+      id: 122,
       title: "10UE Procedure before the Approving Panel",
       link: TenUEProcedureContent
     },
     {
-      id: 125,
+      id: 123,
       title: "10UF Remuneration",
       link: TenUFRemunerationContent
     },
     {
-      id: 126,
+      id: 124,
       title: "10V Guidelines for application of section 9A",
       link: TenVGuidelinesContent
     },
     {
-      id: 127,
+      id: 125,
       title: "10VA Approval of the fund",
       link: TenVAApprovalContent
     },
     {
-      id: 128,
+      id: 126,
       title: "10VB Statement to be furnished by the fund",
       link: TenVBStatementContent
     },
     
     {
-      id: 129,
+      id: 127,
       title: "11 Determination of income from transactions with non-residents",
       link: DeterminationIncomeContent
     },
     
     {
-      id: 130,
+      id: 128,
       title: "11A Medical authority for certifying autism, cerebral palsy and multiple disabilities and certificate to be obtained from the medical authority for the purposes of deduction under section 80DD and section 80U",
       link: AMedicalConetent
     },
     
     {
-      id: 131,
+      id: 129,
       title: "11AA Requirements for approval of an institution or fund under section 80G",
       link: AARequirementsContent
     },
     
     {
-      id: 132,
+      id: 130,
       title: "11B Conditions for allowance for deduction under section 80G",
       link: BConditionsContent
     },
     
     {
-      id: 133,
+      id: 131,
       title: "11C Prescribed fields for the purposes of deduction in respect of remuneration received from foreign employers or Indian concerns under section 80RRA",
       link: CPrescribedContent
     },
     
     {
-      id: 134,
+      id: 132,
       title: "11D Permanent physical disabilities for the purposes of deduction under section 80U",
       link: DPermanentContent
     },
     {
-      id: 135,
+      id: 133,
       title: "11DD Specified diseases and ailments for the purposeS of deduction under section 80DDB",
       link: DDSpecifiedContent
     },
     {
-      id: 136,
+      id: 134,
       title: "11E Application for approval of agreement under section 80-O",
       link: EApplicationContent
     },
     {
-      id: 137,
+      id: 135,
       title: "11EA Guidelines for specifying industrially backward districts for the purpose of deduction under sub-section (5) of section 80-IB",
       link: EAGuidelinesContent
     },
     
     {
-      id: 138,
+      id: 136,
       title: "11EE Statement under the simplified procedure for taxation of retail traders, etc., under Chapter XII-C",
       link: EEStatementContent
     },
     {
-      id: 139,
+      id: 137,
       title: "11F General",
       link: FGeneralContent
     },
     
     {
-      id: 140,
+      id: 138,
       title: "11G Composition of the National Committee",
       link: GCompositionContent
     },
     
     {
-      id: 141,
+      id: 139,
       title: "11H Headquarters and Secretariat",
       link: HHeadquartersContent
     },
     {
-      id: 142,
+      id: 140,
       title: "11I Functions ",
       link: IFunctionsContent
     },
     {
-      id: 143,
+      id: 141,
       title: "11J Guidelines for approval of associations and institutions ",
       link: JGuidelinesContent
     },
     {
-      id: 144,
+      id: 142,
       title: "11K Guidelines for recommending projects or schemes ",
       link: KGuidelinesContent
     },
     {
-      id: 145,
+      id: 143,
       title: "11L Application for approval of an association or institution or for recommendation of a project or scheme by the National Committee",
       link: LApplicationContent
     },
     {
-      id: 146,
+      id: 144,
       title: "11M Procedure before the National Committee",
       link: MProcedureContent
     },
     {
-      id: 147,
+      id: 143,
       title: "11MA Form of report by an approved association or institution under clause (ii) of sub-section (4) of section 35AC",
       link: MAFormContent
     },
     {
-      id: 148,
+      id: 144,
       title: "11MAA Form of report by public sector company or local authority or association or institution, which is carrying out a notified eligible project or scheme, under clause (ii) of sub-section (5) of section 35AC.",
       link: MAAFormContent
     },
     {
-      id: 149,
+      id: 145,
       title: "11N Other provisions",
       link: NOtherConetnt
     },
     {
-      id: 150,
+      id: 146,
       title: "11O Certificate of payment or expenditure in respect of eligible projects or schemes notified under section 35AC",
       link:  OCertificateContent
     },
     {
-      id: 151,
+      id: 147,
       title: "11OA Guidelines for notification of affordable housing project as specified business under section 35AD.",
       link: OAGuidelinesContent
     },
     {
-      id: 152,
+      id: 148,
       title: "11OB Guidelines for notification of a semiconductor wafer fabrication manufacturing unit as specified business under section 35AD.",
       link: OBGuidelinesContent
     },
     {
-      id: 153,
+      id: 149,
       title: "11P Tonnage tax scheme for shipping companies.",
       link: PTonnageContent
     },
     {
-      id: 154,
+      id: 150,
       title: "11Q Computation of deemed tonnage.",
       link: QComputationContent
     },
     {
-      id: 155,
+      id: 151,
       title: "11R Incidental activities for purposes of relevant shipping income.",
       link: RIncidentalContent
     },
     {
-      id: 156,
+      id: 152,
       title: "11S Computation of average of net tonnage for charter-in of tonnage.",
       link: SComputationContent
     },
     {
-      id: 157,
+      id: 153,
       title: "11T Form of report of an accountant under clause (ii) of section 115VW.",
       link: TFormContent
     },
     {
-      id: 158,
+      id: 154,
       title: "11U Determination of fair market value of the property other than immovable property",
       link: FiveDConditionsContent
     },
     
     {
-      id: 159,
+      id: 153,
       title: "11UA Determination of Fair Market Value",
       link: UAADeterminationMarketContent
     },
     {
-      id: 160,
+      id: 154,
       title: "11UAA Determination of Fair Market Value for share other than quoted share",
       link: UAADeterminationContent
     },
     {
-      id: 161,
+      id: 155,
       title: "11UAB Determination of fair market value for inventory",
       link: UABDeterminationContent
     },
     {
-      id: 162,
+      id: 156,
       title: "11UAC Prescribed class of persons for the purpose of clause (XI) of the proviso to clause (x) of sub-section (2) section 56",
       link: UACPrescribedContent
     },
     {
-      id: 162,
+      id: 157,
       title: "9D Calculation of taxable interest relating to contribution in a provident fund or recognised",
       link: DCalculationContent
     },
     
     {
-      id: 163,
+      id: 158,
       title: "11UAE Computation of Fair Market Value of Capital Assets for the purposes of section 50B of the Income-tax Act",
       link: UAEComputationContent
     },
     {
-      id: 164,
+      id: 159,
       title: "11UB Fair market value of assets in certain cases",
       link: UBFairContent
     },
     {
-      id: 165,
+      id: 160,
       title: "11UC Determination of Income attributable to assets in India",
       link: UCDetermination
     },
     {
-      id: 166,
+      id: 161,
       title: "11UD Thresholds for the purposes of significant economic presence",
       link: UDThresholdsContent
     },
     {
-      id: 167,
+      id: 162,
       title: "11UE  Indirect transfer prior to 28th May, 2012 of assets situate in India",
       link: UEIndirectContent
     }, 
     {
-      id: 168,
+      id: 163,
       title: "11UF Manner of furnishing undertaking under rule 11UE",
       link: UFMannerContent
     },
     {
-      id: 170,
+      id: 164,
       title: "2DD Computation of exempt income of specified fund for the purposes of clause (23FF) of section 10",
       link: TwoDDComputationContent
     },
     {
-      id: 171,
+      id: 165,
       title: "8AC Computation of short term capital gains and written down value under section 50 where depreciation on goodwill has been obtained",
       link: EightACComputationContent
     },
     {
-      id: 172,
+      id: 166,
       title: "8AD Computation of capital gains for the purposes of sub-section (1B) of section 45",
       link: EightADComputatioContent
     },
     {
-      id: 173,
+      id: 167,
       title: "2DCA Computation of minimum investment and exempt income for the purposes of clause (23FE)",
       link: TwoDCAComputationContent
     },
     {
-      id: 174,
+      id: 168,
       title: "6ABBB Form of statement to be furnished regarding preliminary expenses incurred under section 35D",
       link: ABBBFormContent
     },
     {
-      id: 175,
+      id: 169,
       title: "11UACA Computation of income chargeable to tax under clause (xiii) of sub-section (2) of section 56",
       link: UACAComputationContent
     },
