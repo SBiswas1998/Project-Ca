@@ -135,6 +135,26 @@ import SevenBIncomeContent from "./7BIncomeContent";
 import SevenAIncomeContent from "./7AIncomeContent";
 import SevenIncomeContent from "./7IncomeContent";
 import SixHFormContent from "./6HFormContent";
+import SixGReportContent from "./6GReportContent";
+import SixFBooksConetnt from "./6FBooksConetnt";
+import SixEBCategoriesConetnt from "./6EBCategoriesConetnt";
+import SixEASpecialContent from "./6EASpecialContent";
+import SixDDDNotificationContent from "./6DDDNotificationContent";
+import SixDDCConditionsContent from "./6DDCConditionsContent";
+import SixDDBNotificationContent from "./66DDBNotificationContent";
+import SixDDAConditionsContent from "./6DDAConditionsContent";
+import SixDDCasesContent from "./6DDCasesContent";
+import SixDExpenditureContent from "./6DExpenditureContent";
+import SixCExpenditureContent from "./6CExpenditureContent";
+import SixBExpenditureContent from "./6BExpenditureContent";
+import SixACLimitsContent from "./6ACLimitsContent";
+import SixABBAOtherConetnt from "./6ABBAOtherConetnt";
+import SixABBFormConent from "./6ABBFormConent";
+import SixABAAInfrastructureContent from "./6ABAAInfrastructureContent";
+import SixABAComputationContent from "./6ABAComputationContent";
+import SixABFormContent from "./6ABFormContent";
+import SixAAHMeaningContent from "./6AAHMeaningContent";
+import SixAAGConditionsContent from "./6AAGConditionsContent";
 
 
 const DeterminationIncomeCentent = [
@@ -351,82 +371,82 @@ const DeterminationIncomeCentent = [
     {
       id: 43,
       title: "6AAG Conditions subject to which a skill development project is to be notified under section 35CCD",
-      link: FiveDConditionsContent
+      link: <SixAAGConditionsContent/>
     },
     {
       id: 44,
       title: "6AAH Meaning of expressions used in rule 6AAF and rule 6AAG",
-      link: FiveDConditionsContent
+      link: <SixAAHMeaningContent/>,
     },
     {
       id: 45,
       title: "6AB Form of audit report for claiming deductions under sections 35D and 35E",
-      link: FiveDConditionsContent
+      link: SixABFormContent
     },
     {
       id: 46,
       title: "6ABA Computation of aggregate average advances for the purposes of clause (viia) of sub-section (1) of section 36",
-      link: FiveDConditionsContent
+      link: SixABAComputationContent
     },
     {
       id: 47,
       title: "6ABAA Infrastructure facility under clause (d) of the Explanation to clause (viii) of sub-section (1) of section 36",
-      link: FiveDConditionsContent
+      link: SixABAAInfrastructureContent
     },
     {
       id: 48,
       title: "6ABB Form of report for claiming deduction under clause (xi) of sub-section (1) of section 36",
-      link: FiveDConditionsContent
+      link: SixABBFormConent
     },
     {
       id: 49,
       title: "6ABBA-Other electronic modes",
-      link: FiveDConditionsContent
+      link: SixABBAOtherConetnt
     },
     {
       id: 50,
       title: "6AC Limits and conditions for allowance of expenditure in certain cases",
-      link: FiveDConditionsContent
+      link: SixACLimitsContent
     },
     {
       id: 51,
       title: "6B Expenditure on advertisement",
-      link: FiveDConditionsContent
+      link: SixBExpenditureContent
     },
     {
       id: 52,
       title: "6C Expenditure on residential accommodation including guest houses",
-      link: FiveDConditionsContent
+      link: SixCExpenditureContent
     },
     {
       id: 53,
       title: "6D Expenditure in connection with travelling, etc",
-      link: FiveDConditionsContent
+      link: SixDExpenditureContent
     },
     {
       id: 54,
       title: "6DD Cases and circumstances in which a payment or aggregate of payments exceeding ten thousand rupees may be made to a person in a day, otherwise than by an account payee cheque drawn on a bank or account payee bank draft",
-      link: FiveDConditionsContent
+      link: SixDDCasesContent
     },
     {
       id: 55,
       title: "6DDA Conditions that a stock exchange is required to fulfil to be notified as a recognised stock exchange for the purposes of clause (d) of proviso to clause (5) of section 43",
-      link: FiveDConditionsContent
+      link: SixDDAConditionsContent
     },
     {
       id: 56,
-      title: "66DDB Notification of a recognised stock exchange for the purposes of clause (d) of proviso to clause (5) of section 43",
-      link: FiveDConditionsContent
+      title: "6DDB Notification of a recognised stock exchange for the purposes of clause (d) of proviso to clause (5) of section 43",
+      link: SixDDBNotificationContent
     },
     {
       id: 57,
       title: "6DDC Conditions that a recognised association is required to fulfil to be notified as a recognised association for the purposes of clause (e) of the proviso to clause (5) of section 43",
-      link: FiveDConditionsContent
+      link: SixDDCConditionsContent
     },
     {
       id: 58,
       title: "6DDD Notification of a recognised association for the purposes of clause (e) of the proviso to clause (5) of section 43",
-      link: FiveDConditionsContent
+      link: SixDDDNotificationContent
     },
     {
       id: 60,
@@ -436,22 +456,22 @@ const DeterminationIncomeCentent = [
     {
       id: 61,
       title: "6EA Special provision regarding interest on bad and doubtful debts of financial institutions, banks, etc.",
-      link: FiveDConditionsContent
+      link: SixEASpecialContent
     },
     {
       id: 62,
       title: "6EB Categories of bad or doubtful debts in the case of a public company under clause (b) of section 43D",
-      link: FiveDConditionsContent
+      link: SixEBCategoriesConetnt
     },
     {
       id: 63,
       title: "6F Books of account and other documents to be kept and maintained under section 44AA(3) by persons carrying on certain professions",
-      link: FiveDConditionsContent
+      link: SixFBooksConetnt
     },
     {
       id: 64,
       title: "6G Report of audit of accounts to be furnished under section 44AB",
-      link: FiveDConditionsContent
+      link: SixGReportContent
     },
     {
       id: 65,
