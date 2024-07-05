@@ -1,11 +1,10 @@
 import React from "react";
-import {  Footer } from "../../components/Layout";
+import { Footer } from "../../components/Layout";
 import ContactFrom from "../../components/Forms/ContactFrom";
 import { Container, Row, Col } from "react-bootstrap";
 import ResHeader from "../../components/ResponsiveMemu/Header";
 
 const Contact = () => {
-
   return (
     <>
       <ResHeader />
@@ -15,23 +14,37 @@ const Contact = () => {
           <Row className="justify-content-md-center">
             <Col md={4}>
               <h2 className="hm-about-title contact-from">
-                  Contact <span>Us</span>
+                Contact <span>Us</span>
               </h2>
               <div className="address">
                 <p>Purminder Kaur & Associates</p>
                 <ul>
                   <li className="office-address">
                     <strong>Address : </strong>
-                    SCF- 78-79, First Floor,  <br /> Phase – XI,Mohali, Punjab – 160062
+                    SCO- 79, First Floor, <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Phase – XI,Mohali, <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Punjab – 160062
                   </li>
                   <li>
-                    <strong>Phone : </strong> <a href="tel:+0172-5122215" style={{color:"#000"}} >0172-5122215</a> 
+                    <strong>Phone : </strong>{" "}
+                    <a href="tel:+0172-5122215" style={{ color: "#000" }}>
+                      0172-5122215
+                    </a>
                   </li>
                   <li>
-                    <strong>Email: </strong> <a href="mailto:info@capka.co.in" style={{color:"#000"}}>info@capka.co.in</a>
+                    <strong>Email: </strong>{" "}
+                    <a href="mailto:info@capka.co.in" style={{ color: "#000" }}>
+                      info@capka.co.in
+                    </a>
                   </li>
                   <li>
-                    <strong>Website: </strong> <a href="https://capka.co.in/" style={{color:"#000"}}> www.capka.co.in</a>
+                    <strong>Website: </strong>{" "}
+                    <a href="https://capka.co.in/" style={{ color: "#000" }}>
+                      {" "}
+                      www.capka.co.in
+                    </a>
                   </li>
                 </ul>
               </div>
