@@ -116,11 +116,6 @@ const QuickEnquiryForm = () => {
     <section className="hm-contactus-sec">
       <Container>
         <Row>
-          <Col lg={5}>
-            <figure className="">
-              <img src={contactimg} alt="" className="contact-image" />
-            </figure>
-          </Col>
           <Col lg={7} className="mt-s">
             <div className="contact">
               <h3>Quick Contact</h3>
